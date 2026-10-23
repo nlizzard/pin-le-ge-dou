@@ -1,0 +1,30 @@
+{
+  "name": "picture-play",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "description": "拼豆归位 Picture Play — 像素拼豆归位闯关小游戏",
+  "scripts": {
+    "dev": "concurrently -k -n web,api \"vite --open\" \"node --watch server/index.js\"",
+    "build": "vite build",
+    "start": "vite build && node server/index.js",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "serve": "node server/index.js",
+    "art:pixelize": "node tools/pixelize.mjs",
+    "art:fetch": "node tools/fetch-art.mjs",
+    "art:approve": "node tools/approve-art.mjs"
+  },
+  "dependencies": {
+    "@fastify/static": "^8.0.0",
+    "fastify": "^5.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0",
+    "sharp": "^0.34.5",
+    "typescript": "^5.6.0",
+    "vite": "^6.0.0",
+    "vitest": "^3.0.0"
+  },
+  "packageManager": "yarn@4.18.1"
+}

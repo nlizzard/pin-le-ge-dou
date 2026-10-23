@@ -1,0 +1,12 @@
+services:
+  picture-play:
+    build: .
+    image: picture-play:latest
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./data:/data
+    environment:
+      # 部署到公网时建议设置访问口令，避免别人改你的存档
+      - ACCESS_KEY=
+    restart: unless-stopped

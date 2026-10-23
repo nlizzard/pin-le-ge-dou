@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#dcdcf5" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>拼豆归位 Picture Play</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' rx='3' fill='%23a58bf0'/><circle cx='8' cy='8' r='5' fill='%23ff8fab'/><circle cx='8' cy='8' r='2' fill='%23b8476a'/></svg>" />
+  </head>
+  <body>
+    <div id="app">
+      <div id="boot" style="height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#dcdcf5;color:#3d3566;font:16px/1.7 system-ui,'Microsoft YaHei',sans-serif;text-align:center;padding:24px">
+        <div style="font-size:32px;font-weight:900;color:#8f6ff0">拼豆归位</div>
+        <div id="boot-msg">正在加载…</div>
+      </div>
+    </div>
+    <script>
+      (function () {
+        function show(msg) {
+          var el = document.getElementById('boot-msg');
+          if (el) el.innerHTML = msg;
+          else document.body.insertAdjacentHTML('beforeend', '<pre style="position:fixed;left:0;right:0;bottom:0;margin:0;padding:12px;background:#fff0f0;color:#c62828;font-size:13px;white-space:pre-wrap;z-index:99">' + msg + '</pre>');
+        }
+        if (location.protocol === 'file:') {
+          show('不能直接双击打开 index.html。<br>请在项目目录运行 <b>npm run dev</b>，然后访问 <b>http://localhost:5173</b>');
+          return;
+        }
+        window.addEventListener('error', function (e) { show('出错了：' + (e.message || e.error) + '<br>' + (e.filename || '') + ':' + (e.lineno || '')); });
+        window.addEventListener('unhandledrejection', function (e) { show('出错了：' + (e.reason && (e.reason.stack || e.reason.message) || e.reason)); });
+        setTimeout(function () {
+          if (document.getElementById('boot')) show('加载超时。请确认用 <b>npm run dev</b> 启动，并访问 <b>http://localhost:5173</b>（3000 端口只是数据接口）。<br>浏览器需要较新版本（Chrome / Edge / Safari 近两年版本）。');
+        }, 6000);
+      })();
+    </script>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

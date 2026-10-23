@@ -1,0 +1,9 @@
+node_modules
+dist
+data
+art/candidates
+art/preview.html
+.yarn/cache
+.yarn/install-state.gz
+.pnp.*
+_to_delete/
