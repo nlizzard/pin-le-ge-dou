@@ -1,0 +1,44 @@
+{
+  "key": "commons-commanderx16-icon-rainbow-o4",
+  "name": "彩虹箭标",
+  "palette": {
+    "A": "#51bfe5",
+    "B": "#eeb93f",
+    "C": "#5480c1",
+    "D": "#b3c441",
+    "E": "#a371b1",
+    "F": "#69c6ae",
+    "G": "#f5803f",
+    "H": "#f0473a"
+  },
+  "rows": [
+    "EE....................EE",
+    ".EE..................EE",
+    ".EEE................EEE",
+    ".CCCC..............CCCC",
+    "..CCCCC..........CCCCC",
+    "..CCCCCA........ACCCCC",
+    "..AAAAAAA......AAAAAAA",
+    "...AAAAAAA....AAAAAAA",
+    "....AAAAAAF..FAAAAAA",
+    ".......FFFF..FFFF",
+    ".........FF..FF",
+    ".........DD..DD",
+    ".......DDDD..DDDD",
+    "....DDDDDDD..DDDDDDD",
+    "....BBBBBB....BBBBBB",
+    "...BBBBBB......BBBBBB",
+    "...GBBBB........BBBBG",
+    "...GGGG..........GGGG",
+    "...HH..............HH",
+    "...H................H",
+    "..H..................H"
+  ],
+  "source": {
+    "url": "https://commons.wikimedia.org/wiki/File:CommanderX16_icon_rainbow.svg",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/CommanderX16_icon_rainbow.svg/960px-CommanderX16_icon_rainbow.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "title": "CommanderX16 icon rainbow",
+    "author": "Original: Christian Simpson aka Perifractic, CommanderX16 team\nVector redesign: VectorVoyager",
+    "license": "Public domain"
+  }
+}

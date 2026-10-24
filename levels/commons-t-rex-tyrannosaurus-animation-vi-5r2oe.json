@@ -1,0 +1,44 @@
+{
+  "key": "commons-t-rex-tyrannosaurus-animation-vi-5r2oe",
+  "name": "小霸王龙",
+  "palette": {
+    "A": "#7d9c48",
+    "B": "#dbdcaf",
+    "C": "#6d8b3d",
+    "D": "#cdd1a4",
+    "E": "#8ca65e"
+  },
+  "rows": [
+    "...CCAA",
+    "..CCAAA",
+    "..CAAAAA",
+    "..CCAAAA",
+    "...AACCCA",
+    "...CAAAAA",
+    "....AAAAA",
+    "...CAAAA",
+    "..CCAAAB",
+    "..CABBBBA",
+    ".CAABBBBD",
+    "CAAABBBBDA",
+    "CCAABBBBBA",
+    ".AAABBBBB.A",
+    ".AAABBBBB",
+    ".AAABBBBB",
+    ".AAABBBBA",
+    ".CAAABBAA",
+    ".CAAC.AAA",
+    "..AA..AAA",
+    "..AA..AAA",
+    "..AA..AAA",
+    "..AA",
+    "..AE"
+  ],
+  "source": {
+    "url": "https://commons.wikimedia.org/wiki/File:T-Rex_Tyrannosaurus_Animation_Video_Game_Sprite_Front_Right.png",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/T-Rex_Tyrannosaurus_Animation_Video_Game_Sprite_Front_Right.png/960px-T-Rex_Tyrannosaurus_Animation_Video_Game_Sprite_Front_Right.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "title": "T-Rex Tyrannosaurus Animation Video Game Sprite Front Right",
+    "author": "Kurt Kaiser",
+    "license": "CC0"
+  }
+}

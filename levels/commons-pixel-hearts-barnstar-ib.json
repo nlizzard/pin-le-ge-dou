@@ -1,0 +1,45 @@
+{
+  "key": "commons-pixel-hearts-barnstar-ib",
+  "name": "爱心勋章",
+  "palette": {
+    "A": "#ee271f",
+    "B": "#c5bbbb",
+    "C": "#b1a8a8",
+    "D": "#9a9393",
+    "E": "#787373",
+    "F": "#1c1211",
+    "G": "#a31d0a",
+    "H": "#443a3a"
+  },
+  "rows": [
+    "...........CB",
+    "...........CD",
+    "...........BC",
+    "..........CBCC",
+    "..........ECCC",
+    "..........EBBC",
+    ".........CBBBB",
+    "DDDECCCCCDDCCDDEECCCCCCB",
+    ".ECBFFFFCDFFFFDCFFHFBCE",
+    "..FAAAAAFFBAAAGFBAAAAF",
+    "...AAAAAFGAAAAAFAAAAA",
+    "...GAAAGGGGAAGGFGAAAG",
+    "....GAAFDDGAAGDEFAAG",
+    ".....GFDBBHGGDCBEFG",
+    ".......BBDEEEDCBB",
+    "......CBBBBDEBBBBC",
+    "......ECBBC..EBBCE",
+    "......DBDD....EEBB",
+    ".....EBDC......EEBE",
+    ".....DDH.........ED",
+    ".....C............CB",
+    "....H..............E"
+  ],
+  "source": {
+    "url": "https://commons.wikimedia.org/wiki/File:Pixel_hearts_barnstar.png",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Pixel_hearts_barnstar.png/960px-Pixel_hearts_barnstar.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "title": "Pixel hearts barnstar",
+    "author": "Sssine21",
+    "license": "CC0"
+  }
+}

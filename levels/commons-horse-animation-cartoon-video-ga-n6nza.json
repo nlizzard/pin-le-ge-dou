@@ -1,0 +1,46 @@
+{
+  "key": "commons-horse-animation-cartoon-video-ga-n6nza",
+  "name": "小马回眸",
+  "palette": {
+    "A": "#533518",
+    "B": "#5c3b1c",
+    "C": "#4a2e15",
+    "D": "#3e2612",
+    "E": "#291b0f",
+    "F": "#1b130c",
+    "G": "#815c62"
+  },
+  "rows": [
+    ".......A",
+    "....GAFG",
+    "....AFABB",
+    "....BFBBE",
+    "....BBBCD",
+    "...ABBBCC",
+    "...BBBCDC",
+    "...BBADDA",
+    "..EEBDDABB",
+    "..EEEAABBB",
+    "..BDAABBBB",
+    ".B.CAABBBBB",
+    ".B.AAAABBBA",
+    "E..AAAAABAAA",
+    "..CAAAAACAAA",
+    "..CAAAAEAAAC",
+    "..CAAAACCCC",
+    "...AAAACCCC",
+    "...CAACCDD",
+    "....CCDDDF",
+    ".....A..A",
+    ".....E..A",
+    ".....F..E",
+    "........F"
+  ],
+  "source": {
+    "url": "https://commons.wikimedia.org/wiki/File:Horse_Animation_Cartoon_Video_Game_Sprite_Clipart_Left_Front.png",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Horse_Animation_Cartoon_Video_Game_Sprite_Clipart_Left_Front.png/960px-Horse_Animation_Cartoon_Video_Game_Sprite_Clipart_Left_Front.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "title": "Horse Animation Cartoon Video Game Sprite Clipart Left Front",
+    "author": "Kurt Kaiser",
+    "license": "CC0"
+  }
+}

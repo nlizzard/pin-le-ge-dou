@@ -13,6 +13,7 @@ ENV NODE_ENV=production PORT=3000 DATA_DIR=/data
 COPY package.json package-lock.json ./
 RUN npm ci --omit=dev && npm cache clean --force
 COPY server ./server
+COPY --from=build /app/server/generated ./server/generated
 COPY --from=build /app/dist ./server/public
 VOLUME /data
 EXPOSE 3000

@@ -1,0 +1,37 @@
+{
+  "key": "commons-fido-character-from-don-t-buy-th-uh",
+  "name": "黄色小怪兽",
+  "palette": {
+    "A": "#e0c010",
+    "B": "#dfbf0f",
+    "C": "#e2c210",
+    "D": "#e1c110",
+    "E": "#e0c00f"
+  },
+  "rows": [
+    ".AAAAAAAAAA",
+    "A.AAAAA..AAA",
+    "AAAAAAAAAAAA..........AA",
+    "A.BAAAAAAAAA.........AAA",
+    ".BBAAAAAAAAA.........AAA",
+    "..AAAAAA.AAA.........AAA",
+    "....AA....A..........AAA",
+    "....AA..............AAA",
+    "...CAAAAAAAAAAAAAAAAAA",
+    "..BAAAAAAAAAAAAAAD.AAA",
+    "..AAA.BAAAAAAAAA.BAEC",
+    "..AAAA.AAAAAAAAAAAAA",
+    "..AAAA.AAAAAAAADAAAA",
+    "...AAAA.AAAAAA.BAAA",
+    "....AAAA.....AAAAA",
+    "......AAB....AAAA",
+    "......AAA.....AA"
+  ],
+  "source": {
+    "url": "https://commons.wikimedia.org/wiki/File:Fido_character_from_Don%27t_Buy_This.png",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Fido_character_from_Don%27t_Buy_This.png/960px-Fido_character_from_Don%27t_Buy_This.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "title": "Fido character from Don't Buy This",
+    "author": "Firebird Software, S. Wilson, J.D. Woodcock",
+    "license": "Public domain"
+  }
+}

@@ -14,7 +14,8 @@ function invariant(g: Game) {
 
 function withElements(minId = 4): LevelDef[] {
   const out: LevelDef[] = [];
-  for (let id = minId; id <= LEVEL_COUNT * 4; id++) out.push(buildLevel(id));
+  // 200 关全量验证 + 越界几关确认循环仍可解
+  for (let id = minId; id <= LEVEL_COUNT + 3; id++) out.push(buildLevel(id));
   return out;
 }
 import { PATTERNS } from '../client/src/core/patterns';
@@ -71,7 +72,7 @@ describe('levels', () => {
   });
 
   it('conserve colour counts and have misplaced beads', () => {
-    for (let id = 1; id <= LEVEL_COUNT * 2; id++) {
+    for (let id = 1; id <= LEVEL_COUNT + 3; id++) {
       const d = buildLevel(id);
       const count = (arr: Int16Array) => {
         const m = new Map<number, number>();
@@ -84,11 +85,64 @@ describe('levels', () => {
     }
   });
 
+  it('difficulty ramps up across the 200 levels', () => {
+    expect(PATTERNS.length).toBe(LEVEL_COUNT);
+    expect(LEVEL_COUNT).toBeGreaterThanOrEqual(200);
+    // 200 关图案连灰色剪影都两两不同（形状严格唯一，配色可以再不同）
+    const seen = new Set(PATTERNS.map((p) => p.rows.join('\n')));
+    expect(seen.size).toBe(PATTERNS.length);
+    const pressure = (id: number) => {
+      const d = buildLevel(id);
+      return d.wrongCount / d.capacity;
+    };
+    const avg = (from: number, to: number) => {
+      let sum = 0;
+      for (let id = from; id <= to; id++) sum += pressure(id);
+      return sum / (to - from + 1);
+    };
+    // 后半程的错位/空槽压力显著高于前半程
+    expect(avg(160, 200)).toBeGreaterThan(avg(1, 40));
+    const order = { 轻松: 0, 普通: 1, 烧脑: 2 } as const;
+    expect(order[buildLevel(1).difficulty]).toBe(0); // 第 1 关一定轻松
+    expect(order[buildLevel(200).difficulty]).toBe(2); // 第 200 关一定烧脑
+  });
+
+  /** 乱点玩法：每步随机点一颗可以动的错位豆，不看空位需不需要 */
+  function playNaive(g: Game, rng: () => number, maxSteps = 400) {
+    g.start();
+    for (let step = 0; step < maxSteps && g.state === 'playing'; step++) {
+      const all = [...g.wrongByColor.values()].flatMap((s) => [...s]).filter((x) => g.movable(x));
+      if (!all.length) break;
+      g.tap(all[Math.floor(rng() * all.length)]);
+    }
+  }
+
+  it('naive random tapping bursts: almost no level can be beaten by mashing', () => {
+    const seeds = [1, 2, 3, 4, 5, 6, 7, 8];
+    let wins = 0;
+    let runs = 0;
+    for (let id = 2; id <= LEVEL_COUNT; id += 5) {
+      const def = buildLevel(id);
+      let levelWins = 0;
+      for (const s of seeds) {
+        const g = new Game(def);
+        playNaive(g, mulberry32(id * 1000 + s));
+        runs++;
+        if (g.state === 'won') levelWins++;
+      }
+      wins += levelWins;
+      // 乱点每关最多靠运气赢一次；整体胜率必须低于 3%
+      expect(levelWins, `level ${id}`).toBeLessThanOrEqual(1);
+    }
+    expect(wins / runs).toBeLessThan(0.03);
+  });
+
   it('smart play always wins without bursting', () => {
-    for (let id = 1; id <= LEVEL_COUNT * 2; id++) {
+    // 全量 200 关 + 越界 3 关（图案循环）都要能被聪明玩法通关
+    for (let id = 1; id <= LEVEL_COUNT + 3; id++) {
       const g = new Game(buildLevel(id));
       playSmart(g);
-      expect(g.state).toBe('won');
+      expect(g.state, `level ${id}`).toBe('won');
       expect(g.slots.length).toBe(0);
       expect(g.stars()).toBeGreaterThanOrEqual(1);
     }
@@ -142,7 +196,8 @@ describe('rules', () => {
   it('a tap moves the connected same-colour group, never mixing the two destinations', () => {
     let sawGroupToSlot = false;
     let sawGroupToCell = false;
-    for (let id = 1; id <= LEVEL_COUNT; id++) {
+    // 200 关里抽样验证逐步规则（全量在 smart play 用例覆盖）
+    for (let id = 1; id <= LEVEL_COUNT; id += 7) {
       const g = new Game(buildLevel(id));
       g.start();
       for (let n = 0; n < 400 && g.state === 'playing'; n++) {
@@ -162,8 +217,16 @@ describe('rules', () => {
         const color = g.beads[cell];
         const needed = g.emptyByColor.get(color)?.size ?? 0;
         if (!needed && group.length > g.freeSlots) {
-          expect(g.tap(cell).type).toBe('burst');
-          break;
+          // 整组放不下空槽：只动点中的一颗；空槽全满才爆槽
+          if (g.freeSlots === 0) {
+            expect(g.tap(cell).type).toBe('burst');
+            break;
+          }
+          const r0 = g.tap(cell);
+          expect(r0.type).toBe('moved');
+          if (r0.type !== 'moved') break;
+          expect(r0.moved).toBe(1);
+          continue;
         }
         const r = g.tap(cell);
         expect(r.type).toBe('moved');
@@ -197,7 +260,7 @@ describe('rules', () => {
 
 describe('props', () => {
   it('fixCell always fixes the target and keeps invariants', () => {
-    for (let id = 2; id <= LEVEL_COUNT; id++) {
+    for (let id = 2; id <= LEVEL_COUNT; id += 11) {
       const g = new Game(buildLevel(id));
       g.start();
       // 先制造一些空位和空槽

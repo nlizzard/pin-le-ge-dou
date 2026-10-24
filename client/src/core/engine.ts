@@ -85,6 +85,8 @@ export class Game {
   state: GameState = 'ready';
   /** 已用时间（秒，游戏内时间，弹窗时暂停） */
   elapsed = 0;
+  /** 实际游玩时间，不受沙漏、星星或冻结影响；暂停由界面停止 tick。 */
+  playedSeconds = 0;
   /** 点击计时器和沙漏加的时间（不计入「闪电手」） */
   addedTime = 0;
   /** 星星豆奖励的时间（计入「闪电手」） */
@@ -143,6 +145,12 @@ export class Game {
 
   tick(dt: number): boolean {
     if (this.state !== 'playing') return false;
+    this.playedSeconds += dt;
+    if (this.def.mode === 'custom') {
+      this.elapsed += dt;
+      this.freezeLeft = Math.max(0, this.freezeLeft - dt);
+      return false;
+    }
     if (this.freezeLeft > 0) {
       this.freezeLeft = Math.max(0, this.freezeLeft - dt);
       return false;
@@ -238,7 +246,8 @@ export class Game {
   /**
    * 点击一颗错位豆子，连着的同色错位豆子一起移动。两种去向互斥：
    * - 有空位需要这个颜色：能填几个空位就飞几颗过去（离点击处近的优先），其余留在原地；
-   * - 没有空位需要：整组进入空槽，放不下就爆槽。
+   * - 没有空位需要：整组进入空槽；若空槽放不下整组，只把点中的这一颗放进去，
+   *   其余留在原地（避免误触一大团直接爆槽）；空槽全满时才会爆槽。
    * 之后每个被腾出的格子若在空槽里有它要的颜色，会自动飞回来填上（连锁）。
    */
   tap(i: number): TapResult {
@@ -260,7 +269,9 @@ export class Game {
     const empties = this.emptyByColor.get(color);
     const toCells = empties ? empties.size > 0 : false;
 
-    if (!toCells && group.length > this.freeSlots) {
+    // 整组进空槽放不下：只动点中的一颗；连一颗的位置都没有才爆槽
+    const overflow = !toCells && group.length > this.freeSlots;
+    if (overflow && this.freeSlots <= 0) {
       this.state = 'burst';
       return { type: 'burst', cell: i, group };
     }
@@ -268,9 +279,9 @@ export class Game {
     this.pushUndo();
     const moves: Move[] = [];
     let placed = 0;
-    const movers = toCells ? group.slice(0, Math.min(group.length, empties!.size)) : group;
+    const movers = toCells ? group.slice(0, Math.min(group.length, empties!.size)) : overflow ? [i] : group;
 
-    // 1. 拿起豆子：要么全部去正确位置，要么全部进空槽
+    // 1. 拿起豆子：全部去正确位置、全部进空槽，或放不下时只动点中的一颗
     for (const cell of movers) {
       if (toCells) {
         const dest = this.nearest(empties, cell);
@@ -325,7 +336,7 @@ export class Game {
 
   /** 记一次道具使用；返回 false 表示本局次数已用完 */
   consumeProp(id: PropId, perGame: number): boolean {
-    if (this.uses(id) >= perGame) return false;
+    if (this.def.mode !== 'custom' && this.uses(id) >= perGame) return false;
     this.propUses[id] = this.uses(id) + 1;
     this.stats.propsUsed++;
     return true;
@@ -482,7 +493,7 @@ export class Game {
 
   /** 爆槽后续命：增加空槽后继续 */
   revive(extraSlots: number): boolean {
-    if (this.state !== 'burst' || this.stats.revives >= MAX_REVIVES) return false;
+    if (this.state !== 'burst' || !this.canRevive) return false;
     this.stats.revives++;
     this.capacity += extraSlots;
     this.state = 'playing';
@@ -491,14 +502,14 @@ export class Game {
 
   /** 爆槽后用扫把续命 */
   reviveWithBroom(rand: () => number): number[] | null {
-    if (this.state !== 'burst' || this.stats.revives >= MAX_REVIVES) return null;
+    if (this.state !== 'burst' || !this.canRevive) return null;
     this.stats.revives++;
     this.state = 'playing';
     return this.broom(rand);
   }
 
   get canRevive() {
-    return this.stats.revives < MAX_REVIVES;
+    return this.def.mode === 'custom' || this.stats.revives < MAX_REVIVES;
   }
 
   /** 凤凰羽毛：清空空槽（豆子回到空位上）并 +30 秒，不占续命次数 */

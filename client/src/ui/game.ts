@@ -1,6 +1,6 @@
 import { sfx, vibrate } from '../audio';
 import { Game, TIMER_TAP_LIMIT, type Events, type Move, type TapResult } from '../core/engine';
-import { buildLevel, ELEMENT_INFO, LEVEL_COUNT, OBJECTIVE_ICON, OBJECTIVE_TEXT, type ElementType, type Objective } from '../core/level';
+import { ELEMENT_INFO, LEVEL_COUNT, loadLevelDef, OBJECTIVE_ICON, OBJECTIVE_TEXT, type ElementType, type Objective } from '../core/level';
 import { COMMON_PROPS, ELF_DROP_CHANCE, ELF_DROPS_PER_GAME, HIDDEN_PROPS, PROP_MAP, PROPS, rollCommon, rollHidden, WISHES_PER_GAME, type PropId } from '../core/props';
 import { BoardView } from '../render/board';
 import { Fx } from '../render/fx';
@@ -11,6 +11,11 @@ import { Elf, type DropResult } from './elf';
 import { openLottery } from './lottery';
 import { openSettings } from './settings';
 import { openWishPool } from './wish';
+import type { LevelDef } from '../core/level';
+import { openShareStudio } from './share';
+import { customRecords, recordCustom } from '../customRecords';
+import { bindPropPress } from './propPress';
+import { loadWallWork, rememberArtwork } from '../artWallStore';
 
 const FLIGHT_MS = 320;
 const STAGGER_MS = 110;
@@ -18,6 +23,8 @@ const STAGGER_MS = 110;
 export interface GameScreenHost {
   toMap(): void;
   play(id: number): void;
+  playCustom(def: LevelDef): void;
+  toStudio(): void;
 }
 
 type PickAction = 'tweezers' | 'rainbowBomb' | null;
@@ -52,6 +59,8 @@ export class GameScreen {
   private locateIdx = 0;
   private lastLocate = 0;
   private finishing = false;
+  private active = false;
+  private fixes: { game: Game; cell: number; at: number; before?: (c: number) => void }[] = [];
 
   // 本局状态
   private elfDrops = 0;
@@ -79,11 +88,19 @@ export class GameScreen {
   private elProgressText: HTMLElement;
   private elObjectives: HTMLElement;
   private elNeed: HTMLElement;
+  private elNeedContent: HTMLElement;
+  private elNeedToggle: HTMLButtonElement;
+  private needUntil = 0;
+  private needTimer = 0;
+  private needPinned = false;
+  private needPressTimer = 0;
+  private needPressFired = false;
   private elTray: HTMLElement;
   private elTrayInfo: HTMLElement;
   private elZoom: HTMLInputElement;
   private elCombo: HTMLElement;
   private elProps: HTMLElement;
+  private cancelPropPress: () => void;
   private elBanner: HTMLElement;
   private elBuffs: HTMLElement;
   private keyHandler = (e: KeyboardEvent) => this.onKey(e);
@@ -112,11 +129,24 @@ export class GameScreen {
     this.elProgress = h('div.progress-fill');
     this.elProgressText = h('div.progress-text');
     this.elObjectives = h('div.objectives');
-    this.elNeed = h('div.need-bar');
+    this.elNeedContent = h('div.need-content', { 'aria-live': 'polite', hidden: true });
+    this.elNeedToggle = h('button.need-toggle', {
+      onclick: () => this.showNeedHint(),
+      onpointerdown: () => this.beginNeedPress(),
+      onpointerup: () => this.cancelNeedPress(),
+      onpointerleave: () => this.cancelNeedPress(),
+      onpointercancel: () => this.cancelNeedPress(),
+      'aria-expanded': 'false',
+      title: '点按显示 2 秒 · 长按常驻 / 再长按收起',
+    }, '💡 提示') as HTMLButtonElement;
+    this.elNeed = h('div.need-bar', {}, this.elNeedToggle, this.elNeedContent);
     this.elTray = h('div.tray');
     this.elTrayInfo = h('div.tray-info');
     this.elCombo = h('div.combo');
-    this.elProps = h('div.props-bar');
+    this.elProps = h('div.props-bar', { 'aria-label': '道具栏：单点使用，长按查看作用' });
+    this.cancelPropPress = bindPropPress(this.elProps,
+      () => this.active && !this.paused && this.game?.state === 'playing',
+      id => void this.useProp(id), id => void this.showPropInfo(id));
     this.elBanner = h('div.mode-banner.hidden');
     this.elBuffs = h('div.buffs');
     this.elZoom = h('input.zoom-range', { type: 'range', min: 0, max: 100, value: 0, 'aria-label': '缩放' }) as HTMLInputElement;
@@ -149,17 +179,22 @@ export class GameScreen {
           h('button.icon-btn.small', { onclick: () => this.board.zoomBy(1 / 1.4), title: '缩小 (-)' }, '−'),
         ),
       ),
-      h('div.side', {}, h('div.tray-panel', {}, this.elTrayInfo, this.elTray), this.elProps),
+      h('div.side', {}, h('div.tray-panel', {}, this.elTrayInfo, this.elTray), this.elProps, h('p.props-help', {}, '单点使用 · 长按查看作用')),
     );
   }
 
   // ---------- 生命周期 ----------
 
-  async open(id: number) {
+  async open(id: number, custom?: LevelDef) {
+    clearTimeout(this.needTimer); this.needUntil = 0;
+    this.needPinned = false;
+    clearTimeout(this.needPressTimer);
+    this.active = true;
+    this.fixes = [];
     this.levelId = id;
     (window as any).__pp = this; // 调试 / 自动化测试用
     (window as any).__grant = grantProp;
-    const def = buildLevel(id);
+    const def = custom ?? (await loadLevelDef(id));
     this.game = new Game(def);
     this.sprites = buildSprites(def.colors);
     this.board.colorBlind = save.data.settings.colorBlind;
@@ -180,7 +215,8 @@ export class GameScreen {
     clearInterval(this.helperTimer);
     this.elf.reset();
     this.elf.setSkin(save.data.elfSkin);
-    this.elTitle.textContent = `第${id}关 · ${def.name}`;
+    this.elTitle.textContent = custom ? `自由创作 · ${def.name}` : `第${id}关 · ${def.name}`;
+    this.elTimer.title = custom ? '实际游玩时间（暂停不计时）' : '点我加时！';
     this.board.setGame(this.game, this.sprites);
     this.renderAll();
     this.setBanner(null);
@@ -196,6 +232,12 @@ export class GameScreen {
   }
 
   close() {
+    clearTimeout(this.needTimer); this.needUntil = 0;
+    this.needPinned = false;
+    clearTimeout(this.needPressTimer);
+    this.cancelPropPress();
+    this.active = false;
+    this.fixes = [];
     cancelAnimationFrame(this.raf);
     clearInterval(this.metricsTimer);
     clearInterval(this.helperTimer);
@@ -204,10 +246,19 @@ export class GameScreen {
   }
 
   private frame(now: number) {
-    const dt = Math.min(0.1, (now - this.lastFrame) / 1000);
+    const dt = Math.max(0, (now - this.lastFrame) / 1000);
     this.lastFrame = now;
     if (!this.paused && this.game.tick(dt)) this.onOvertime();
-    if (this.brushUntil && now > this.brushUntil) this.endBrush();
+    if (!this.paused && this.game.state === 'playing') {
+      const ready = this.fixes.filter(f => f.game === this.game && f.at <= this.game.playedSeconds);
+      this.fixes = this.fixes.filter(f => f.game === this.game && f.at > this.game.playedSeconds);
+      for (const f of ready) {
+        if (this.game.state !== 'playing') break;
+        f.before?.(f.cell); this.fixOne(f.cell);
+      }
+    }
+    if (this.paused && this.brushUntil) this.brushUntil += dt * 1000;
+    if (!this.paused && this.brushUntil && now > this.brushUntil) this.endBrush();
     this.renderTimer();
     this.board.draw(now);
     this.fx.draw(now);
@@ -218,6 +269,14 @@ export class GameScreen {
 
   private async showStartCard() {
     const def = this.game.def;
+    if (def.mode === 'custom') {
+      this.paused = true;
+      await dialog(h('div.start-card', {}, h('h2', {}, def.name), h('p', {}, `${def.w} × ${def.h} 格 · ${def.colors.length} 色 · ${def.wrongCount} 颗等待归位`),
+        h('p.hint', {}, '这里没有倒计时，所有道具（含隐藏道具）免费畅用。计时器记录实际游玩时间，暂停不计时。'),
+        h('p.hint', {}, '点击凸起的方豆，找到它需要的底色；归位后它会融入画面。')),
+        [{ label: '开始我的创作', value: 'go', cls: 'primary big' }]);
+      this.resume(); this.game.start(); return;
+    }
     const tutorial = !save.data.seenTutorial;
     this.paused = true;
     const el = def.elements;
@@ -252,7 +311,7 @@ export class GameScreen {
         ? h(
             'ol.howto',
             {},
-            h('li', {}, '方块底色是正确颜色，圆豆子颜色不对就是放错了。'),
+            h('li', {}, '连续色块是正确底色，凸起的方豆就是放错了；归位后会融入底色。'),
             h('li', {}, '点一颗放错的豆子，和它连着的同色错位豆子会一起移动：有空位需要这个颜色就飞去空位（空位不够时只飞够用的几颗），没有就整组进下方空槽。'),
             h('li', {}, '它原来的格子会变成闪烁的空位，去点空位需要的颜色，就能连锁归位。'),
             h('li', {}, '空槽满了会爆槽失败；时间用完还能继续，但只能拿半星。点计时器可以加时（每局 3 次）。'),
@@ -281,7 +340,7 @@ export class GameScreen {
     ]);
     this.board.colorBlind = save.data.settings.colorBlind;
     this.renderNeed();
-    if (v === 'restart') return this.host.play(this.levelId);
+    if (v === 'restart') return this.replay();
     if (v === 'map') return this.host.toMap();
     this.resume();
   }
@@ -290,6 +349,23 @@ export class GameScreen {
     this.paused = false;
     this.lastFrame = performance.now();
     this.lastActionAt = performance.now();
+  }
+
+  private replay() {
+    if (this.game.def.mode === 'custom') this.host.playCustom(this.game.def);
+    else this.host.play(this.levelId);
+  }
+
+  private stock(id: PropId) { return this.game.def.mode === 'custom' ? Infinity : propCount(id); }
+  private availableUses(id: PropId) { return this.game.def.mode === 'custom' ? Infinity : PROP_MAP[id].perGame - this.game.uses(id); }
+  private spend(id: PropId) { if (this.game.def.mode !== 'custom') addProp(id, -1); }
+  private shareButton() {
+    const g = this.game;
+    return h('button.btn.primary.share-cta', { onclick: async () => {
+      const data = { level: g.def, seconds: g.playedSeconds, propsUsed: g.stats.propsUsed };
+      const existing = g.def.mode === 'custom' ? await loadWallWork(g.def.key).catch(() => undefined) : undefined;
+      await openShareStudio(data, g.def.mode === 'custom' ? { initial: existing?.options, onSave: async options => { await rememberArtwork(data, options); } } : {});
+    } }, '✧ 制作我的分享卡');
   }
 
   private async onBurst(cell: number, groupSize = 1) {
@@ -303,10 +379,10 @@ export class GameScreen {
     await new Promise((r) => setTimeout(r, 500));
     const g = this.game;
     const buttons: { label: string; value: string; cls?: string }[] = [];
-    if (propCount('phoenix') > 0 && g.uses('phoenix') < PROP_MAP.phoenix.perGame) buttons.push({ label: '🪶 凤凰羽毛复活', value: 'phoenix', cls: 'primary gold' });
+    if (this.stock('phoenix') > 0 && this.availableUses('phoenix') > 0) buttons.push({ label: '🪶 凤凰羽毛复活', value: 'phoenix', cls: 'primary gold' });
     if (g.canRevive) {
-      if (propCount('expand') > 0 && g.uses('expand') < PROP_MAP.expand.perGame) buttons.push({ label: `📦 扩槽箱 +4（×${propCount('expand')}）`, value: 'expand', cls: 'primary' });
-      if (propCount('broom') > 0 && g.uses('broom') < PROP_MAP.broom.perGame) buttons.push({ label: `🧹 扫把洗牌（×${propCount('broom')}）`, value: 'broom', cls: 'primary' });
+      if (this.stock('expand') > 0 && this.availableUses('expand') > 0) buttons.push({ label: `📦 扩槽箱 +4（${g.def.mode === 'custom' ? '免费' : '×' + propCount('expand')}）`, value: 'expand', cls: 'primary' });
+      if (this.stock('broom') > 0 && this.availableUses('broom') > 0) buttons.push({ label: `🧹 扫把洗牌（${g.def.mode === 'custom' ? '免费' : '×' + propCount('broom')}）`, value: 'broom', cls: 'primary' });
     }
     buttons.push({ label: '关卡地图', value: 'map' }, { label: '再来一次', value: 'retry' });
     const canSave = buttons.length > 2;
@@ -316,30 +392,30 @@ export class GameScreen {
         {},
         h('h2', {}, '爆槽啦！'),
         h('p', {}, groupSize > 1 ? `这一组 ${groupSize} 颗连着的豆子要一起进空槽，但只剩 ${g.freeSlots} 格。` : '空槽已满，这颗豆子没地方放了。'),
-        canSave ? h('p.hint', {}, `可以用道具续命（本局还能续命 ${2 - g.stats.revives} 次，凤凰羽毛不占次数）`) : h('p.hint', {}, '小技巧：先点闪烁空位需要的颜色，不占空槽；必须进槽时挑小的一组。'),
+        canSave ? h('p.hint', {}, g.def.mode === 'custom' ? '自由创作可无限次免费续命，慢慢来。' : `可以用道具续命（本局还能续命 ${2 - g.stats.revives} 次，凤凰羽毛不占次数）`) : h('p.hint', {}, '小技巧：先点闪烁空位需要的颜色，不占空槽；必须进槽时挑小的一组。'),
       ),
       buttons,
     );
     if (v === 'phoenix') {
       g.consumeProp('phoenix', 1);
-      addProp('phoenix', -1);
+      this.spend('phoenix');
       const cells = g.phoenix(Math.random);
       this.fx.burst(innerWidth / 2, innerHeight / 2, { n: 60, colors: ['#ff7043', '#ffd54f', '#ff5252'], speed: 9, size: 7, life: 60, shape: 'spark' });
       sfx.win();
       this.popCells(cells);
-      toast('凤凰涅槃！空槽清空，+30 秒');
+      toast(g.def.mode === 'custom' ? '凤凰涅槃！空槽清空，继续创作' : '凤凰涅槃！空槽清空，+30 秒');
     } else if (v === 'expand') {
       g.consumeProp('expand', PROP_MAP.expand.perGame);
-      addProp('expand', -1);
+      this.spend('expand');
       g.revive(4);
       toast('空槽 +4，继续加油！');
     } else if (v === 'broom') {
       g.consumeProp('broom', PROP_MAP.broom.perGame);
-      addProp('broom', -1);
+      this.spend('broom');
       const changed = g.reviveWithBroom(Math.random) ?? [];
       this.popCells(changed);
       toast('洗牌完成，空槽清空！');
-    } else if (v === 'retry') return this.host.play(this.levelId);
+    } else if (v === 'retry') return this.replay();
     else return this.host.toMap();
     this.trayHidden.clear();
     this.renderAll();
@@ -349,10 +425,24 @@ export class GameScreen {
   }
 
   private async onWin() {
-    if (this.finishing) return;
+    if (this.finishing || !this.active || this.game.state !== 'won') return;
     this.finishing = true;
     this.endModes();
     const g = this.game;
+    if (g.def.mode === 'custom') {
+      const best = customRecords().filter(r => r.key === g.def.key).reduce((n, r) => Math.min(n, r.seconds), Infinity);
+      const stored = recordCustom({ key: g.def.key, name: g.def.name, seconds: g.playedSeconds, propsUsed: g.stats.propsUsed, completedAt: Date.now() });
+      const collected = await rememberArtwork({ level: g.def, seconds: g.playedSeconds, propsUsed: g.stats.propsUsed }).then(() => true, () => false);
+      if (!this.active || this.game !== g) return;
+      this.board.fit(); this.fx.confetti(); sfx.win();
+      const v = await dialog(h('div.result', {}, h('div.studio-eyebrow', {}, 'A LITTLE MASTERPIECE'), h('h2', {}, '喜欢的画，亲手完成了'),
+        h('p', {}, g.def.name), h('div.custom-finish-time', {}, fmtTime(g.playedSeconds)), h('p.hint', {}, `实际游玩时间 · ${g.stats.propsUsed ? `使用道具 ${g.stats.propsUsed} 次` : '纯手作完成'}`),
+        h('p.hint', {}, stored ? (g.playedSeconds < best ? '本图近期最佳记录，已保存在此设备' : `本图近期最佳 ${fmtTime(best)} · 记录已保存在此设备`) : '浏览器暂时无法保存记录，可下载分享卡留念'),
+        h('p.hint', {}, collected ? '已收进小画室的作品墙，随时回来换相框、重新布置。' : '作品墙暂时无法保存，仍可下载分享卡留念。'),
+        this.shareButton()), [{ label: '返回地图', value: 'map' }, { label: '再拼一次', value: 'retry' }, { label: '回小画室布置', value: 'wall', cls: 'primary' }]);
+      if (v === 'retry') this.replay(); else if (v === 'wall') this.host.toStudio(); else this.host.toMap();
+      return;
+    }
     const stars = g.stars();
     const id = this.levelId;
     const prevBest = save.data.best[id] ?? 0;
@@ -388,6 +478,7 @@ export class GameScreen {
         h('div', {}, h('span', {}, '历史最佳'), h('b', {}, '★'.repeat(Math.floor(Math.max(prevBest, stars))) + (Math.max(prevBest, stars) % 1 ? '½' : ''))),
       ),
       h('div.obj-list', {}, ...objRows),
+      this.shareButton(),
     );
     const fillStars = async () => {
       const spans = row.querySelectorAll('.star');
@@ -485,7 +576,8 @@ export class GameScreen {
 
   private scheduleWin(nMoves: number) {
     const delay = nMoves * this.stagger(nMoves) + FLIGHT_MS + 50;
-    setTimeout(() => this.onWin(), delay);
+    const game = this.game;
+    setTimeout(() => { if (this.active && this.game === game) void this.onWin(); }, delay);
   }
 
   /** 特殊格子事件的反馈 */
@@ -611,6 +703,7 @@ export class GameScreen {
   // ---------- 计时器 ----------
 
   private onTimerTap() {
+    if (this.game.def.mode === 'custom') { toast('正在记录实际游玩时间，慢慢拼就好'); return; }
     const g = this.game;
     const r = this.elTimer.getBoundingClientRect();
     const x = r.left + r.width / 2;
@@ -649,6 +742,7 @@ export class GameScreen {
   // ---------- 小精灵 ----------
 
   private onElfCombo(k: number): DropResult {
+    if (this.game.def.mode === 'custom') { this.elf.say('全部道具已为你准备好啦！', 1800, true); return 'none'; }
     if (this.paused || this.game.state !== 'playing') return 'none';
     if (this.elfDrops >= ELF_DROPS_PER_GAME) return 'empty';
     const chance = ELF_DROP_CHANCE[Math.min(k, ELF_DROP_CHANCE.length) - 1];
@@ -664,6 +758,7 @@ export class GameScreen {
   }
 
   private async onWish() {
+    if (this.game.def.mode === 'custom') { toast('自由创作中，全部隐藏道具都能直接使用'); return; }
     if (this.game.state !== 'playing' || this.paused) {
       this.elf.say('开始游戏后再许愿吧～', 1800, true);
       return;
@@ -697,7 +792,7 @@ export class GameScreen {
     this.elf.update({
       state: g.state,
       overtime: g.overtime,
-      timeRatio: Math.max(0, g.timeLeft) / g.def.timeLimit,
+      timeRatio: g.def.mode === 'custom' ? 1 : Math.max(0, g.timeLeft) / g.def.timeLimit,
       slotRatio: g.slots.length / g.capacity,
       combo: now - this.lastPlaceAt < 1500 ? g.stats.combo : 0,
       progress: g.progress,
@@ -739,21 +834,40 @@ export class GameScreen {
 
   // ---------- 道具 ----------
 
+  private async showPropInfo(id: PropId) {
+    if (this.paused || !this.active || this.game.state !== 'playing') return;
+    const g = this.game, p = PROP_MAP[id];
+    const custom = g.def.mode === 'custom';
+    const descriptions: Partial<Record<PropId, string>> = {
+      hourglass: '闯关时可增加 30 秒倒计时。自由创作本来就不限时，使用不会改变完成用时。',
+      amber: '闯关时可冻结倒计时 20 秒。自由创作仍会记录实际游玩时间，不会扣掉这 20 秒。',
+      phoenix: '被动道具：爆槽后可选择凤凰羽毛，清空空槽并继续创作。可重复使用，不改变完成用时。',
+      clover: '闯关时可增加三星扭蛋奖励。自由创作可以激活幸运陪伴，但不发放扭蛋奖励。',
+    };
+    this.paused = true;
+    await dialog(h('div.prop-info', {}, h('div.prop-info-icon', { 'aria-hidden': 'true' }, p.icon), h('h2', {}, p.name),
+      h('p.prop-info-description', {}, custom ? descriptions[id] ?? p.desc : p.desc),
+      h('p.hint', {}, custom ? '自由创作 · 免费无限使用' : `背包剩余 ${this.stock(id)} 个 · 本局还可用 ${Math.max(0, this.availableUses(id))} 次`),
+      h('p.hint', {}, '查看说明不会消耗道具，阅读期间游戏已暂停。')),
+      [{ label: '知道了', value: 'close', cls: 'primary' }]);
+    if (this.active && this.game === g) this.resume();
+  }
+
   private renderProps() {
     const g = this.game;
     if (!g) return;
-    const list = PROPS.filter((p) => !p.hidden || propCount(p.id) > 0 || g.uses(p.id) > 0);
+    const list = PROPS.filter((p) => g.def.mode === 'custom' || !p.hidden || propCount(p.id) > 0 || g.uses(p.id) > 0);
     this.elProps.replaceChildren(
       ...list.map((p, k) => {
-        const n = propCount(p.id);
-        const left = p.perGame - g.uses(p.id);
+        const n = this.stock(p.id);
+        const left = this.availableUses(p.id);
         const usable = n > 0 && left > 0 && this.propAvailable(p.id);
         return h(
           'button.prop-btn' + (p.hidden ? '.hidden-prop.' + p.rarity : '') + (usable ? '' : '.off') + (p.id === 'clover' && g.cloverActive ? '.active' : ''),
-          { 'data-prop': p.id, title: `${p.name}：${p.desc}\n本局还能用 ${left} 次${k < 7 ? `\n快捷键 ${k + 1}` : ''}`, onclick: () => this.useProp(p.id) },
+          { 'data-prop': p.id, 'aria-label': `${p.name}，单点使用，长按查看作用`, title: `${p.name}：${p.desc}\n${g.def.mode === 'custom' ? '免费无限使用；计时类道具不改变完成用时，四叶草不发放闯关奖励' : `本局还能用 ${left} 次`}${k < 7 ? `\n快捷键 ${k + 1}` : ''}` },
           h('span.prop-icon', {}, p.icon),
           h('span.prop-name', {}, p.name),
-          h('span.prop-count' + (n ? '' : '.zero'), {}, n ? String(n) : '+'),
+          h('span.prop-count' + (n ? '' : '.zero'), {}, n === Infinity ? '∞' : n ? String(n) : '+'),
         );
       }),
     );
@@ -781,12 +895,12 @@ export class GameScreen {
     const g = this.game;
     const p = PROP_MAP[id];
     if (this.paused || g.state !== 'playing') return;
-    if (propCount(id) <= 0) {
+    if (this.stock(id) <= 0) {
       toast(`背包里没有${p.name}了：连点或长按右上角的啵啵试试`);
       this.elf.say('来找我呀～', 1500, true);
       return;
     }
-    if (g.uses(id) >= p.perGame) return toast(`${p.name}本局最多用 ${p.perGame} 次`);
+    if (this.availableUses(id) <= 0) return toast(`${p.name}本局最多用 ${p.perGame} 次`);
     if (id === 'phoenix') return toast('凤凰羽毛是被动道具：爆槽时会问你要不要复活');
     if (!this.propAvailable(id)) {
       if (id === 'hourglass') return toast('已经超时，沙漏救不回来啦');
@@ -814,7 +928,7 @@ export class GameScreen {
     }
 
     g.consumeProp(id, p.perGame);
-    addProp(id, -1);
+    this.spend(id);
     sfx.star(1);
     this.lastActionAt = performance.now();
     const btn = this.elProps.querySelector<HTMLElement>(`[data-prop="${id}"]`)?.getBoundingClientRect();
@@ -840,7 +954,7 @@ export class GameScreen {
         g.addTime(30);
         const r = this.elTimer.getBoundingClientRect();
         this.fx.burst(r.left + r.width / 2, r.top + r.height / 2, { n: 24, colors: ['#ffe082', '#80deea', '#fff'], shape: 'star', speed: 5, size: 5, life: 40 });
-        floatText('+30秒', r.left + r.width / 2, r.top + r.height + 20, 'gold');
+        floatText(g.def.mode === 'custom' ? '不限时，安心拼' : '+30秒', r.left + r.width / 2, r.top + r.height + 20, 'gold');
         this.bumpTimer();
         break;
       }
@@ -878,7 +992,7 @@ export class GameScreen {
       case 'amber':
         g.freeze(20);
         this.elTimer.classList.add('frozen');
-        toast('🧊 时间冻结 20 秒');
+        toast(g.def.mode === 'custom' ? '🧊 琥珀已生效，实际游玩时间继续记录' : '🧊 时间冻结 20 秒');
         setTimeout(() => this.elTimer.classList.remove('frozen'), 100);
         break;
       case 'brush':
@@ -893,7 +1007,7 @@ export class GameScreen {
         break;
       case 'clover':
         g.cloverActive = true;
-        toast('🍀 四叶草生效：三星通关时扭蛋 +1 次，隐藏道具概率翻倍');
+        toast(g.def.mode === 'custom' ? '🍀 幸运陪伴已开启，自由创作不发放扭蛋奖励' : '🍀 四叶草生效：三星通关时扭蛋 +1 次，隐藏道具概率翻倍');
         break;
     }
     this.elf.react('clap');
@@ -903,16 +1017,14 @@ export class GameScreen {
   /** 依次修正一批格子（带动画） */
   private runFixes(cells: number[], interval: number, before?: (c: number) => void) {
     cells.forEach((c, k) => {
-      setTimeout(() => {
-        if (this.game.state !== 'playing') return;
-        before?.(c);
-        this.fixOne(c);
-      }, k * interval);
+      this.fixes.push({ game: this.game, cell: c, at: this.game.playedSeconds + k * interval / 1000, before });
     });
   }
 
   private fixOne(c: number) {
     const g = this.game;
+    if (!this.active) return;
+    if (this.paused) { this.fixes.push({ game: g, cell: c, at: g.playedSeconds }); return; }
     if (g.state !== 'playing' || g.isCorrect(c)) return;
     const res = g.fixCell(c);
     this.animateMoves(res.moves);
@@ -1075,6 +1187,7 @@ export class GameScreen {
     pickCells.forEach((c, k) => {
       const start = { x: -60 + Math.random() * innerWidth * 0.6, y: -60, size: 36 };
       this.fx.fly(this.meteorImg, () => start, this.cellPt(c), 600, k * 220, () => {
+        if (!this.active || this.game !== g) return;
         const p = this.board.cellClientCenter(c);
         this.fx.burst(p.x, p.y, { n: 14, colors: ['#fff59d', '#ffd54f', '#fff'], shape: 'star', speed: 5, size: 5, life: 30 });
         sfx.star(k % 3);
@@ -1206,6 +1319,12 @@ export class GameScreen {
   private renderTimer() {
     const g = this.game;
     const left = g.timeLeft;
+    if (g.def.mode === 'custom') {
+      this.elTimerText.textContent = fmtTime(g.playedSeconds);
+      this.elTimer.classList.remove('over', 'low', 'frozen');
+      this.elBuffs.textContent = '自由计时';
+      return;
+    }
     const over = g.overtime;
     this.elTimerText.textContent = over ? '+' + fmtTime(-left) : fmtTime(Math.ceil(left));
     this.elTimer.classList.toggle('over', over);
@@ -1224,6 +1343,7 @@ export class GameScreen {
 
   private renderTaps() {
     const g = this.game;
+    if (g.def.mode === 'custom') { this.elTaps.replaceChildren(); this.elTaps.title = ''; return; }
     const left = g.overtime ? 0 : TIMER_TAP_LIMIT - g.timerTaps;
     this.elTaps.replaceChildren(...Array.from({ length: TIMER_TAP_LIMIT }, (_, k) => h('span.tap-dot' + (k < left ? '.on' : ''))));
     this.elTaps.title = `点击计时器加时，还剩 ${left} 次`;
@@ -1250,16 +1370,50 @@ export class GameScreen {
     );
   }
 
+  /** 长按「提示」约半秒：切换空位提示的常驻显示 */
+  private beginNeedPress() {
+    this.needPressFired = false;
+    if (!this.active || this.paused || this.game.state !== 'playing' || !save.data.settings.needBar) return;
+    clearTimeout(this.needPressTimer);
+    this.needPressTimer = window.setTimeout(() => {
+      this.needPressFired = true;
+      this.needPinned = !this.needPinned;
+      clearTimeout(this.needTimer);
+      this.needUntil = 0;
+      this.renderNeed();
+      toast(this.needPinned ? '空位提示已常驻，再长按收起' : '已收起常驻提示');
+    }, 450);
+  }
+
+  private cancelNeedPress() {
+    clearTimeout(this.needPressTimer);
+  }
+
+  private showNeedHint() {
+    if (this.needPressFired) { this.needPressFired = false; return; } // 长按后松手附带的 click，忽略
+    if (!this.active || this.paused || this.game.state !== 'playing' || !save.data.settings.needBar) return;
+    if (this.needPinned) return; // 已常驻，无需再计时
+    this.needUntil = performance.now() + 2000;
+    clearTimeout(this.needTimer);
+    this.renderNeed();
+    this.needTimer = window.setTimeout(() => { this.needUntil = 0; this.renderNeed(); }, 2000);
+  }
+
   private renderNeed() {
     const show = save.data.settings.needBar;
     this.elNeed.classList.toggle('hidden', !show);
-    if (!show) return;
+    if (!show) { clearTimeout(this.needTimer); this.needUntil = 0; this.needPinned = false; }
+    const expanded = show && this.game.state === 'playing' && (this.needPinned || performance.now() < this.needUntil);
+    this.elNeedContent.hidden = !expanded;
+    this.elNeedToggle.setAttribute('aria-expanded', String(expanded));
+    this.elNeedToggle.classList.toggle('pinned', show && this.needPinned);
+    if (!expanded) { this.elNeedContent.replaceChildren(); return; }
     const need = this.game.neededColors();
     if (!need.length) {
-      this.elNeed.replaceChildren(h('span.need-empty', {}, '点一颗放错的豆子开始'));
+      this.elNeedContent.replaceChildren(h('span.need-empty', {}, '点一颗放错的豆子开始'));
       return;
     }
-    this.elNeed.replaceChildren(
+    this.elNeedContent.replaceChildren(
       h('span.need-label', {}, '空位需要'),
       ...need.map(({ color, count }) =>
         h(

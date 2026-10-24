@@ -12,7 +12,12 @@ export function h<K extends keyof HTMLElementTagNameMap>(sel: string, attrs: Att
   for (const [k, v] of Object.entries(attrs)) {
     if (v === undefined || v === null || v === false) continue;
     if (k.startsWith('on') && typeof v === 'function') el.addEventListener(k.slice(2), v);
-    else if (k === 'style' && typeof v === 'object') Object.assign(el.style, v);
+    else if (k === 'style' && typeof v === 'object') {
+      for (const [name, value] of Object.entries(v)) {
+        if (name.startsWith('--')) el.style.setProperty(name, String(value));
+        else Object.assign(el.style, { [name]: value });
+      }
+    }
     else if (k === 'class') el.className += ' ' + v;
     else if (k === 'html') el.innerHTML = v;
     else el.setAttribute(k, v === true ? '' : String(v));
@@ -38,7 +43,7 @@ export function starRow(stars: number, max = 3, cls = ''): HTMLElement {
 
 /** CSS 豆子样式（空槽托盘、需求色条用） */
 export function beadStyle(hex: string): string {
-  return `radial-gradient(circle at 50% 50%, rgba(0,0,0,.38) 0 15%, transparent 16%), radial-gradient(circle at 35% 30%, rgba(255,255,255,.65), ${hex} 45%, color-mix(in srgb, ${hex} 75%, #000) 100%)`;
+  return `conic-gradient(from 45deg, color-mix(in srgb, ${hex} 90%, #000) 0 25%, color-mix(in srgb, ${hex} 75%, #000) 0 50%, ${hex} 0 75%, color-mix(in srgb, ${hex} 65%, #fff) 0)`;
 }
 
 export interface DialogButton {

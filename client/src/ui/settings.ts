@@ -5,7 +5,7 @@ import { dialog, h } from './dom';
 const LABELS: [keyof Settings, string, string][] = [
   ['sound', '音效', '点击、归位、爆破的声音'],
   ['vibrate', '震动', '手机上的触感反馈'],
-  ['needBar', '需求色条', '显示空位需要的颜色'],
+  ['needBar', '空位提示', '点击「提示」后显示需求颜色 2 秒'],
   ['colorBlind', '色弱模式', '每种颜色的豆子叠加一个符号'],
 ];
 

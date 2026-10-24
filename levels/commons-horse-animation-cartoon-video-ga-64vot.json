@@ -1,0 +1,44 @@
+{
+  "key": "commons-horse-animation-cartoon-video-ga-64vot",
+  "name": "小马漫步",
+  "palette": {
+    "A": "#523417",
+    "B": "#5a3a1c",
+    "C": "#472c13",
+    "D": "#17100a",
+    "E": "#3a2410",
+    "F": "#291a0d"
+  },
+  "rows": [
+    ".....BAD",
+    "....DBADD",
+    "....ACCCDD",
+    "...BCCCCDD",
+    "...ACCCADD",
+    "..ACECCAADD",
+    "EEEEECABBAD",
+    ".EF..BBBBA",
+    "....BBBBBA",
+    "....BBBBBAA",
+    "...BBBBBBAA",
+    "..DBAABBAAA",
+    "..DAAAAAAAC",
+    "...AAAAAAAC",
+    "...AAAAAACC",
+    "...CCCACCEED",
+    "...CCCCCEFFD",
+    "....EEEFFD.D",
+    "......EA....D",
+    ".......A....D",
+    "......AA",
+    "......FF",
+    "......DD"
+  ],
+  "source": {
+    "url": "https://commons.wikimedia.org/wiki/File:Horse_Animation_Cartoon_Video_Game_Sprite_Clipart_Left_Side.png",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Horse_Animation_Cartoon_Video_Game_Sprite_Clipart_Left_Side.png/960px-Horse_Animation_Cartoon_Video_Game_Sprite_Clipart_Left_Side.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "title": "Horse Animation Cartoon Video Game Sprite Clipart Left Side",
+    "author": "Kurt Kaiser",
+    "license": "CC0"
+  }
+}

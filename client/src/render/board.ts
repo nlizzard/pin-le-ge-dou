@@ -414,10 +414,9 @@ export class BoardView {
         }
         if (lod) {
           ctx.fillStyle = g.fog[i] ? '#c9c6d8' : g.def.colors[t];
-          ctx.fillRect(px, py, s, s);
+          ctx.fillRect(px, py, s + 0.5, s + 0.5);
           if (b >= 0 && b !== t) {
-            ctx.fillStyle = g.def.colors[b];
-            ctx.fillRect(px + s * 0.25, py + s * 0.25, s * 0.5, s * 0.5);
+            ctx.drawImage(sp.beads[b], px, py, s, s);
           } else if (b < 0) {
             ctx.fillStyle = `rgba(60,40,120,${0.3 + 0.4 * pulse})`;
             ctx.fillRect(px + s * 0.3, py + s * 0.3, s * 0.4, s * 0.4);
@@ -425,14 +424,17 @@ export class BoardView {
           continue;
         }
         if (g.fog[i]) drawFogTile(ctx, px, py, s, now + i * 37);
-        else ctx.drawImage(sp.tiles[t], px, py, s, s);
+        else {
+          ctx.fillStyle = g.def.colors[t];
+          ctx.fillRect(px, py, s + 0.5, s + 0.5);
+        }
         if (b >= 0) {
-          ctx.drawImage(sp.beads[b], px, py, s, s);
+          if (b !== t) ctx.drawImage(sp.beads[b], px, py, s, s);
           if (g.ice[i]) drawIce(ctx, px, py, s);
           if (g.locked[i]) drawLock(ctx, px, py, s, g.def.colors[g.lockColor]);
           if (g.star[i]) drawStar(ctx, px + s * 0.8, py + s * 0.2, s * 0.17, pulse);
           if (g.bomb[i] >= 0) drawBomb(ctx, px, py, s, g.bomb[i], pulse);
-          if (this.colorBlind && s >= 16) {
+          if (this.colorBlind && b !== t && s >= 16) {
             ctx.fillStyle = luminance(g.def.colors[b]) > 0.6 ? 'rgba(0,0,0,0.7)' : 'rgba(255,255,255,0.9)';
             ctx.font = `${Math.round(s * 0.32)}px sans-serif`;
             ctx.fillText(SYMBOLS[b % SYMBOLS.length], px + s / 2, py + s / 2 + 1);

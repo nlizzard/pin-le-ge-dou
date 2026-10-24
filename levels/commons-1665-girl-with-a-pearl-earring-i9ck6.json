@@ -1,0 +1,44 @@
+{
+  "key": "commons-1665-girl-with-a-pearl-earring-i9ck6",
+  "name": "戴珍珠耳环的少女",
+  "palette": {
+    "A": "#b5976d",
+    "B": "#65573e",
+    "C": "#8f7958",
+    "D": "#353e44",
+    "E": "#cfb393",
+    "F": "#99aab4",
+    "G": "#ebd4bf",
+    "H": "#62737d"
+  },
+  "rows": [
+    ".....AAEB",
+    "...FFFEAA",
+    ".FFFFFHAC",
+    ".FFFFFHDDB",
+    ".GGFHHDDDB",
+    "EGAEBDDDDBB",
+    "EGEBBBDDDAB",
+    "GGEEABBDDAB",
+    "GAEEBBBDDABD",
+    ".CAACBBDDECB",
+    ".EACCBBDDEAH",
+    "...CCGGB.EAD",
+    "...GGAB...EAH",
+    "...AACB...EHH",
+    "...AAAB...EHE",
+    "..CAAABB..FH",
+    "..AAAACBB",
+    "..AACCC..B",
+    ".AACCCC..B",
+    ".AABCBC",
+    "AACBCBC"
+  ],
+  "source": {
+    "url": "https://commons.wikimedia.org/wiki/File:1665_Girl_with_a_Pearl_Earring.jpg",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/1665_Girl_with_a_Pearl_Earring.jpg/960px-1665_Girl_with_a_Pearl_Earring.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "title": "1665 Girl with a Pearl Earring",
+    "author": "Johannes Vermeer",
+    "license": "Public domain"
+  }
+}

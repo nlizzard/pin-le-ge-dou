@@ -1,0 +1,41 @@
+{
+  "key": "commons-long-neck-dino-long-neck-brachio-xzbt1",
+  "name": "紫色长颈龙",
+  "palette": {
+    "A": "#e38c90",
+    "B": "#df8589",
+    "C": "#e69599",
+    "D": "#db7f82",
+    "E": "#d5777a",
+    "F": "#cc6c6f",
+    "G": "#e0c0c1"
+  },
+  "rows": [
+    "..................DC",
+    "..................AGC",
+    "..................AAA",
+    "..................FBCC",
+    "...................F",
+    "..................AA",
+    "........EDBBBB....A",
+    "........EDBAAAAA..A",
+    ".......FDDBBAACCAFA",
+    "..AAAAAEDDBBAACCCCA",
+    "A.......EDBBBAACCCB",
+    "........FDDBBAACCCC",
+    "........DEDDBBAAACC",
+    ".........AFEDBBAAAA",
+    ".........ABGEDBBBBF",
+    "..............AEED",
+    "..............AAAA",
+    "..............AAGC",
+    "..............FG"
+  ],
+  "source": {
+    "url": "https://commons.wikimedia.org/wiki/File:Long_neck_dino_Long_neck_Brachiosaurus_animation_cartoon_video_game_sprite_3D_model.png",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Long_neck_dino_Long_neck_Brachiosaurus_animation_cartoon_video_game_sprite_3D_model.png/960px-Long_neck_dino_Long_neck_Brachiosaurus_animation_cartoon_video_game_sprite_3D_model.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "title": "Long neck dino Long neck Brachiosaurus animation cartoon video game sprite 3D model",
+    "author": "Kurt Kaiser",
+    "license": "CC0"
+  }
+}
