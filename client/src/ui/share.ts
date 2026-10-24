@@ -47,7 +47,7 @@ export async function openShareStudio(data: ShareData, config: { initial?: CardO
     preview.toBlob(blob => {
       if (!blob) return toast('图片生成失败，请再试一次');
       const url = URL.createObjectURL(blob), a = document.createElement('a');
-      a.href = url; a.download = `拼豆归位-${data.level.name.replace(/[\\/:*?"<>|]/g, '')}-${options.style}.png`;
+      a.href = url; a.download = `拼了个豆-${data.level.name.replace(/[\\/:*?"<>|]/g, '')}-${options.style}.png`;
       document.body.append(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(url), 60000);
       toast('图片已生成；手机也可打开图片后长按保存');
     }, 'image/png');
@@ -57,7 +57,7 @@ export async function openShareStudio(data: ShareData, config: { initial?: CardO
     void dialog(h('div', {}, h('p.hint', {}, '长按图片保存到相册'), img), [{ label: '返回编辑', value: 'back' }], { cls: 'studio-dialog' });
   } }, '打开图片 / 长按保存');
   const copy = h('button.btn', { onclick: async () => {
-    const text = `${options.quote}\n${options.source}\n${data.level.name} · 亲手拼成的小美好\n#拼豆归位 #像素画 #治愈系 #PicturePlay`;
+    const text = `${options.quote}\n${options.source}\n${data.level.name} · 亲手拼成的小美好\n#拼了个豆 #像素画 #治愈系 #拼了个豆`;
     try { await navigator.clipboard.writeText(text); toast('文案和话题已复制'); } catch { quote.focus(); quote.select(); toast('请长按或按 Ctrl+C 复制文案'); }
   } }, '复制发布文案');
   const saveToWall = config.onSave ? h('button.btn.primary', { onclick: async () => {

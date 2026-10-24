@@ -89,7 +89,7 @@ export function renderMap(root: HTMLElement, onPlay: (id: number) => void, fx: F
       h(
         'header.map-header',
         {},
-        h('div.logo', {}, h('span.logo-main', {}, '拼豆归位'), h('span.logo-sub', {}, '✿ PICTURE PLAY ✿')),
+        h('div.logo', {}, h('span.logo-main', {}, '拼了个豆'), h('span.logo-sub', {}, '✿ PIN LE GE DOU ✿')),
         h('div.total-stars', {}, '★ ', String(total), h('span.dim', {}, ` / ${LEVEL_COUNT * 3}`)),
         h('button.icon-btn', { onclick: () => openCollection().then(() => mapElf?.setSkin(save.data.elfSkin)), title: '背包 · 图鉴' }, '🎒'),
         h('button.icon-btn', { onclick: () => openSettings(), title: '设置' }, '⚙'),

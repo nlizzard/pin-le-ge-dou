@@ -1,4 +1,4 @@
-// 拼豆归位 服务端：托管前端静态文件 + 本地 SQLite（node:sqlite）存档
+// 拼了个豆 服务端：托管前端静态文件 + 本地 SQLite（node:sqlite）存档
 // 数据都在 data/picture-play.db：关卡定义、闯关进度、自由创作记录、作品墙
 import Fastify from 'fastify';
 import fastifyStatic from '@fastify/static';
@@ -251,7 +251,7 @@ if (PUBLIC_DIR) {
   app.get('/', async (req, reply) =>
     reply.type('text/html; charset=utf-8').send(`<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width">
 <body style="font:16px/1.8 system-ui,'Microsoft YaHei',sans-serif;background:#ffeef5;color:#8a4a63;display:grid;place-items:center;height:100vh;margin:0;text-align:center">
-<div><h2 style="color:#ff6f9f">这里是拼豆归位的数据接口（3000 端口）</h2>
+<div><h2 style="color:#ff6f9f">这里是拼了个豆的数据接口（3000 端口）</h2>
 <p>开发模式下游戏页面在 <a href="http://${(req.headers.host || 'localhost').split(':')[0]}:5173">http://localhost:5173</a></p>
 <p>想只用 3000 端口：先运行 <b>npm run build</b>，再运行 <b>npm run serve</b>（或直接 <b>npm start</b>）。</p></div>`),
   );

@@ -5,7 +5,7 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - ./data:/data
+      - /home/a123/docker_data/pin_le_ge_dou:/data
     environment:
       # 部署到公网时建议设置访问口令，避免别人改你的存档
       - ACCESS_KEY=

@@ -3,7 +3,7 @@
   "version": "0.3.0",
   "private": true,
   "type": "module",
-  "description": "拼豆归位 Picture Play — 像素拼豆归位闯关小游戏",
+  "description": "拼了个豆 — 像素拼了个豆闯关小游戏",
   "scripts": {
     "build:levels": "node tools/build-levels.mjs",
     "dev": "node tools/build-levels.mjs && concurrently -k -n web,api \"vite --open\" \"node --watch server/index.js\"",
