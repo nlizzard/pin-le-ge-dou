@@ -1,7 +1,14 @@
 node_modules
 dist
 data
-art
+# Keep build-time pattern metadata; exclude artwork and generated previews.
+art/*
+!art/pinterest-recommendations/
+art/pinterest-recommendations/*
+!art/pinterest-recommendations/catalog-order.json
+!art/pinterest-board/
+art/pinterest-board/*
+!art/pinterest-board/exclusions.json
 .git
 .yarn
 .pnp.*
