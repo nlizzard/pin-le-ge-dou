@@ -1,0 +1,49 @@
+{
+  "key": "pinterest-rec-471189179791963094",
+  "name": "小恶魔骷髅",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#181818",
+    "C": "#3b383f",
+    "D": "#636168",
+    "E": "#c6c5c6",
+    "F": "#eac1c6",
+    "G": "#aa94a3",
+    "H": "#8b7676",
+    "I": "#dbdcdd"
+  },
+  "rows": [
+    "AAAAAAAAAAAAAAABBAAHHH",
+    "AAAAAAAAAAAAAAABGBAAAA",
+    "AAAAAAAAAAAAAAABGGBAAA",
+    "AAAAAAAAAAAAAAABEGGBAA",
+    "AAAAAAAAAAAAAAACBAEGBA",
+    "AAAAAAAAAAAAAACHCBAEBA",
+    "AAAAAABBBBBAACHCAABAGB",
+    "AAAABBDDDCCBCDCAAABAEB",
+    "AAABCDDDDDCCBBAAAABAEB",
+    "AABCBBBBBBCCCBBAAABAEB",
+    "AABBEAAAECBCCCBAAABABA",
+    "AABEAAAAAADBCCBAABAABA",
+    "AABABBAABBABCBBABAABAA",
+    "AABFBBAABBFBBBABBBBAAA",
+    "AABFFAAAAFFBBAAAAAAAAA",
+    "AAABAABAABBBBAAAAAAAAA",
+    "AAACBBBBBBBBBBAAAAAAAA",
+    "AACDBBCCCCBBCCBAAAAAAA",
+    "ACHCBCDDCCCCCBBAAAAAAA",
+    "CHCABDDDDCCCBAAAAAAAFE",
+    "ACAAABBBBBBBAAAAAAAAFF",
+    "AAIAAAAAAAAAAAAAAAAAIH"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/471189179791963094/",
+    "image": "https://i.pinimg.com/originals/73/29/72/7329725d32b5d12584d2756e463be6a5.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

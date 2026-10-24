@@ -1,0 +1,45 @@
+{
+  "key": "pinterest-rec-329044316549585769",
+  "name": "彩虹像素心",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#181818",
+    "C": "#7c00b8",
+    "D": "#0669ac",
+    "E": "#ff7f02",
+    "F": "#3db400",
+    "G": "#ea02ad",
+    "H": "#b00807",
+    "I": "#f01d26",
+    "J": "#ffad01",
+    "K": "#51e400",
+    "L": "#feea00",
+    "M": "#01a8d4"
+  },
+  "rows": [
+    "AACHIEAAAAADDMCAA",
+    "ACCHIEJAAAFDDMCGA",
+    "GCCHIEJLAFFDDMCGG",
+    "GCCHBEJLKFFDBMCGG",
+    "GCBHBEBLKFBDBMBGG",
+    "BCBHBEBLKFBDBMBGB",
+    "ABBBBEBBKBBDBBBBA",
+    "AABBBEBBKBBDBBBAA",
+    "AAABBBBBBBBBBBAAA",
+    "AAAABBBBBBBBBAAAA",
+    "AAAAABBBBBBBAAAAA",
+    "AAAAAABBBBBAAAAAA",
+    "AAAAAAABBBAAAAAAA",
+    "AAAAAAAABAAAAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/329044316549585769/",
+    "image": "https://i.pinimg.com/originals/3d/e8/7d/3de87d399077b5071d6647a86371847d.jpg",
+    "title": "Image recherchée visuellement",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

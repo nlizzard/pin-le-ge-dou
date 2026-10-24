@@ -1,0 +1,35 @@
+{
+  "key": "pinterest-rec-1083889835357127822-02",
+  "name": "牛仔胡迪小人",
+  "palette": {
+    "A": "#57a5d5",
+    "B": "#f6ceb1",
+    "C": "#984f33",
+    "D": "#3c3a43"
+  },
+  "rows": [
+    "AACCCCCCCAA",
+    "AACCCCCCCAA",
+    "CCCCCCCCCCC",
+    "AADBBBBBDAA",
+    "AADBDBDBDAA",
+    "AABBBBBBBAA",
+    "AAABBBBBAAA",
+    "ABBDBCBDBBA",
+    "ABBBDBDBBBA",
+    "AAACCCCCAAA",
+    "AACDDDDDAAA",
+    "AAADDADDAAA",
+    "AAACCACCAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/1083889835357127822/",
+    "image": "https://i.pinimg.com/originals/d2/a5/8e/d2a58ebb75d4e94dc12f772152dfe14c.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

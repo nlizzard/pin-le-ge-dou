@@ -1,0 +1,43 @@
+{
+  "key": "pinterest-rec-1041457482637717383",
+  "name": "小熊装凯蒂猫",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#8a6857",
+    "C": "#e185af",
+    "D": "#181818",
+    "E": "#5a4540",
+    "F": "#322d2d",
+    "G": "#ddc4cb"
+  },
+  "rows": [
+    "AAABFAAAAAAAAAAA",
+    "ACBBBFAAAAADFDDA",
+    "ABEDDBFDFBEBFBBD",
+    "DEDBBDCCDFFBDGFB",
+    "DBBBBCCCCEBEBDDB",
+    "DBCCCCDCCBBFBEBF",
+    "ABCECCDCCDBEBBBD",
+    "ABCDCDAAAAADBFFD",
+    "ADBFEAAAAAAADBBD",
+    "AFBDADAAAADADFBG",
+    "AABGAAAAAAAAGBDA",
+    "AACDAAAAAAAADDAA",
+    "AAAADBBFFDBFAAAA",
+    "AAAADEBBBBBFDAAA",
+    "AAAABBFEFFBEDAAA",
+    "AAADGDGFBBDDFBAA",
+    "AAADGDGGBFFBBDAA",
+    "AAAADBEEBEDAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/1041457482637717383/",
+    "image": "https://i.pinimg.com/originals/ad/7b/af/ad7baf77c427ed828187664cb7a9a735.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

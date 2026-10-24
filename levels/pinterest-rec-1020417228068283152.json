@@ -1,0 +1,51 @@
+{
+  "key": "pinterest-rec-1020417228068283152",
+  "name": "双颗樱桃",
+  "palette": {
+    "A": "#cbedfa",
+    "B": "#870539",
+    "C": "#cc297a",
+    "D": "#ff9ecd",
+    "E": "#2e5735",
+    "F": "#fcddf6",
+    "G": "#4f9e59",
+    "H": "#bfdec4"
+  },
+  "rows": [
+    "AAAAAAAAAAAAAAAAAAEEEAAAAAA",
+    "ABBABBAAAAAAAAAAEEHHEEAAAAA",
+    "BFCBDFBAAAAAAAAEAEGHHGEAAAA",
+    "BCFDCDBAAAAAAAAEEEGGHGEAAAA",
+    "ABCDDBAAAAAAAAEAEAEGGGGEAAA",
+    "AABCBAAAAAAAAEAAEAAEGGGEAAA",
+    "AAABAAAAAAAAEAAAEAAAEGGGEAA",
+    "AAAAAAAAAAAAEAAAAEAAAEEEAAA",
+    "AAAAAAAAAAAEAAAAAEAAAAAAAAA",
+    "AAAAAABBBAAEAAAAAEAAAAAAAAA",
+    "AAAABBDDDBBEAAAAAAEAAAAAAAA",
+    "AAABDDDDDDBEBBABBAEABBBAAAA",
+    "AAABDFDDDBBBDDBDDBEBDDDBBAA",
+    "AABDFFFDDDDDBBDDBDEDBDDDCBA",
+    "AABDCFCDDDDDBDFDDBBBDDDCCBA",
+    "AABDCCCCCDDBDFFFDDDDDDCCCCB",
+    "AABDCCCCCCCBDCFDDDDDDCCCCCB",
+    "AABDCCCCCCCBDCCFFCCCCCCCCCB",
+    "AABDCCCCCCCBDCCCCCCCCCCCFFB",
+    "AAABDCCCCCCBDCCCCCCCCCCFFFB",
+    "AAABDCCCCDDCBDCCCCCCCCCFFBA",
+    "AAAABDCCDCCCBDCCCCCCCFFFFBA",
+    "AAAAABCCCCBBABDCCCCCCFFFBAA",
+    "AAAAAABBBBAAAABBCCCCCCBBAAA",
+    "AAAAAAAAAAAAAAAABBBBBBAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/1020417228068283152/",
+    "image": "https://i.pinimg.com/originals/d0/17/b7/d017b724ebeed9c1232f40035cfaec1b.png",
+    "title": "Alpha pattern #171087",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

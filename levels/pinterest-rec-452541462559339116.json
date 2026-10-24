@@ -1,0 +1,42 @@
+{
+  "key": "pinterest-rec-452541462559339116",
+  "name": "玫瑰方框",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#8a8b06",
+    "C": "#af2325"
+  },
+  "rows": [
+    "ACACAAAAAAAAAAACACA",
+    "CACAAAAAAAAAAAAACAC",
+    "ACAAAAAAAACCAAAAACA",
+    "CAAAAAAACCCACCCAAAC",
+    "AAAAAAAACCACCAACAAA",
+    "AAAAAAACACACCCACAAA",
+    "AAAAAAACCCACCCCCAAA",
+    "AABBBAACCCAACCCACAA",
+    "AAABABAACCACAAACCAA",
+    "AAABBBAAABCCCCCCAAA",
+    "AAAABBAABACCCACCAAA",
+    "AAAAAABBAAACCAAAAAA",
+    "AAAAABBAAAAAAAAAAAA",
+    "AAAABAABBCAAAAAAAAA",
+    "AAABAAABCCCAAAAAAAA",
+    "AAABAAAACCCAAAAAAAA",
+    "AAABAAAAAAAAAAAAAAA",
+    "CAABAAAAAAAAAAAAAAC",
+    "ACAABAAAAAAAAAAAACA",
+    "CACAAAAAAAAAAAAACAC",
+    "ACACAAAAAAAAAAACACA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/452541462559339116/",
+    "image": "https://i.pinimg.com/originals/88/03/5e/88035e215050f8894d5e336ea6560554.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

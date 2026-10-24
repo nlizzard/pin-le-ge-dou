@@ -1,0 +1,46 @@
+{
+  "key": "pinterest-rec-1091771134641750483",
+  "name": "像素向日葵",
+  "palette": {
+    "A": "#181818",
+    "B": "#edd046",
+    "C": "#60a731",
+    "D": "#432608",
+    "E": "#603610",
+    "F": "#477e21"
+  },
+  "rows": [
+    "AAAAAAAAABBAAAAAAAAA",
+    "AAAAAABBABBABBAAAAAA",
+    "AAAAAABBBBBBBBAAAAAA",
+    "AAAABBBBDEDEBBBBAAAA",
+    "AAAABBBDEDEDEBBBAAAA",
+    "AAAAABDEDEDEDEBAAAAA",
+    "AAABBBEDEDEDEDBBBAAA",
+    "AAABBBDEDEDEDEBBBAAA",
+    "AAAAABEDEDEDEDBAAAAA",
+    "AAAABBBEDEDEDBBBAAAA",
+    "CCCCBBBBEDEDBBBBAAAA",
+    "ACCFFCBBBBBBBBAAAAAA",
+    "ACCCCFBBABBABBAAAAAA",
+    "AACCCCFAABBAAAAAAAAA",
+    "AACCCCCFAFAACCCAACCC",
+    "AAACCCCFAFACCCCCCCCC",
+    "AAAACCCFAFCCCCCCCCCA",
+    "AAAAAACCFFCCFFFCCCCA",
+    "AAAAAAAFFFCFCCCCCCAA",
+    "AAAAAAAAFFFCCCCCAAAA",
+    "AAAAAAAAFFAACCCAAAAA",
+    "AAAAAAAAFAAAAAAAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/1091771134641750483/",
+    "image": "https://i.pinimg.com/originals/f5/01/4a/f5014a8c513cd3774e87eedfc6504ae0.jpg",
+    "title": "Sunflower Pixel Art",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

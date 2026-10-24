@@ -1,0 +1,33 @@
+{
+  "key": "pinterest-rec-1117948307502078322",
+  "name": "白雪公主头像",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#242424",
+    "C": "#fde1d5",
+    "D": "#e32831"
+  },
+  "rows": [
+    "AAAADAAADAAAA",
+    "AAABDDBDDBAAA",
+    "AABBDDDDDBBAA",
+    "ABBDBBBBBDBBA",
+    "ABDBBBCBBBDBA",
+    "ABBBBCCCBBBBA",
+    "ABBCCCCCCCBBA",
+    "BBBCBCCCBCBBB",
+    "BBBCBCCCBCBBB",
+    "BBBCCCDCCCBBB",
+    "ABBBCCCCCBBBA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/1117948307502078322/",
+    "image": "https://i.pinimg.com/originals/a6/6d/f3/a66df3d871027832a19f49aa843e51d3.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

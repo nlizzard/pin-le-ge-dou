@@ -1,0 +1,40 @@
+{
+  "key": "pinterest-rec-828169819013632864",
+  "name": "小哔莫游戏机",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#7bafa2",
+    "C": "#181818",
+    "D": "#d4fed6",
+    "E": "#c8c86e",
+    "F": "#556963"
+  },
+  "rows": [
+    "ACCCCCCCCCCCA",
+    "CBBBBBBBBBBBC",
+    "CBDDDDDDDDDBC",
+    "CBDDDDDDDDDBC",
+    "CBDCDDDDDCDBC",
+    "CBDDDCCCDDDBC",
+    "CBDDDDDDDDDBC",
+    "CBDDDDDDDDDBC",
+    "CBBBBBBBBBBBC",
+    "CBCCCCCBBCBBC",
+    "CBBBBBBBBBBBC",
+    "CBBEBBBBBBBBC",
+    "CBEEEBBBBBBBC",
+    "CBBEBBBBFBBBC",
+    "CBBBBBBBBBBBC",
+    "ACCCCCCCCCCCA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/828169819013632864/",
+    "image": "https://i.pinimg.com/originals/4d/79/5b/4d795b7392d5c4aefc96a7e0f4926d6d.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

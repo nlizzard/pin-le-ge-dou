@@ -1,0 +1,47 @@
+{
+  "key": "pinterest-rec-1017391372139467336",
+  "name": "棕色小精灵",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#eb9c59",
+    "C": "#211f1d",
+    "D": "#9b5a23",
+    "E": "#552a05"
+  },
+  "rows": [
+    "AAAAAAAAACCAAAAAAAAA",
+    "AAAAAAAACBDCAAAAAAAA",
+    "AAAAAAACCDDCCAAAAAAA",
+    "AAAAAACBBDDDECAAAAAA",
+    "AAAAACBBBBDDDECAAAAA",
+    "AAACCBBBBBBDDDECCAAA",
+    "AACBBBBBBBBBDDDDECAA",
+    "AACDDDDDDDDDDDDDECAA",
+    "AAACCDDBBBBBBBBCCAAA",
+    "ACCACDBBBBBBBBBCAAAA",
+    "CBBCCBCCBBCCBBBCAAAA",
+    "CBBCCBCCBBCCBBBCCCCA",
+    "CBDDDBCCBBCCBBBBBBDC",
+    "CDDDEBBBBBBBBBBBBBDC",
+    "ACCCCBBBBBBBBBECCBDC",
+    "AAAACBBCCCBBBBECCBDC",
+    "AAAACBBCCCBBBDECACCA",
+    "AAAACBBCCCBBBDECAAAA",
+    "AAAACBBBBBBBDDECAAAA",
+    "AAAACBBBBBBBDDECAAAA",
+    "AAACBBBBBBBBBBBECAAA",
+    "AAACDDDDDDDDDDDECAAA",
+    "AAAACDDDDDDDDDECCAAA",
+    "AAAAACCCCCCCCCCAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/1017391372139467336/",
+    "image": "https://i.pinimg.com/originals/f6/99/4e/f6994ede6838eb30f0579623771a2bb8.png",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "key": "pinterest-rec-712483603583216967",
+  "name": "猫耳幽灵",
+  "palette": {
+    "A": "#96aee6",
+    "B": "#f53b82",
+    "C": "#6b0029",
+    "D": "#ffffff",
+    "E": "#ffde4c"
+  },
+  "rows": [
+    "AAAAACCCAAAAAAA",
+    "AAAACBBBCAAAAAA",
+    "AAACBBBBBCAAAAA",
+    "AAACBBBBBCAAAAA",
+    "AACBBBBBBCCCCAA",
+    "AACBBBBCCBBBBCA",
+    "AACBBBCCBBBBBCA",
+    "AADDBBCBBBBBCAA",
+    "ADEEDBBCCCCCBCA",
+    "ADEEDBBBBBBBCCA",
+    "ACDDBBBBBBBBBCA",
+    "ACBBBDDDDDBBBCA",
+    "CBBBDDDDDDDBBBC",
+    "CBBDCDDDDDCDBBC",
+    "CBBDCDDDDDCDBBC",
+    "ACBDDDDEDDDDBCA",
+    "AACBDDDDDDDBCAA",
+    "AAACCCCCCCCCAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/712483603583216967/",
+    "image": "https://i.pinimg.com/originals/5d/6d/b0/5d6db016cfd13424a91021afa2397104.png",
+    "title": "Alpha pattern #145155 variation #292151",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

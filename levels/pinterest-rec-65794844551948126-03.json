@@ -1,0 +1,40 @@
+{
+  "key": "pinterest-rec-65794844551948126-03",
+  "name": "章鱼哥小星星",
+  "palette": {
+    "A": "#f9edb1",
+    "B": "#8fced3",
+    "C": "#181818",
+    "D": "#5d583f"
+  },
+  "rows": [
+    "AAAAACCCCCAAAAA",
+    "AAACCBBBBBCCAAA",
+    "AACBBBBBBBBBCAA",
+    "AACBBAABAABBCAA",
+    "AAACBADBDABCAAA",
+    "AAAACBBBBBCAAAA",
+    "AAACBBBBBBBCAAA",
+    "AAAACCCBCCCAAAA",
+    "AAAAAACBCAAAAAA",
+    "AAAAACDDDCAAAAA",
+    "AAAACDDDDDCAAAA",
+    "AAACBCDDDCBCAAA",
+    "ACCBCCBBBCCBCCA",
+    "CBBCACBBBCACBBC",
+    "ACCAACBCBCAACCA",
+    "AAAACBBCBBCAAAA",
+    "AAACBBBCBBBCAAA",
+    "AAAACCCACCCAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/65794844551948126/",
+    "image": "https://i.pinimg.com/originals/ca/cd/50/cacd5063220d268227f836e7489a7d8a.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

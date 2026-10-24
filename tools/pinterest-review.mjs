@@ -1,6 +1,6 @@
 import sharp from 'sharp';
 import {readFile,mkdir,writeFile} from 'node:fs/promises';
-const root='art/pinterest-board';await mkdir(`${root}/review`,{recursive:true});
+const root=process.argv[2]||'art/pinterest-board';await mkdir(`${root}/review`,{recursive:true});
 const assets=JSON.parse(await readFile(`${root}/assets.json`,'utf8')).filter(a=>a.status==='downloaded');
 for(let page=0;page<Math.ceil(assets.length/42);page++){
  const subset=assets.slice(page*42,(page+1)*42);const cells=[];

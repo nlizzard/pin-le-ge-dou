@@ -1,0 +1,43 @@
+{
+  "key": "pinterest-rec-589408670006539634",
+  "name": "紫晶花纹",
+  "palette": {
+    "A": "#34393c",
+    "B": "#410c73",
+    "C": "#b082ce",
+    "D": "#ffffff",
+    "E": "#7729a9"
+  },
+  "rows": [
+    "AAAAAAAAADADAAAAAAAAA",
+    "AAAAAAAADCDCDAAAAAAAA",
+    "AAAAAAADCCCCCDAAAAAAA",
+    "AAAAAAADCECECDAAAAAAA",
+    "AAAAAADCEEEEECDAAAAAA",
+    "AADDDADBBEEEBBDADDDAA",
+    "AADCCDDBBBEBBBDDCCDAA",
+    "DDDCCEBBBBDBBBBECCDDD",
+    "DCCCEEBDBDDDBDBBBCCCD",
+    "DCCEEEDBDDEDDBDEEECCD",
+    "ADEBBBBDDEDEDDBBBBEDA",
+    "AADDBBDDDDEDDDDBBDDAA",
+    "AAAADDBBBDDDBBBDDAAAA",
+    "AAADEBBBDBDBDBBBEDAAA",
+    "AADEEEEDBBDBBDEEEEDAA",
+    "AADCEEEEBBDBBEEEECDAA",
+    "AADCCEEEBDADBEEECCDAA",
+    "AADDDCEEEDADEEECDDDAA",
+    "AAAADCCEDAAADECCDAAAA",
+    "AAAADDDDAAAAADDDDAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/589408670006539634/",
+    "image": "https://i.pinimg.com/originals/af/e9/3d/afe93db3d7ad63aff38150e94f9a0b3c.jpg",
+    "title": "О",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

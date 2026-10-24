@@ -1,0 +1,42 @@
+{
+  "key": "pinterest-rec-1024850458962677588",
+  "name": "蓝帽小女孩",
+  "palette": {
+    "A": "#9dc1c1",
+    "B": "#3263a0",
+    "C": "#e2d2ca",
+    "D": "#71a4b7"
+  },
+  "rows": [
+    "CCCCCCCCCCCCCDBDDCCCCCC",
+    "CCCCCCCCCAAAAADBDCCCCCC",
+    "CCCCCCCAAAAAAAADBCCCCCC",
+    "CCCCBBAAAAAAAAAADBBCCCC",
+    "CCCBBBAAABAAABAAABBBCCC",
+    "CCBBBBAAAACCCAAAABBBBCC",
+    "CBBBBAAAAAAAAAAAAABBBBC",
+    "BBBBBAAAACCCCCAAAABBBBB",
+    "BBBBAAACCCCCCCCCAAABBBB",
+    "BBBBAACCBCCCCCBCCAABBBB",
+    "BBBBAACCBCCBCCBCCAABBBB",
+    "CBBCAACCCCCCCCCCCAACBBC",
+    "CCCCCAACCCCCCCCCAACCCCC",
+    "CCCCCCABBBCCCBBBACCCCCC",
+    "CCCCCAAAAAACAAAAAACCCCC",
+    "CCCCAAAACCAAACCAAAACCCC",
+    "CCCCACCACCAAACCACCACCCC",
+    "CCCACBBCAAAAAAACBBCACCC",
+    "CCCACBBCAAAAAAACBBCACCC",
+    "CCCCAAAAAAAAAAAAAAACCCC"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/1024850458962677588/",
+    "image": "https://i.pinimg.com/originals/c7/c9/eb/c7c9ebd886b53aadcdba0c176088d569.jpg",
+    "title": "Pixel",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "key": "pinterest-rec-1092263715912098914",
+  "name": "小恐龙骨架",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#e1c58e",
+    "C": "#492f20",
+    "D": "#caa86f"
+  },
+  "rows": [
+    "AAAAAAAAAACCCCCAAA",
+    "AAAAAAACCCBBBBBCAA",
+    "AACCCCCDBBBCCBBDCA",
+    "ACBBBBBBBDCCCCBBDC",
+    "CBBCCBBCCBCCCCDBBC",
+    "CBCCBBCCCBCCCDBCDC",
+    "CBBBBBBBBBBBBBBCDC",
+    "CCBBDBBBBDCCDBBDDC",
+    "ACCCCCCCCCACCCCCCA",
+    "ACBCBCBCAACCDDDDCA",
+    "AACACACAACDBBBBDCA",
+    "AAAAAAACCDBBBBDCAA",
+    "AACACACDBBBBDDCAAA",
+    "ACCCCCDBBBDDDCAAAA",
+    "ACBBBBBBBCCCCAAAAA",
+    "AACCCCCCCAAAAAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/1092263715912098914/",
+    "image": "https://i.pinimg.com/originals/94/27/e7/9427e7b47099080be7555507ac4ca8d8.jpg",
+    "title": "Pixel art : Créez un dinosaure bleu charmant et rétro",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

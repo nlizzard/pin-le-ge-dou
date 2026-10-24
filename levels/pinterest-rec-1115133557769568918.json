@@ -1,0 +1,49 @@
+{
+  "key": "pinterest-rec-1115133557769568918",
+  "name": "黑魔法师",
+  "palette": {
+    "A": "#ffffcc",
+    "B": "#383838",
+    "C": "#1985eb",
+    "D": "#f0f000",
+    "E": "#eb8500"
+  },
+  "rows": [
+    "AAAAAAAAAAAAABBBBA",
+    "AAAAAAAAAAABBBDDBA",
+    "AAAAAAAAAABBDDDEBA",
+    "AAAAAAAABBBDDDEBBA",
+    "AAAAAABBBDDDDEEBAA",
+    "BBBBBBBDDDDEEEBBAA",
+    "BDDDDDDDDEEEEEBAAA",
+    "BBEEEEDDDDEEEEBAAA",
+    "ABBBBEEEEDDDEBBAAA",
+    "AAAABBBBEEEEEEBBAA",
+    "AAAABDBBBBBEEEEBBA",
+    "AABBBDBBDBBBBEEEBB",
+    "ABBCBBBBDBBBBCBEEB",
+    "ABCBBBBBBBBBBBCBBB",
+    "ABCCCBBBCCCCCCCBAA",
+    "BBBCCCCCCBBBCCBBAA",
+    "BDDBCCCBBCCCCCCBAA",
+    "BDDBCCBBBCCCCCCBAA",
+    "BBBCCCDDBCCCCCCBAA",
+    "ABCBCCDDBCCCCCCBAA",
+    "ABCBCCBBBCCCCCBBAA",
+    "ABCCBCCCCBCCCCBAAA",
+    "ABCCCBCCCBCCCCBBAA",
+    "BBCCCCBBCCBCCBCBBA",
+    "BCCCCCCCCCCBBCCCBA",
+    "BBBBBBBBBBBBBBBBBA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/1115133557769568918/",
+    "image": "https://i.pinimg.com/originals/e2/96/e1/e296e18064ce00eca1c254394c92f349.gif",
+    "title": "HAMA BEADS FÁCIL",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

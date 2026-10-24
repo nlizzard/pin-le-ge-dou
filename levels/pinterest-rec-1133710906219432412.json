@@ -1,0 +1,47 @@
+{
+  "key": "pinterest-rec-1133710906219432412",
+  "name": "细脚小虫",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#202020",
+    "C": "#79a196",
+    "D": "#f9f2b6",
+    "E": "#db6543"
+  },
+  "rows": [
+    "AAAAAAAAAAABAAAAAAAA",
+    "AAAAAAAAAABAAAAAAAAA",
+    "AAAAAAAAABBAAAAAAAAA",
+    "AAAAAAAAABAAAAAAAAAA",
+    "AAAAAAAAABAAAAAAAAAA",
+    "AAAAAAAAABAAAAAAAAAA",
+    "AAAAAAAAABAAABABAAAA",
+    "AAAAAAAABBBABABABAAA",
+    "AAAAAAABCCCBAAAAABAA",
+    "AAAAAABDBBCCBAAAAABA",
+    "AAAAABDEDDCCBAAAAAAB",
+    "AAAAABDDDDCCBAAAAAAA",
+    "AAAABDDDDDCBAAAAAAAA",
+    "AAAABCDDDCCBAAAAAAAA",
+    "BAAABCCCCCBAAAAAAAAA",
+    "ABBBCCCCBCBAABAAAAAA",
+    "AAABCCBBCCBBBBAAAAAA",
+    "AAABCCCCCBAAAAAAAAAA",
+    "AAABCCCCCBAAAAAAAAAA",
+    "AAABCCCCCBAAAAAAAAAA",
+    "AAAABCCCCBAAAAAAAAAA",
+    "AAAAABBBBAAAAAAAAAAA",
+    "AAAAABAABAAAAAAAAAAA",
+    "AAAAABAABAAAAAAAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/1133710906219432412/",
+    "image": "https://i.pinimg.com/originals/3c/22/cb/3c22cbecbfe79aec38521f72ef91f5c2.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

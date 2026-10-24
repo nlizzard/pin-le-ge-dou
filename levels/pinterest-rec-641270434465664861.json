@@ -1,0 +1,40 @@
+{
+  "key": "pinterest-rec-641270434465664861",
+  "name": "发呆小猫",
+  "palette": {
+    "A": "#b0d7d9",
+    "B": "#fad6a8",
+    "C": "#363636",
+    "D": "#945937"
+  },
+  "rows": [
+    "AAAAAACCAAAAAACCAAA",
+    "AAAAACDDCAAAACDDCAA",
+    "AAAAACDDDCCCCDDDCAA",
+    "AAAAACDDDBBBBDDDCAA",
+    "AAAACBBBBBBBBBBBBCA",
+    "AAACBBBBBBBBBBBBBBC",
+    "AAACBBBBBBBBBBBBBBC",
+    "AAACBBBBCBBBBBCBBBC",
+    "AAACBBBBCBDDDBCBBBC",
+    "AAACBBBBBDDCDDBBBBC",
+    "AAAACBBBBDDDDDBBBCA",
+    "AAAAACCCCCCCCCCCCAA",
+    "AAAAAACBBBBBBBBCAAA",
+    "AAAAACBBBBBBBBBCAAA",
+    "ACCCACBBBBCBCBBCAAA",
+    "CDDDCCBBBBCBCBBCAAA",
+    "ACCDDCBBCDDCDDDCAAA",
+    "AAACCCCCCCCCCCCAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/641270434465664861/",
+    "image": "https://i.pinimg.com/originals/ba/c3/7d/bac37dd3027d511102c6ae480e134e3b.png",
+    "title": "Alpha pattern #151203",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

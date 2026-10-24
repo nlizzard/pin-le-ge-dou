@@ -1,0 +1,45 @@
+{
+  "key": "pinterest-rec-738168195219221021",
+  "name": "花朵凯蒂猫头像",
+  "palette": {
+    "A": "#ead1db",
+    "B": "#e3ae79",
+    "C": "#783f0b",
+    "D": "#e9a7dd",
+    "E": "#fa82cf",
+    "F": "#fff446"
+  },
+  "rows": [
+    "AAAAAAAAAAAAAAAAAAAAAAAAAA",
+    "AAAAAAAAAAAAAAAAAAAEEEAAAA",
+    "AAAAAAAAAAAAAAAEEAEDDDEAAA",
+    "AAAAACCCAAAAAAEDDEDDDDEAAA",
+    "AAAACBBBCCCCCCEDDDEDDEAAAA",
+    "AAAACBBBBBBBBBBEDDFFEDEAAA",
+    "AAAACBBBBBBBBBEDEEFFDDDEAA",
+    "AAAAACBBBBBBBEDDDDEDEDDEAA",
+    "AAAACBBBBBBBBEDDEEDDDEEAAA",
+    "AAAACBBBBBBBBBEEBEDDECAAAA",
+    "AAACBBBBBBBBBBBBBBEEBBCAAA",
+    "ACCCCBBBBBBBBBBBBBBBBCCCCA",
+    "AAACBBBBCBBBBBBBBCBBBBCAAA",
+    "AACCCBBBCBBBBBBBBCBBBCCCAA",
+    "AAAACCBBBBBBBBBBBBBBCCAAAA",
+    "AAACCBBBBBBBFFBBBBBBBCCAAA",
+    "AAAAACBBBBBBBBBBBBBBCAAAAA",
+    "AAAAAACCBBBBBBBBBBCCAAAAAA",
+    "AAAAAAAACCCCCCCCCCAAAAAAAA",
+    "AAAAAAAAAAAAAAAAAAAAAAAAAA",
+    "AAAAAAAAAAAAAAAAAAAAAAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/738168195219221021/",
+    "image": "https://i.pinimg.com/originals/e4/e9/dc/e4e9dc513c3b168eafa850f2c972e017.png",
+    "title": "hawaiian hello kitty pixel grid",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

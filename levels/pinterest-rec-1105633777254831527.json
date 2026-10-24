@@ -1,0 +1,46 @@
+{
+  "key": "pinterest-rec-1105633777254831527",
+  "name": "抱心熊猫",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#454545",
+    "C": "#b50303",
+    "D": "#fa0203"
+  },
+  "rows": [
+    "AABBBAAAAAAAAAAAABBBAA",
+    "ABBBBBABBBBBBBBABBBBBA",
+    "BBBBBBBAAAAAAAABBBBBBB",
+    "BBBBAAAAAAAAAAAAAABBBB",
+    "BBBAAAAAAAAAAAAAAAABBB",
+    "ABAAAAAAAAAAAAAAAAAABA",
+    "ABAAAAAAAAAAAAAAAAAABA",
+    "BAAAABBBAAAAAABBBAAAAB",
+    "BAAABBBBBAAAABBBBBAAAB",
+    "BAABBBBABAAAABABBBBAAB",
+    "BAABBBBABAAAABABBBBAAB",
+    "BAABBBBBAAAAAABBBBBAAB",
+    "BAAABBBAAABBAAABBBAAAB",
+    "ABAAAAAAAABBAAAAAAAABA",
+    "ABBBBACCCAAAACCCABBBBA",
+    "BBBBBBDDDCAACDDDBBBBBB",
+    "BBBBBBBDDDCCDDDBBBBBBB",
+    "BBBBBBBDDDDDDDDBBBBBBB",
+    "BBBBBBBDDDDDDDDBBBBBBB",
+    "ABBBBBBDDDDDDDDBBBBBBA",
+    "AABBBBACDDDDDDCABBBBAA",
+    "AAAAAAAACDDDDCAAAAAAAA",
+    "AAAAAAAAACDDCAAAAAAAAA",
+    "AAAAAAAAAACCAAAAAAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/1105633777254831527/",
+    "image": "https://i.pinimg.com/originals/a9/47/c8/a947c8f8320fc6d4c27dc1ccd2e86750.jpg",
+    "title": "dessin mignon",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

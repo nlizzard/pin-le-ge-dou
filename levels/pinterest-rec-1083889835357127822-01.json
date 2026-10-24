@@ -1,0 +1,44 @@
+{
+  "key": "pinterest-rec-1083889835357127822-01",
+  "name": "太空人巴斯",
+  "palette": {
+    "A": "#2c3554",
+    "B": "#99cf5f",
+    "C": "#ffffff",
+    "D": "#63abbc",
+    "E": "#f5d0b9",
+    "F": "#cbd0cc",
+    "G": "#744392",
+    "H": "#181818",
+    "I": "#586d7a"
+  },
+  "rows": [
+    "AAAAAAAFFFFFAAA",
+    "AAAAAAFGGGGGFAA",
+    "AAAAAFGEEEEEGFA",
+    "AAAAAFGEHEHEGFA",
+    "AAAAAFGEEEEEGFA",
+    "AAAAAFGEEEEEGFA",
+    "AAAACBCBBBBBCBC",
+    "AAAACBCDIBGBCBC",
+    "AAAAAACCCCCCCAA",
+    "AAAAAABAAAAABAA",
+    "AAAAAACCCCCCCAA",
+    "DDDAAACCCACCCAA",
+    "DDDAAABBBABBBAA",
+    "DDDAAAAAAAAAAAA",
+    "DDDAAAAAAAAAAAA",
+    "DDDAAAAAAAAAAAA",
+    "DDDAAAAAAAAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/1083889835357127822/",
+    "image": "https://i.pinimg.com/originals/d2/a5/8e/d2a58ebb75d4e94dc12f772152dfe14c.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

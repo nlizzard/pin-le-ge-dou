@@ -1,0 +1,40 @@
+{
+  "key": "pinterest-rec-65794844551948126-01",
+  "name": "海绵宝宝小星星",
+  "palette": {
+    "A": "#f9edb1",
+    "B": "#181818",
+    "C": "#fdeb4d",
+    "D": "#704926",
+    "E": "#ffffff",
+    "F": "#bfad8f"
+  },
+  "rows": [
+    "AABBBBBBBBBBBAA",
+    "ABCCCCCCCCCCCBA",
+    "ABACBCBCBCBCCBA",
+    "ABACEEECEEECABA",
+    "ABCCEFFCFFECABA",
+    "ABCCEFBCBFECCBA",
+    "ABCAACCACCCACBA",
+    "ABCCCCCCCCCCCBA",
+    "ABCCACCEECACCBA",
+    "BECCCCCCCCCCCEB",
+    "BCEEEEEDEEEEECB",
+    "BCDDDDDDDDDDDCB",
+    "ABDDDDDDDDDDDBA",
+    "AABDDDBBBDDDBAA",
+    "AAABCBAAABCBAAA",
+    "AAAABAAAAABAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/65794844551948126/",
+    "image": "https://i.pinimg.com/originals/ca/cd/50/cacd5063220d268227f836e7489a7d8a.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

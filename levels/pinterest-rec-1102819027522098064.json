@@ -1,0 +1,48 @@
+{
+  "key": "pinterest-rec-1102819027522098064",
+  "name": "睡觉橘猫",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#181818",
+    "C": "#fc8e34",
+    "D": "#d3d7da",
+    "E": "#ec651f",
+    "F": "#c72f28",
+    "G": "#e4ebf5"
+  },
+  "rows": [
+    "AABBBBAAAAAAAAAAAAAAAAAA",
+    "ABADADBAAAAAAAAAAAAAAAAA",
+    "BDDDDDABAAAAAAAAAAAAAAAA",
+    "BADAAADDBAAAAAAAAAAAAAAA",
+    "BDDAAAADABAAAAAAAAAAAAAA",
+    "BADAAAAADDBBBBBAAAAAAAAA",
+    "ABDDAAAAADABBABBBBAAAAAA",
+    "AABADAAAAACCCBAABBAAAAAA",
+    "AAABADAAACCCCBABBBAAAAAA",
+    "AABCCDDACABBCCBBAAAAAAAA",
+    "AABCCCACCABBCCBBAAAAAAAA",
+    "ABCCBCBCBAAACCBAAAAAAAAA",
+    "ABCCCBCBCCCCCCCBAAAAAAAA",
+    "ABCCCCCCCCCCCCCBAAAAAAAA",
+    "ABCCCCCCCCCCCCCBAAAAAAAA",
+    "AABCCCCCCCCFCCCCBAAAAAAA",
+    "ABBFCCCCCCCBCCCCBAAAAAAA",
+    "BCBFCCCCFCBCBBCCBBAAAAAA",
+    "BCCBFCCCFCBCCCCCBBAAAAAA",
+    "BCCCCCCEEFBCCCCCBBAAAAAA",
+    "BCCCCEEEEEBCCCCEBBBGGBBB",
+    "BEEEEBBBBBBEEEEBBGBBBBGB",
+    "ABBBBAAAAABBBBBGGGGGGBBB"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/1102819027522098064/",
+    "image": "https://i.pinimg.com/originals/62/0c/24/620c2463c33cb9e19a57428a31d53bf1.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

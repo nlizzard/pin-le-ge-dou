@@ -1,0 +1,45 @@
+{
+  "key": "pinterest-rec-1148347605020927598",
+  "name": "蓝背带凯蒂猫",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#181818",
+    "C": "#fededf",
+    "D": "#304385",
+    "E": "#7a1e1f",
+    "F": "#e13d3c",
+    "G": "#c7d0a9"
+  },
+  "rows": [
+    "AAAAAAAAAAEEAAAAAAA",
+    "AAABBBAAAEFFEBBBAAA",
+    "AABAAABBEFFFEAAABAA",
+    "AABAAAAAEFFEFEEEBAA",
+    "AABAAAAAAEEEFEFFEAA",
+    "ABAAAAAAAAAAEFFFEBA",
+    "ABAAAAAAAAAAAEEEABA",
+    "ABAACCABAAABACCAABA",
+    "BBBCCCCAAAAACCCCBBB",
+    "ABACCCCBABABCCCCABA",
+    "BBBACCAABBBAACCABBB",
+    "ABAAAAAAAAGAAAAAABA",
+    "AABABBAAAAGAABBABAA",
+    "AAABAABBAAABBAABAAA",
+    "AAABAABDBBBDBAABAAA",
+    "AAAABBDGDDDGDBBAAAA",
+    "AAAABDDDDDDDDDBAAAA",
+    "AAAABBBBBBBBBBBAAAA",
+    "AAAABAAAABAAAABAAAA",
+    "AAAAABBBBABBBBAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/1148347605020927598/",
+    "image": "https://i.pinimg.com/originals/1b/31/15/1b31159c2940c2c7d85000827605822c.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

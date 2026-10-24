@@ -1,0 +1,43 @@
+{
+  "key": "pinterest-rec-1083889835357127822-03",
+  "name": "三眼仔",
+  "palette": {
+    "A": "#181818",
+    "B": "#b0c157",
+    "C": "#ffffff",
+    "D": "#15265d",
+    "E": "#5e3985",
+    "F": "#3364a7",
+    "G": "#6389ad"
+  },
+  "rows": [
+    "AAAAAAAAABAAAAA",
+    "AAAAAAAAABAAAAA",
+    "AAAABABBBBBBBAB",
+    "AAAABBBCBCBCBBB",
+    "AAAABBCACACACBB",
+    "AAAABBBCBCBCBBB",
+    "AAAAABBBBBBBBBA",
+    "AAAAAABBBBBBBAA",
+    "AAAAAAEEEEEEEAA",
+    "AAAABFFFFFFBFFB",
+    "AAAAAAFFFFFFFAA",
+    "AAAAAADDDDDDDAA",
+    "AAAAAAFFFFFFFAA",
+    "AAAAADDDDADDDDA",
+    "GAAAAAAAAAAAAAA",
+    "GAAAAAAAAAAAAAA",
+    "GAAAAAAAAAAAAAA",
+    "GAAAAAAAAAAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/1083889835357127822/",
+    "image": "https://i.pinimg.com/originals/d2/a5/8e/d2a58ebb75d4e94dc12f772152dfe14c.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

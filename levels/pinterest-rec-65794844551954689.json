@@ -1,0 +1,47 @@
+{
+  "key": "pinterest-rec-65794844551954689",
+  "name": "小黄帽女孩",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#f9e6db",
+    "C": "#f7df51",
+    "D": "#f79b1f",
+    "E": "#181818",
+    "F": "#a15211"
+  },
+  "rows": [
+    "AAAAAAAAAAAAAAAAAAAAAEEEAA",
+    "AAAAAAAAAAAAAAAAAAAAEDDDEA",
+    "AAAAAAAAAAAAAEEEEEAEDEEDDE",
+    "AAAAAAAAAAEEEDDDDDEDEDDDDE",
+    "AAAAAAAAAEDDDDDDEDDEDDDDDE",
+    "AAAAAAAAEDDDDDDEDEDEDDDDDE",
+    "AAAAAAAEDEDDDDDEDDEEDDDDEA",
+    "AAAAAAEDDEEEEEEBEEEBEEEEAA",
+    "AAAAAAEDEBEBBEBBEBBBBEAAAA",
+    "AAAAAEDEBBBEEBBBBEEBBEAAAA",
+    "AAAAAEEEBBEEAEBBEEAEBEEAAA",
+    "AAEEEBBEBBEEEEBBEEEEBBBEAA",
+    "AECCEBBBBBBEEBBBBEEBBBBBEA",
+    "AECCEBBBBBBBBBBBBBBBBBBBEA",
+    "ECCCCEBBEBBBBBBBBBEEBBBBEA",
+    "ECCCCCEECEEEBBBBBEFFEBBEAA",
+    "ECCCCCCCCCEAEEEBBEFFEEEAAA",
+    "ECCCCCCECCEAAAAEEEEEEEAAAA",
+    "ECCCCCCECCCEAAAAAAAECEAAAA",
+    "AECCCCCCECCEAAAAAAECEAAAAA",
+    "AECCCECCECCEEAAAAEECEAAAAA",
+    "ECECCCEEBECECEEEEAEBEAAAAA",
+    "EEEEEEBAEEEEEEAAAAAEEEAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/65794844551954689/",
+    "image": "https://i.pinimg.com/originals/57/ef/1c/57ef1c6e970143aad4c340fdfb4d6871.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

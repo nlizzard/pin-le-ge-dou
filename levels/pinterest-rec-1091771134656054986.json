@@ -1,0 +1,49 @@
+{
+  "key": "pinterest-rec-1091771134656054986",
+  "name": "史酷比",
+  "palette": {
+    "A": "#29388e",
+    "B": "#221e20",
+    "C": "#ae7227",
+    "D": "#56bdb0",
+    "E": "#ec6473",
+    "F": "#ffffff",
+    "G": "#f8e24b"
+  },
+  "rows": [
+    "AAAAAAAABBAAAAAAAAAA",
+    "AAAAAAABCCBAAAAAAAAA",
+    "AAAAAAABBBAAAAAAAAAA",
+    "BAAAAAABCCBAAABBBAAA",
+    "BBAAAABFFCFBABBBBBAA",
+    "BCBBABBFBCBFBBBBBBBA",
+    "BCCCBCCFBCBBCBBBBBBA",
+    "BCCCBCCCCCCCCCCBBBCB",
+    "BCBBCCCCBCCCCCCCCBCB",
+    "ABBBCCCBCCCCCCCCCBCB",
+    "AAABCCBCBCCCCCCCBCCB",
+    "AAABCCCCBBCCCCCBCBBA",
+    "AAABCCCCBCBCCBBBBAAA",
+    "AAABCCCCBEEBBBAAAAAA",
+    "AAAABCCCCCEEBBAAAAAA",
+    "AAAABCCBCBEEBBBAAAAA",
+    "AAAABCCCCCBBBCBAAAAA",
+    "AAAABCCCBCCCCCBAAAAA",
+    "AAAABCCCCCCCCCBAAAAA",
+    "AAABDBCCCCBBBBAAAAAA",
+    "AAABDDBBBBBBBAAAAAAA",
+    "AAAABDDDDGGDDBAAAAAA",
+    "AAAAABDDDGGDBAAAAAAA",
+    "AAAAAABBBBBBAAAAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/1091771134656054986/",
+    "image": "https://i.pinimg.com/originals/91/74/7e/91747e5b0a81027034040cfa5e0ade0f.png",
+    "title": "Scooby-Doo&#39;s Face Pixel Art",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

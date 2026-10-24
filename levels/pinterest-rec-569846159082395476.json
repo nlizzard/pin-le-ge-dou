@@ -1,0 +1,47 @@
+{
+  "key": "pinterest-rec-569846159082395476",
+  "name": "樱桃巧克力纸杯蛋糕",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#2b2b2d",
+    "C": "#fd83af",
+    "D": "#8b4413",
+    "E": "#b32123",
+    "F": "#b8ffc0",
+    "G": "#de6990",
+    "H": "#cacbb2"
+  },
+  "rows": [
+    "AAAABBBAAAAAAAAAAAA",
+    "AAABEEEBAAAAAAAAAAA",
+    "AABEAEEEBAAAAAAAAAA",
+    "AABEAEEEBBBBAAAAAAA",
+    "AABEEEEEBCCCBBAAAAA",
+    "AAABEEEBCCGCCCBBAAA",
+    "AABCBBBCCCCCCHCCBAA",
+    "AABCCCGCCCCFCCCCBAA",
+    "ABCCCCCCCCCCCCGCCBA",
+    "ABCCFCCCHCCCCCCCCBA",
+    "BCCCCCFCCCCCGCCFCCB",
+    "BCCCCCCCCFCCCCCCCCB",
+    "BCCCCCCCCCCCCCCCCCB",
+    "ABBBBCCCCBCCCCCCBBA",
+    "AABDDBCCBDBCCCCBBAA",
+    "AABDDDBBDDDBCCBDBAA",
+    "AAABDDDDDDDDBBDBAAA",
+    "AAABDDDDDDDDDDDBAAA",
+    "AAABDDDDDDDDDDDBAAA",
+    "AAAABDDDDDDDDDBAAAA",
+    "AAAAABBBBBBBBBAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/569846159082395476/",
+    "image": "https://i.pinimg.com/originals/be/6e/53/be6e536de361f05a22c2062aa17049b3.jpg",
+    "title": "Cupcake hama",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

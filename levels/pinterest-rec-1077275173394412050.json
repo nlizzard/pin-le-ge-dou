@@ -1,0 +1,53 @@
+{
+  "key": "pinterest-rec-1077275173394412050",
+  "name": "戴围巾小鸭",
+  "palette": {
+    "A": "#e6dac4",
+    "B": "#949a9c",
+    "C": "#c8d2d4",
+    "D": "#333333",
+    "E": "#49646b",
+    "F": "#a68ac2",
+    "G": "#4ab8b4",
+    "H": "#ffffff",
+    "I": "#875633",
+    "J": "#db9f74"
+  },
+  "rows": [
+    "AAAAAAAADDDDDDDDDDAAAAAAAAA",
+    "AAAAAADDHHHBBBBEEEDDAAAAAAA",
+    "AAAAADHHBBBBBBBBBEEEDAAAAAA",
+    "AAAADHBBBBBBBBBBBBBEEDAAAAA",
+    "AAAADHBBBBBBBBBBBBBBEDAAAAA",
+    "AAADHBBBBBBBBBBBBBBBEEDAAAA",
+    "AAADHBBBBBHHHBBBBBBBBEDAAAA",
+    "AADHBBHDBHDDDHBHDBBBBEDAAAA",
+    "AADHBBDDBDEEEDBDDBBBBEDAAAA",
+    "AADHBBBBBBDDDBBBBBBBBEDAAAA",
+    "AADHBBBBBBBBBBBBBBBBBEDAAAA",
+    "AADHGBBBBBBBBBBBBBBBGEDAAAA",
+    "AAADGGBBBBBBBBBBBBGGGFDAAAA",
+    "AADHFGGGGGGGGGGGGGGGFFEDAAA",
+    "AADHFFFGGGGGGGGGGFFFFCEEDAA",
+    "ADHCCFFFFFFFFFFFFFFFCCCEDDA",
+    "ADHCCCCFFFFFFFFFFCCCCCCDEDA",
+    "DHCCCCCCCCCCCCCCCCCCCDDCEED",
+    "DHCCCCCCCCCCCCCCCCDCCDCCEDD",
+    "DHCCCCCCCCCCCCCCCCDDDCCCDED",
+    "DHCCICICCCCCCICICCEDCCDDEED",
+    "ADHIJIJICCCCIJIJICCEDCDEEDA",
+    "ADHIJJJICCCCIJJJICEEEDDDDAA",
+    "AADDIJICCCCCCIJIEEEEDDAAAAA",
+    "AAAADIDDDDDDDDIDDDDDAAAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/1077275173394412050/",
+    "image": "https://i.pinimg.com/originals/e4/40/ba/e440ba164db058ddc1d124b8efac3e97.png",
+    "title": "Alpha pattern #194258",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

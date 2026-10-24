@@ -1,0 +1,46 @@
+{
+  "key": "pinterest-rec-576390452328412282",
+  "name": "白色胖龙猫",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#76cdbc",
+    "C": "#402f1f",
+    "D": "#90b6af",
+    "E": "#c28542"
+  },
+  "rows": [
+    "BBBBBBCCBBBBCCBBBBBB",
+    "BBBBBCACBBBCACBBBBBB",
+    "BBBBCAACBBCAACBBBBBB",
+    "BBBBCAACBBCAACBBBBBB",
+    "BBBCAAACBCAAACBBBBBB",
+    "BBBCAAACBCAAACBBBBBB",
+    "BBCAAACCCCAAACBBBBBB",
+    "BBCAAAAAAAAAACCCBBBB",
+    "BBCCAAACCAAAACEECBBB",
+    "BCAACACAACAAADCEECBB",
+    "BCCACACCACAAADCEEECB",
+    "BCAACACAACAAADCEEECB",
+    "CACCAAACCAAAAADCEECC",
+    "CAAAAAAAAAAAAADCEECC",
+    "CAAAAAAAAAAAAADCCCCC",
+    "CAAAAAAAAAAAAADCCCCB",
+    "CAAAAAAAAAAAAADDCCBB",
+    "CAAAAAAAAAAAAAADCBBB",
+    "CAAAAAAAAAAAAAADCCCB",
+    "BCAAAAAAAAAAAADDCAAC",
+    "BCAAAAAAAADDDDDCAAAC",
+    "BBCCAADDDDDDDDCAACCB",
+    "BBBBCCCCCCCCCCCCCBBB"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/576390452328412282/",
+    "image": "https://i.pinimg.com/originals/dc/19/d1/dc19d1554729a082b36c0d2634edc703.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

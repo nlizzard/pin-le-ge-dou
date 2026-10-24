@@ -1,0 +1,51 @@
+{
+  "key": "pinterest-rec-1130473943996782615",
+  "name": "胡萝卜小人",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#181818",
+    "C": "#d39166",
+    "D": "#784f36",
+    "E": "#c97752"
+  },
+  "rows": [
+    "AAABAAAAAAAAA",
+    "AAAABAAAAAAAA",
+    "AAAAABAAABBAA",
+    "AAAAABAABAAAA",
+    "AAAAABABAAAAA",
+    "AAAAABABAAAAA",
+    "AAAAABBAAAAAA",
+    "AAABBCCBBBAAA",
+    "AABCCCCCCCBAA",
+    "ABCCBCCBCCCBA",
+    "BCEECCCCEECCB",
+    "BCCCCCCCCCCCB",
+    "BCCCBCCBCCCCB",
+    "BCCCCBBCCCCCB",
+    "ABCCCCCCCCCBA",
+    "AABBBBBBBBBAA",
+    "ABDDBDDDBDDBA",
+    "ABDDBDDDBDDBA",
+    "ABDDBDDDBDDBA",
+    "ABBDDBDBDDBBA",
+    "ABBDDDDDDDBBA",
+    "ABBDDDDDDDBBA",
+    "ABDBDDDDDBDBA",
+    "AABDBDDDBDBAA",
+    "AABDDBBBDDBAA",
+    "AAABBBABBBAAA",
+    "AAAAABABAAAAA",
+    "AAAABBABBAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/1130473943996782615/",
+    "image": "https://i.pinimg.com/originals/5c/87/66/5c876691d2c65c427487abb7df67bba2.webp",
+    "title": "🪳🪳",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

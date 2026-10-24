@@ -1,0 +1,43 @@
+{
+  "key": "pinterest-rec-1088745278703335372",
+  "name": "皮皮",
+  "palette": {
+    "A": "#96b1c2",
+    "B": "#ffc9c9",
+    "C": "#4a3739",
+    "D": "#c98584",
+    "E": "#ffffff",
+    "F": "#b5743e"
+  },
+  "rows": [
+    "AAACAAAAAAAAAAAAAA",
+    "AACFCACCCAAAAAAAAA",
+    "AACFFCBBBCAAAAAAAA",
+    "AACBCBBBBBCCCCCCAA",
+    "AACBCDBCBBDBBFFCAA",
+    "AACBBCCDBBBBBFCCCA",
+    "ACDEBBBBBBBBBCCDDC",
+    "ACBCBBBEBDBBCCCDCA",
+    "CDBBBBBCBDBCCCDDCA",
+    "CEBBCCBBDBBBDCDDDC",
+    "CDBBDDBBBBBBDDCCCC",
+    "ACBBBBBBDBBBDDCDCA",
+    "ACDBBBBCEBBDDDCDCA",
+    "AACDBBBBCCDDDCDDCA",
+    "ACECDDDDDDDDDCDCAA",
+    "AACCCCDDDDDDCDCCAA",
+    "AAAAACCDDDDCCCCAAA",
+    "AAAAAAACEECCAAAAAA",
+    "AAAAAAAACCAAAAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/1088745278703335372/",
+    "image": "https://i.pinimg.com/originals/92/d5/b1/92d5b12ab6d26f603276d94c25da213f.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

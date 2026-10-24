@@ -1,0 +1,45 @@
+{
+  "key": "pinterest-rec-313774299047280731",
+  "name": "玉米饼小可爱",
+  "palette": {
+    "A": "#f8ad0a",
+    "B": "#ceeced",
+    "C": "#3b2222",
+    "D": "#ae3f25",
+    "E": "#eb3b3b",
+    "F": "#85b359",
+    "G": "#fa9be1",
+    "H": "#ffffff"
+  },
+  "rows": [
+    "BBBBBBBBBBBBCCCCCCCCBBBBBBBBBB",
+    "BBBBBBBBBBCCAAAAAAAACCCBBBBBBB",
+    "BBBBBBBBCCCCCCCCCAAAAAACBBBBBB",
+    "BBBBBBCCAAAAAAAAACCAACCACBBBBB",
+    "BBBBBCAAAAAAAAAAAAACCFFCACBBBB",
+    "BBBBCAAAAAAAAAAAAAAACFFFCACBBB",
+    "BBBCAAAAAAAAAAAAAAAAACFCCAACBB",
+    "BBCAAAAAAAAAAAAAAAAAAACEECAACB",
+    "BBCAAAAAAAAAAAAAAAAAAAACEECACB",
+    "BCAAAAAAAAAAAAAAAAAAAAACEEECAC",
+    "BCAAAAAAAAAAAAAAAAAAAAAACCCCAC",
+    "CAAAAAAAAAAAAAAAAAAAAAAACDDCAC",
+    "CAAAACCAAAAAAAAAAACCAAAACDDDCC",
+    "CAAACCHCAAACACAAACCHCAAAACDDDC",
+    "CAAACCCCAACCCCCAACCCCAAAACDDDC",
+    "CAAAGCCAACCCACCCAACCGAAAACDDCC",
+    "CAAAGGAACCCAAACCCAAGGAAAACDCCB",
+    "BCAAAAAAAAAAAAAAAAAAAAAACCCCBB",
+    "BBCCCCCCCCCCCCCCCCCCCCCCCCBBBB"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/313774299047280731/",
+    "image": "https://i.pinimg.com/originals/e1/e0/c5/e1e0c5ec1d44442af97fc4e5a360397b.png",
+    "title": "Alpha pattern #104062",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

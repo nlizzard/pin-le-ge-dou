@@ -1,0 +1,49 @@
+{
+  "key": "pinterest-rec-1000995454704618442",
+  "name": "伊布坐姿",
+  "palette": {
+    "A": "#fcdec2",
+    "B": "#282625",
+    "C": "#ffffff",
+    "D": "#b08358"
+  },
+  "rows": [
+    "AAAAABAAAAAAAAAAAA",
+    "AABABDBBBAAAAAAAAA",
+    "ABDBDDDDDBAAAAAAAA",
+    "ABDDDDDDBAAAAAAAAA",
+    "BDDDDDDDDBAAAAAAAA",
+    "BDDDDDDDBBAAABBAAA",
+    "BDDDDDDBDDBABDDBAA",
+    "ABDDDDDBDDBABDDDBA",
+    "BDDDDDBDDDDBDDDDBA",
+    "ABBDDDBDDDDDDDDDBA",
+    "AABDDDBDDDDDDDDDBA",
+    "AAABDDBDBDDDDDBDDB",
+    "AAABDBDDBDDDDDBDDB",
+    "AABDDBDDDCBBCDDDDB",
+    "AAABDBDDCCCCCCDDBA",
+    "AABDDDBDCCCCCCDBAA",
+    "AABDDDDBBDCCCBBAAA",
+    "ABDDDDBDDDDCCDDBBA",
+    "BDDDDBDBDDDCCDDDDB",
+    "ABDDBDDBDDBCCBBBBA",
+    "ABDDBDDDBBBCCBAAAA",
+    "BDDBDDDDCCCCCBAAAA",
+    "ABDBDDBCCCCCBAAAAA",
+    "ABDBDDDBCCCCBBBAAA",
+    "AABBDDDDBBDDDDDBAA",
+    "AAAABDDDDDBBBBBBAA",
+    "AAAAABBBBBBAAAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/1000995454704618442/",
+    "image": "https://i.pinimg.com/originals/02/e8/47/02e847a6804b9e78e37adf7118794c33.jpg",
+    "title": "squirrel",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

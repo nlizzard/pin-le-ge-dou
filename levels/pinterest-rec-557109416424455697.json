@@ -1,0 +1,53 @@
+{
+  "key": "pinterest-rec-557109416424455697",
+  "name": "猫头鹰",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#181818",
+    "C": "#ab5a0f",
+    "D": "#b0b0b0",
+    "E": "#ffb688",
+    "F": "#5c3004",
+    "G": "#ff8d1c",
+    "H": "#ffb92d"
+  },
+  "rows": [
+    "AABBAAAAABBBBBBBBAAAABBAAA",
+    "ABCCBBABBEEEEEEEEBAABCCBAA",
+    "ABCCECBCECEEEEEECCBBCCEFBA",
+    "ABCCCEECAAEECECEAACGCCFFBA",
+    "ABFCECCCCAAECCCAAACCCCCFBA",
+    "AABECEEECAAACCAAACCCCEEBAA",
+    "ABECCAAAAACAAAACAAAAACCCBA",
+    "ABCCAAAAAAACAACAAAAAAACCBA",
+    "BECAAAAAAAAAGGAAAAAAAAACEB",
+    "BECAAABBBAAAAAAAABBBAAACCB",
+    "BEAAABAABBAAAAAABAABBAAACB",
+    "BEAAABBBBBAAHHAABBBBBAAACB",
+    "BEAAABBBBBABACBABBBBAAAACB",
+    "BCAAAABBBAABHCBAABBAAAADCB",
+    "BCDAAAAAAAAABBAAAAAAAAADCB",
+    "BCCFAAAAAAAADDAAAAAAAADFFB",
+    "ABFFFAAAAAAAAAAAAAAAADFFBA",
+    "BGBBCDDAAAAAAAAAAAADDFBBEB",
+    "BGGCBBBAAAAAAAAAAAABBBCCEB",
+    "BGEGBDADDDAAAAADDDDADBEEEB",
+    "BCGCBAAAADDDAADDDAAAABCECB",
+    "ABFFBAADAADDDDDDAADAABCCBA",
+    "AABFBAAAAAADAADAAAAAABCBAA",
+    "AAABBDDABDAAAAAADBAADBBAAA",
+    "AAAABBDBHBBDDDBBBHBDBBAAAA",
+    "DDBBDDBCCBCBBBBCBCCBDBBBDD",
+    "AAAAAAABBABAAAABABBAAAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/557109416424455697/",
+    "image": "https://i.pinimg.com/originals/32/1b/33/321b3380b726deb71f55abd41e8a27c4.png",
+    "title": "Baby owl 🦉 Pixel Color by Number Page",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

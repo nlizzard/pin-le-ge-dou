@@ -1,0 +1,38 @@
+{
+  "key": "pinterest-rec-377176537546499637",
+  "name": "熊猫头像",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#181818",
+    "C": "#faafc3"
+  },
+  "rows": [
+    "CCBBBCCBBBBBCCBBBCC",
+    "CBBBBBBAAAAABBBBBBC",
+    "BBBBBAAAAAAAAABBBBB",
+    "BBBBAAAAAAAAAAABBBB",
+    "BBBAAAAAAAAAAAAABBB",
+    "CBAAAAAAAAAAAAAAABC",
+    "CBAABBBAAAAABBBAABC",
+    "BAABBBABAAABABBBAAB",
+    "BAABBBBBAAABBBBBAAB",
+    "BAABBBBAAAAABBBBAAB",
+    "BAAABBAABBBAABBAAAB",
+    "CBACCAAAABAAAACCABC",
+    "CBAAAABAABAABAAAABC",
+    "CCBAAAABBABBAAAABCC",
+    "CCCBAAAAAAAAAAABCCC",
+    "CCCCBBAAAAAAABBCCCC",
+    "CCCCCCBBBBBBBCCCCCC"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/377176537546499637/",
+    "image": "https://i.pinimg.com/originals/4d/31/ad/4d31ad4072893c27151e12845336df76.jpg",
+    "title": "Panda 🐼 pattern",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

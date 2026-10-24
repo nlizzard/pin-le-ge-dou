@@ -1,0 +1,40 @@
+{
+  "key": "pinterest-rec-1068408711618648019",
+  "name": "金色小鱼",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#f8d694",
+    "C": "#8f6014",
+    "D": "#efb854"
+  },
+  "rows": [
+    "AAAAAAAACCCCCAAAAAAAAAAAA",
+    "AAAAACCCBBBBBCCCAAAAAAAAA",
+    "AAAACBBBBBDCBBBBCCAAAAAAA",
+    "AAACBBBCBBBDCBBBBBCACCCAA",
+    "AACBBBBBCBBBDCBCBBBCBBBCA",
+    "ACBBBBBBCBBBDBBDCBBBBBBDC",
+    "CBBBCCBBCBBDCBBDCBBBCCCDC",
+    "CBBBCCDDBCBDCBBDCBBBDBBDC",
+    "CBBBBDDDBCBBDCDCBBBBDCCDC",
+    "ACBBBDDDBCBBDCBDCBBBDBBDC",
+    "AACBBBDDBCBDCBBDCBBBCCCDC",
+    "AACBBBBBBCBDCBBDCBBDDBBDC",
+    "ACBBBBBBCBBBBBDCBBBDCBBDC",
+    "ACBBBBBBCBBBDCBBBBDCACCCA",
+    "AACBBBBCBBBDCBBBBDCAAAAAA",
+    "AAACCBBBBBDCBBBBDCAAAAAAA",
+    "AAAAACCCBBBBBBCCCAAAAAAAA",
+    "AAAAAAAACCCCCCAAAAAAAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/1068408711618648019/",
+    "image": "https://i.pinimg.com/originals/d4/d2/35/d4d235c3b77d033774817775faff6300.webp",
+    "title": "taiyaki",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "key": "pinterest-rec-580401470741987166",
+  "name": "西瓜凯蒂猫",
+  "palette": {
+    "A": "#528ab6",
+    "B": "#ffffff",
+    "C": "#aee7f6",
+    "D": "#f25151",
+    "E": "#6fb278",
+    "F": "#636475"
+  },
+  "rows": [
+    "CCCCCCCCAAAAAAACCCCCCCC",
+    "CCCCCAAABBBBBBBAAACCCCC",
+    "CCCCABABBBBBBBBBABACCCC",
+    "CCCCABBBBBBBBBBBBBACCCC",
+    "CCCCCABBBBBBBBBBBACCCCC",
+    "CCCCCABBFBFFFBFBBACCCCC",
+    "CCCCABBBBBBFBBBBBBACCCC",
+    "CCCCABBBBBBFBBBBBBACCCC",
+    "CCCCABBBBBBBBBBBBBAACCC",
+    "CCCCAAAABBBBBBBBBABBACC",
+    "CCCABBBBABBBBBBBABBBACC",
+    "CCCABBBBABBBBBBBBBBACCC",
+    "EBDDAAAADDDDDDDDDDDDDBE",
+    "EBDDDDDDDDDDFDDDDDDFDBE",
+    "EBDDDFDDDFDDDDDFDDDDDBE",
+    "EBBDDDDDDDDDDDDDDDDDBBE",
+    "CEBDDDDDDDDDDDDDDDDDBEC",
+    "CEBBDDDFDDFDDDDFDDDBBEC",
+    "CCEBBDDDDDDDDDDDDDBBECC",
+    "CCCEBBBDDDDDDDDDBBBECCC",
+    "CCCCEEBBBBBBBBBBBEECCCC",
+    "CCCCCCEEEEEEEEEEECCCCCC"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/580401470741987166/",
+    "image": "https://i.pinimg.com/originals/b3/ac/a5/b3aca5ab25905e4b11cf21e409dcfe98.jpg",
+    "title": "Drawings by cells [Рисунки по клеточкам]",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

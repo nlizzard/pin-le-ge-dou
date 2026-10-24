@@ -1,0 +1,38 @@
+{
+  "key": "pinterest-rec-578290408428897183",
+  "name": "森林龙猫",
+  "palette": {
+    "A": "#4aa77a",
+    "B": "#404040",
+    "C": "#8c8b99",
+    "D": "#f9fae8"
+  },
+  "rows": [
+    "AAAAAAAAAAAAAAAA",
+    "AAAAAAAAAAAAAAAA",
+    "AAAAABAAABAAAAAA",
+    "AAAABCBABCBAAAAA",
+    "AAAABCBABCBAAAAA",
+    "AAAABCBBBCBAAAAA",
+    "AAAABCCCCCBAAAAA",
+    "AAABDDCCDDCBAAAA",
+    "AAABDBCCBDCCBAAA",
+    "AABCDDCCDDCCBAAA",
+    "AABCCCCCCCCCBAAA",
+    "AABCCDDDDCCCBBAA",
+    "AABCDDDDDDCCCCBA",
+    "AAABDDDDDDCCBBAA",
+    "AAAABBBBBBBBAAAA",
+    "AAAAAAAAAAAAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/578290408428897183/",
+    "image": "https://i.pinimg.com/originals/51/05/a2/5105a26c0c0d4cd34293f475f58c5acd.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

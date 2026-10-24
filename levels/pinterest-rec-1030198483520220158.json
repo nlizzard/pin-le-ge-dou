@@ -1,0 +1,46 @@
+{
+  "key": "pinterest-rec-1030198483520220158",
+  "name": "红草莓",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#ce2235",
+    "C": "#569d10",
+    "D": "#201f1c"
+  },
+  "rows": [
+    "AAAAAAAAADDDDDDAAAAADDAA",
+    "AAAAAAADDCCCCCCDAAADCCDA",
+    "AAAAADDBBDCCCCCCDADCCCDA",
+    "AAAADBBBBBDDDDCCCDCCCDAA",
+    "AAADBBBBBBBBBBDCCCCCDAAA",
+    "AADBBBBBBABBBDCCCCCDAAAA",
+    "AADBABBBBAABDCCCCCCCDAAA",
+    "ADBBAABBBBBBDCCCCCCCCDAA",
+    "ADBBBBBBBBBBDCCCCCDCCCDA",
+    "ADBBBBBBBBBBDCCCCDBDCCDA",
+    "DBBBBBBBABBBBDDDDBBDCCCD",
+    "DBBABBBBAABBBBBBBBBDCCCD",
+    "DBBAABBBBBBBBBBBBBBDCCCD",
+    "DBBBBBBBBBBBBBBBBABBDCCD",
+    "DBBBBBBBBBBBABBBBAABBDDD",
+    "DBBBBBBABBBBAABBBBBBBBBD",
+    "DBABBBBAABBBBBBBBBBBBBDA",
+    "DBAABBBBBBBBBBBBBBBBBBDA",
+    "DBBBBBBBBBBBBBBBABBBBDAA",
+    "DBBBBBBBBBBABBBBAABBDAAA",
+    "ADBBBBABBBBAABBBBBDDAAAA",
+    "AADBBBAABBBBBBBDDDAAAAAA",
+    "AAADBBBBBBBBBDDAAAAAAAAA",
+    "AAAADDDDDDDDDAAAAAAAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/1030198483520220158/",
+    "image": "https://i.pinimg.com/originals/c5/ed/ad/c5edad3f9174ae8cf1e40f73cdf8eac2.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

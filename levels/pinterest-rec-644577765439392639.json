@@ -1,0 +1,43 @@
+{
+  "key": "pinterest-rec-644577765439392639",
+  "name": "饼干怪兽头像",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#181818",
+    "C": "#2667a9"
+  },
+  "rows": [
+    "AAAAAAAABBBAAAAAAAAAA",
+    "AAAAAAABAAABAABAAAAAA",
+    "AAAAAABABBAABBBBBAAAA",
+    "AAAABBBABBAABCCCCBAAA",
+    "AAABAAABAAABCCCCBAAAA",
+    "AABAAAAABBBCCCCBBAAAA",
+    "AABAABBABCCCCCBCBBBAA",
+    "AABAABBABCCCCBBCCCBAA",
+    "AABBAAABCCCCBBBBCCCBA",
+    "AABCBBBCCCCBBBBBBCCBA",
+    "BBCCCCCCCCBBBBBBBBCBB",
+    "BCCCCCCCBBBBBBBBBBCCB",
+    "BCCCCCCBBBBBBBBBBBCCB",
+    "BCCCCBBBBBBBBBBBBCCCB",
+    "BCCBBBBBBBBBBBBBBCCCB",
+    "BCCCBBBBBBBBBBBBCCCBB",
+    "BBCCCCBBBBBBBBCCCCCBA",
+    "ABCCCCCCBBBBCCCCCCBBA",
+    "AABCCCCCCCCCCCCCBBAAA",
+    "AABBCCCCCCCCCCCBAAAAA",
+    "AAAABBBBBCCCCCBBAAAAA",
+    "AAAAAAAABBBBBBBAAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/644577765439392639/",
+    "image": "https://i.pinimg.com/originals/f8/31/fc/f831fc247a224922103e2244e1da944b.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

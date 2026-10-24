@@ -1,0 +1,38 @@
+{
+  "key": "pinterest-rec-1083889835357127822-04",
+  "name": "牛仔翠丝",
+  "palette": {
+    "A": "#a13627",
+    "B": "#4e92d2",
+    "C": "#cdbda6",
+    "D": "#ffffff",
+    "E": "#efe096",
+    "F": "#70565c",
+    "G": "#6f1e1b"
+  },
+  "rows": [
+    "BBAAAAAAABB",
+    "BBDDDDDDDBB",
+    "AAAAAAAAAAA",
+    "BBAACCCAABB",
+    "BBACFCFCABB",
+    "BBCCCCCCCAB",
+    "BBBCCCCCBBB",
+    "BCEDEEEDECB",
+    "BCEDDEDDECB",
+    "BBBAAAAABBB",
+    "BBBFFFFFBBB",
+    "BBBGDBGDBBB",
+    "BBBAABAABBB"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/1083889835357127822/",
+    "image": "https://i.pinimg.com/originals/d2/a5/8e/d2a58ebb75d4e94dc12f772152dfe14c.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "key": "pinterest-rec-1041457482637751993",
+  "name": "德国牧羊犬",
+  "palette": {
+    "A": "#2e2b2d",
+    "B": "#ca8f65",
+    "C": "#181818",
+    "D": "#ffffff",
+    "E": "#e2beb3",
+    "F": "#5d483c"
+  },
+  "rows": [
+    "DDDDDCADDDDDDDDCAD",
+    "DDDDCBAACDDDDCAFAD",
+    "DDDDABBBADDDDAABBC",
+    "DDDDABBBACCCCABBBC",
+    "DDDDABBBAAAAAABBBC",
+    "DDDDABAAAAAAAAABBC",
+    "DDDDAAAAAAAAAAAABC",
+    "DDDDCAABBBAABBBAAD",
+    "DDDDCABCAAAAADCBAD",
+    "DDDDCABFCAAAACCBAB",
+    "DDDDBEEBBACCABEEBC",
+    "DDDDBBBBAACCAABBBC",
+    "DDDDBBBBAAAAAABBBA",
+    "DDDDCBBBACEECABBCD",
+    "DDDDDCCABFEEABFCDD",
+    "DADDDAAFAACCAAFACD",
+    "DADDCAAABAAAABAACD",
+    "CAADCAABBBAABBBACD",
+    "CACAACAABBBBBBAAAA",
+    "CAACACAABBBBBBAAAA",
+    "DBACABAABBBBABAABC",
+    "DBFAABCFBBBBCBBCFA",
+    "DDDDBBCBBBBBCBBABC",
+    "DDDDCCCCBCDDCBFCCD"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/1041457482637751993/",
+    "image": "https://i.pinimg.com/originals/7b/21/89/7b2189fd1c72017666d42baff1f314f4.webp",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

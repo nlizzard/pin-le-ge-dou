@@ -1,0 +1,37 @@
+{
+  "key": "pinterest-rec-1109926270672716074",
+  "name": "趴趴小黑狗",
+  "palette": {
+    "A": "#757575",
+    "B": "#f8b85e",
+    "C": "#4ecbca",
+    "D": "#323433"
+  },
+  "rows": [
+    "CCCCDDDCCDDDDDDDCCDDDCCCC",
+    "CCCDAAADDAAAAAAADDAAADCCC",
+    "CCDAAADAAAAAAAAAAADAAADCC",
+    "CDAAADAAAAAAAAAAAAADAAADC",
+    "CDAAADAAABBAAABBAAADAAADC",
+    "CDAADAAAAAAAAAAAAAAADAADC",
+    "CCDDDAAADDAAAAADDAAADDDCC",
+    "CCCCDAAADDABBBADDAAADCCCC",
+    "CCCDAAABBBBDDDBBBBAAADCCC",
+    "CCCDAABBBBBDDDBBBBBAADCCC",
+    "CCCDAABBBBBBDBBBBBBAADCCC",
+    "CCCDADDDDBBBBBBBDDDDADCCC",
+    "CCCCDBBBBDBBBBBDBBBBDCCCC",
+    "DDDDDBBBBDDDDDDDBBBBDDDDD",
+    "CCCCCDDDDCCCCCCCDDDDCCCCC"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/1109926270672716074/",
+    "image": "https://i.pinimg.com/originals/31/ae/9a/31ae9a5e42644720b3f4a9365af813f5.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

@@ -29,7 +29,7 @@ def pitch_profile(a, axis):
     trials=np.arange(max(2.8,pitch-.25),pitch+.251,.01)
     pitch=max(trials,key=lambda t:coherence(t)[0]);amp,phase=coherence(pitch)
     confidence=amp/(float(centered.sum())+1e-9)
-    return {'pitch':float(pitch),'phase':phase,'confidence':confidence,'candidates':candidates[:4]},p
+    return {'pitch':float(pitch),'phase':phase,'confidence':confidence,'candidates':candidates},p
 
 if __name__=='__main__':
  assets=json.loads((ROOT/'assets.json').read_text('utf8'))
@@ -74,7 +74,7 @@ def component_cleanup(grid, largest_only=False):
             for y,x in c:grid[y,x]=-1
     return grid
 
-def pattern_from_cells(cells, name, key, keep=False, largest_only=False):
+def pattern_from_cells(cells, name, key, keep=False, largest_only=False, trim=False):
     im=Image.fromarray(cells).quantize(colors=24,method=Image.Quantize.MEDIANCUT)
     labels=np.array(im); pal=np.array(im.getpalette(),np.uint8).reshape(-1,3)
     counts=np.bincount(labels.ravel(),minlength=len(pal)); order=np.argsort(-counts)
@@ -88,6 +88,38 @@ def pattern_from_cells(cells, name, key, keep=False, largest_only=False):
         if nearest is None:nearest=len(colors);colors.append(color)
         mapping[int(i)]=nearest
     grid=np.array([[mapping[int(c)] for c in row] for row in labels],np.int16)
+    if trim:
+        # Crop the motif as a rectangle. Open white outlines remain white instead
+        # of being flood-filled away along with the paper background.
+        border=np.r_[grid[0],grid[-1],grid[:,0],grid[:,-1]];bg=np.bincount(border).argmax()
+        near={i for i,c in enumerate(colors) if np.linalg.norm(c-colors[bg])<52}
+        mask=~np.isin(grid,list(near));visited=np.zeros(mask.shape,bool);components=[]
+        h,w=mask.shape
+        for yy,xx in np.argwhere(mask):
+            if visited[yy,xx]:continue
+            q=[(int(yy),int(xx))];visited[yy,xx]=True;points=[]
+            while q:
+                y,x=q.pop();points.append((y,x))
+                for dy,dx in [(0,1),(0,-1),(1,0),(-1,0),(1,1),(1,-1),(-1,1),(-1,-1)]:
+                    ny,nx=y+dy,x+dx
+                    if 0<=ny<h and 0<=nx<w and mask[ny,nx] and not visited[ny,nx]:visited[ny,nx]=True;q.append((ny,nx))
+            components.append(np.array(points))
+        if components:
+            chunky=[c for c in components if np.all(c.max(axis=0)-c.min(axis=0)+1>=3)]
+            main=max(chunky or components,key=len);lo,hi=main.min(axis=0),main.max(axis=0)+1
+            chosen=[]
+            for c in components:
+                clo,chi=c.min(axis=0),c.max(axis=0)+1;ch,cw=chi-clo
+                # Separate header rules, colour-key bars and ruler columns are
+                # annotations, not part of the recovered picture.
+                horizontal=ch<=max(2,h*.055) and cw>w*.28 and (chi[0]<=lo[0]+1 or clo[0]>=hi[0]-1)
+                vertical=cw<=max(2,w*.04) and ch>h*.28 and (chi[1]<=lo[1]+1 or clo[1]>=hi[1]-1)
+                frame=c is not main and len(c)/(ch*cw)<.15 and ch>h*.7 and cw>w*.7
+                if len(c)>=max(4,len(main)*.025) and not (horizontal or vertical or frame):chosen.append(c)
+            if not chosen:chosen=[main]
+            pts=np.concatenate(chosen);lo,hi=pts.min(axis=0),pts.max(axis=0)+1
+            grid=grid[lo[0]:hi[0],lo[1]:hi[1]]
+        keep=True
     if not keep:
         border=np.r_[grid[0],grid[-1],grid[:,0],grid[:,-1]];bg=np.bincount(border).argmax()
         # Only remove the edge-connected background, preserving enclosed white details.
@@ -123,6 +155,25 @@ def convert(file,name,key,spec=None):
         x,y,w,h=spec['crop'];W,H=img.size;img=img.crop((round(x*W),round(y*H),round((x+w)*W),round((y+h)*H)))
     img.thumbnail((1600,1600));arr=np.array(img)
     x,_=pitch_profile(arr,1);y,_=pitch_profile(arr,0)
+    reliable_initial=x and y and min(x['confidence'],y['confidence'])>.58 and abs(x['pitch']/y['pitch']-1)<.16
+    if spec.get('recover') and x and y and not reliable_initial and 'pitch' not in spec and 'grid' not in spec:
+        # Numbered charts often repeat digit strokes 2-3 times within a cell.
+        # Recover a shared X/Y cell period rather than sampling those harmonics.
+        pairs=[]
+        for px,ax in x['candidates']:
+            for py,ay in y['candidates']:
+                if abs(px/py-1)<.025 and min(ax/x['candidates'][0][1],ay/y['candidates'][0][1])>.30 and 3<px<min(img.size)/14:
+                    pairs.append((px+py)/2)
+        if pairs:
+            period=max(pairs)
+            def phase_at(axis):
+                _,profile=pitch_profile(arr,axis)
+                centered=np.maximum(profile-np.convolve(profile,np.ones(min(81,len(profile)))/min(81,len(profile)),mode='same'),0)
+                def strength(p):return abs(np.dot(centered,np.exp(-2j*np.pi*np.arange(len(profile))/p)))
+                p=max(np.arange(max(2.8,period-.15),period+.151,.01),key=strength)
+                z=np.dot(centered,np.exp(-2j*np.pi*np.arange(len(profile))/p))
+                return {'pitch':float(p),'phase':float((-np.angle(z)/(2*np.pi)*p)%p),'confidence':1}
+            x,y=phase_at(1),phase_at(0)
     if 'pitch' in spec:
         p=spec['pitch']
         def fixed(axis):
@@ -140,7 +191,7 @@ def convert(file,name,key,spec=None):
     else:
         size=spec.get('resize',48);scale=size/max(img.size)
         cells=np.array(img.resize((max(1,round(img.width*scale)),max(1,round(img.height*scale))),Image.Resampling.BOX));method='resample'
-    pattern=pattern_from_cells(cells,name,key,spec.get('keep',False),spec.get('largestOnly',False))
+    pattern=pattern_from_cells(cells,name,key,spec.get('keep',False),spec.get('largestOnly',False),spec.get('trim',False))
     return pattern,{'method':method,'x':x,'y':y,'sampleSize':[len(cells[0]),len(cells)]}
 
 def render(pattern,path,scale=8):

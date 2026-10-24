@@ -1,0 +1,45 @@
+{
+  "key": "pinterest-rec-770326711267734696",
+  "name": "复古游戏手柄",
+  "palette": {
+    "A": "#dddddd",
+    "B": "#ffffff",
+    "C": "#242424",
+    "D": "#4b4b4b",
+    "E": "#969696",
+    "F": "#fa3402",
+    "G": "#3301f9",
+    "H": "#66cb08",
+    "I": "#fccd37"
+  },
+  "rows": [
+    "BBBBCCCCCBBBBBBBBBBCCCCCBBBB",
+    "BBBCAAAAACCCCCCCCCCAAAAACBBB",
+    "BBCAACCCAAAAAAAAAAAAAIIAACBB",
+    "BCAACDDDCAAAACCAAAAAAIIAAACB",
+    "BCAACDDDCACACEECACAGGAAFFACB",
+    "BCAACDDDCAAACEECAAAGGAAFFACB",
+    "BCAAACCCAAAAACCAAAAAAHHAAACB",
+    "BCAAAAAAACCCAAAACCCAAHHAAACB",
+    "BCAAAAAACDCDCAACDDDCAAAAAACB",
+    "BCAAAAAACCCCCAACDDDCAAAAAACB",
+    "BCAAAAAACDCDCAACDDDCAAAAAACB",
+    "CAAAAAAAACCCAAAACCCAAAAAAAAC",
+    "CAAAAAAAAAAAAAAAAAAAAAAAAAAC",
+    "CAAAAAACCCCCCCCCCCCCCAAAAAAC",
+    "CAAAAACBBBBBBBBBBBBBBCAAAAAC",
+    "CAAAACBBBBBBBBBBBBBBBBCAAAAC",
+    "CAAACBBBBBBBBBBBBBBBBBBCAAAC",
+    "BCCCBBBBBBBBBBBBBBBBBBBBCCCB"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/770326711267734696/",
+    "image": "https://i.pinimg.com/originals/91/bc/f0/91bcf0c5f95534a3decb139de727dac6.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

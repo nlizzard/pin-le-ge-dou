@@ -1,0 +1,43 @@
+{
+  "key": "pinterest-rec-408912841181586574",
+  "name": "花朵爱心",
+  "palette": {
+    "A": "#808080",
+    "B": "#ffffff",
+    "C": "#f5aac8",
+    "D": "#e6306b"
+  },
+  "rows": [
+    "AAAAAAAAACCCAAAAAAAAA",
+    "AAAAAAAACBBBCAAAAAAAA",
+    "AAACCCAACBBBCAACCCAAA",
+    "AACBBBCACBBBCACBBBCAA",
+    "AACBBBBCBBBBBCBBBBCAA",
+    "AACBBBBBCBBBCBBBBBCAA",
+    "AAACBBBBCBBBCBBBBCAAA",
+    "AAAACBBBBDDDBBBBCAAAA",
+    "ACCCBCCBDDDDDBCCBCCCA",
+    "CBBBBBBDDDDDDDBBBBBBC",
+    "CBBBBBBDDDDDDDBBBBBBC",
+    "CBBBBBBDDDDDDDBBBBBBC",
+    "ACCCBCCBDDDDDBCCBCCCA",
+    "AAAACBBBBDDDBBBBCAAAA",
+    "AAACBBBBCBBBCBBBBCAAA",
+    "AACBBBBBCBBBCBBBBBCAA",
+    "AACBBBBCBBBBBCBBBBCAA",
+    "AACBBBCACBBBCACBBBCAA",
+    "AAACCCAACBBBCAACCCAAA",
+    "AAAAAAAACBBBCAAAAAAAA",
+    "AAAAAAAAACCCAAAAAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/408912841181586574/",
+    "image": "https://i.pinimg.com/originals/d6/0f/5f/d60f5f5725bf08940af058d08bc46926.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "key": "pinterest-rec-326018460498063364",
+  "name": "惊讶崔弟",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#ffff02",
+    "C": "#ff7802",
+    "D": "#181818",
+    "E": "#0281ff"
+  },
+  "rows": [
+    "AAAABBBBBBBAAAA",
+    "AAABBDBBBDBBAAA",
+    "AABDBBDBDBBDBAA",
+    "AABBDAABAADBBAA",
+    "AABBAAABAAABBAA",
+    "AABBAAABAAABBAA",
+    "AABBAEEBEEABBAA",
+    "AAABAEDBDEABAAA",
+    "AABBAEDBDEABBAA",
+    "AABBBBBCBBBBBAA",
+    "AAAABBBBBBBAAAA",
+    "AAAAAABBBAAAAAA",
+    "AAAAABBBBBAAAAA",
+    "ACCCBBBBBBBCCCA",
+    "CCCCCBBBBBCCCCC",
+    "CCCCCCBBBCCCCCC"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/326018460498063364/",
+    "image": "https://i.pinimg.com/originals/f1/28/c4/f128c4b343b16f8f38c3b324bdb2d0ee.png",
+    "title": "Hama Beads",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

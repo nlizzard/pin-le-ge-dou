@@ -1,0 +1,35 @@
+{
+  "key": "pinterest-rec-1039909370188615995",
+  "name": "狐狸头像",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#fa7e42",
+    "C": "#e5eaee",
+    "D": "#181818"
+  },
+  "rows": [
+    "AAADAAAAAAADAAC",
+    "AADADAAAAADADAA",
+    "AADABDAAADBADAA",
+    "AADABBDDDBBADAA",
+    "AADADDBBBDDADAA",
+    "AADDBBBBBBBDDAA",
+    "AADBBBBBBBBBDAA",
+    "AADBDBBBBBDBDAA",
+    "ADBBDBDDDBDBBDA",
+    "ADBBBBADABBBBDA",
+    "DBBBBAAAAABBBBD",
+    "ADDBAAAAAAABDDA",
+    "AAADDDDDDDDDAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/1039909370188615995/",
+    "image": "https://i.pinimg.com/originals/e2/ea/40/e2ea40b5fe9251f1e22dba9d1f540ee0.jpg",
+    "title": "Pixel art (3)",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

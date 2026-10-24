@@ -1,0 +1,42 @@
+{
+  "key": "pinterest-rec-613193305508075513",
+  "name": "小四叶草",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#181818",
+    "C": "#069806",
+    "D": "#94b80f"
+  },
+  "rows": [
+    "AAAAAAAABBBAAAAAAA",
+    "AAAAAABBDDDBAAAAAA",
+    "AAAABBDDDDCBAAAAAA",
+    "AAABDDDDDDCBABBBAA",
+    "AAABDDDCBCCBBDDDBA",
+    "AAAABDDCBCBDDDDDBA",
+    "AAABBBBDCCBDCCDDBA",
+    "ABBDDDBDCBDDBBDDBB",
+    "BDDDCCDBBBDDDDDDCB",
+    "BDDCBBDCBBBCCCCCCB",
+    "BDDBDDCCBDDBBBBBBA",
+    "ABDDDDCBDDDDDBAAAA",
+    "AABDCCCBDDDDDDBAAA",
+    "AABBBBBDDCBDDDDBAA",
+    "AAAAABBDDCBDDDCBAA",
+    "AAAAABBBDDDDCCCBAA",
+    "AAAABBABCCCCCBBAAA",
+    "AAABBAAABBBBBAAAAA",
+    "ABBBAAAAAAAAAAAAAA",
+    "ABBAAAAAAAAAAAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/613193305508075513/",
+    "image": "https://i.pinimg.com/originals/ee/b4/98/eeb4985644efd961208a276d58350514.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

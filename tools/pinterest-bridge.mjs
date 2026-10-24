@@ -21,9 +21,10 @@ http.createServer(async (req,res)=>{
  let body='';try{
   for await(const chunk of req){body+=chunk;if(body.length>2_000_000)throw new Error('清单过大');}
   const data=JSON.parse(new URLSearchParams(body).get('payload')||'null');
-  if(!Array.isArray(data?.pins)||data.pins.length>1000)throw new Error('图案清单无效');
+  if(!Array.isArray(data?.pins)||data.pins.length>2000)throw new Error('图案清单无效');
   for(const p of data.pins){if(new URL(p.href).hostname!=='jp.pinterest.com')throw new Error('来源无效');for(const img of p.images||[]){if(new URL(img.src).hostname!=='i.pinimg.com')throw new Error('图片地址无效');}}
-  await mkdir(new URL('.',target),{recursive:true});await writeFile(target,JSON.stringify(data,null,2)+'\n');
+  const output=data.scope==='recommendations'?new URL('../art/pinterest-recommendations/manifest.json',import.meta.url):target;
+  await mkdir(new URL('.',output),{recursive:true});await writeFile(output,JSON.stringify(data,null,2)+'\n');
   res.writeHead(200,{'content-type':'text/html;charset=utf-8'});res.end(`<meta charset="utf-8"><title>图案清单已保存</title><h1>图案清单已保存</h1><p>已保存 ${data.pins.length} 张 Pin 图的来源与图片信息。</p>`);
  }catch(e){res.writeHead(400,{'content-type':'text/plain;charset=utf-8'});res.end(e.message);}
 }).listen(5186,'127.0.0.1',()=>console.log('Pinterest board manifest bridge: http://127.0.0.1:5186/'));

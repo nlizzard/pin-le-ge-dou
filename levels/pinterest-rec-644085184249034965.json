@@ -1,0 +1,39 @@
+{
+  "key": "pinterest-rec-644085184249034965",
+  "name": "黑色凯蒂猫",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#201f1d"
+  },
+  "rows": [
+    "AAAAAAAAAAAAAABBAAAAAAAAAA",
+    "AAAAABBBAAAAABAABABBBAAAAA",
+    "AAAABAAABBBBBABBABAAABAAAA",
+    "AAABABBBAAAAABBBBABBBABAAA",
+    "AAABABBBBBBBABBBAAABBABAAA",
+    "AAABABBBBBBBABBABBBAAABAAA",
+    "AAAABABBBBBBBAAABBBABBABAA",
+    "AAABABBBBBBBBBBBAAABBBABAA",
+    "AAABABBBBBBBBBBBBBABBABAAA",
+    "ABBABBBBBBBBBBBBBBBAABABBA",
+    "BAAAABBBBBBBBBBBBBBBBAAAAB",
+    "ABBABBBBABBBBBBBBABBBBABBA",
+    "ABAAABBBABBBBBBBBABBBAAABA",
+    "AABBAABBBBBBAABBBBBBAABBAA",
+    "AABAABBBBBBBBBBBBBBBBAABAA",
+    "AAABBABBBBBBBBBBBBBBABBAAA",
+    "AAAAABAABBBBBBBBBBAABAAAAA",
+    "AAAAAABBAAAAAAAAAABBAAAAAA",
+    "AAAAAAAABBBBBBBBBBAAAAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/644085184249034965/",
+    "image": "https://i.pinimg.com/originals/d2/d9/73/d2d9732e0d410e93a7cd0a81757242ba.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

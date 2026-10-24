@@ -1,0 +1,41 @@
+{
+  "key": "pinterest-rec-687643436891533775",
+  "name": "挥手史迪奇",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#2782fb",
+    "C": "#b9fdfc",
+    "D": "#fb30b1",
+    "E": "#213551",
+    "F": "#02109c"
+  },
+  "rows": [
+    "AAAAAAABBBBBBAAAAAAA",
+    "AAAAAABBBBBBBBAAAAAA",
+    "AAAAABBBBBBBBBBAAAAA",
+    "AAAABBCBBBBBBCBBAAAA",
+    "AAAABCCBBBBBBCCBAAAA",
+    "AAABCEECBBBBCEECBAAA",
+    "AAABCEACBFFBCAECBAAA",
+    "AABDCEECFFFFCEECDBAA",
+    "ABDDBCCBFFFFBCCBDDBA",
+    "BDDDCBBBBBBBBBBCDDDB",
+    "BDDBACCCCCCCCCCABDDB",
+    "ABBAAABBBBBBBBAAABBA",
+    "AAAAABBBCCCCBBBAAAAA",
+    "AAAAABBCCCCCCBBAAAAA",
+    "AAAAAAABCCCCBAAAAAAA",
+    "AAAAAAABBCCBBAAAAAAA",
+    "AAAAAABBBBBBBBAAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687643436891533775/",
+    "image": "https://i.pinimg.com/originals/6b/a2/22/6ba222451488a528d1f61d21ecbb816b.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

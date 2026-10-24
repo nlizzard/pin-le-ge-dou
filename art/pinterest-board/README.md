@@ -8,6 +8,8 @@
 
 每关保存原 Pin、原图地址、中文名和转换方式。授权信息按页面实际情况记录为「来源网页未标注授权」，没有把 Pinterest 收藏标成 CC0。实物照片采用近似像素化；图纸优先识别原始格点。逐项结果见 `import-report.json`，包含重复、跳过、拆图和照片近似转换记录。
 
+后续扩充到1000关时，按用户要求移除了其中1张旗帜图案，首批现保留235张。该位置由新图案替换，其余关卡编号不变。排除记录见 `exclusions.json`；推荐区扩充说明见 [../pinterest-recommendations/README.md](../pinterest-recommendations/README.md)。
+
 ## 复现
 
 - `manifest.json`：从用户已登录浏览器的可见 DOM 采集的收藏板清单，不含登录信息。

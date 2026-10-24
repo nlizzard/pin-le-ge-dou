@@ -38,6 +38,19 @@ class GridRecoveryTests(unittest.TestCase):
         self.assertEqual(len(p['rows']), 5)
         self.assertEqual(p['palette'][p['rows'][2][2]], '#ffffff')
 
+    def test_chart_trim_keeps_diagonal_outline_and_removes_separate_colour_key(self):
+        pixels = np.full((24, 22, 3), 255, dtype=np.uint8)
+        # The head and cheeks meet diagonally, as they commonly do in bead charts.
+        for y, x in [(3, 8), (3, 9), (3, 10), (4, 7), (4, 11), (5, 6), (5, 12),
+                     (6, 6), (6, 12), (7, 7), (7, 11), (8, 8), (8, 9), (8, 10)]:
+            pixels[y, x] = [24, 24, 24]
+        pixels[19:21, 2:19] = [210, 40, 90]  # The colour key is not part of the face.
+        p = grid.pattern_from_cells(pixels, 'face', 'face', keep=True, trim=True)
+        self.assertEqual(len(p['rows']), 6)
+        self.assertEqual(max(map(len, p['rows'])), 7)
+        self.assertIn('#ffffff', p['palette'].values())
+        self.assertNotIn('#d2285a', p['palette'].values())
+
 
 if __name__ == '__main__':
     unittest.main()

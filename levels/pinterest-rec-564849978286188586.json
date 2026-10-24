@@ -1,0 +1,42 @@
+{
+  "key": "pinterest-rec-564849978286188586",
+  "name": "圆眼波加曼",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#181818",
+    "C": "#1c70ca",
+    "D": "#86d1f0",
+    "E": "#feb529"
+  },
+  "rows": [
+    "AAAAABBBBBBAAAAA",
+    "AAABBCCCCCCBBAAA",
+    "AABCCCCCCCCCCBAA",
+    "ABCCCCCCCCCCCCBA",
+    "ABCAACCCCCCAACBA",
+    "ABAAAACCCCAAAABA",
+    "ABAABADDDDABAABA",
+    "ABAABADEEDABAABA",
+    "ABAAAAEEEEAAAABA",
+    "AABAAAAEEAAAABAA",
+    "ABBBCAAAAAACBBBA",
+    "BDDBCCCCCCCCBDDB",
+    "BDDDBBBDDBBBDDDB",
+    "ABBDDAADDAADDBBA",
+    "AABDDAADDAADDBAA",
+    "AABDDDDDDDDDDBAA",
+    "AAABDDDDDDDDBAAA",
+    "AABEEEBBBBEEEBAA",
+    "AABBBBBAABBBBBAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/564849978286188586/",
+    "image": "https://i.pinimg.com/originals/1e/e8/6b/1ee86bffcc3d5257af8f6030baf9835f.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "key": "pinterest-rec-569212840381741736-08",
+  "name": "幸运关爱小熊",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#8fc548",
+    "C": "#23841d",
+    "D": "#204d14"
+  },
+  "rows": [
+    "ACBBBCBBBBBBBBBCBBBCA",
+    "ACBBCBBBBBBBBBBBCBBCA",
+    "AACCBBBBBBBBBBBBBCCAA",
+    "AAACBBBADBBBDABBBCAAA",
+    "AAACBBBDDBBBDDBBBCAAA",
+    "AACBBBBDDBBBDDBBBBCAA",
+    "ACBBBBAAADDDAAABBBBCA",
+    "ACBBBBAAAADAAAABBBBCA",
+    "ACBBBBAADADADAABBBBCA",
+    "ACBBBBBAADDDAABBBBBCA",
+    "AACBBBBBAAAAABBBBBCAA",
+    "AAACCBBBBBBBBBBBCCAAA",
+    "AAAAACCCBBBBBCCCAAAAA",
+    "AACCCCBBCCCCCBBCCCCAA",
+    "ACBBCBBBAAAAABBBCBBCA",
+    "CBBCBBBAACACAABBBCBBC",
+    "CBBCBBAACCACCAABBCBBC",
+    "CBBCBBACCCCCCCABBCBBC",
+    "CBBCBBAAACCCAAABBCBBC",
+    "CBBCBBACCCCCCCABBCBBC",
+    "ACBCBBAACCACCAABBCBCA",
+    "AACCBBBAACACAABBBCCAA",
+    "AAAACBBBAAAAABBBCAAAA",
+    "AAAAACBBBBBBBBBCAAAAA",
+    "AAAAACBBBBCBBBBCAAAAA",
+    "AAAAACBBBBCBBBBCAAAAA",
+    "AAACCCCBBBCBBBCCCCAAA",
+    "AACBBBBBBBCBBBBBBBCAA",
+    "AACBBBBBBBCBBBBBBBCAA",
+    "AACBBBBBBBCBBBBBBBCAA",
+    "AAACCCCCCCACCCCCCCAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/569212840381741736/",
+    "image": "https://i.pinimg.com/originals/f0/9b/1b/f09b1bf2a69b2ec2f59b88f7c7538fda.jpg",
+    "title": "Care Bears Pixel Graph.",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "key": "pinterest-rec-52495151881075486",
+  "name": "死侍头像",
+  "palette": {
+    "A": "#cc0000",
+    "B": "#ffffff",
+    "C": "#181818"
+  },
+  "rows": [
+    "BBBAAAABBB",
+    "BAAAAAAAAB",
+    "AAAAAAAAAA",
+    "ACAAAAAACA",
+    "ACCAAAACCA",
+    "ACBCCCCBCA",
+    "ACBBCCBBCA",
+    "AACCAACCAA",
+    "AAAAAAAAAA",
+    "BAAAAAAAAB",
+    "BBAAAAAABB",
+    "BBBAAAABBB"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/52495151881075486/",
+    "image": "https://i.pinimg.com/originals/b6/36/67/b63667b8462b37ba3b52f27600b14fe2.gif",
+    "title": "Spiderman mask",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

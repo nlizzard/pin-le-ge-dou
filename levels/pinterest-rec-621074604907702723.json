@@ -1,0 +1,43 @@
+{
+  "key": "pinterest-rec-621074604907702723",
+  "name": "狐狸坐姿",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#fe6b06",
+    "C": "#622a02",
+    "D": "#fedcbd",
+    "E": "#271101",
+    "F": "#bf8862"
+  },
+  "rows": [
+    "AACAAAAAAAAACAAAAA",
+    "ACCCAAAAAAACCCAAAA",
+    "ACFCCAAAAACCFCAAAA",
+    "ACFFCBBBBBCFFCAAAA",
+    "ACFBBBBBBBBBFCAAAA",
+    "AABBBBBBBBBBBAAAAA",
+    "AABBBBBBBBBBBAAAAA",
+    "ABBBDBBBBBDBBBAAAA",
+    "BBBDEABBBAEDBBBAAA",
+    "ADDDEEBBBEEDDDAAAA",
+    "AADDDDEEDDDDDAAAAD",
+    "AAAADDDEDDDAAAADDD",
+    "AAAABDDDDDBAAABDDD",
+    "AAAABBDDDBBAABBBDD",
+    "AAABBBBDBBBBABBBBB",
+    "AAABBBBDBBBBBBBBBB",
+    "AAABBCBBBCBBBBBBBA",
+    "AACCBCCBCCBCCBBBAA",
+    "AACCCCEBECECCBBAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/621074604907702723/",
+    "image": "https://i.pinimg.com/originals/96/66/db/9666db663c8c644e31c71995efd1350c.png",
+    "title": "Лисёнок",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

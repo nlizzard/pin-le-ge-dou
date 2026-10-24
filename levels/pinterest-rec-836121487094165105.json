@@ -1,0 +1,37 @@
+{
+  "key": "pinterest-rec-836121487094165105",
+  "name": "黑粉双心",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#ff2d95",
+    "C": "#211f1d"
+  },
+  "rows": [
+    "AAAAAAAAABBBAAABBBAA",
+    "AAAAAAAABBBBBABBBBBA",
+    "AAAAAAABBBAABBBAABBB",
+    "AAAAAAABBAAAABAAAABB",
+    "AACCCAABCCCAAAAAAABB",
+    "ACCCCCACCCCCAAAAAABB",
+    "CCCAACCCBBCCCAAAABBA",
+    "CCAAAACAABBCCAAABBAA",
+    "CCAAAAAAAABBCAABBAAA",
+    "CCAAAAAAAAABBABBAAAA",
+    "ACCAAAAAAACCBBBAAAAA",
+    "AACCAAAAACCAABAAAAAA",
+    "AAACCAAACCAAAAAAAAAA",
+    "AAAACCACCAAAAAAAAAAA",
+    "AAAAACCCAAAAAAAAAAAA",
+    "AAAAAACAAAAAAAAAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/836121487094165105/",
+    "image": "https://i.pinimg.com/originals/a2/97/e7/a297e7c99f69d45d741d8646625988ef.png",
+    "title": "Pink and Black Heart",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

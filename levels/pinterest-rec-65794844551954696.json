@@ -1,0 +1,39 @@
+{
+  "key": "pinterest-rec-65794844551954696",
+  "name": "简笔小熊",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#181818",
+    "C": "#394d5b"
+  },
+  "rows": [
+    "AAAAAAAAAAAAAAAABBA",
+    "ABBBAABBBBBBBAABAAB",
+    "BAAABBAAAAAAABBABBA",
+    "ABBBAAAAAAAAAAABAAA",
+    "AAABABBAAAAABBABAAA",
+    "AABAAAAAAAAAAAAABAA",
+    "AABAAABAAAAABAAABAA",
+    "AABAAAAABBBAAAAABAA",
+    "AABAAAAAAAAAAAAABAA",
+    "AAABAAAAAAAAAAABAAA",
+    "AAAABBAAAAAAABBAAAA",
+    "ABAAABCCCCCCCBAAAAA",
+    "BABABAAAAAAAABAAAAA",
+    "BAABBAAAAAAAABAAAAA",
+    "ABBAAAABAABAABAAAAA",
+    "AABAAAABAABAABAAAAA",
+    "AAABAAAABABAABAAAAA",
+    "AAAABBBBBBBBBAAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/65794844551954696/",
+    "image": "https://i.pinimg.com/originals/b7/c7/7f/b7c77f49d44f931c17ca62429400b374.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

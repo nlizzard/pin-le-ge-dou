@@ -1,0 +1,49 @@
+{
+  "key": "pinterest-rec-398709373277490503",
+  "name": "粉色双樱桃",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#f9c2d6",
+    "C": "#f77fb1",
+    "D": "#f02c8c",
+    "E": "#739f27",
+    "F": "#e0dfc2"
+  },
+  "rows": [
+    "AAAAAAAAAAAAAAAAEEEAAAAAA",
+    "AAAAAAAAAAAAAAEEFFFEAAAAA",
+    "AAAAAAAAAAAAAEAEFFFFEAAAA",
+    "AAAAAAAAAAAAAEEEFFFFEAAAA",
+    "AAAAAAAAAAAAEAEAEEFEEEAAA",
+    "AAAAAAAAAAAEAAEAAEFFFEAAA",
+    "AAAAAAAAAAEAAAEAAAEEEFEAA",
+    "AAAAAAAAAAEAAAAEAAAEEEAAA",
+    "AAAAAAAAAEAAAAAEAAAAAAAAA",
+    "AAAADDDAAEAAAAAEAAAAAAAAA",
+    "AADDBBBDDEAAAAAAEAAAAAAAA",
+    "ADBBBBBBDEDDADDAEADDDAAAA",
+    "ADBABBBDDDBBDBBDDDBBBDDAA",
+    "DBAAABBBBBDDBBDBDBDBBBBDA",
+    "DBCACCCCCCDBABBDDDBBBBBDA",
+    "DBCCCCCCCDBAAABBBBBBCCCCD",
+    "DBCCCCCCCDBCABBBBBBCCCCCD",
+    "DBCCCCCCCDBCCAACCCCCCCCCD",
+    "DBCCCCCCCDBCCCCCCCCCCCAAD",
+    "ADBCCCCCCDBCCCCCCCCCCAACD",
+    "ADBCCCCBBCDBCCCCCCCCCACDA",
+    "AADBCCBCCCDBCCCCCCCAAACDA",
+    "AAADCCCCDDADBCCCCCCACCDAA",
+    "AAAADDDDAAAADDCCCCCCDDAAA",
+    "AAAAAAAAAAAAAADDDDDDAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/398709373277490503/",
+    "image": "https://i.pinimg.com/originals/a9/2b/0c/a92b0cf58a5d8e4077fedebae983351f.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "key": "pinterest-rec-588775351320334631",
+  "name": "鸣人头像",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#ece570",
+    "C": "#f5e4ca",
+    "D": "#181818",
+    "E": "#d5be94",
+    "F": "#eed694"
+  },
+  "rows": [
+    "AAAAAAADAAADAAAAAAA",
+    "AAADAADBDADBDAADAAA",
+    "AADBDDBBDADBBDDBDAA",
+    "AADBBDBBBDBBBDBBDAA",
+    "AADBBBBBBBBBBBBBDAA",
+    "ADDBBBBBBBBBBBBBDDA",
+    "DBBBBBBBBBBBBBBBBBD",
+    "ADBBBBBBBBBBBBBBBDA",
+    "AADBEDDDDDDDDDBBDAA",
+    "ADBEDDDEEEEEDDDBBDA",
+    "ADEDDDDEEEEEDDDDBDA",
+    "ADDDDDDDDDDDDDDDDDA",
+    "AADBECCCCCCCCCBFDAA",
+    "AADBCCDCCCCCDCCBDAA",
+    "AADBCCDCCCCCDCCBDAA",
+    "AAADDEECCCCCEEDDAAA",
+    "AAAAADDDDDDDDDAAAAA",
+    "AAAEAAADDDDDAAAAAAA",
+    "AAAAAADEEDEEDAAAAAA",
+    "AAAAADCEEDEECDAAAAA",
+    "AAAAAADDDDDDDAAAAAA",
+    "AAAAAAADEDEDAAAAAAA",
+    "AAAAAAADCDCDAAAAAAA",
+    "AAAAAAAADADAAAAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/588775351320334631/",
+    "image": "https://i.pinimg.com/originals/ff/b7/5b/ffb75b5d7a08706a51297d2d2de8565c.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

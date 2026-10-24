@@ -1,0 +1,51 @@
+{
+  "key": "pinterest-rec-662240320253677881",
+  "name": "奶牛装小熊",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#181818",
+    "C": "#464445",
+    "D": "#f6c8cb",
+    "E": "#d7c9b6",
+    "F": "#b69f8b"
+  },
+  "rows": [
+    "AAAAABAAAAAAAAABAAAAA",
+    "AAAABDBAAAAAAABDBAAAA",
+    "AAAABFFBAAAAABFFBAAAA",
+    "AAAABEEFBBBBBFEEBAAAA",
+    "AAABCBFAACCCCCFBCBAAA",
+    "ABBCCCAAAACCCCCCCCBBA",
+    "BCCDBAAAAACCCCCCBDCCB",
+    "BDDBAAAAAAACCCCCCBDDB",
+    "ABBBAAAAAAAACCCCCBBBA",
+    "AAABCAABAAAAABCCCBAAA",
+    "AABCCAABAAAAABACCCBAA",
+    "AABCCAAADDDDDAAAACBAA",
+    "AABCAAADDFDFDDAAAABAA",
+    "AAABAAAADDDDDAAAABAAA",
+    "AAAABAAAAAAAAAAABAAAA",
+    "AAAAABCCCAAAAAABAAAAA",
+    "AAAABCCCCCAAAAAABAAAA",
+    "AAABBCCCCAAAAAACBBAAA",
+    "AABABCCCAABAAACCBABAA",
+    "AABEABAAAABAAACBAEBAA",
+    "AABEABAAAABAAAABAEBAA",
+    "AABEAABEDEBEDEBAAEBAA",
+    "AAABBBBBBBBBBBBBBBAAA",
+    "AAAAAAAAAAAAAAAAAAAAA",
+    "AAAAAAAAAAAAAAAAAAAAA",
+    "AAABBACADDAEEFFADDAAA",
+    "AAABBACADDAEEAFADDAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/662240320253677881/",
+    "image": "https://i.pinimg.com/originals/ac/b9/98/acb9981d6e7207e848ad5ffc8a85e279.webp",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

@@ -5,9 +5,12 @@ import { mulberry32 } from '../client/src/core/rng';
 
 // 全图案目录只生成一遍；每个用例拿独立副本，避免反复运行大图解题模拟。
 const levelFixtures = new Map<number, LevelDef>();
-beforeAll(() => {
-  for (let id = 1; id <= LEVEL_COUNT + 3; id++) levelFixtures.set(id, generateLevel(id));
-}, 30000);
+beforeAll(async () => {
+  for (let id = 1; id <= LEVEL_COUNT + 3; id++) {
+    levelFixtures.set(id, generateLevel(id));
+    if (id % 25 === 0) await new Promise(resolve => setTimeout(resolve, 0));
+  }
+}, 180000);
 function buildLevel(id: number): LevelDef {
   return structuredClone(levelFixtures.get(id) ?? generateLevel(id));
 }
@@ -151,16 +154,17 @@ describe('levels', () => {
     expect(wins / runs).toBeLessThan(0.03);
   });
 
-  it('smart play always wins without bursting', () => {
-    // 全量 200 关 + 越界 3 关（图案循环）都要能被聪明玩法通关
+  it('smart play always wins without bursting', async () => {
+    // 全量目录 + 越界3关（图案循环）都要能被聪明玩法通关。
     for (let id = 1; id <= LEVEL_COUNT + 3; id++) {
       const g = new Game(buildLevel(id));
       playSmart(g);
       expect(g.state, `level ${id}`).toBe('won');
       expect(g.slots.length).toBe(0);
       expect(g.stars()).toBeGreaterThanOrEqual(1);
+      if (id % 25 === 0) await new Promise(resolve => setTimeout(resolve, 0));
     }
-  }, 30000);
+  }, 180000);
 });
 
 describe('rules', () => {
@@ -368,7 +372,7 @@ describe('props', () => {
 });
 
 describe('special tiles', () => {
-  it('levels from 4 on get elements, and every level stays solvable', () => {
+  it('levels from 4 on get elements, and every level stays solvable', async () => {
     const defs = withElements();
     const kinds = { ice: 0, star: 0, fog: 0, lock: 0, bomb: 0 };
     for (const d of defs) {
@@ -380,13 +384,14 @@ describe('special tiles', () => {
       const g = new Game(d);
       playSmart(g);
       expect(g.state, `level ${d.id}`).toBe('won');
+      if (d.id % 25 === 0) await new Promise(resolve => setTimeout(resolve, 0));
     }
     for (const v of Object.values(kinds)) expect(v).toBeGreaterThan(0);
     for (let id = 1; id <= 3; id++) {
       const e = buildLevel(id).elements;
       expect(e.ice.length + e.star.length + e.fog.length + e.bombs.length + (e.lock ? 1 : 0)).toBe(0);
     }
-  }, 30000);
+  }, 180000);
 
   it('ice needs two taps; lock blocks until its colour is complete', () => {
     const d = withElements().find((x) => x.elements.ice.length)!;

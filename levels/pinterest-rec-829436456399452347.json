@@ -1,0 +1,48 @@
+{
+  "key": "pinterest-rec-829436456399452347",
+  "name": "蓝色索尼克",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#181818",
+    "C": "#0270bf",
+    "D": "#cc0202",
+    "E": "#fac091"
+  },
+  "rows": [
+    "AABBBBBBBBBBBBAAABBAA",
+    "ABCCCCCCCCCCCCBBBCBAA",
+    "AABCCCBECCCCCCCCCCBAA",
+    "AAABCCBEECCCCCCCCCBAA",
+    "AAAABCBECCCCCCCCCCCBA",
+    "AAABCCCCCCCCAAACCCCBA",
+    "AABCCCCCCCCAAAAACCCBA",
+    "ABCCCCCCCCCAAAABCABAA",
+    "BBBBBBCCCCCAAAABCABAA",
+    "AAAABCCCCCCCAAABABBBA",
+    "AAABCCCCCEEEAAAAEEBAA",
+    "AABCCCCCCEEEEEEEEEBAA",
+    "ABBBBBBBBBEEEEEEEBAAA",
+    "AAAAAAAABEBBBBBBBBAAA",
+    "AAAAAAABEBBCEEEBBBBAA",
+    "AAAAAABEBAABEEEBAABAA",
+    "AAAAAABBAAAABEEBAABAA",
+    "AAAAAAABAAAABBEBABAAA",
+    "AAAAAAAABAABBCBBBBAAA",
+    "AAAAAAAAABBCBBBAAAAAA",
+    "AAAAAAAAABBCBDDBBAAAA",
+    "AAAAAAAABBDDBBDDABBAA",
+    "AAAAAAAABDDDADBBDDDBA",
+    "AAAAAAAABDDADDDDBDDDB",
+    "AAAAAAAABBBBBBBBBBBBB"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/829436456399452347/",
+    "image": "https://i.pinimg.com/originals/81/54/5a/81545a9febcd88ccb7a97133f6e06af0.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

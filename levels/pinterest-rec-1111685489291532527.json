@@ -1,0 +1,40 @@
+{
+  "key": "pinterest-rec-1111685489291532527",
+  "name": "黑色小恐龙",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#181818"
+  },
+  "rows": [
+    "AAAAAAAAAABBBBBBBBA",
+    "AAAAAAAAABBBBBBBBBB",
+    "AAAAAAAAABBABBBBBBB",
+    "AAAAAAAAABBBBBBBBBB",
+    "AAAAAAAAABBBBBBBBBB",
+    "AAAAAAAAABBBBBAAAAA",
+    "AAAAAAAAABBBBBBBBAA",
+    "BAAAAAAABBBBBAAAAAA",
+    "BAAAAAABBBBBBAAAAAA",
+    "BBAAABBBBBBBBBBAAAA",
+    "BBBABBBBBBBBBABAAAA",
+    "BBBBBBBBBBBBBAAAAAA",
+    "BBBBBBBBBBBBBAAAAAA",
+    "ABBBBBBBBBBBAAAAAAA",
+    "AABBBBBBBBBBAAAAAAA",
+    "AAABBBBBBBBAAAAAAAA",
+    "AAAABBBABBAAAAAAAAA",
+    "AAAABBAAABAAAAAAAAA",
+    "AAAABAAAABAAAAAAAAA",
+    "AAAABBAAABBAAAAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/1111685489291532527/",
+    "image": "https://i.pinimg.com/originals/1e/68/54/1e685477dedb0a9e91099a68fd1abd54.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

@@ -878,6 +878,10 @@ const HAND_DRAWN: Pattern[] = [
 const extraModules = import.meta.glob('../../../levels/*.json', { eager: true, import: 'default' }) as Record<string, Pattern & { source?: PatternSource }>;
 
 import { GENERATED_PATTERNS } from './generatedPatterns';
+import importedOrder from '../../../art/pinterest-recommendations/catalog-order.json';
+import exclusions from '../../../art/pinterest-board/exclusions.json';
+const orderIndex = new Map(importedOrder.map((key, index) => [key, index]));
+const excludedKeys = new Set(exclusions.map((entry) => entry.key));
 
 function valid(p: Pattern): boolean {
   return !!p && typeof p.key === 'string' && Array.isArray(p.rows) && p.rows.length > 0 && typeof p.palette === 'object' && p.rows.every((r) => [...r].every((ch) => ch === '.' || ch === ' ' || p.palette[ch]));
@@ -891,8 +895,9 @@ const generated = GENERATED_PATTERNS.filter((p) => {
 
 const globbed = Object.keys(extraModules)
   .filter((f) => !f.endsWith('credits.json'))
-  .sort()
+  .sort((a, b) => (orderIndex.get(extraModules[a].key) ?? Number.MAX_SAFE_INTEGER) - (orderIndex.get(extraModules[b].key) ?? Number.MAX_SAFE_INTEGER) || a.localeCompare(b))
   .map((f) => extraModules[f])
+  .filter((p) => !excludedKeys.has(p.key))
   .filter((p) => {
     if (valid(p)) return true;
     console.warn('忽略无效的关卡文件', p);

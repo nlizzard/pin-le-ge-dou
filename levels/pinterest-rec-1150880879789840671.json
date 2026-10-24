@@ -1,0 +1,40 @@
+{
+  "key": "pinterest-rec-1150880879789840671",
+  "name": "白色小馒头",
+  "palette": {
+    "A": "#bbcfea",
+    "B": "#ffffff",
+    "C": "#181818"
+  },
+  "rows": [
+    "AAAAAAAAAAAAACCAAAA",
+    "AAAAAAAAAAAAACCCAAA",
+    "AAAAAAAAAAAAACCCAAA",
+    "AAAAAAAAAAAAACCCAAA",
+    "AAAAAAAAAAAAAACCCAA",
+    "ACCCAAAAAAAAAACCCAA",
+    "CCCCCCACCBCCBCCCCAA",
+    "CCCCCCCBBBBBBBBCCAA",
+    "AAAAACBBBBBBBBBBCAA",
+    "AAAACBBBBBBBBBBBBCA",
+    "AAAACBBBBBBBBBBBBCA",
+    "AAAACBBBBBBBBBBBBCA",
+    "AAAACBBBBBBBBBBBBCA",
+    "AAAACBBCBBBBBBCBBCA",
+    "AAACBBBCBBCCBBCBBBC",
+    "AAACBBBBBBBBBBBBBBC",
+    "AAACBBBBBBBBBBBBBBC",
+    "AAAACCBBBBBBBBBBCCA",
+    "AAAAAACCCCCCCCCCAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/1150880879789840671/",
+    "image": "https://i.pinimg.com/originals/e2/e7/95/e2e795e206a6db4a5987b5440e2e23ec.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

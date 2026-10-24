@@ -1,0 +1,51 @@
+{
+  "key": "pinterest-rec-483785184992703505",
+  "name": "草莓奶昔",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#162737",
+    "C": "#fec8e0",
+    "D": "#c8f4fd",
+    "E": "#a0677d"
+  },
+  "rows": [
+    "AAAAAAAAAAAABB",
+    "AAAAABBAAAABCB",
+    "AAAABAAAAAABCB",
+    "AAABEBBBBABCBA",
+    "AABEBEBAABBCBA",
+    "ABBEEEBAAABBAA",
+    "ABABBBAAAAABAA",
+    "BAAAAAAAAAAABA",
+    "BBBBBBBBBBBBBA",
+    "BDAAAAAAAAADBA",
+    "BDCCCCCCCCCDBA",
+    "BDCCCCCCCCCDBA",
+    "BDCCCCCCCCCDBA",
+    "BDCCCCCCCCCDBA",
+    "BDCCCCCCCCCDBA",
+    "BDCCCCCCCCCDBA",
+    "ABDCCCCCCCDBAA",
+    "ABDCCCCCCCDBAA",
+    "ABDCCCCCCCDBAA",
+    "ABDCCCCCCCDBAA",
+    "AABDCCCCCDBAAA",
+    "AABDCCCCCDBAAA",
+    "AAABDCCCDBAAAA",
+    "AAAABDDDBAAAAA",
+    "AAAABDDDBAAAAA",
+    "AABBDDDDDBBAAA",
+    "ABDDDDDDDDDBAA",
+    "ABBBBBBBBBBBAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/483785184992703505/",
+    "image": "https://i.pinimg.com/originals/f7/fe/3c/f7fe3c87476ce751bc59bd97c800244f.jpg",
+    "title": "Pixel art milkshake : Reproduisez ce rafraîchissant défi créatif",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

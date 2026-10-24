@@ -4,7 +4,7 @@
   "accessiblePinCount": 191,
   "unavailablePinCount": 16,
   "unavailableReason": "收藏板完整向下及向上滚动多轮后仍只提供191个独立Pin；其余16个没有出现在页面，无法取得链接或原图。推荐区与推广卡片不计入本收藏板。",
-  "importedLevelCount": 236,
+  "importedLevelCount": 235,
   "exactDuplicateImages": 4,
   "duplicatePatterns": 6,
   "approximatePhotoLevelCount": 18,
@@ -2532,12 +2532,8 @@
       "url": "https://jp.pinterest.com/pin/687502699414445476/",
       "items": [
         {
-          "status": "converted",
-          "key": "pinterest-687502699414445476",
-          "name": "彩色旗帜",
-          "w": 28,
-          "h": 19,
-          "method": "lattice"
+          "status": "skipped",
+          "reason": "国旗及旗帜类图案，按用户要求排除"
         }
       ]
     },

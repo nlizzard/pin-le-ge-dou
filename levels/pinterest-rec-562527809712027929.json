@@ -1,0 +1,45 @@
+{
+  "key": "pinterest-rec-562527809712027929",
+  "name": "史努比侧身",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#373737",
+    "C": "#b7e7f3"
+  },
+  "rows": [
+    "CCCCCCCCBBBBBCCCC",
+    "CCCCCCCBAAAAABCCC",
+    "CCCCCCBAAAAAAABCC",
+    "CCCBBBAAAAAAAAABC",
+    "CCBAAAABAAAABABBC",
+    "BBAAAAABAAABABBAB",
+    "BBAAAAAAAAABABBBB",
+    "CBAAAAAAAAABABBBB",
+    "CCBAAAAAAAABABBBB",
+    "CCCBBAAAAAABABBBB",
+    "CCCCCBBBAABCBABBC",
+    "CCCCCCCBBBCCCBBCC",
+    "CCCCCCBAAABCCCCCC",
+    "CCCCCBAABABCCCCCC",
+    "CCCCCBAABABCCCCCC",
+    "CCCCBAAABAABCCCCC",
+    "CCCCBAAABAABCCCCC",
+    "CCCCBAAAABBCCCCCC",
+    "CCCCCBAAAABBCCCCC",
+    "CCCCCCBAAAAABCCCC",
+    "CCCCCCCBABBBCCCCC",
+    "CCCCCBBAAABCCCCCC",
+    "CCCCBAAAAAABCCCCC",
+    "CCCCBBBBBBBBCCCCC"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/562527809712027929/",
+    "image": "https://i.pinimg.com/originals/78/1d/30/781d30141e462c375344f4073b28f1ea.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

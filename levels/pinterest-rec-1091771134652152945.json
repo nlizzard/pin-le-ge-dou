@@ -1,0 +1,36 @@
+{
+  "key": "pinterest-rec-1091771134652152945",
+  "name": "粉色卡比",
+  "palette": {
+    "A": "#88c3d9",
+    "B": "#e8a8ab",
+    "C": "#232323",
+    "D": "#cd2c5c",
+    "E": "#db7095"
+  },
+  "rows": [
+    "ACCACCCCCACCA",
+    "CBBCBBBBBCBBC",
+    "CBBBBBBBBBBBC",
+    "CBBBBBBCBCBBC",
+    "ACBBBBBCBCBCA",
+    "ACBBBBBCBCBCA",
+    "ACBBBEEBBBECA",
+    "AACBBBBBCBBCA",
+    "AACBBBBBBBCAA",
+    "ACDCBBBBBBCAA",
+    "ACDDCCCCCCAAA",
+    "ACDDCACDDCAAA",
+    "AACCAAACCAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/1091771134652152945/",
+    "image": "https://i.pinimg.com/originals/0b/bb/ca/0bbbcac2a79ec1a2c73ef29a82f2fc4d.png",
+    "title": "Kirby Pixel Art",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

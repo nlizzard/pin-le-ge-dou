@@ -1,0 +1,51 @@
+{
+  "key": "pinterest-rec-698480223478295666",
+  "name": "米老鼠玫瑰",
+  "palette": {
+    "A": "#211f1d",
+    "B": "#ffd7c9",
+    "C": "#ff0000",
+    "D": "#699200",
+    "E": "#676e01",
+    "F": "#fd3d39",
+    "G": "#840000"
+  },
+  "rows": [
+    "BBBAAAABBBBBBAAAABBB",
+    "BBAAAAAABBBBAAAAAABB",
+    "BAAAFFFAABBAACCGAAAB",
+    "BAAFFCCCAAAACCCGGAAB",
+    "AAAFCCCCCAACCCCCGAAA",
+    "AAFFCCCCCCCCCCCCCGAA",
+    "AAFFCCAACCCCAACCCGAA",
+    "AAFFCACCACCACCACCGAA",
+    "BAAFCCCCCCCCCCCCGAAB",
+    "BAAACCCCCCCCCCCCAAAB",
+    "BBAAACCCACCACCCAAABB",
+    "BBBAAACCCAACCCAAABBB",
+    "BBBBAAACCCCCCAAABBBB",
+    "BBBBBAAAACCAAABBBBBB",
+    "BBAAAABAAAAAABAAAABB",
+    "BADDDDABADAABADDDDAB",
+    "AEEAADDAADEAADDAAEEA",
+    "AEEEEADAADEAADAEEEEA",
+    "BAEEEEABADEABAEEEEAB",
+    "BBAAAABBADEABBAAAABB",
+    "BBBBBBBBADEABBBBBBBB",
+    "BBBBBBBBADEABBBBBBBB",
+    "BBBBBBBAADEAABBBBBBB",
+    "BBBAAAAADEEDAAAAABBB",
+    "BBAADDDDEEEDDDDDAABB",
+    "BBAAAAAAAAAAAAAAAABB"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/698480223478295666/",
+    "image": "https://i.pinimg.com/originals/a8/3e/43/a83e437e45159229061d76295b67fe4c.png",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

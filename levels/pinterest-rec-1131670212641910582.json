@@ -1,0 +1,48 @@
+{
+  "key": "pinterest-rec-1131670212641910582",
+  "name": "傲娇小猫",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#181818",
+    "C": "#ffe78f",
+    "D": "#bfd1db",
+    "E": "#ffbabf",
+    "F": "#60696e"
+  },
+  "rows": [
+    "AAABAAAAAAABAAA",
+    "AABABAAAAABABAA",
+    "ABACABAAABACABA",
+    "ABCCABAAABACCBA",
+    "BCCCAABABAACCCB",
+    "BCCCAABBBAACCCB",
+    "BAAAAAAAAAAAAAB",
+    "BBBBBAAAAABBBBB",
+    "BAAAAAAAAAAAAAB",
+    "BABBAAAAAAABBAB",
+    "BEBBAAAAABABBEB",
+    "BEEAAAABAABAEEB",
+    "BAAAABBABBAAAAB",
+    "ABAAAAAAAAAAABA",
+    "AABBBBBBBBBBBAA",
+    "AAAABDDDDDBAAAA",
+    "AAABFAAAAAFBAAA",
+    "AABAFAAAAAFABAA",
+    "AABABAAAAABABAA",
+    "AABABAAAAABABAA",
+    "AAABBFBBBFBBAAA",
+    "AAAABDBABDBAAAA",
+    "AAAABABABABAAAA",
+    "AAAABBBABBBAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/1131670212641910582/",
+    "image": "https://i.pinimg.com/originals/78/e3/8c/78e38ce82c20b1caaaa40c8942b6e4f0.jpg",
+    "title": "Toro Inoue Pixel Art",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

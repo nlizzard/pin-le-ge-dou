@@ -1,7 +1,7 @@
 import {readFile,writeFile,mkdir,access} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import path from 'node:path';
-const root='art/pinterest-board';
+const root=process.argv[2]||'art/pinterest-board';
 await mkdir(`${root}/originals`,{recursive:true});
 const manifest=JSON.parse(await readFile(`${root}/manifest.json`,'utf8'));
 const assets=[];

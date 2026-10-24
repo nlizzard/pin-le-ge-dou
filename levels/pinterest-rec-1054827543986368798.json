@@ -1,0 +1,39 @@
+{
+  "key": "pinterest-rec-1054827543986368798",
+  "name": "汉堡小可爱",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#404040",
+    "C": "#92d14f",
+    "D": "#fccd66",
+    "E": "#c55911",
+    "F": "#fc0103",
+    "G": "#fe9285"
+  },
+  "rows": [
+    "AAAABBBBBBBBBBAAAA",
+    "AAABDDDDDDDDDDBAAA",
+    "AABDDABDDDDABDDBAA",
+    "ABDDDBBDDDDBBDDDBA",
+    "ABDDGGDDBBDDGGDDBA",
+    "ABDDDDDDDDDDDDDDBA",
+    "BBBBBBBBBBBBBBBBBB",
+    "BEEEEEEEEEEEEEEEEB",
+    "ABBBBBBBBBBBBBBBBA",
+    "BCCCCCCCCCCCCCCCCB",
+    "ABBFFFBFFFFBFFFBBA",
+    "ABDBBBDBBBBDBBBDBA",
+    "ABDDDDDDDDDDDDDDBA",
+    "AABBBBBBBBBBBBBBAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/1054827543986368798/",
+    "image": "https://i.pinimg.com/originals/21/da/f8/21daf8259ceae74fd71df46aef7dee40.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

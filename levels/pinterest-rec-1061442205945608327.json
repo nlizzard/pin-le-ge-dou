@@ -1,0 +1,46 @@
+{
+  "key": "pinterest-rec-1061442205945608327",
+  "name": "伯恩山小狗",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#e48d2e",
+    "C": "#3d3d3f",
+    "D": "#181818",
+    "E": "#dfc6ac",
+    "F": "#8e5b29"
+  },
+  "rows": [
+    "AAAAADDDDDDDDDDAAAAAA",
+    "AAADDCCCDCCCCCCDDAAAA",
+    "AADCCDDCCCCCCCDCCDAAA",
+    "ADCCDDDDCCCCDDDDCCDAA",
+    "DDDDDCBBCCCCBBCDDDDDA",
+    "DDDDDDDDCCCDDDDDDDCDA",
+    "DCCCDCDDCCCCDDCDCCCDA",
+    "ADDDFBCDEDDADCBFDCDAA",
+    "AADDBBBAAAAAABBBDDAAA",
+    "AAAADFBAADDAABFDAAAAA",
+    "AAAADDAAAAAAAEDDAAAAA",
+    "AAADCDDEEAAEECCCDAAAA",
+    "AAADCAAAAAAAAAADDAAAA",
+    "AADCDCAAAAAAAADDCDAAA",
+    "AADDCCCAAAAAACCCDDDAD",
+    "ADCDDDCCAAAADCDDDCDDD",
+    "ADCCDCCCCAADCCCDCCDDD",
+    "ADCDDBBBBCCBBBBDCCDCD",
+    "AADDBDBBBDDBBBDBDDDCA",
+    "AADAADAAACCAAADAADDAA",
+    "AEEDDDABADDABADDDAAAA",
+    "AAAAAADDDAEDDDAAAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/1061442205945608327/",
+    "image": "https://i.pinimg.com/originals/aa/98/c9/aa98c98b3946abe08b5ee0fa1f490612.jpg",
+    "title": "Drawing by cells",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

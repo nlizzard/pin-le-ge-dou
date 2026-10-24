@@ -1,0 +1,48 @@
+{
+  "key": "pinterest-rec-441282463465185577",
+  "name": "黄色草帽头像",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#2b2b2b",
+    "C": "#fed702"
+  },
+  "rows": [
+    "AAAAAAABBBBBBBAAAAAA",
+    "AAAAABBCCCCCCCBBAAAA",
+    "AAAABCCCCCCCCCCCBAAA",
+    "AAABCCCCCCCCCCCCCBAA",
+    "AAABCCAAACCCCCCAABAA",
+    "AABCBAAAAACCCCAAAABA",
+    "AABCBAAAAABBBBBAABBA",
+    "ABCCBBAABBCBBBCBBBBA",
+    "ABCCBBBBCCCCCCCCBBBA",
+    "ABCCCBBBCCCCBCCCBCBA",
+    "ABCCBCBBCCCBCBCCBBAA",
+    "AABBCCCBCCBCCCBCBAAA",
+    "ABCCCCCBCCBCCCBCBBAA",
+    "BCCBCCCCBBCCCCBBCBBA",
+    "BCBCCCCCCCCCCCCCCBCB",
+    "BCBCCCCCCCCCCCCCCBCB",
+    "BCBCCCCCCCCCCCCCCBCB",
+    "BCCBCCCCCCCCCCCCCBBA",
+    "ABCCBCCCCCCCCCCCCBAA",
+    "BCBCBCCCCCCCCCCCBBAA",
+    "BCBBBCCCCCCCCCCBAAAA",
+    "ABCCBCCBBBBBBCCBAAAA",
+    "AABBBCBAAAAAABCBAAAA",
+    "AAAABCBAAAAAABCBAAAA",
+    "AAABCCBAAAAAABCCBAAA",
+    "AAABCCBAAAAAABCCBAAA",
+    "AAAABBBAAAAAABBBAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/441282463465185577/",
+    "image": "https://i.pinimg.com/originals/8f/53/2b/8f532b4104f885ed8bbffed405d51121.jpg",
+    "title": "Eventyrtid Jake",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

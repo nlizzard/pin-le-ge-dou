@@ -1,0 +1,38 @@
+{
+  "key": "pinterest-rec-1112811389196790322",
+  "name": "金色小鸭",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#fef56a",
+    "C": "#e68119",
+    "D": "#ffd449",
+    "E": "#ffc26f",
+    "F": "#34150b"
+  },
+  "rows": [
+    "AAAAACCCAAAAA",
+    "AAACCABDCCAAA",
+    "AACAABBBBDCAA",
+    "ACBBBBBBBBDCA",
+    "ACBBBBBBBBDCA",
+    "CBBFBBBFBBBDC",
+    "CEEFCCBFEEBDC",
+    "CEEBBBBBEEBDC",
+    "ACBBBBBBBBDCA",
+    "AACDDDDDCDDCA",
+    "AACDBBBDCCDDC",
+    "AAACBBBBDDDCA",
+    "AAAACCCCCCCAA",
+    "AAAAACAAACAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/1112811389196790322/",
+    "image": "https://i.pinimg.com/originals/1e/ea/04/1eea04996951d511a114d46005a72883.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

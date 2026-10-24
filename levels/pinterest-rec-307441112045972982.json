@@ -1,0 +1,34 @@
+{
+  "key": "pinterest-rec-307441112045972982",
+  "name": "微笑便便",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#724c1d",
+    "C": "#2c1e10"
+  },
+  "rows": [
+    "AAAABBBAAAAAA",
+    "AAAAABBBAAAAA",
+    "AAAABBBBBAAAA",
+    "AAAABBBBBAAAA",
+    "AAABBBBBBBAAA",
+    "AABAAABAAABAA",
+    "AABACABACABAA",
+    "AABACABACABAA",
+    "ABBAAABAAABBA",
+    "ABBBBBBBBBBBA",
+    "BBBBAAAAABBBB",
+    "BBBBBAAABBBBB",
+    "ABBBBBBBBBBBA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/307441112045972982/",
+    "image": "https://i.pinimg.com/originals/52/59/67/525967c840a001ddad71f6e224749d39.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

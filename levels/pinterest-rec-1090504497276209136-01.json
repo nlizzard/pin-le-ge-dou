@@ -1,0 +1,44 @@
+{
+  "key": "pinterest-rec-1090504497276209136-01",
+  "name": "狗狗格罗米特",
+  "palette": {
+    "A": "#c2bb94",
+    "B": "#795d34",
+    "C": "#94c7da",
+    "D": "#353535",
+    "E": "#c9e3eb",
+    "F": "#9e9477"
+  },
+  "rows": [
+    "CCCCCCCCCCCCCCCCDDDCCCC",
+    "CCCCDDDDCCCCCCCDBBBDDCC",
+    "CCDDBBBBDCCCCCDBBBBBBDC",
+    "CDBBBBBBBDCCCDBBBBBBBBD",
+    "DBBBBBBBBBDCDBBBDDDBBBD",
+    "DBBBBDDDBDDDDDBDCCCDDDC",
+    "DBBBDCCCDAAAAADCCCCCCCC",
+    "CDDDCCCDAAAAAAADCCCCCCC",
+    "CCCCCCCDAAEAEAADCCCCCCC",
+    "CCCCCCCDAEDEDEADCCCCCCC",
+    "CCCCCCCDAAEAEAADCCCCCCC",
+    "CCCCCCCDAAAAAAADCCCCCCC",
+    "CCCCCCDAAAAAAAAADCCCCCC",
+    "CCCCCCDAAADDDAAADCCCCCC",
+    "CCCCCCDAADEFFDAADCCCCCC",
+    "CCCCCCDAADFFFDAADCCCCCC",
+    "CCCCCCCDADFFFDADCCCCCCC",
+    "CCCCCCCDAADDDAADCCCCCCC",
+    "CCCCCCCCDAAAAADCCCCCCCC",
+    "CCCCCCCCCDDDDDCCCCCCCCC"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/1090504497276209136/",
+    "image": "https://i.pinimg.com/originals/e4/a4/3e/e4a43e733c8802d20b9f7bb0888600f6.jpg",
+    "title": "Alpha pattern #25244",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

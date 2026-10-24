@@ -1,0 +1,35 @@
+{
+  "key": "pinterest-rec-522628731772249837",
+  "name": "迷你库洛米",
+  "palette": {
+    "A": "#6d54d3",
+    "B": "#ffffff",
+    "C": "#181818",
+    "D": "#88c53a",
+    "E": "#fd8f78"
+  },
+  "rows": [
+    "ABAAAAABA",
+    "BBBAAABBB",
+    "BCBBABBCB",
+    "BCCBBBCCB",
+    "BCBBBBBCB",
+    "BBDDBDDBB",
+    "BBDCBDCBB",
+    "BBBBEBBBB",
+    "ABBBBBBBA",
+    "AAABBBAAA",
+    "AABBBBBAA",
+    "ABBBBBBBA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/522628731772249837/",
+    "image": "https://i.pinimg.com/originals/aa/e9/75/aae975df52f145caaf507e8012f40d0b.jpg",
+    "title": "cat",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "key": "pinterest-rec-65794844551946059",
+  "name": "披风小熊国王",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#181818",
+    "C": "#fd372e",
+    "D": "#fede7a",
+    "E": "#ffdddb",
+    "F": "#4a1b19",
+    "G": "#5052fc"
+  },
+  "rows": [
+    "AAAAAAAAAAAAAABAAAAAAAAA",
+    "AAAAAAAAAAAABBDBBAAAAAAA",
+    "AAAAAAAAAAABDBDBDBAAAAAA",
+    "AAAAAAAAAAABDDCDDBAAAAAA",
+    "AAAAAAABBAABDDDDDBAABBAA",
+    "AAAAAABAABABBBBBBBABAABA",
+    "AAAAAABAABBAAAAAAABBAABA",
+    "AAAAAAABBAAAAAAAAAAABBAA",
+    "AAAAAAAFAAAAAAAAAAAAABAA",
+    "AAAAAABAAAAAAAAAAAAAAABA",
+    "AAAAAABAAAAAAAAAAAAAAABA",
+    "AAAAABAAAAAABAAABAAAAAAB",
+    "ABBAABAAEEAAAAAAAAAEEAAB",
+    "BAABABAEEEEAAABAAAEEEEAB",
+    "BAAABBAAEEAABABABAAEEAAB",
+    "ABAAABAAAAAAABBBAAAAAAAB",
+    "AABAADBAAAAAAAAAAAAAAABA",
+    "AAABDDBBCAAAAAAAAAAACBAA",
+    "AAABDBBAACCCCCGGCCCCAAFA",
+    "AAAABABAABCCCCGGCCCAAAFA",
+    "AAAAAAABBBAAAAAAAAABAAFA",
+    "AAAAAAABCBAAAAAAAAABBFAA",
+    "AAAAAAABCBAAAAAAAAABCBAA",
+    "AAAAAABCCBAAAAAAAAABCCBA",
+    "AAAAAABCCCBAABBBAABCCCBA",
+    "AAAAAABBBBABBAAABBABBBBA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/65794844551946059/",
+    "image": "https://i.pinimg.com/originals/53/78/8e/53788e37acd03ee54b8371643d5276e6.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

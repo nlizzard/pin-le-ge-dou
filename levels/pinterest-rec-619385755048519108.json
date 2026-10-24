@@ -1,0 +1,51 @@
+{
+  "key": "pinterest-rec-619385755048519108",
+  "name": "火红枫叶",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#f38b51",
+    "C": "#efc22e",
+    "D": "#933933",
+    "E": "#eb5647",
+    "F": "#f4de5c",
+    "G": "#de0930",
+    "H": "#b9092b"
+  },
+  "rows": [
+    "AAAAAAAAAAAADAAAAAAAAAAAA",
+    "AAAAAAAAAAADGDAAAAAAAAAAA",
+    "AAAAAAAAAAADGDAAAAAAAAAAA",
+    "AAAAAAAAAADGGGDAAAAAAAAAA",
+    "AAAAAAADAADGGGDAADAAAAAAA",
+    "AAAAAAAADDGEGEGDDAAAAAAAA",
+    "AAAAAAADGEEEGEEEGDAAAAAAA",
+    "AAAAAAAHBEEEGEEGEHAAAAAAA",
+    "DAADADAHBGBBGEBGBHADADAAD",
+    "ADDEDEHAHBGBGBGEHAHEDEDDA",
+    "ADEBBBEHDBGCDGEBDHEBBBEDA",
+    "AADBGBBEDBCGDECBDEBBGBDAA",
+    "ADBBBGBGBBCCGCBGEBBBBBBDA",
+    "AADBBCGCCCCCGCGEBBBGEEDAA",
+    "AADBBCCGCCFFDGBBCCGBBEDAA",
+    "ADBBBCCCGFFFGFCCGGBBBBBDA",
+    "AADDHHFFFGGFGFCGFFFHHDDAA",
+    "AAAAAAHFFCFGDFGFCFHAAAAAA",
+    "AAAAAHCCFFFFDGFFFCCHAAAAA",
+    "AAADDBBBCFFFGFFFCBBBDDAAA",
+    "AAAAADDDCCHHEHHCCDDDAAAAA",
+    "AAAAAAAADHAADAAHDAAAAAAAA",
+    "AAAAAAAAAAAADAAAAAAAAAAAA",
+    "AAAAAAAAAAAGAAAAAAAAAAAAA",
+    "AAAAAAAAAAAEAAAAAAAAAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/619385755048519108/",
+    "image": "https://i.pinimg.com/originals/21/3b/b7/213bb751256faabe3aa32f9fa115de23.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

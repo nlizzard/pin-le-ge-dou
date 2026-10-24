@@ -1,0 +1,36 @@
+{
+  "key": "pinterest-rec-1137721924643947294",
+  "name": "天使翅膀",
+  "palette": {
+    "A": "#e7e7e7",
+    "B": "#ffffff",
+    "C": "#181818"
+  },
+  "rows": [
+    "BCCCBBBBBBBBBBBBBBBBBBBBBCCCB",
+    "BCAACCBBBBBBBBBBBBBBBBBCCAACB",
+    "BCAAAACCBBBBBBBBBBBBBCCAAAACB",
+    "BCAAAAAACCBBBBBBBBBCCAAAAAACB",
+    "BCAAAAAAAACBBBBBBBCAAAAAAAACB",
+    "CCCAAAAAAAACBBBBBCAAAAAAAACCC",
+    "CAACCCAAAAAACBBBCAAAAAAAAAAAC",
+    "CAAAAABAAAAACBBBCAAAAAAAAABAC",
+    "BCAAAAACCCAAACBCAAACCCAAAAACB",
+    "BBCCAACAAACAACBCAACAAACAACCBB",
+    "BCAAACAAAACAACBCAACAAAACAAACB",
+    "BBCAACABACAAACBCAAACAAACAACBB",
+    "BBBCCCBBABAACBBBCABABABCCCBBB",
+    "BBBBBBCAAAACBBBBBCAAAACBBBBBB",
+    "BBBBBBBCCCCBBBBBBBCCCCBBBBBBB"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/1137721924643947294/",
+    "image": "https://i.pinimg.com/originals/85/d3/10/85d3108d90f5271dc50c52ed345f4158.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

@@ -7,7 +7,7 @@ describe('Pinterest board import', () => {
   it('accounts for every accessible pin and links each imported level', () => {
     expect(report.records).toHaveLength(report.accessiblePinCount);
     expect(report.accessiblePinCount + report.unavailablePinCount).toBe(report.displayedPinCount);
-    const imported = PATTERNS.filter((p) => p.key.startsWith('pinterest-'));
+    const imported = PATTERNS.filter((p) => p.key.startsWith('pinterest-') && !p.key.startsWith('pinterest-rec-'));
     expect(imported).toHaveLength(report.importedLevelCount);
     const keys = new Set(imported.map((p) => p.key));
     for (const record of report.records) {

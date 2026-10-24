@@ -1,0 +1,39 @@
+{
+  "key": "pinterest-rec-441915782202127891",
+  "name": "红蝴蝶结凯蒂猫头像",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#181818",
+    "C": "#f60508",
+    "D": "#fcfd59"
+  },
+  "rows": [
+    "AAAAAAAAAAAAABBAAAAAAAAA",
+    "AAAABBBAAAAABCCBABBBAAAA",
+    "AAABAAABBBBBCCCCBAAABAAA",
+    "AAABAAAAAAABCCCBBBAABAAA",
+    "AAABAAAAAAABCCBCCCBBBAAA",
+    "AAAABAAAAAAABBBCCCBCCBAA",
+    "AAABAAAAAAAAAAABBBCCCBAA",
+    "AAABAAAAAAAAAAAAABCCBAAA",
+    "AABAAAAAAAAAAAAAABBBABAA",
+    "BBBBAAAAAAAAAAAAAAAABBBB",
+    "AABAAAABAAAAAAABAAAAABAA",
+    "ABBBAAABAAAAAAABAAAABBBA",
+    "AAABBAAAAAAAAAAAAAABBAAA",
+    "AABBAAAAAADDAAAAAAAABBAA",
+    "AAAABAAAAAAAAAAAAAABAAAA",
+    "AAAAABBAAAAAAAAAABBAAAAA",
+    "AAAAAAABBBBBBBBBBAAAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/441915782202127891/",
+    "image": "https://i.pinimg.com/originals/66/75/90/6675900fb29dd031ca9e2405c5752526.jpg",
+    "title": "Hello kitty pixsel art",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

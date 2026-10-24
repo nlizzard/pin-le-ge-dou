@@ -1,0 +1,40 @@
+{
+  "key": "pinterest-rec-1091771134642647463",
+  "name": "胡迪牛仔",
+  "palette": {
+    "A": "#56a4d4",
+    "B": "#984e31",
+    "C": "#f6cfb0",
+    "D": "#355989",
+    "E": "#f2bf54",
+    "F": "#181818",
+    "G": "#603610",
+    "H": "#ffffff",
+    "I": "#b63e26"
+  },
+  "rows": [
+    "AABBBBBBBAA",
+    "AABBBBBBBAA",
+    "BBBBBBBBBBB",
+    "AAGCCCCCGAA",
+    "AAGCFCFCGAA",
+    "AACCCCCCCAA",
+    "AAACCCCCAAA",
+    "ACEFEIEFECA",
+    "ACEHFEFHECA",
+    "AAABBBBBAAA",
+    "AABDDDDDAAA",
+    "AAADDADDAAA",
+    "AAABBABBAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/1091771134642647463/",
+    "image": "https://i.pinimg.com/originals/c2/cb/54/c2cb54ea04b9e01fdb605ee693e64df7.jpg",
+    "title": "Woody (small) Pixel Art",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

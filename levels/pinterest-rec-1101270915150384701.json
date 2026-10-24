@@ -1,0 +1,53 @@
+{
+  "key": "pinterest-rec-1101270915150384701",
+  "name": "草莓库洛米",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#181818",
+    "C": "#323232",
+    "D": "#d23442",
+    "E": "#fac4d8",
+    "F": "#bed785",
+    "G": "#dfd3b6"
+  },
+  "rows": [
+    "AAAAAAAAAAABAAAAAAAAAAA",
+    "AAAAAAAAAABFBAAAAAAAAAA",
+    "AAAAAAAAAABFBAAAAAAAAAA",
+    "ABBBBAAAAABFBAAAAABBBBA",
+    "BCCCCBBABBFFFBBABBCCCCB",
+    "BCCCCCBBFFFFFFFBBCCCCCB",
+    "BCCCCCBFFFBFBFFFBCCCCCB",
+    "BBCCCCBFFBFFFBFFBCCCCBB",
+    "ABCCCCBFBBFFFBBFBCCCCBA",
+    "AABCCCBBAABFBAABBCCCBAA",
+    "ABDBBBAAAAABAAAAABBBDBA",
+    "ABDDDBAAAAAAAAAAABDDDBA",
+    "BDDDDBAAAAAAAAAAABDEEDB",
+    "BDDDBAAAAAAAAAAAAABEEDB",
+    "BDEEBAAAABAAABAAAABDDDB",
+    "BDEEBAEEABABABAEEABDDDB",
+    "BDDDBAEEAAAAAAAEEABDDDB",
+    "BDDDDBAAAAAAAAAAABDDDDB",
+    "BDDDDDBBBBBBBBBBBDDDDDB",
+    "ABDDEEDDDDDDDDDDDEEDDBA",
+    "ABBDEEDDDDDEEDDDDEEDBBA",
+    "AABDDDDDDDDEEDDDDDDDBAA",
+    "AAABDDDDDDDDDDDDDDDBAAA",
+    "AAABBDDDEEDDDDDDDDBBAAA",
+    "AAAABBDDEEDDDDEEDBBAAAA",
+    "AAAAAABBDDDDDDEBBAAAAAA",
+    "AACGAAAABBDDDBBAAAAAAAA",
+    "AAAAAAAAAABBBAAAAAAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/1101270915150384701/",
+    "image": "https://i.pinimg.com/originals/21/a3/e7/21a3e7a6efb42aa4307b9e4d7077d811.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

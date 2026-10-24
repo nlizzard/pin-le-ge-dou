@@ -1,0 +1,40 @@
+{
+  "key": "pinterest-rec-65794844551951279",
+  "name": "蓝色小鲨鱼",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#a8e1e8",
+    "C": "#f8b3b6",
+    "D": "#1da9c2",
+    "E": "#181818"
+  },
+  "rows": [
+    "AAAAAAAAADDDAAAAAAAAAA",
+    "AAAAAAAADDDDDAAAAAAAAA",
+    "AAAAAAAADDDDDDAAAAAAAA",
+    "AAAAABBBBBBBBBBBBAAAAA",
+    "AAAABBBBBBBBBBBBBBAAAA",
+    "AAABBBBBBBBBBBBBBBBAAA",
+    "AABBBBBBBBBBBBBBBBBBAA",
+    "AABBBAAAABBBBAAAABBBAA",
+    "ADBBAAAAAABBAAAAAABBDA",
+    "DDBBAAAEEABBAEEAAABBDD",
+    "DDBBAAAEEABBAEEAAABBDD",
+    "DDBBAAAAAABBAAAAAABBDD",
+    "ADBBBAAAABBBBAAAABBBDA",
+    "AABBBBBBBBBBBBBBBBBBAA",
+    "AABBCCCCCCCCCCCCCCBBAA",
+    "AAACCCCCCCCCCCCCCCCAAA",
+    "AAAACCCCCCCCCCCCCCAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/65794844551951279/",
+    "image": "https://i.pinimg.com/originals/f5/3f/f5/f53ff5379c1cac24438ab5e92291c568.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

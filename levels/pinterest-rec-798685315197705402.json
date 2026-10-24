@@ -1,0 +1,40 @@
+{
+  "key": "pinterest-rec-798685315197705402",
+  "name": "熊猫小头像",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#201f1d"
+  },
+  "rows": [
+    "ABBBAAAABBBBBAAAABBBA",
+    "BBBBBABBAAAAABBABBBBB",
+    "BBBBBBAAAAAAAAABBBBBB",
+    "BBBBAAAAAAAAAAAAABBBB",
+    "ABBAAAAAAAAAAAAAAABBA",
+    "AABAAAAAAAAAAAAAAABAA",
+    "ABAAAAAAAAAAAAAAAAABA",
+    "ABAAAAAAAAAAAAAAAAABA",
+    "BAAAAABBAAAAABBAAAAAB",
+    "BAAAABBABAAABABBAAAAB",
+    "BAAABBBBBAAABBBBBAAAB",
+    "BAAABBBBBAAABBBBBAAAB",
+    "BAAABBBBAAAAABBBBAAAB",
+    "ABAAABBAAAAAAABBAAABA",
+    "ABAAAAAAABBBAAAAAAABA",
+    "AABAAAAAAABAAAAAAABAA",
+    "AAABAAAAAAAAAAAAABAAA",
+    "AAAABBAAAABAAAABBAAAA",
+    "AAAAAABBAAAAABBAAAAAA",
+    "AAAAAAAABBBBBAAAAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/798685315197705402/",
+    "image": "https://i.pinimg.com/originals/3b/ff/94/3bff943a474db566ae9d8be60590c627.jpg",
+    "title": "Panda Perler Beads (20+ Free Patterns)",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

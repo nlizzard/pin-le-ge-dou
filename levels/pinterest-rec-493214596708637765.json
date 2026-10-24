@@ -1,0 +1,38 @@
+{
+  "key": "pinterest-rec-493214596708637765",
+  "name": "利欧路小头像",
+  "palette": {
+    "A": "#8bcdf0",
+    "B": "#404040",
+    "C": "#ffffff",
+    "D": "#d444d4",
+    "E": "#ffa3ff"
+  },
+  "rows": [
+    "AABBAAAAAAABBAA",
+    "AABDBAAAAABDBAA",
+    "AABDBBAAABBDBAA",
+    "AABDDBAAABDDBAA",
+    "AABDDBBABBDDBAA",
+    "AABDDBBABBDDBAA",
+    "AAADBBBBBBBDAAA",
+    "AAABBBBBBBBBAAA",
+    "AABBCCBBBCCBBAA",
+    "AABCCBCBCBCCBAA",
+    "AABCCBCBCBCCBAA",
+    "BBBBCCBEBCCBBBB",
+    "AAABBBBBBBBBAAA",
+    "AABAABBBBBAABAA",
+    "ABAAAAAAAAAAABA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/493214596708637765/",
+    "image": "https://i.pinimg.com/originals/5f/e2/ab/5fe2ab64052428bc498743347059972d.png",
+    "title": "Alpha pattern #59783 variation #275139",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

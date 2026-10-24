@@ -1,0 +1,40 @@
+{
+  "key": "pinterest-rec-614459942939713935",
+  "name": "幸运四叶草",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#447c18",
+    "C": "#78af48",
+    "D": "#abd68a"
+  },
+  "rows": [
+    "AAAAAABBBAABBBBAAAAA",
+    "AAAAABCCBBBCCCBBAAAA",
+    "AAAAABCDDBCCCCCBAAAA",
+    "AAAAABCDCCCCCCCBAAAA",
+    "AAAAABCCCCCCCCBBAAAA",
+    "AAAAAABCCCCCCCBAAAAA",
+    "ABBBBABCCCCCCBABBBBA",
+    "BBBCCBBBCCCCBBBCCCBB",
+    "BBCDDCBBBCCBBCCDDCCB",
+    "BBCDCCCCBCBCCCCDCCCB",
+    "ABBCCCCCCBBBCCCCCCBA",
+    "AAABCCCCBBBBBCCCCBAA",
+    "AABCCCCBBABABBCCCCBA",
+    "AABCCCBBBABAABBCCCBA",
+    "AABBBBBBAABAAABBBBBA",
+    "AAABBBBAAABBAAABBBAA",
+    "AAAAAAAAAABBBAAAAAAA",
+    "AAAAAAAAAAABBBAAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/614459942939713935/",
+    "image": "https://i.pinimg.com/originals/e4/de/2f/e4de2f8cd439e1106a1ae5a98e2dddca.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "key": "pinterest-rec-745838388314409715",
+  "name": "树袋熊头像",
+  "palette": {
+    "A": "#88db90",
+    "B": "#ababab",
+    "C": "#333333",
+    "D": "#ffffff",
+    "E": "#fccdfa"
+  },
+  "rows": [
+    "AAACCCCAAAAAAAACCCCAAA",
+    "AACBBBBCAAAAAACBBBBCAA",
+    "ACBBBBBBCCCCCCBBBBBBCA",
+    "CBCCCCBBBBBBBBBBCCCCBC",
+    "CCBBDDCBBBBBBBBCDDBBCC",
+    "CBBBDCBBBBBBBBBBCDBBBC",
+    "CBBBCBBBBBBBBBBBBCBBBC",
+    "ACBCBBBBBBBBBBBBBBCBCA",
+    "AACBBBBBBBBBBBBBBBBCAA",
+    "AAACBBBBBBBBBBBBBBCAAA",
+    "AAACBBDCBBCCBBDCBBCAAA",
+    "AAACBECCBCCCCBCCEBCAAA",
+    "AAACBEEBBCCCCBBEEBCAAA",
+    "AAAACBBBBBCCBBBBBCAAAA",
+    "AAAAACBBBBBBBBBBCAAAAA",
+    "AAAAAACCCCCCCCCCAAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/745838388314409715/",
+    "image": "https://i.pinimg.com/originals/d7/6f/02/d76f02f4623f2e1fa8cdc00abdacedd2.png",
+    "title": "Alpha pattern #122989",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

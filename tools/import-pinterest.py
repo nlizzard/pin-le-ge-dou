@@ -47,7 +47,7 @@ if '--publish' in sys.argv:
  levels=Path('levels');levels.mkdir(exist_ok=True)
  credits_path=levels/'credits.json'
  credits=json.loads(credits_path.read_text('utf8')) if credits_path.exists() else []
- credits=[c for c in credits if not c['key'].startswith('pinterest-')]
+ credits=[c for c in credits if not c['key'].startswith('pinterest-') or c['key'].startswith('pinterest-rec-')]
  for r in converted:
   p=json.loads((root/'converted'/f'{r["key"]}.json').read_text('utf8'))
   if len(p['palette'])<2:raise ValueError(f'Unplayable one-colour pattern: {p["key"]}')

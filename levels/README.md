@@ -1,6 +1,6 @@
 # levels/ — 额外关卡图案
 
-这个目录里的每个 `*.json`（除来源汇总 `credits.json`）都会自动成为一个新关卡，按文件名排序，排在手绘和程序生成图案之后。运行 `npm run build` 并重启服务后生效。
+这个目录里的每个 `*.json`（除来源汇总 `credits.json`）都会自动成为一个新关卡，排在手绘和程序生成图案之后。已有图案按 `art/pinterest-recommendations/catalog-order.json` 固定顺序，新增未登记图案再按文件名排序。运行 `yarn build` 并重启服务后生效。
 
 ## 格式
 
@@ -25,6 +25,8 @@
 ## 生成方式
 
 Pinterest 收藏板导入说明和逐项报告见 [art/pinterest-board](../art/pinterest-board/README.md)。
+
+当前共有1000张图案。推荐区的555张新增图案、审核记录和复现说明见 [art/pinterest-recommendations](../art/pinterest-recommendations/README.md)。国旗及旗帜类图案按排除清单过滤，不纳入关卡。
 
 ```bash
 # 任意图片 → 关卡

@@ -1,0 +1,38 @@
+{
+  "key": "pinterest-rec-691795192789189995",
+  "name": "粉色小猪头像",
+  "palette": {
+    "A": "#f399cd",
+    "B": "#aa7145",
+    "C": "#333333",
+    "D": "#a65670"
+  },
+  "rows": [
+    "BBBCCCCBBBCCCCCBBBCCCCBBB",
+    "BBBCAAACCCAAAAACCCAAACBBB",
+    "BBBCADAAAAAAAAAAAAADACBBB",
+    "BBBCADAAAAAAAAAAAAADACBBB",
+    "BBBBCAAAAAAAAAAAAAAACBBBB",
+    "BBBBCAAAAAAAAAAAAAAACBBBB",
+    "BBBBCAACCAAAAAAACCAACBBBB",
+    "BBBCAAACCACCCCCACCAAACBBB",
+    "BBBCAAAAACDDDDDCAAAAACBBB",
+    "BBBCAAAAACDCDCDCAAAAACBBB",
+    "BBBCAAAAACDDDDDCAAAAACBBB",
+    "BBBCAAAAAACCCCCAAAAAACBBB",
+    "BBBBCAACCCAAAAACCCAACBBBB",
+    "CCCCCCCAAACCCCCAAACCCCCCC",
+    "BBBBBBCAAACBBBCAAACBBBBBB",
+    "BBBBBBBCCCBBBBBCCCBBBBBBB"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/691795192789189995/",
+    "image": "https://i.pinimg.com/originals/ed/65/fd/ed65fde142cea84f72eaf1c004a43947.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

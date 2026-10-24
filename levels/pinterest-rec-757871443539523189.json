@@ -1,0 +1,45 @@
+{
+  "key": "pinterest-rec-757871443539523189",
+  "name": "微笑猫猫",
+  "palette": {
+    "A": "#dddddd",
+    "B": "#ffffff",
+    "C": "#abaaa6",
+    "D": "#63605c",
+    "E": "#181818"
+  },
+  "rows": [
+    "AAADAAAAAAADAAAAAAAA",
+    "AADCDDAAADDCDAAAAAAA",
+    "ADCBCCDDDCCBCDAAAAAA",
+    "ADCBCCCCCCCBCDAAAAAA",
+    "ADCBBCCCCCBBCDAAAAAA",
+    "ADCBCCCCCCCBCDAAAAAA",
+    "AADCCBCCCBCCDAAAAAAA",
+    "ADCCBBBCBBBCCDAAADAA",
+    "ADCBBEBBBEBBCDAAADDA",
+    "DCCBBBBBBBBBCCDAADBD",
+    "ADCBBBEEEBBBCDAADCBD",
+    "AADCBBBEBBBCDAADCCDA",
+    "ADCDCBBBBBCDCDDCCCDA",
+    "DCBBBBBBBBBCCCCDCDAA",
+    "DCBBBBBBBBCCCCCCDAAA",
+    "DCCBBBBBBCCDCCCCDAAA",
+    "DCCDBBBDBCCDCCCCDAAA",
+    "DCCDBBBDBCCDBCCCDAAA",
+    "DCBBDBDBBBCDBBBDAAAA",
+    "ADBBBDBBBBBDBDBDAAAA",
+    "DBDBDADBDBDDDDDAAAAA",
+    "DDDDAADDDDAAAAAAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/757871443539523189/",
+    "image": "https://i.pinimg.com/originals/ba/b0/7f/bab07fc21f893e37122c8b2ec1d9b4b2.png",
+    "title": "Wolve Pixel Art",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

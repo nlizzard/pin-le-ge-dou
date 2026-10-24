@@ -1,0 +1,43 @@
+{
+  "key": "pinterest-rec-618189486384082503",
+  "name": "尼莫小丑鱼",
+  "palette": {
+    "A": "#43434f",
+    "B": "#ffffff",
+    "C": "#ff7300",
+    "D": "#ce4703",
+    "E": "#181818"
+  },
+  "rows": [
+    "AACCAAACCCCCDAAAAAA",
+    "AACCCADCCCCDDCCAAAA",
+    "ACCCCCCCCCDDCCCDAAA",
+    "ACCCCCCCCCDDCCDDCAA",
+    "CCCCCCCCDCCDCCDDCCA",
+    "CCCBBCCCDDCBCCDDCCD",
+    "CEBBBEBCCBBBBBBCCDD",
+    "CEEBBEECCBBBBBBBDDC",
+    "CCCBBCCCBBBBBBBBDCC",
+    "ABBDBBBBBBBBBBBBBCC",
+    "ABBBBBBBBBAAAABBBDD",
+    "ABBAABBBBAAAAABBBDC",
+    "ABAABBBBAAAAAABBBCA",
+    "AAABBBBAAAAAABBBCAA",
+    "AAABBBAAAADDDBBCCAA",
+    "AAAAAAAAADDDDDDCAAA",
+    "AAAAAAAADDDDDDAAAAA",
+    "AAAAAAAAAADDDAAAAAA",
+    "AAAAAAAAADDDAAAAAAA",
+    "AAAAAAAAADDAAAAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/618189486384082503/",
+    "image": "https://i.pinimg.com/originals/ee/7a/d6/ee7ad645b14e88243cbd143904d09b14.jpg",
+    "title": "Котик-креветка в клеточку",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

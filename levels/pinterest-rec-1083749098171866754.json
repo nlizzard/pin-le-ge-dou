@@ -1,0 +1,37 @@
+{
+  "key": "pinterest-rec-1083749098171866754",
+  "name": "走路白鹅",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#181818",
+    "C": "#d6754a"
+  },
+  "rows": [
+    "AAAAAAAAAAAA",
+    "AAABBBAAAAAA",
+    "AABAAABAAAAA",
+    "ABCCBABAAAAA",
+    "AABBAABAAAAA",
+    "AAABAABAAAAA",
+    "AAABAABAAAAA",
+    "AAABAABAAAAA",
+    "AABAAABBAAAA",
+    "AABAAAAABBAA",
+    "AABAAAAAAABA",
+    "AAABAAAAABAA",
+    "AAAABBBBBAAA",
+    "AAABCCBCBAAA",
+    "AAABBBBBBAAA",
+    "AAAAAAAAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/1083749098171866754/",
+    "image": "https://i.pinimg.com/originals/ec/cb/3d/eccb3d11939cfb5dfec6f6db7a0247f2.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

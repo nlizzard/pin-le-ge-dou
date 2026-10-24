@@ -1,0 +1,41 @@
+{
+  "key": "pinterest-rec-697565429753227390",
+  "name": "像素小智与皮卡丘",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#181818",
+    "C": "#eef30c",
+    "D": "#ff0000",
+    "E": "#d9bb7b",
+    "F": "#663300",
+    "G": "#009900",
+    "H": "#0057a8"
+  },
+  "rows": [
+    "AAAABBBBBBAAAAAAAAAAAAAAAABBAAAA",
+    "AAABDDDDDDBAAAAAAAAAAAABBBBBBBBB",
+    "AABDDDDDDDDBAAAAAAAABBBCCBBBCCCB",
+    "ABBADDDDDDDBAAAAAAABCCCCCCBCCCBA",
+    "BAAAADBBBBBBBAAAAABCCCCCCBBCCBAA",
+    "ABBDDDDBBBBBBAAAAABCCCCCCBCCBAAA",
+    "AABEBEEBEEBBBAAAABCCBCCCCCBCBBBA",
+    "AABEBEEBEEBBAAAAABCCCCDCCCBBCCBA",
+    "AABEEEEEEEBAAAAAAABCCCCCFFFBFBAA",
+    "AAABEEEEBBHBAAAAAABCCCCCCCCBFFBA",
+    "AAAABBBBBBHBAAAAAABCBBCCFFFBFBAA",
+    "AABBBBBBAABBAAAAAABBCCCCCCBBBAAA",
+    "ABAABGGBAABABAAAABCCBCCCCBBCBAAA",
+    "AABAABBBBBAABAAAAABBABBBBCCBAAAA",
+    "AAABBBAAAABBAAAAAAAAAAAAABBAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/697565429753227390/",
+    "image": "https://i.pinimg.com/originals/74/6c/be/746cbea8fec3d14c1c4927da2102dfc2.png",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

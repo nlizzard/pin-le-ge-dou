@@ -1,0 +1,38 @@
+{
+  "key": "pinterest-rec-348325352434989582",
+  "name": "小熊头像",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#ca6703",
+    "C": "#181818",
+    "D": "#fdfd5a"
+  },
+  "rows": [
+    "AACCCAAAAAAAAAAAAACCCAA",
+    "ACBBBCACCCCCCCCCACBBBCA",
+    "CDCCBBCBBBBBBBBBCBBCCDC",
+    "CDDDCBBBBBBBBBBBBBCDDDC",
+    "CDDCBBBBBBBBBBBBBBBCDDC",
+    "CDDCBBBBBBBBBBBBBBBCDDC",
+    "ACCBBBBBBBBBBBBBBBBBCCA",
+    "AACBBBBBBBBBBBBBBBBBCAA",
+    "AACBBBBBBBBBBBBBBBBBCAA",
+    "AACBBBCCBBAAABBCCBBBCAA",
+    "AACBBBCCBAACAABCCBBBCAA",
+    "AACBBBBBBACACABBBBBBCAA",
+    "AAACBBBBBAAAAABBBBBCAAA",
+    "AAAACBBBBBBBBBBBBBCAAAA",
+    "AAAAACCCBBBBBBBCCCAAAAA",
+    "AAAAAAAACCCCCCCAAAAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/348325352434989582/",
+    "image": "https://i.pinimg.com/originals/97/45/6c/97456cf9b2a0219f2730677a3deb1a4d.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

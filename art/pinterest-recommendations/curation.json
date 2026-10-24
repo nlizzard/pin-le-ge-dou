@@ -1,0 +1,7080 @@
+{
+  "1000995454704618442": {
+    "approved": true,
+    "name": "伊布坐姿",
+    "keep": true,
+    "flagFree": true
+  },
+  "1001136192166675790": {
+    "approved": true,
+    "name": "蓝耳大耳狗",
+    "flagFree": true
+  },
+  "1001276929663170219": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1002684304562800179": {
+    "approved": false,
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整",
+    "parts": [
+      {
+        "name": "方块小猫",
+        "crop": [
+          0,
+          0,
+          0.5,
+          0.49
+        ]
+      },
+      {
+        "name": "粉色圆精灵",
+        "crop": [
+          0.5,
+          0,
+          0.5,
+          0.49
+        ]
+      },
+      {
+        "name": "白色小团子",
+        "crop": [
+          0,
+          0.5,
+          0.5,
+          0.49
+        ]
+      },
+      {
+        "name": "黄色小怪兽",
+        "crop": [
+          0.5,
+          0.5,
+          0.5,
+          0.49
+        ]
+      }
+    ]
+  },
+  "1004091679423809599": {
+    "approved": false,
+    "skip": "合集裁切后的图案细节不足，本批次不采用",
+    "parts": [
+      {
+        "name": "南瓜帽凯蒂猫",
+        "crop": [
+          0,
+          0,
+          1,
+          0.49
+        ]
+      },
+      {
+        "name": "魔法斗篷凯蒂猫",
+        "crop": [
+          0,
+          0.5,
+          1,
+          0.5
+        ]
+      }
+    ]
+  },
+  "1004162048177206529": {
+    "approved": true,
+    "name": "白色凯蒂猫",
+    "keep": true,
+    "flagFree": true
+  },
+  "1005006473076612946": {
+    "approved": false,
+    "skip": "合集裁切后的图案细节不足，本批次不采用",
+    "parts": [
+      {
+        "name": "美乐蒂小头像",
+        "crop": [
+          0.08,
+          0.34,
+          0.26,
+          0.2
+        ]
+      },
+      {
+        "name": "大耳狗小头像",
+        "crop": [
+          0.37,
+          0.34,
+          0.26,
+          0.2
+        ]
+      },
+      {
+        "name": "库洛米圆头像",
+        "crop": [
+          0.6599999999999999,
+          0.34,
+          0.26,
+          0.2
+        ]
+      },
+      {
+        "name": "帕恰狗小头像",
+        "crop": [
+          0.08,
+          0.5900000000000001,
+          0.26,
+          0.2
+        ]
+      },
+      {
+        "name": "小企鹅头像",
+        "crop": [
+          0.37,
+          0.5900000000000001,
+          0.26,
+          0.2
+        ]
+      },
+      {
+        "name": "布丁狗圆头像",
+        "crop": [
+          0.6599999999999999,
+          0.5900000000000001,
+          0.26,
+          0.2
+        ]
+      }
+    ]
+  },
+  "1005076841858376195": {
+    "approved": false,
+    "name": "粉色凯蒂猫手账",
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "1005639791791892085": {
+    "approved": true,
+    "name": "展翅小蝙蝠",
+    "flagFree": true
+  },
+  "1005991635484726627": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1005991635497160173": {
+    "approved": true,
+    "name": "双眼小黄人",
+    "keep": true,
+    "flagFree": true
+  },
+  "1006413847979742816": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1007469379160927822": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1007469379169266161": {
+    "approved": true,
+    "name": "月亮与云朵",
+    "flagFree": true
+  },
+  "1007539747870128216": {
+    "approved": true,
+    "name": "桃心小锁",
+    "flagFree": true
+  },
+  "1008876754055419904": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1010706341389228766": {
+    "approved": true,
+    "name": "草莓蛋糕卷",
+    "flagFree": true
+  },
+  "1010776710108860266": {
+    "approved": true,
+    "name": "调皮皮卡丘",
+    "flagFree": true
+  },
+  "1011269291327001473": {
+    "approved": true,
+    "name": "南瓜妙蛙种子",
+    "flagFree": true
+  },
+  "1011691503791218353": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1013591459867536641": {
+    "approved": true,
+    "name": "布丁狗快餐",
+    "keep": true,
+    "flagFree": true
+  },
+  "1014154409866964155": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1017391372139467336": {
+    "approved": true,
+    "name": "棕色小精灵",
+    "flagFree": true
+  },
+  "1018376534524790826": {
+    "approved": true,
+    "name": "蓝莓奶茶",
+    "crop": [
+      0.01094391244870041,
+      0.04818181818181818,
+      0.9767441860465116,
+      0.7454545454545455
+    ],
+    "grid": [
+      88,
+      100
+    ],
+    "trim": false,
+    "flagFree": true
+  },
+  "1018376534524828323": {
+    "approved": true,
+    "name": "蛇年小团子",
+    "crop": [
+      0.02140309155766944,
+      0.14181818181818182,
+      0.9571938168846611,
+      0.8
+    ],
+    "grid": [
+      43,
+      47
+    ],
+    "trim": false,
+    "flagFree": true
+  },
+  "1018376534524879365": {
+    "approved": false,
+    "name": "草莓夹心蛋糕",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "1018376534524879399": {
+    "approved": false,
+    "name": "抹茶汽水罐",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "1019220959439457162": {
+    "approved": true,
+    "name": "微笑猫咪",
+    "trim": false,
+    "flagFree": true
+  },
+  "1019291328186738191": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1020417228068283152": {
+    "approved": true,
+    "name": "双颗樱桃",
+    "keep": true,
+    "flagFree": true
+  },
+  "1024850458962677588": {
+    "approved": true,
+    "name": "蓝帽小女孩",
+    "keep": true,
+    "flagFree": true
+  },
+  "1027102258764696013": {
+    "approved": true,
+    "name": "红色蜘蛛网",
+    "keep": true,
+    "flagFree": true
+  },
+  "1028368896260546587": {
+    "approved": false,
+    "name": "小猪鲜花",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "102879172733790357": {
+    "approved": true,
+    "name": "紫色耿鬼",
+    "keep": true,
+    "flagFree": true
+  },
+  "1030198483520220158": {
+    "approved": true,
+    "name": "红草莓",
+    "flagFree": true
+  },
+  "1032872495777225365": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "10344274120293344": {
+    "approved": true,
+    "name": "蝴蝶结凯蒂猫",
+    "keep": true,
+    "flagFree": true
+  },
+  "1034561345636206705": {
+    "approved": true,
+    "name": "粉裙凯蒂猫",
+    "keep": true,
+    "flagFree": true
+  },
+  "1034561345638607813": {
+    "approved": true,
+    "name": "香蕉水豚",
+    "flagFree": true
+  },
+  "1035476139306443340": {
+    "approved": true,
+    "name": "开心卡比兽",
+    "flagFree": true
+  },
+  "1037376095390835440": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1039909370188615995": {
+    "approved": true,
+    "name": "狐狸头像",
+    "flagFree": true
+  },
+  "1039909370218359585": {
+    "approved": true,
+    "name": "萌萌小狮子",
+    "keep": true,
+    "flagFree": true
+  },
+  "1040050107678330938": {
+    "approved": true,
+    "name": "经典马里奥",
+    "flagFree": true
+  },
+  "1040824163890644776": {
+    "approved": true,
+    "name": "草莓凯蒂猫头像",
+    "flagFree": true
+  },
+  "1041457482637717383": {
+    "approved": true,
+    "name": "小熊装凯蒂猫",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "flagFree": true
+  },
+  "1041457482637718627": {
+    "approved": false,
+    "name": "生气凯蒂猫",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "1041457482637718646": {
+    "approved": false,
+    "name": "小猪装凯蒂猫",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "1041457482637751993": {
+    "approved": true,
+    "name": "德国牧羊犬",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "flagFree": true
+  },
+  "1041457482637823298": {
+    "approved": true,
+    "name": "睡衣凯蒂猫",
+    "flagFree": true
+  },
+  "1043850019895874112": {
+    "approved": true,
+    "name": "招财小猪",
+    "trim": false,
+    "flagFree": true
+  },
+  "1043990757358324409": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1046735138415826302": {
+    "approved": true,
+    "name": "站立小水獭",
+    "flagFree": true
+  },
+  "1047227719610757512": {
+    "approved": true,
+    "name": "黑猫表情章",
+    "keep": true,
+    "flagFree": true
+  },
+  "1048423988283426095": {
+    "approved": true,
+    "name": "南瓜小幽灵",
+    "flagFree": true
+  },
+  "1051449844326345114": {
+    "approved": true,
+    "name": "库洛米小头像",
+    "flagFree": true
+  },
+  "1051520212990684927": {
+    "approved": true,
+    "name": "坐姿水豚",
+    "keep": true,
+    "flagFree": true
+  },
+  "1051660950490268339": {
+    "approved": true,
+    "name": "灰猫小步舞",
+    "keep": true,
+    "flagFree": true
+  },
+  "1052435006704698004": {
+    "approved": true,
+    "name": "水豚抱小鸭",
+    "keep": true,
+    "flagFree": true
+  },
+  "1052575744197790744": {
+    "approved": true,
+    "name": "苹果凯蒂猫",
+    "flagFree": true
+  },
+  "1053068325391027067": {
+    "approved": true,
+    "name": "派大星",
+    "flagFree": true
+  },
+  "1053772012835143738": {
+    "approved": false,
+    "name": "爱心小猫",
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "1054827543986368798": {
+    "approved": true,
+    "name": "汉堡小可爱",
+    "flagFree": true
+  },
+  "1055601600171398402": {
+    "approved": true,
+    "name": "皮卡丘热饮",
+    "keep": true,
+    "flagFree": true
+  },
+  "1056797868809606639": {
+    "approved": true,
+    "name": "苹果库洛米",
+    "flagFree": true
+  },
+  "1057079343814988849": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1057501556275506138": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1057501556275506434": {
+    "approved": true,
+    "name": "新叶喵",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "keep": true,
+    "flagFree": true
+  },
+  "1057501556275506484": {
+    "approved": true,
+    "name": "星光小狐狸",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "keep": true,
+    "flagFree": true
+  },
+  "1057501556275506496": {
+    "approved": true,
+    "name": "花环六尾",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "keep": true,
+    "flagFree": true
+  },
+  "1061442205945608327": {
+    "approved": true,
+    "name": "伯恩山小狗",
+    "flagFree": true
+  },
+  "1061582943429440159": {
+    "approved": true,
+    "name": "蝴蝶结问号",
+    "flagFree": true
+  },
+  "1062005155882445342": {
+    "approved": true,
+    "name": "舞蹈凯蒂猫",
+    "keep": true,
+    "flagFree": true
+  },
+  "1062638474595401259": {
+    "approved": true,
+    "name": "面包大耳狗",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "flagFree": true
+  },
+  "1062849580833550258": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1065171749418402528": {
+    "approved": true,
+    "name": "小老虎凯蒂猫",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "keep": true,
+    "flagFree": true
+  },
+  "1066860599216521908": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1067142074186330167": {
+    "approved": true,
+    "name": "库洛米奶茶",
+    "keep": true,
+    "flagFree": true
+  },
+  "1068408711579579533": {
+    "approved": true,
+    "name": "国王企鹅",
+    "trim": false,
+    "flagFree": true
+  },
+  "1068408711607918469": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1068408711618648019": {
+    "approved": true,
+    "name": "金色小鱼",
+    "flagFree": true
+  },
+  "1069745717765748656": {
+    "approved": true,
+    "name": "趴趴库洛米",
+    "keep": true,
+    "flagFree": true
+  },
+  "1070941986411427974": {
+    "approved": true,
+    "name": "长尾喜鹊",
+    "keep": true,
+    "flagFree": true
+  },
+  "1072630836238652929": {
+    "approved": false,
+    "name": "爱心凯蒂猫",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "1072630836239282101": {
+    "approved": false,
+    "name": "双兔飞舞",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "1074812267343021623": {
+    "approved": true,
+    "name": "愤怒小火焰",
+    "flagFree": true
+  },
+  "1076993698410421300": {
+    "approved": true,
+    "name": "兔耳大耳狗",
+    "keep": true,
+    "flagFree": true
+  },
+  "1077275173394412050": {
+    "approved": true,
+    "name": "戴围巾小鸭",
+    "keep": true,
+    "flagFree": true
+  },
+  "1079245498212008889": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1079456604504702242": {
+    "approved": true,
+    "name": "樱桃凯蒂猫",
+    "keep": true,
+    "flagFree": true
+  },
+  "1080512135619287193": {
+    "approved": true,
+    "name": "棕色伊布",
+    "flagFree": true
+  },
+  "1080512135619287871": {
+    "approved": true,
+    "name": "阿尼亚头像",
+    "keep": true,
+    "flagFree": true
+  },
+  "1081778772984508786": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1081778772986912064": {
+    "approved": true,
+    "name": "海绵宝宝",
+    "flagFree": true
+  },
+  "1083749098171866754": {
+    "approved": true,
+    "name": "走路白鹅",
+    "trim": false,
+    "flagFree": true
+  },
+  "1083889835357127822": {
+    "approved": true,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足",
+    "parts": [
+      {
+        "name": "太空人巴斯",
+        "crop": [
+          0.45,
+          0,
+          0.55,
+          0.34
+        ],
+        "keep": true,
+        "trim": true
+      },
+      {
+        "name": "牛仔胡迪小人",
+        "crop": [
+          0,
+          0.234,
+          0.54,
+          0.378
+        ],
+        "keep": true,
+        "trim": true
+      },
+      {
+        "name": "三眼仔",
+        "crop": [
+          0.532,
+          0.383,
+          0.468,
+          0.308
+        ],
+        "keep": true,
+        "trim": true
+      },
+      {
+        "name": "牛仔翠丝",
+        "crop": [
+          0.065,
+          0.635,
+          0.5,
+          0.35
+        ],
+        "keep": true,
+        "trim": true
+      }
+    ],
+    "flagFree": true
+  },
+  "1084382416562932657": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1084734260283738731": {
+    "approved": true,
+    "name": "凯蒂猫蛋糕",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "flagFree": true
+  },
+  "1085086104000592700": {
+    "approved": true,
+    "name": "长耳猎犬",
+    "flagFree": true
+  },
+  "1087267535075611782": {
+    "approved": true,
+    "name": "花帽小鸭",
+    "flagFree": true
+  },
+  "1087478641297336246": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1087478641305776694": {
+    "approved": true,
+    "name": "白胖大白",
+    "trim": false,
+    "flagFree": true
+  },
+  "1088604541208502128": {
+    "approved": false,
+    "name": "尤达宝宝",
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "1088745278703335372": {
+    "approved": true,
+    "name": "皮皮",
+    "keep": true,
+    "flagFree": true
+  },
+  "1089308228630352805": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1090152653537491234": {
+    "approved": false,
+    "skip": "合集裁切后的图案细节不足，本批次不采用",
+    "parts": [
+      {
+        "name": "米奇小头像",
+        "crop": [
+          0.0,
+          0.0,
+          0.5,
+          0.3333333333333333
+        ]
+      },
+      {
+        "name": "米妮小头像",
+        "crop": [
+          0.5,
+          0.0,
+          0.5,
+          0.3333333333333333
+        ]
+      },
+      {
+        "name": "唐老鸭小头像",
+        "crop": [
+          0.0,
+          0.3333333333333333,
+          0.5,
+          0.3333333333333333
+        ]
+      },
+      {
+        "name": "黛丝小头像",
+        "crop": [
+          0.5,
+          0.3333333333333333,
+          0.5,
+          0.3333333333333333
+        ]
+      },
+      {
+        "name": "布鲁托小头像",
+        "crop": [
+          0.0,
+          0.6666666666666666,
+          0.5,
+          0.3333333333333333
+        ]
+      },
+      {
+        "name": "高飞小头像",
+        "crop": [
+          0.5,
+          0.6666666666666666,
+          0.5,
+          0.3333333333333333
+        ]
+      }
+    ]
+  },
+  "1090504497276209136": {
+    "approved": true,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足",
+    "parts": [
+      {
+        "name": "狗狗格罗米特",
+        "crop": [
+          0,
+          0,
+          0.58,
+          1
+        ],
+        "keep": true
+      },
+      {
+        "name": "华莱士小人",
+        "crop": [
+          0.6,
+          0,
+          0.4,
+          1
+        ],
+        "keep": true
+      }
+    ],
+    "flagFree": true
+  },
+  "1090997078678103956": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1091771134635995871": {
+    "approved": true,
+    "name": "唐老鸭头像",
+    "flagFree": true
+  },
+  "1091771134639360063": {
+    "approved": true,
+    "name": "大力士皮卡丘",
+    "keep": true,
+    "flagFree": true
+  },
+  "1091771134639684628": {
+    "approved": true,
+    "name": "长脖子小子",
+    "keep": true,
+    "flagFree": true
+  },
+  "1091771134639957266": {
+    "approved": true,
+    "name": "吐舌狗狗",
+    "keep": true,
+    "flagFree": true
+  },
+  "1091771134641750483": {
+    "approved": true,
+    "name": "像素向日葵",
+    "keep": true,
+    "flagFree": true
+  },
+  "1091771134642510336": {
+    "approved": true,
+    "name": "炸弹小黑球",
+    "flagFree": true
+  },
+  "1091771134642647463": {
+    "approved": true,
+    "name": "胡迪牛仔",
+    "keep": true,
+    "flagFree": true
+  },
+  "1091771134652058660": {
+    "approved": true,
+    "name": "尼克狐狸头像",
+    "keep": true,
+    "flagFree": true
+  },
+  "1091771134652152945": {
+    "approved": true,
+    "name": "粉色卡比",
+    "flagFree": true
+  },
+  "1091771134656054986": {
+    "approved": true,
+    "name": "史酷比",
+    "keep": true,
+    "flagFree": true
+  },
+  "1092263715912098914": {
+    "approved": true,
+    "name": "小恐龙骨架",
+    "flagFree": true
+  },
+  "1092263715912098976": {
+    "approved": true,
+    "name": "柠檬小企鹅",
+    "keep": true,
+    "flagFree": true
+  },
+  "1092545190886497007": {
+    "approved": true,
+    "name": "生日小熊",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "flagFree": true
+  },
+  "1092897034674443624": {
+    "approved": false,
+    "name": "粉红熊凯蒂猫",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "keep": true,
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "1093319247089463316": {
+    "approved": true,
+    "name": "圆眼小青蛙",
+    "flagFree": true
+  },
+  "1093671090786207514": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1093671090786828213": {
+    "approved": true,
+    "name": "黑色小猫",
+    "flagFree": true
+  },
+  "1094304409488706704": {
+    "approved": false,
+    "name": "水果双兔",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "1095359940603128758": {
+    "approved": true,
+    "name": "吊灯紫色小精灵",
+    "flagFree": true
+  },
+  "1095711784365754383": {
+    "approved": true,
+    "name": "圣诞凯蒂猫",
+    "keep": true,
+    "flagFree": true
+  },
+  "1095711784377423212": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1095922890594141932": {
+    "approved": true,
+    "name": "月亮伊布皮卡丘",
+    "keep": true,
+    "flagFree": true
+  },
+  "1096063628088381761": {
+    "approved": true,
+    "name": "爱心凯蒂猫",
+    "keep": true,
+    "trim": false,
+    "flagFree": true
+  },
+  "1096978421770159708": {
+    "approved": true,
+    "name": "胖可丁",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "flagFree": true
+  },
+  "1096978421770159718": {
+    "approved": true,
+    "name": "胖丁",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "flagFree": true
+  },
+  "1096978421770159737": {
+    "approved": true,
+    "name": "派拉斯特",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "flagFree": true
+  },
+  "1097259896733358938": {
+    "approved": false,
+    "name": "蝴蝶结小刺猬",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "1099300590313318769": {
+    "approved": true,
+    "name": "凯蒂猫双子星",
+    "keep": true,
+    "flagFree": true
+  },
+  "1099511696505051721": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1101270915150384701": {
+    "approved": true,
+    "name": "草莓库洛米",
+    "keep": true,
+    "flagFree": true
+  },
+  "1101270915150384708": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1101552390139842791": {
+    "approved": true,
+    "name": "蓝色蝴蝶结",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "flagFree": true
+  },
+  "1102256077583975923": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1102819027522098064": {
+    "approved": true,
+    "name": "睡觉橘猫",
+    "flagFree": true
+  },
+  "1105281933554865099": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1105633777254831527": {
+    "approved": true,
+    "name": "抱心熊猫",
+    "flagFree": true
+  },
+  "1105704146038060995": {
+    "approved": true,
+    "name": "粉红蝴蝶结凯蒂猫",
+    "keep": true,
+    "flagFree": true
+  },
+  "1105704146038061040": {
+    "approved": true,
+    "name": "马里奥大耳狗",
+    "keep": true,
+    "flagFree": true
+  },
+  "1106548570976504064": {
+    "approved": true,
+    "name": "爱心考拉",
+    "flagFree": true
+  },
+  "1107533733348410105": {
+    "approved": true,
+    "name": "绿色水晶",
+    "flagFree": true
+  },
+  "1107533733388227512": {
+    "approved": true,
+    "name": "企鹅母子",
+    "flagFree": true
+  },
+  "1108026314598148000": {
+    "approved": true,
+    "name": "史努比爱心",
+    "flagFree": true
+  },
+  "1109152214465591947": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1109152214465591967": {
+    "approved": true,
+    "name": "水下小鱼圈",
+    "flagFree": true
+  },
+  "1109574426972632939": {
+    "approved": false,
+    "name": "苹果小镇",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "1109926270672716074": {
+    "approved": true,
+    "name": "趴趴小黑狗",
+    "keep": true,
+    "flagFree": true
+  },
+  "1110489220646364456": {
+    "approved": true,
+    "name": "熊猫服小女孩",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "keep": true,
+    "flagFree": true
+  },
+  "1110700326842879503": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1111122539344284715": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1111122539344401856": {
+    "approved": true,
+    "name": "三文鱼骨",
+    "flagFree": true
+  },
+  "1111122539344648288": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1111685489291532527": {
+    "approved": true,
+    "name": "黑色小恐龙",
+    "flagFree": true
+  },
+  "1112037333004734676": {
+    "approved": true,
+    "name": "粉色小兔头像",
+    "keep": true,
+    "flagFree": true
+  },
+  "1112529914169261912": {
+    "approved": true,
+    "name": "凯蒂猫方格头像",
+    "flagFree": true
+  },
+  "1112529914225179963": {
+    "approved": true,
+    "name": "小兔气球",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "flagFree": true
+  },
+  "1112811389196790322": {
+    "approved": true,
+    "name": "金色小鸭",
+    "keep": true,
+    "flagFree": true
+  },
+  "1113092864254279930": {
+    "approved": true,
+    "name": "草莓小熊",
+    "keep": true,
+    "flagFree": true
+  },
+  "1113303971662473347": {
+    "approved": true,
+    "name": "凯蒂猫下午茶",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "flagFree": true
+  },
+  "1113726182842540202": {
+    "approved": true,
+    "name": "飞行喷火龙",
+    "flagFree": true
+  },
+  "1113866920359046448": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1114289132841364824": {
+    "approved": true,
+    "name": "花束",
+    "flagFree": true
+  },
+  "1114711345302855913": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1115133557769568918": {
+    "approved": true,
+    "name": "黑魔法师",
+    "flagFree": true
+  },
+  "1115133557769568933": {
+    "approved": true,
+    "name": "库洛米钥匙",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "flagFree": true
+  },
+  "1115133557769568958": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1116118720181164281": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1116470563874365376": {
+    "approved": true,
+    "name": "条纹小青蛙",
+    "keep": true,
+    "flagFree": true
+  },
+  "1117314988832028691": {
+    "approved": true,
+    "name": "边牧头像",
+    "keep": true,
+    "flagFree": true
+  },
+  "1117385357585530952": {
+    "approved": true,
+    "name": "白色雏菊",
+    "keep": true,
+    "flagFree": true
+  },
+  "1117526095021459410": {
+    "approved": true,
+    "name": "花环梦幻",
+    "keep": true,
+    "flagFree": true
+  },
+  "1117948307502078322": {
+    "approved": true,
+    "name": "白雪公主头像",
+    "keep": true,
+    "flagFree": true
+  },
+  "1118651994999452677": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1119637157376094970": {
+    "approved": true,
+    "name": "绿色小恐龙",
+    "keep": true,
+    "flagFree": true
+  },
+  "1119637157376230387": {
+    "approved": true,
+    "name": "尤达宝宝抬手",
+    "keep": true,
+    "flagFree": true
+  },
+  "1119637157376230489": {
+    "approved": true,
+    "name": "小火龙",
+    "flagFree": true
+  },
+  "1120270476040927295": {
+    "approved": true,
+    "name": "派对凯蒂猫",
+    "keep": true,
+    "flagFree": true
+  },
+  "1120833426022469606": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1121326007267009174": {
+    "approved": true,
+    "name": "美乐蒂小兔",
+    "keep": true,
+    "flagFree": true
+  },
+  "1122381538412930008": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1123155594605178229": {
+    "approved": false,
+    "name": "美乐蒂奶茶",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "1124633338229853641": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1125125919694605916": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1125618500642017938": {
+    "approved": true,
+    "name": "圆滚滚熊猫",
+    "keep": true,
+    "flagFree": true
+  },
+  "1126392556839103952": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1127025875536566711": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1127025875536766486": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1128151775407869822": {
+    "approved": false,
+    "name": "戴帽史努比",
+    "keep": true,
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "1129277675330393037": {
+    "approved": true,
+    "name": "超梦皮卡丘",
+    "keep": true,
+    "flagFree": true
+  },
+  "1129348044072986658": {
+    "approved": true,
+    "name": "蓝裙凯蒂猫",
+    "keep": true,
+    "flagFree": true
+  },
+  "1130473943996782615": {
+    "approved": true,
+    "name": "胡萝卜小人",
+    "keep": true,
+    "flagFree": true
+  },
+  "1131107262694725516": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1131670212641910582": {
+    "approved": true,
+    "name": "傲娇小猫",
+    "keep": true,
+    "flagFree": true
+  },
+  "1133710906216582152": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1133710906219432412": {
+    "approved": true,
+    "name": "细脚小虫",
+    "flagFree": true
+  },
+  "1134907174880285720": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1135047912340571952": {
+    "approved": true,
+    "name": "水伊布",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "flagFree": true
+  },
+  "1135329387337141605": {
+    "approved": false,
+    "name": "香蕉凯蒂猫",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "1136103443535898650": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1136596024715159268": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1136666393455589615": {
+    "approved": true,
+    "name": "月亮太阳伊布",
+    "keep": true,
+    "flagFree": true
+  },
+  "1137299712127135206": {
+    "approved": true,
+    "name": "柴犬头像",
+    "keep": true,
+    "flagFree": true
+  },
+  "1137721924643947294": {
+    "approved": true,
+    "name": "天使翅膀",
+    "flagFree": true
+  },
+  "1138495980834289659": {
+    "approved": true,
+    "name": "抱熊小羊",
+    "flagFree": true
+  },
+  "1138918193313138794": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1139832987007938960": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1139973724454160694": {
+    "approved": false,
+    "name": "皮卡丘团子",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "1139973724460355326": {
+    "approved": false,
+    "name": "红色小狐狸",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "1139973724460461034": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1139973724461204537": {
+    "approved": false,
+    "name": "哥特凯蒂猫",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "1139973724461206794": {
+    "approved": true,
+    "name": "花园拱桥",
+    "keep": true,
+    "flagFree": true
+  },
+  "1139973724461223864": {
+    "approved": true,
+    "name": "海边松树",
+    "keep": true,
+    "flagFree": true
+  },
+  "1139973724461224714": {
+    "approved": true,
+    "name": "蒲公英猫咪",
+    "keep": true,
+    "flagFree": true
+  },
+  "1139973724461224734": {
+    "approved": true,
+    "name": "秋天南瓜猫",
+    "keep": true,
+    "flagFree": true
+  },
+  "1139973724461339163": {
+    "approved": false,
+    "name": "森林精灵瓶",
+    "keep": true,
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "1139973724461339273": {
+    "approved": false,
+    "name": "月光小屋瓶",
+    "keep": true,
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "1139973724461348280": {
+    "approved": false,
+    "name": "酥脆饼干",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "keep": true,
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "1139973724461354605": {
+    "approved": false,
+    "name": "星空小船",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "1139973724461505959": {
+    "approved": false,
+    "name": "红灯笼企鹅",
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "1139973724461506316": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1139973724461599155": {
+    "approved": false,
+    "name": "珊瑚海洋瓶",
+    "keep": true,
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "1139973724461599156": {
+    "approved": false,
+    "name": "彩色糖果瓶",
+    "keep": true,
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "1139973724461599230": {
+    "approved": false,
+    "name": "田园春日瓶",
+    "keep": true,
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "1139973724461619904": {
+    "approved": false,
+    "name": "美乐蒂魔法瓶",
+    "keep": true,
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "1139973724461620395": {
+    "approved": false,
+    "name": "金色玻璃罐",
+    "keep": true,
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "1139973724461671885": {
+    "approved": true,
+    "name": "黑猫与月球",
+    "keep": true,
+    "flagFree": true
+  },
+  "1139973724461671891": {
+    "approved": false,
+    "name": "白猫与地球",
+    "keep": true,
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "1139973724461671894": {
+    "approved": true,
+    "name": "橘猫与火星",
+    "keep": true,
+    "flagFree": true
+  },
+  "1139973724461842733": {
+    "approved": true,
+    "name": "烟花双猫",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "flagFree": true
+  },
+  "1142436630461916869": {
+    "approved": true,
+    "name": "害羞美乐蒂",
+    "keep": true,
+    "flagFree": true
+  },
+  "1143351424163352080": {
+    "approved": false,
+    "name": "洋装美乐蒂",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "1143421792930066822": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1143562530371278377": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1144829167755635753": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1145321749005497734": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1145462486476965442": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1145462486511716347": {
+    "approved": true,
+    "name": "灰白小狗",
+    "keep": true,
+    "flagFree": true
+  },
+  "1146377280133092123": {
+    "approved": true,
+    "name": "黑色超梦皮卡丘",
+    "keep": true,
+    "flagFree": true
+  },
+  "1146588386412291627": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1146869861349959582": {
+    "approved": true,
+    "name": "灰色龙猫",
+    "flagFree": true
+  },
+  "1147714286305036070": {
+    "approved": true,
+    "name": "草莓小姑娘",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "flagFree": true
+  },
+  "1148347605020927598": {
+    "approved": true,
+    "name": "蓝背带凯蒂猫",
+    "keep": true,
+    "flagFree": true
+  },
+  "1148347605020927613": {
+    "approved": true,
+    "name": "毛绒小怪兽",
+    "keep": true,
+    "flagFree": true
+  },
+  "1150106823621273959": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "1150106823623172091": {
+    "approved": true,
+    "name": "奶茶凯蒂猫",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "flagFree": true
+  },
+  "1150880879789840671": {
+    "approved": true,
+    "name": "白色小馒头",
+    "keep": true,
+    "flagFree": true
+  },
+  "1151303092277629407": {
+    "approved": false,
+    "name": "凯蒂猫相框",
+    "keep": true,
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "116530709085995542": {
+    "approved": true,
+    "name": "巴特头像",
+    "keep": true,
+    "flagFree": true
+  },
+  "116530709094542948": {
+    "approved": true,
+    "name": "大眼吉娃娃",
+    "keep": true,
+    "flagFree": true
+  },
+  "129900770494749176": {
+    "approved": true,
+    "name": "吐舌皮卡丘",
+    "keep": true,
+    "flagFree": true
+  },
+  "129900770494749182": {
+    "approved": true,
+    "name": "挥手皮卡丘",
+    "keep": true,
+    "flagFree": true
+  },
+  "13299761394419601": {
+    "approved": true,
+    "name": "端坐卡比兽",
+    "keep": true,
+    "flagFree": true
+  },
+  "134685845103352996": {
+    "approved": true,
+    "name": "长颈鹿头像",
+    "flagFree": true
+  },
+  "134826582587867093": {
+    "approved": true,
+    "name": "海豚比心",
+    "keep": true,
+    "flagFree": true
+  },
+  "156429787040508959": {
+    "approved": true,
+    "name": "围巾胖猫",
+    "keep": true,
+    "flagFree": true
+  },
+  "160792649199280826": {
+    "approved": false,
+    "name": "蝴蝶结库洛米",
+    "keep": true,
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "163537030203965921": {
+    "approved": true,
+    "name": "精灵球",
+    "flagFree": true
+  },
+  "16818198601236758": {
+    "approved": true,
+    "name": "浣熊头像",
+    "keep": true,
+    "flagFree": true
+  },
+  "169377635981037359": {
+    "approved": true,
+    "name": "惊声面具",
+    "keep": true,
+    "flagFree": true
+  },
+  "172755335704331825": {
+    "approved": true,
+    "name": "彩色曼陀罗花",
+    "keep": true,
+    "flagFree": true
+  },
+  "178314466486742855": {
+    "approved": true,
+    "name": "杰尼龟",
+    "keep": true,
+    "flagFree": true
+  },
+  "184788390952078815": {
+    "approved": true,
+    "name": "开心海绵宝宝",
+    "keep": true,
+    "flagFree": true
+  },
+  "187392034485004328": {
+    "approved": true,
+    "name": "海鸥台词牌",
+    "keep": true,
+    "flagFree": true
+  },
+  "201184308347225999": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "205054589258227789": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "210472982576887282": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "210824826301331122": {
+    "approved": true,
+    "name": "皮卡丘精灵球",
+    "keep": true,
+    "flagFree": true
+  },
+  "216524694580599788": {
+    "approved": true,
+    "name": "小仓鼠头像",
+    "keep": true,
+    "flagFree": true
+  },
+  "224757837647935355": {
+    "approved": true,
+    "name": "花帽小熊",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "keep": true,
+    "flagFree": true
+  },
+  "227291112435443957": {
+    "approved": true,
+    "name": "彩虹爱心花纹",
+    "keep": true,
+    "flagFree": true
+  },
+  "227572587399369962": {
+    "approved": true,
+    "name": "阿甘猫",
+    "keep": true,
+    "flagFree": true
+  },
+  "234116880614691078": {
+    "approved": true,
+    "name": "灰鼠杰瑞",
+    "keep": true,
+    "flagFree": true
+  },
+  "240942648801932065": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "283093526573060261": {
+    "approved": true,
+    "name": "松鼠双子",
+    "keep": true,
+    "flagFree": true
+  },
+  "283093526573060273": {
+    "approved": true,
+    "name": "奶茶小美西螈",
+    "keep": true,
+    "flagFree": true
+  },
+  "283093526573060275": {
+    "approved": true,
+    "name": "小仓鼠抱饭团",
+    "keep": true,
+    "flagFree": true
+  },
+  "283093526573060297": {
+    "approved": true,
+    "name": "猴子比心",
+    "keep": true,
+    "flagFree": true
+  },
+  "283093526573060306": {
+    "approved": true,
+    "name": "戴耳机小松鼠",
+    "keep": true,
+    "flagFree": true
+  },
+  "285345326386040049": {
+    "approved": true,
+    "name": "花园凯蒂猫",
+    "keep": true,
+    "flagFree": true
+  },
+  "287808232421074322": {
+    "approved": false,
+    "name": "趴趴皮卡丘",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "289778557297147913": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "289778557297147944": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "290904457203582403": {
+    "approved": true,
+    "name": "红色章鱼",
+    "flagFree": true
+  },
+  "295478425571491379": {
+    "approved": true,
+    "name": "黑色小蜗牛",
+    "keep": true,
+    "flagFree": true
+  },
+  "298293175289456642": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "299630181479702833": {
+    "approved": true,
+    "name": "水豚表情方框",
+    "keep": true,
+    "flagFree": true
+  },
+  "299630181479702838": {
+    "approved": true,
+    "name": "坐姿小水豚",
+    "keep": true,
+    "flagFree": true
+  },
+  "304837468551735496": {
+    "approved": false,
+    "name": "生日礼物相框",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "304837468552097046": {
+    "approved": false,
+    "name": "粉色包包吊牌",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "304837468553037667": {
+    "approved": true,
+    "name": "彩虹黑猫",
+    "keep": true,
+    "flagFree": true
+  },
+  "307441112045972982": {
+    "approved": true,
+    "name": "微笑便便",
+    "flagFree": true
+  },
+  "310959549253581940": {
+    "approved": true,
+    "name": "滑板巴特",
+    "keep": true,
+    "flagFree": true
+  },
+  "313774299047280731": {
+    "approved": true,
+    "name": "玉米饼小可爱",
+    "keep": true,
+    "flagFree": true
+  },
+  "317292736223784223": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "317996423706100160": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "325807354315454029": {
+    "approved": true,
+    "name": "梦幻夜空瓶",
+    "keep": true,
+    "flagFree": true
+  },
+  "326018460498063364": {
+    "approved": true,
+    "name": "惊讶崔弟",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "keep": true,
+    "flagFree": true
+  },
+  "326370304222503777": {
+    "approved": false,
+    "name": "公主凯蒂猫",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "keep": true,
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "326722147992786703": {
+    "approved": true,
+    "name": "小火龙捧星光",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "flagFree": true
+  },
+  "326722147992786704": {
+    "approved": true,
+    "name": "圣诞妙蛙种子",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "flagFree": true
+  },
+  "326722147992786767": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "328762841571188928": {
+    "approved": true,
+    "name": "冰伊布皮卡丘",
+    "keep": true,
+    "flagFree": true
+  },
+  "328762841571188931": {
+    "approved": false,
+    "name": "皮皮皮卡丘",
+    "keep": true,
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "329044316549585769": {
+    "approved": true,
+    "name": "彩虹像素心",
+    "flagFree": true
+  },
+  "334181234854834015": {
+    "approved": false,
+    "name": "向日葵小兔",
+    "keep": true,
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "334744184822517119": {
+    "approved": true,
+    "name": "铃铛黑猫",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "flagFree": true
+  },
+  "334955291045842953": {
+    "approved": true,
+    "name": "大眼仔",
+    "keep": true,
+    "flagFree": true
+  },
+  "336362665939139554": {
+    "approved": true,
+    "name": "气球飞屋",
+    "keep": true,
+    "flagFree": true
+  },
+  "336925615880427409": {
+    "approved": true,
+    "name": "新娘凯蒂猫",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "keep": true,
+    "flagFree": true
+  },
+  "33706697208157810": {
+    "approved": true,
+    "name": "魔法蝙蝠之书",
+    "flagFree": true
+  },
+  "338825571978744432": {
+    "approved": true,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足",
+    "parts": [
+      {
+        "name": "万圣节巫师库洛米",
+        "crop": [
+          0,
+          0,
+          0.5,
+          0.3
+        ]
+      },
+      {
+        "name": "万圣节美乐蒂",
+        "crop": [
+          0.5,
+          0,
+          0.5,
+          0.3
+        ]
+      },
+      {
+        "name": "南瓜帽白猫",
+        "crop": [
+          0,
+          0.31,
+          0.5,
+          0.3
+        ]
+      },
+      {
+        "name": "南瓜灯头像",
+        "crop": [
+          0.5,
+          0.31,
+          0.5,
+          0.3
+        ]
+      }
+    ],
+    "flagFree": true
+  },
+  "340936634315123810": {
+    "approved": true,
+    "name": "可爱喷火龙",
+    "keep": true,
+    "flagFree": true
+  },
+  "348325352434989582": {
+    "approved": true,
+    "name": "小熊头像",
+    "keep": true,
+    "flagFree": true
+  },
+  "349029039903573915": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "350366046033232853": {
+    "approved": false,
+    "name": "小兔甜甜圈",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "keep": true,
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "350366046033691881": {
+    "approved": false,
+    "name": "兔兔棒棒糖",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "keep": true,
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "350366046033716379": {
+    "approved": false,
+    "name": "库洛米棒冰",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "keep": true,
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "350506783522101656": {
+    "approved": true,
+    "name": "眨眼库洛米",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "keep": true,
+    "flagFree": true
+  },
+  "350506783522154344": {
+    "approved": true,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足",
+    "parts": [
+      {
+        "name": "库洛米草莓",
+        "crop": [
+          0.0,
+          0.0,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      },
+      {
+        "name": "库洛米小礼物",
+        "crop": [
+          0.3333333333333333,
+          0.0,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      },
+      {
+        "name": "库洛米甜心",
+        "crop": [
+          0.6666666666666666,
+          0.0,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      },
+      {
+        "name": "库洛米开心",
+        "crop": [
+          0.0,
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      },
+      {
+        "name": "库洛米蝴蝶结",
+        "crop": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      },
+      {
+        "name": "库洛米思考",
+        "crop": [
+          0.6666666666666666,
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      },
+      {
+        "name": "库洛米爱心",
+        "crop": [
+          0.0,
+          0.6666666666666666,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      },
+      {
+        "name": "库洛米花朵",
+        "crop": [
+          0.3333333333333333,
+          0.6666666666666666,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      },
+      {
+        "name": "库洛米小抱枕",
+        "crop": [
+          0.6666666666666666,
+          0.6666666666666666,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      }
+    ],
+    "flagFree": true
+  },
+  "351421577168903393": {
+    "approved": true,
+    "name": "吉他小狗",
+    "keep": true,
+    "flagFree": true
+  },
+  "355925176822053883": {
+    "approved": true,
+    "name": "叶伊布",
+    "keep": true,
+    "flagFree": true
+  },
+  "367536019582830069": {
+    "approved": true,
+    "name": "哈士奇头像",
+    "keep": true,
+    "flagFree": true
+  },
+  "368450813277546141": {
+    "approved": true,
+    "name": "粉色小猪",
+    "keep": true,
+    "flagFree": true
+  },
+  "370702613100145084": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "370772981801391889": {
+    "approved": true,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足",
+    "parts": [
+      {
+        "name": "桃花公主",
+        "crop": [
+          0,
+          0,
+          0.26,
+          1
+        ]
+      },
+      {
+        "name": "马里奥小英雄",
+        "crop": [
+          0.27,
+          0,
+          0.25,
+          1
+        ]
+      },
+      {
+        "name": "路易吉小英雄",
+        "crop": [
+          0.52,
+          0,
+          0.25,
+          1
+        ]
+      },
+      {
+        "name": "蘑菇小伙伴",
+        "crop": [
+          0.77,
+          0,
+          0.23,
+          1
+        ]
+      }
+    ],
+    "flagFree": true
+  },
+  "371124825566816506": {
+    "approved": true,
+    "name": "猫耳小人",
+    "keep": true,
+    "flagFree": true
+  },
+  "37436240628765451": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "376121006355504410": {
+    "approved": true,
+    "name": "纯白蝴蝶结",
+    "flagFree": true
+  },
+  "377176537546499637": {
+    "approved": true,
+    "name": "熊猫头像",
+    "keep": true,
+    "flagFree": true
+  },
+  "379780181096590168": {
+    "approved": true,
+    "name": "蕾丝蝴蝶结库洛米",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "keep": true,
+    "flagFree": true
+  },
+  "383791199526404842": {
+    "approved": false,
+    "name": "爱心眼镜凯蒂猫",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "384424518202840301": {
+    "approved": true,
+    "name": "拥抱树懒",
+    "keep": true,
+    "flagFree": true
+  },
+  "384635624442838524": {
+    "approved": true,
+    "name": "樱桃大耳狗",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "keep": true,
+    "flagFree": true
+  },
+  "385972630543760117": {
+    "approved": true,
+    "name": "巧克力小黄人",
+    "keep": true,
+    "flagFree": true
+  },
+  "386746686772689984": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "386957793004678280": {
+    "approved": true,
+    "name": "蓝色忍者",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "keep": true,
+    "flagFree": true
+  },
+  "389842911466082107": {
+    "approved": true,
+    "name": "甜甜圈凯蒂猫",
+    "keep": true,
+    "flagFree": true
+  },
+  "390054017753347016": {
+    "approved": false,
+    "name": "彩虹云朵",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "keep": true,
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "390124386491136725": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "39265827976442946": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "394065036166237081": {
+    "approved": true,
+    "name": "太阳月亮伊布",
+    "keep": true,
+    "flagFree": true
+  },
+  "395261304821139921": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "398709373277490503": {
+    "approved": true,
+    "name": "粉色双樱桃",
+    "keep": true,
+    "flagFree": true
+  },
+  "404127766545020089": {
+    "approved": true,
+    "name": "害羞崔弟",
+    "keep": true,
+    "flagFree": true
+  },
+  "404268504052613280": {
+    "approved": true,
+    "name": "西瓜小伙伴",
+    "keep": true,
+    "flagFree": true
+  },
+  "406872147605668004": {
+    "approved": true,
+    "name": "抱抱小动物",
+    "keep": true,
+    "flagFree": true
+  },
+  "408912841181586574": {
+    "approved": true,
+    "name": "花朵爱心",
+    "keep": true,
+    "flagFree": true
+  },
+  "411094272262277957": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "413557178303626807": {
+    "approved": true,
+    "name": "椰子布丁狗",
+    "keep": true,
+    "flagFree": true
+  },
+  "415527503142948753": {
+    "approved": true,
+    "name": "祈愿库洛米",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "keep": true,
+    "flagFree": true
+  },
+  "416090453047778006": {
+    "approved": true,
+    "name": "星星小翅膀",
+    "flagFree": true
+  },
+  "416442296822226822": {
+    "approved": true,
+    "name": "蓝环月亮伊布",
+    "keep": true,
+    "flagFree": true
+  },
+  "416442296823246609": {
+    "approved": true,
+    "name": "坏笑耿鬼",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "keep": true,
+    "flagFree": true
+  },
+  "416442296824005137": {
+    "approved": true,
+    "name": "眼镜鲨鱼",
+    "keep": true,
+    "flagFree": true
+  },
+  "418834834122237041": {
+    "approved": true,
+    "name": "夜煞小龙",
+    "keep": true,
+    "flagFree": true
+  },
+  "420523683961406005": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "423197696257383720": {
+    "approved": true,
+    "name": "比心库洛米",
+    "keep": true,
+    "flagFree": true
+  },
+  "423197696259044206": {
+    "approved": true,
+    "name": "魔幻飞蛾",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "keep": true,
+    "flagFree": true
+  },
+  "423690277461275785": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "423690277462672404": {
+    "approved": false,
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整",
+    "parts": [
+      {
+        "name": "马里奥月亮",
+        "crop": [
+          0,
+          0,
+          0.55,
+          0.3333333333333333
+        ]
+      },
+      {
+        "name": "马里奥火焰花",
+        "crop": [
+          0,
+          0.3333333333333333,
+          0.55,
+          0.3333333333333333
+        ]
+      },
+      {
+        "name": "马里奥耀西蛋",
+        "crop": [
+          0,
+          0.6666666666666666,
+          0.55,
+          0.3333333333333333
+        ]
+      }
+    ]
+  },
+  "424956914861855781": {
+    "approved": false,
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整",
+    "parts": [
+      {
+        "name": "煤球精灵小星星",
+        "crop": [
+          0,
+          0,
+          1,
+          0.34
+        ]
+      },
+      {
+        "name": "煤球精灵糖果",
+        "crop": [
+          0,
+          0.34,
+          1,
+          0.33
+        ]
+      },
+      {
+        "name": "煤球精灵小花",
+        "crop": [
+          0,
+          0.67,
+          1,
+          0.33
+        ]
+      }
+    ]
+  },
+  "426716133463221129": {
+    "approved": true,
+    "name": "圣诞小火龙",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "keep": true,
+    "flagFree": true
+  },
+  "427208714675499178": {
+    "approved": true,
+    "name": "蜂蜜小熊",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "keep": true,
+    "flagFree": true
+  },
+  "428404983315782177": {
+    "approved": true,
+    "name": "圆滚滚皮卡丘",
+    "keep": true,
+    "flagFree": true
+  },
+  "432486370485528343": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "432627107968583133": {
+    "approved": true,
+    "name": "黑白狐狸",
+    "keep": true,
+    "flagFree": true
+  },
+  "433753007868459887": {
+    "approved": true,
+    "name": "魔法星星卡比",
+    "keep": true,
+    "flagFree": true
+  },
+  "436356651375641124": {
+    "approved": false,
+    "name": "爱心翼凯蒂猫",
+    "keep": true,
+    "skip": "转换预览审核未通过：编号、网格或色表残留，或图案细节及轮廓不完整"
+  },
+  "436778863841419983": {
+    "approved": true,
+    "name": "背包蓝龙猫",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "keep": true,
+    "flagFree": true
+  },
+  "438397345006313256": {
+    "approved": true,
+    "name": "彩色小海马",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.86
+    ],
+    "flagFree": true
+  },
+  "441282463465185577": {
+    "approved": true,
+    "name": "黄色草帽头像",
+    "keep": true,
+    "flagFree": true
+  },
+  "441915782202127891": {
+    "approved": true,
+    "name": "红蝴蝶结凯蒂猫头像",
+    "keep": true,
+    "flagFree": true
+  },
+  "443323157046708951": {
+    "approved": true,
+    "name": "绿色路易吉",
+    "keep": true,
+    "flagFree": true
+  },
+  "444800900720984636": {
+    "approved": true,
+    "name": "困困小乌龟",
+    "keep": true,
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "444800900720984655": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "444800900720984673": {
+    "approved": false,
+    "name": "迷你皮卡丘团子",
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "445293481976503520": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "445786063101059975": {
+    "approved": true,
+    "name": "微笑耿鬼",
+    "keep": true,
+    "flagFree": true
+  },
+  "447826756759521020": {
+    "approved": true,
+    "name": "淡紫色蝴蝶",
+    "flagFree": true
+  },
+  "448319337879090444": {
+    "approved": true,
+    "name": "蓝耳塔麻可吉",
+    "flagFree": true
+  },
+  "449937819040723699": {
+    "approved": true,
+    "name": "抱心凯蒂猫",
+    "keep": true,
+    "flagFree": true
+  },
+  "452541462559339116": {
+    "approved": true,
+    "name": "玫瑰方框",
+    "keep": true,
+    "flagFree": true
+  },
+  "454159943680856462": {
+    "approved": true,
+    "name": "超梦小人",
+    "keep": true,
+    "flagFree": true
+  },
+  "459015387042156254": {
+    "approved": true,
+    "name": "紫色小河马",
+    "keep": true,
+    "flagFree": true
+  },
+  "4599512316890134528": {
+    "approved": true,
+    "name": "小企鹅平古",
+    "keep": true,
+    "flagFree": true
+  },
+  "4610349084741806656": {
+    "approved": true,
+    "name": "蓝色剑龙",
+    "keep": true,
+    "flagFree": true
+  },
+  "461478293047055859": {
+    "approved": true,
+    "name": "打盹小熊",
+    "keep": true,
+    "flagFree": true
+  },
+  "461619030529981970": {
+    "approved": true,
+    "name": "妙蛙种子",
+    "keep": true,
+    "flagFree": true
+  },
+  "462041242993544824": {
+    "approved": true,
+    "name": "紫色皮卡丘游戏机",
+    "keep": true,
+    "flagFree": true
+  },
+  "462956036677498971": {
+    "approved": true,
+    "name": "机器人瓦力",
+    "keep": true,
+    "flagFree": true
+  },
+  "466474473927336182": {
+    "approved": true,
+    "name": "蜘蛛侠吊坠",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "469218854929364631": {
+    "approved": true,
+    "name": "胖丁小精灵",
+    "keep": true,
+    "flagFree": true
+  },
+  "469922542389715367": {
+    "approved": true,
+    "name": "星空大耳狗",
+    "keep": true,
+    "flagFree": true
+  },
+  "471189179791963091": {
+    "approved": false,
+    "name": "魔法帽大耳狗",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "471189179791963094": {
+    "approved": true,
+    "name": "小恶魔骷髅",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "471329917268714052": {
+    "approved": true,
+    "name": "彩耳布丁狗",
+    "keep": true,
+    "flagFree": true
+  },
+  "474355773275561901": {
+    "approved": false,
+    "name": "四季窗景",
+    "keep": true,
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "474355773275561920": {
+    "approved": true,
+    "name": "草莓果酱",
+    "keep": true,
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "474355773275561921": {
+    "approved": true,
+    "name": "草莓切片",
+    "keep": true,
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "474355773275561922": {
+    "approved": true,
+    "name": "草莓奶油三明治",
+    "keep": true,
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "474355773275561924": {
+    "approved": true,
+    "name": "新鲜草莓",
+    "keep": true,
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "474355773275561925": {
+    "approved": true,
+    "name": "草莓可颂",
+    "keep": true,
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "474355773275561926": {
+    "approved": true,
+    "name": "草莓蛋挞",
+    "keep": true,
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "474355773275561932": {
+    "approved": true,
+    "name": "草莓甜筒",
+    "keep": true,
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "474355773275561935": {
+    "approved": true,
+    "name": "草莓蛋糕卷切片",
+    "keep": true,
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "474355773275588980": {
+    "approved": true,
+    "name": "布丁狗奶茶",
+    "keep": true,
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "474355773275588984": {
+    "approved": true,
+    "name": "巧克力奶昔",
+    "keep": true,
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "474355773275588985": {
+    "approved": false,
+    "name": "彩虹冰淇淋杯",
+    "keep": true,
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "474355773275589092": {
+    "approved": false,
+    "name": "樱花团扇",
+    "keep": true,
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "474355773275589098": {
+    "approved": false,
+    "name": "蓝花团扇",
+    "keep": true,
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "474355773275617386": {
+    "approved": false,
+    "name": "月夜小猫",
+    "keep": true,
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "474355773275617387": {
+    "approved": true,
+    "name": "向日葵橘猫",
+    "keep": true,
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "474355773275617388": {
+    "approved": false,
+    "name": "樱花熟睡小猫",
+    "keep": true,
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "474355773275617389": {
+    "approved": false,
+    "name": "雏菊小猫",
+    "keep": true,
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "474355773275617418": {
+    "approved": true,
+    "name": "气球史努比",
+    "keep": true,
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "474355773275617419": {
+    "approved": true,
+    "name": "滑雪史努比",
+    "keep": true,
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "474355773275617420": {
+    "approved": true,
+    "name": "野餐史努比",
+    "keep": true,
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "474355773275617421": {
+    "approved": true,
+    "name": "橙汁史努比",
+    "keep": true,
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "474355773275617422": {
+    "approved": true,
+    "name": "星空史努比",
+    "keep": true,
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "474355773275617423": {
+    "approved": false,
+    "name": "早餐史努比",
+    "keep": true,
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "474355773275617427": {
+    "approved": true,
+    "name": "雨伞史努比",
+    "keep": true,
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "474355773275631780": {
+    "approved": false,
+    "name": "深海黑猫",
+    "keep": true,
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "474355773275631781": {
+    "approved": true,
+    "name": "珊瑚黑猫",
+    "keep": true,
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "476255729356835859": {
+    "approved": false,
+    "name": "黛丝小头像",
+    "keep": true,
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "477451998011470393": {
+    "approved": false,
+    "name": "大蝴蝶结凯蒂猫头像",
+    "keep": true,
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "478577897880333498": {
+    "approved": true,
+    "name": "穿和服凯蒂猫",
+    "keep": true,
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "480055641545231691": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "483785184992703505": {
+    "approved": true,
+    "name": "草莓奶昔",
+    "keep": true,
+    "flagFree": true
+  },
+  "487162884713877533": {
+    "approved": true,
+    "name": "凯蒂猫抱草莓",
+    "keep": true,
+    "flagFree": true
+  },
+  "488570259600619595": {
+    "approved": true,
+    "name": "可爱小魔杖",
+    "keep": true,
+    "flagFree": true
+  },
+  "490540584431636047": {
+    "approved": true,
+    "name": "展开双臂库洛米",
+    "keep": true,
+    "flagFree": true
+  },
+  "490610953174393916": {
+    "approved": true,
+    "name": "圆肚卡比兽",
+    "keep": true,
+    "flagFree": true
+  },
+  "491103534375590926": {
+    "approved": true,
+    "name": "白色超梦皮卡丘",
+    "keep": true,
+    "flagFree": true
+  },
+  "491314640580810074": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "492018328053569784": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "492018328053583002": {
+    "approved": true,
+    "name": "黑猫南瓜灯",
+    "keep": true,
+    "flagFree": true
+  },
+  "492440540521016443": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "493214596708637765": {
+    "approved": true,
+    "name": "利欧路小头像",
+    "keep": true,
+    "flagFree": true
+  },
+  "493284965452939800": {
+    "approved": true,
+    "name": "月亮伊布爬爬",
+    "keep": true,
+    "flagFree": true
+  },
+  "499758889894047849": {
+    "approved": true,
+    "name": "史努比方格头像",
+    "keep": true,
+    "flagFree": true
+  },
+  "508343876701453956": {
+    "approved": false,
+    "name": "粉色铃铛小猫",
+    "keep": true,
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "508625351663258729": {
+    "approved": true,
+    "name": "达菲鸭",
+    "keep": true,
+    "crop": [
+      0.1,
+      0,
+      0.9,
+      1
+    ],
+    "flagFree": true
+  },
+  "509329039134956633": {
+    "approved": true,
+    "name": "捕虫草",
+    "flagFree": true
+  },
+  "513480795039337952": {
+    "approved": true,
+    "name": "黄色皮克敏花",
+    "keep": true,
+    "flagFree": true
+  },
+  "514536326200516491": {
+    "approved": false,
+    "name": "奶茶小水豚",
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "516717757273546815": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "522628731771948124": {
+    "approved": true,
+    "name": "迷你企鹅",
+    "keep": true,
+    "flagFree": true
+  },
+  "522628731772249837": {
+    "approved": true,
+    "name": "迷你库洛米",
+    "keep": true,
+    "flagFree": true
+  },
+  "523895369173639016": {
+    "approved": true,
+    "name": "西高地白梗",
+    "keep": true,
+    "flagFree": true
+  },
+  "52495151881075486": {
+    "approved": true,
+    "name": "死侍头像",
+    "keep": true,
+    "flagFree": true
+  },
+  "52635889383136820": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "527554543873176853": {
+    "approved": false,
+    "name": "蓝色编织鱼群",
+    "keep": true,
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "528610075035132598": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "529243393702621138": {
+    "approved": true,
+    "name": "蓝色企鹅",
+    "keep": true,
+    "flagFree": true
+  },
+  "529243393702621520": {
+    "approved": true,
+    "name": "圆滚滚熊猫",
+    "keep": true,
+    "flagFree": true
+  },
+  "530510031122413155": {
+    "approved": true,
+    "name": "月亮伊布侧身",
+    "keep": true,
+    "flagFree": true
+  },
+  "530650768612740728": {
+    "approved": true,
+    "name": "伊布皮卡丘",
+    "keep": true,
+    "flagFree": true
+  },
+  "534450680805964384": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "535717318167568489": {
+    "approved": true,
+    "name": "紫底凯蒂猫",
+    "keep": true,
+    "flagFree": true
+  },
+  "535928424392077813": {
+    "approved": true,
+    "name": "草莓套装凯蒂猫",
+    "keep": true,
+    "flagFree": true
+  },
+  "540080180341752170": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "540854236521628908": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "541628292676068016": {
+    "approved": true,
+    "name": "小飞鼠皮卡丘",
+    "keep": true,
+    "flagFree": true
+  },
+  "542472717623658947": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "542683823870881597": {
+    "approved": false,
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足",
+    "parts": [
+      {
+        "name": "黄色皮克敏",
+        "crop": [
+          0,
+          0,
+          0.34,
+          1
+        ]
+      },
+      {
+        "name": "红色皮克敏",
+        "crop": [
+          0.34,
+          0,
+          0.33,
+          1
+        ]
+      },
+      {
+        "name": "蓝色皮克敏",
+        "crop": [
+          0.67,
+          0,
+          0.33,
+          1
+        ]
+      }
+    ]
+  },
+  "543246773776763052": {
+    "approved": true,
+    "name": "小熊维尼",
+    "keep": true,
+    "flagFree": true
+  },
+  "543457880037087314": {
+    "approved": true,
+    "name": "星之卡比",
+    "flagFree": true
+  },
+  "545005992422844211": {
+    "approved": true,
+    "name": "魔法骷髅",
+    "keep": true,
+    "flagFree": true
+  },
+  "546765211002307100": {
+    "approved": true,
+    "name": "蓝色伊布游戏机",
+    "keep": true,
+    "flagFree": true
+  },
+  "5488830788585196": {
+    "approved": true,
+    "name": "哈士奇方格头像",
+    "keep": true,
+    "flagFree": true
+  },
+  "549087379550042447": {
+    "approved": true,
+    "name": "开心皮卡丘",
+    "keep": true,
+    "flagFree": true
+  },
+  "549087379552650773": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "549368854570008155": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "550142910754318047": {
+    "approved": true,
+    "name": "仙子伊布精灵球",
+    "keep": true,
+    "flagFree": true
+  },
+  "557109416424049620": {
+    "approved": true,
+    "name": "宇航员小企鹅",
+    "keep": true,
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "557109416424455697": {
+    "approved": true,
+    "name": "猫头鹰",
+    "keep": true,
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "557109416427866263": {
+    "approved": true,
+    "name": "月夜白天鹅",
+    "keep": true,
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "560276009910629862": {
+    "approved": true,
+    "name": "猴子双双比心",
+    "keep": true,
+    "flagFree": true
+  },
+  "560557484892850650": {
+    "approved": true,
+    "name": "酷企鹅头像",
+    "keep": true,
+    "flagFree": true
+  },
+  "562527809712027929": {
+    "approved": true,
+    "name": "史努比侧身",
+    "keep": true,
+    "flagFree": true
+  },
+  "563372234618467949": {
+    "approved": true,
+    "name": "卡拉卡拉皮卡丘",
+    "keep": true,
+    "flagFree": true
+  },
+  "564146290838641780": {
+    "approved": true,
+    "name": "脸红小企鹅",
+    "keep": true,
+    "flagFree": true
+  },
+  "564638872038009034": {
+    "approved": true,
+    "name": "飘逸冰雪九尾",
+    "keep": true,
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "564849978286188586": {
+    "approved": true,
+    "name": "圆眼波加曼",
+    "keep": true,
+    "flagFree": true
+  },
+  "566609196889706998": {
+    "approved": true,
+    "name": "深蓝小鲸鱼",
+    "keep": true,
+    "flagFree": true
+  },
+  "569212840381741736": {
+    "approved": true,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足",
+    "parts": [
+      {
+        "name": "阳光关爱小熊",
+        "crop": [
+          0.0,
+          0.0,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      },
+      {
+        "name": "彩虹关爱小熊",
+        "crop": [
+          0.3333333333333333,
+          0.0,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      },
+      {
+        "name": "四叶草关爱小熊",
+        "crop": [
+          0.6666666666666666,
+          0.0,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      },
+      {
+        "name": "雨云关爱小熊",
+        "crop": [
+          0.0,
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      },
+      {
+        "name": "爱心关爱小熊",
+        "crop": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      },
+      {
+        "name": "蜂蜜关爱小熊",
+        "crop": [
+          0.6666666666666666,
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      },
+      {
+        "name": "甜心关爱小熊",
+        "crop": [
+          0.0,
+          0.6666666666666666,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      },
+      {
+        "name": "幸运关爱小熊",
+        "crop": [
+          0.3333333333333333,
+          0.6666666666666666,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      },
+      {
+        "name": "星月关爱小熊",
+        "crop": [
+          0.6666666666666666,
+          0.6666666666666666,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      }
+    ],
+    "flagFree": true
+  },
+  "569635052888800977": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "569846159082395476": {
+    "approved": true,
+    "name": "樱桃巧克力纸杯蛋糕",
+    "keep": true,
+    "flagFree": true
+  },
+  "570620215307119202": {
+    "approved": true,
+    "name": "红衣小女孩",
+    "keep": true,
+    "flagFree": true
+  },
+  "576390452328412282": {
+    "approved": true,
+    "name": "白色胖龙猫",
+    "keep": true,
+    "flagFree": true
+  },
+  "576390452335556456": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "578290408428897183": {
+    "approved": true,
+    "name": "森林龙猫",
+    "keep": true,
+    "flagFree": true
+  },
+  "580260733251302095": {
+    "approved": true,
+    "name": "喷火龙皮卡丘",
+    "keep": true,
+    "flagFree": true
+  },
+  "580401470741987166": {
+    "approved": true,
+    "name": "西瓜凯蒂猫",
+    "keep": true,
+    "flagFree": true
+  },
+  "582231058116958574": {
+    "approved": true,
+    "name": "伊布松饼",
+    "keep": true,
+    "crop": [
+      0.1,
+      0.12,
+      0.8,
+      0.64
+    ],
+    "flagFree": true
+  },
+  "584553226656393562": {
+    "approved": true,
+    "name": "开心波加曼",
+    "keep": true,
+    "flagFree": true
+  },
+  "586242076501884575": {
+    "approved": true,
+    "name": "史迪奇小头像",
+    "keep": true,
+    "flagFree": true
+  },
+  "587156870214884336": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "587156870214884338": {
+    "approved": true,
+    "name": "跳舞动物兄弟",
+    "flagFree": true
+  },
+  "588775351320334631": {
+    "approved": true,
+    "name": "鸣人头像",
+    "flagFree": true
+  },
+  "588986457587816923": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "589408670006539634": {
+    "approved": true,
+    "name": "紫晶花纹",
+    "flagFree": true
+  },
+  "592856738452128210": {
+    "approved": true,
+    "name": "生日皮卡丘",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "593138213471660292": {
+    "approved": true,
+    "name": "万圣节城堡编织",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "597430706808737161": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "599682506619245351": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "599682506664143534": {
+    "approved": true,
+    "name": "蓝衣凯蒂猫",
+    "flagFree": true
+  },
+  "599682506664143621": {
+    "approved": true,
+    "name": "红帽美乐蒂",
+    "flagFree": true
+  },
+  "602356518953579649": {
+    "approved": true,
+    "name": "困倦柴犬",
+    "flagFree": true
+  },
+  "603200943872398150": {
+    "approved": true,
+    "name": "蓝色水母",
+    "flagFree": true
+  },
+  "603904631293613216": {
+    "approved": true,
+    "name": "抱心熊猫全身",
+    "flagFree": true
+  },
+  "603975000066086195": {
+    "approved": true,
+    "name": "小企鹅挥手",
+    "flagFree": true
+  },
+  "606226799846392770": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "607986018453293967": {
+    "approved": true,
+    "name": "彩虹爱心编织",
+    "flagFree": true
+  },
+  "609111918374688492": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "609393393347848676": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "613122936743248769": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "613193305508075513": {
+    "approved": true,
+    "name": "小四叶草",
+    "flagFree": true
+  },
+  "614459942939713935": {
+    "approved": true,
+    "name": "幸运四叶草",
+    "flagFree": true
+  },
+  "616852480222313888": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "617345061501245493": {
+    "approved": true,
+    "name": "喷火龙振翅",
+    "flagFree": true
+  },
+  "617978380159963777": {
+    "approved": true,
+    "name": "懒蛋蛋荷包蛋",
+    "flagFree": true
+  },
+  "618189486384082503": {
+    "approved": true,
+    "name": "尼莫小丑鱼",
+    "flagFree": true
+  },
+  "618259855141741084": {
+    "approved": true,
+    "name": "黑色八号球",
+    "flagFree": true
+  },
+  "619104280005221846": {
+    "approved": true,
+    "name": "大眼库洛米",
+    "flagFree": true
+  },
+  "619385755048519108": {
+    "approved": true,
+    "name": "火红枫叶",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "621074604907702723": {
+    "approved": true,
+    "name": "狐狸坐姿",
+    "flagFree": true
+  },
+  "622552348496952020": {
+    "approved": true,
+    "name": "考拉抱树",
+    "flagFree": true
+  },
+  "623748617198930184": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "623748617199017093": {
+    "approved": false,
+    "name": "库洛米生气头像",
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "625437467011593028": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "625507835780735540": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "625718941955062342": {
+    "approved": true,
+    "name": "法国斗牛犬头像",
+    "flagFree": true
+  },
+  "627548529368361607": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "629870697925135072": {
+    "approved": true,
+    "name": "举手布鲁伊",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "632755816444662003": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "632966922622475228": {
+    "approved": true,
+    "name": "扫帚魔法凯蒂猫",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "63472675993243460": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "635781672438222165": {
+    "approved": true,
+    "name": "粉色爱心蝴蝶结",
+    "flagFree": true
+  },
+  "636203884944508540": {
+    "approved": false,
+    "name": "猴子小精灵",
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "636344622389721394": {
+    "approved": true,
+    "name": "瓦豆鲁迪",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "636766834862134105": {
+    "approved": true,
+    "name": "COOL热狗小狗",
+    "flagFree": true
+  },
+  "637329784810299804": {
+    "approved": false,
+    "name": "小恐龙吹口哨",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "637963103436366583": {
+    "approved": true,
+    "name": "皮卡丘侧卧头像",
+    "flagFree": true
+  },
+  "638385315952587024": {
+    "approved": true,
+    "name": "暴躁猫",
+    "flagFree": true
+  },
+  "638877897167613980": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "640285272048067633": {
+    "approved": true,
+    "name": "库洛米微笑",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "640285272048253917": {
+    "approved": true,
+    "name": "独角兽装库洛米",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "641270434465664861": {
+    "approved": true,
+    "name": "发呆小猫",
+    "flagFree": true
+  },
+  "641551909474159259": {
+    "approved": true,
+    "name": "骨头小狗",
+    "flagFree": true
+  },
+  "644085184249034965": {
+    "approved": true,
+    "name": "黑色凯蒂猫",
+    "flagFree": true
+  },
+  "644577765439392639": {
+    "approved": true,
+    "name": "饼干怪兽头像",
+    "flagFree": true
+  },
+  "645140715398664942": {
+    "approved": true,
+    "name": "抱心凯蒂猫",
+    "flagFree": true
+  },
+  "647111040254913718": {
+    "approved": true,
+    "name": "粉色套装美乐蒂",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "647111040254944945": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "651262796087016674": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "654077545915144402": {
+    "approved": true,
+    "name": "叶伊布侧身",
+    "flagFree": true
+  },
+  "657525614365291405": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "65794844551919050": {
+    "approved": true,
+    "name": "绿色耀西",
+    "flagFree": true
+  },
+  "65794844551921402": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "65794844551927938": {
+    "approved": true,
+    "name": "尖叫凯蒂猫",
+    "flagFree": true
+  },
+  "65794844551927955": {
+    "approved": true,
+    "name": "黑色星星骷髅",
+    "flagFree": true
+  },
+  "65794844551930408": {
+    "approved": false,
+    "skip": "原图明确标注禁止商用，本批次不采用"
+  },
+  "65794844551931272": {
+    "approved": true,
+    "name": "大嘴章鱼哥",
+    "flagFree": true
+  },
+  "65794844551931362": {
+    "approved": true,
+    "name": "圣代大耳狗",
+    "flagFree": true
+  },
+  "65794844551934008": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "65794844551934414": {
+    "approved": true,
+    "name": "米老鼠滑板",
+    "flagFree": true
+  },
+  "65794844551937432": {
+    "approved": true,
+    "name": "凯蒂猫草莓冰棒",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "65794844551937434": {
+    "approved": false,
+    "name": "爱丽丝凯蒂猫",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "65794844551937451": {
+    "approved": true,
+    "name": "水豚接电话",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "65794844551939619": {
+    "approved": true,
+    "name": "加油小熊",
+    "flagFree": true
+  },
+  "65794844551939622": {
+    "approved": true,
+    "name": "开心小熊",
+    "flagFree": true
+  },
+  "65794844551939635": {
+    "approved": true,
+    "name": "粉色长筒袜凯蒂猫",
+    "flagFree": true
+  },
+  "65794844551939659": {
+    "approved": false,
+    "name": "可怜尖叫凯蒂猫",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "65794844551939671": {
+    "approved": true,
+    "name": "忧郁派大星",
+    "flagFree": true
+  },
+  "65794844551940468": {
+    "approved": false,
+    "name": "巴斯装凯蒂猫",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "65794844551940469": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "65794844551940495": {
+    "approved": true,
+    "name": "莱娅公主凯蒂猫",
+    "flagFree": true
+  },
+  "65794844551940499": {
+    "approved": true,
+    "name": "和风凯蒂猫",
+    "flagFree": true
+  },
+  "65794844551940524": {
+    "approved": true,
+    "name": "苹果套装凯蒂猫",
+    "flagFree": true
+  },
+  "65794844551940525": {
+    "approved": true,
+    "name": "礼物盒凯蒂猫",
+    "flagFree": true
+  },
+  "65794844551940536": {
+    "approved": true,
+    "name": "长颈鹿凯蒂猫",
+    "flagFree": true
+  },
+  "65794844551940539": {
+    "approved": true,
+    "name": "海盗凯蒂猫",
+    "flagFree": true
+  },
+  "65794844551943325": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "65794844551943331": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "65794844551943336": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "65794844551944887": {
+    "approved": true,
+    "name": "小薯条",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "65794844551945421": {
+    "approved": false,
+    "name": "史迪奇套装凯蒂猫",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "65794844551946056": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "65794844551946059": {
+    "approved": true,
+    "name": "披风小熊国王",
+    "flagFree": true
+  },
+  "65794844551946062": {
+    "approved": true,
+    "name": "红蘑菇小人",
+    "flagFree": true
+  },
+  "65794844551946066": {
+    "approved": false,
+    "name": "养乐多凯蒂猫",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "65794844551948102": {
+    "approved": true,
+    "name": "皇家企鹅",
+    "flagFree": true
+  },
+  "65794844551948119": {
+    "approved": false,
+    "name": "人字拖凯蒂猫",
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "65794844551948126": {
+    "approved": true,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足",
+    "parts": [
+      {
+        "name": "海绵宝宝小星星",
+        "crop": [
+          0.0,
+          0.0,
+          0.3333333333333333,
+          0.5
+        ]
+      },
+      {
+        "name": "派大星小星星",
+        "crop": [
+          0.3333333333333333,
+          0.0,
+          0.3333333333333333,
+          0.5
+        ]
+      },
+      {
+        "name": "章鱼哥小星星",
+        "crop": [
+          0.6666666666666666,
+          0.0,
+          0.3333333333333333,
+          0.5
+        ]
+      },
+      {
+        "name": "蜗牛小蜗",
+        "crop": [
+          0.0,
+          0.5,
+          0.3333333333333333,
+          0.5
+        ]
+      },
+      {
+        "name": "蟹老板小星星",
+        "crop": [
+          0.3333333333333333,
+          0.5,
+          0.3333333333333333,
+          0.5
+        ]
+      },
+      {
+        "name": "珊迪小星星",
+        "crop": [
+          0.6666666666666666,
+          0.5,
+          0.3333333333333333,
+          0.5
+        ]
+      }
+    ],
+    "flagFree": true
+  },
+  "65794844551949129": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "65794844551949130": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "65794844551949167": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "65794844551951258": {
+    "approved": true,
+    "name": "奥特曼小英雄",
+    "flagFree": true
+  },
+  "65794844551951279": {
+    "approved": true,
+    "name": "蓝色小鲨鱼",
+    "flagFree": true
+  },
+  "65794844551952013": {
+    "approved": true,
+    "name": "唐老鸭凯蒂猫",
+    "flagFree": true
+  },
+  "65794844551952029": {
+    "approved": true,
+    "name": "南瓜大耳狗",
+    "flagFree": true
+  },
+  "65794844551954689": {
+    "approved": true,
+    "name": "小黄帽女孩",
+    "flagFree": true
+  },
+  "65794844551954696": {
+    "approved": true,
+    "name": "简笔小熊",
+    "flagFree": true
+  },
+  "659003358023394505": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "659144095460939268": {
+    "approved": true,
+    "name": "黑色火斑喵",
+    "flagFree": true
+  },
+  "659144095462565184": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "661325526530075876": {
+    "approved": true,
+    "name": "粉色小红帽美乐蒂",
+    "flagFree": true
+  },
+  "662099582765293118": {
+    "approved": true,
+    "name": "天使凯蒂猫圆环",
+    "flagFree": true
+  },
+  "662240320253677845": {
+    "approved": false,
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足",
+    "parts": [
+      {
+        "name": "葡萄柚切片",
+        "crop": [
+          0.0,
+          0.0,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      },
+      {
+        "name": "粉柚切片",
+        "crop": [
+          0.3333333333333333,
+          0.0,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      },
+      {
+        "name": "甜橙切片",
+        "crop": [
+          0.6666666666666666,
+          0.0,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      },
+      {
+        "name": "香梨切片",
+        "crop": [
+          0.0,
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      },
+      {
+        "name": "青柠切片",
+        "crop": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      },
+      {
+        "name": "柠檬切片",
+        "crop": [
+          0.6666666666666666,
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      },
+      {
+        "name": "蓝莓切片",
+        "crop": [
+          0.0,
+          0.6666666666666666,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      },
+      {
+        "name": "苹果切片",
+        "crop": [
+          0.3333333333333333,
+          0.6666666666666666,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      },
+      {
+        "name": "无花果切片",
+        "crop": [
+          0.6666666666666666,
+          0.6666666666666666,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      }
+    ]
+  },
+  "662240320253677881": {
+    "approved": true,
+    "name": "奶牛装小熊",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "662240320255765257": {
+    "approved": true,
+    "name": "金鱼小鱼缸",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "662662532698322537": {
+    "approved": true,
+    "name": "熊猫比心",
+    "flagFree": true
+  },
+  "663577326393077402": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "669980882113115543": {
+    "approved": true,
+    "name": "米白小鱼",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "671247519495865709": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "674695587960140556": {
+    "approved": true,
+    "name": "卡比撑伞",
+    "flagFree": true
+  },
+  "675891856622969512": {
+    "approved": true,
+    "name": "鸭鸭小画家",
+    "flagFree": true
+  },
+  "676877019014813677": {
+    "approved": true,
+    "name": "小驴屹耳",
+    "flagFree": true
+  },
+  "680395456245347187": {
+    "approved": true,
+    "name": "鹅鹅比心",
+    "flagFree": true
+  },
+  "680817668639175642": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "681169512433457357": {
+    "approved": true,
+    "name": "黄油可颂",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "681380618662910317": {
+    "approved": true,
+    "name": "星空鲸鲨",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "683421312251506577": {
+    "approved": true,
+    "name": "万圣节史努比",
+    "flagFree": true
+  },
+  "686799011974828483": {
+    "approved": true,
+    "name": "绿色花裙凯蒂猫",
+    "flagFree": true
+  },
+  "687150855691281142": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "687150855691314941": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "687643436891533775": {
+    "approved": true,
+    "name": "挥手史迪奇",
+    "flagFree": true
+  },
+  "687924911849130704": {
+    "approved": true,
+    "name": "米老鼠黛丝海景",
+    "flagFree": true
+  },
+  "688980443027973417": {
+    "approved": true,
+    "name": "月亮猫露娜",
+    "flagFree": true
+  },
+  "689473024246492113": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "690810030397659898": {
+    "approved": true,
+    "name": "小鹿宝宝",
+    "flagFree": true
+  },
+  "690810030399021136": {
+    "approved": false,
+    "name": "派大星欢呼",
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "690810030399021144": {
+    "approved": false,
+    "name": "派大星哭哭",
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "691795192789189995": {
+    "approved": true,
+    "name": "粉色小猪头像",
+    "flagFree": true
+  },
+  "691795192789440897": {
+    "approved": true,
+    "name": "小猪皮杰",
+    "flagFree": true
+  },
+  "695595104997161239": {
+    "approved": true,
+    "name": "猫咪糖果瓶",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "695595104997161274": {
+    "approved": false,
+    "name": "橘猫破壳",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "695595104997161297": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "695595104997161307": {
+    "approved": false,
+    "name": "月亮小夜灯",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "695595104997212787": {
+    "approved": true,
+    "name": "森林露营邮票",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "695595104997212789": {
+    "approved": true,
+    "name": "落日晚霞邮票",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "695595104997212795": {
+    "approved": true,
+    "name": "雪山溪流邮票",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "695595104997212796": {
+    "approved": true,
+    "name": "夏日海岛邮票",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "695595104997212800": {
+    "approved": true,
+    "name": "青山日出邮票",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "695595104997212825": {
+    "approved": false,
+    "name": "橘色金鱼",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "695595104997212830": {
+    "approved": true,
+    "name": "花兔凯蒂猫月饼",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "695595104997212838": {
+    "approved": false,
+    "name": "星月樱花摇铃",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "695595104997212841": {
+    "approved": true,
+    "name": "中秋凯蒂猫",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "695595104997212845": {
+    "approved": false,
+    "name": "灯笼小姑娘",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "695595104997212856": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "695595104997276571": {
+    "approved": false,
+    "name": "海盗猫咪",
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "695595104997276572": {
+    "approved": false,
+    "name": "红帽小猫",
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "695595104997276584": {
+    "approved": false,
+    "name": "睡梦小猫枕头",
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "695595104997295834": {
+    "approved": false,
+    "name": "贵妃凯蒂猫",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "695595104997320229": {
+    "approved": false,
+    "name": "粉花凯蒂猫",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "695595104997320266": {
+    "approved": false,
+    "name": "公主凯蒂猫花束",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "695595104997358110": {
+    "approved": false,
+    "name": "红蝴蝶结凯蒂猫",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "695595104997358132": {
+    "approved": true,
+    "name": "彩虹龙猫装凯蒂猫",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "695595104997358138": {
+    "approved": false,
+    "name": "蜂蜜小饼干",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "695595104997358152": {
+    "approved": false,
+    "name": "魔法师凯蒂猫",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "695595104997358155": {
+    "approved": true,
+    "name": "柠檬小蜜蜂凯蒂猫",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "695595104997358156": {
+    "approved": false,
+    "name": "蓝龙凯蒂猫",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "695595104997358166": {
+    "approved": false,
+    "name": "草莓月饼兔",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "695595104997358167": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "695595104997358171": {
+    "approved": true,
+    "name": "蓝色龙猫凯蒂猫",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "696228423679989340": {
+    "approved": true,
+    "name": "凯蒂猫月牙",
+    "flagFree": true
+  },
+  "697565429753227390": {
+    "approved": true,
+    "name": "像素小智与皮卡丘",
+    "flagFree": true
+  },
+  "697987642272055086": {
+    "approved": true,
+    "name": "三丽鸥抱抱",
+    "flagFree": true
+  },
+  "697987642272055140": {
+    "approved": true,
+    "name": "库洛米与美乐蒂头像",
+    "flagFree": true
+  },
+  "698480223478295666": {
+    "approved": true,
+    "name": "米老鼠玫瑰",
+    "flagFree": true
+  },
+  "700169073364988348": {
+    "approved": false,
+    "name": "太阳系编织",
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "706924472791141840": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "707417053978631102": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "707839266446730787": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "707839266451477172": {
+    "approved": true,
+    "name": "星空卡比",
+    "flagFree": true
+  },
+  "707839266453371159": {
+    "approved": true,
+    "name": "火焰喷火龙剪影",
+    "flagFree": true
+  },
+  "707839266461482616": {
+    "approved": true,
+    "name": "杰尼龟安睡",
+    "flagFree": true
+  },
+  "707839266466005356": {
+    "approved": true,
+    "name": "惊讶猫熊",
+    "flagFree": true
+  },
+  "711216966216857429": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "711216966217139386": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "712061391129849895": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "712202128602090863": {
+    "approved": true,
+    "name": "酷企鹅走路",
+    "flagFree": true
+  },
+  "712342866065872107": {
+    "approved": true,
+    "name": "凯蒂猫爱心框",
+    "flagFree": true
+  },
+  "712483603583216967": {
+    "approved": true,
+    "name": "猫耳幽灵",
+    "flagFree": true
+  },
+  "712694709780119172": {
+    "approved": true,
+    "name": "开心杰尼龟",
+    "flagFree": true
+  },
+  "714524297180373390": {
+    "approved": true,
+    "name": "白兔嗅花",
+    "flagFree": true
+  },
+  "715931672038036229": {
+    "approved": true,
+    "name": "卡西法小火苗",
+    "flagFree": true
+  },
+  "717409415695130060": {
+    "approved": false,
+    "name": "蕾丝凯蒂猫线稿",
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "717409415695130061": {
+    "approved": true,
+    "name": "圆脸小仓鼠",
+    "flagFree": true
+  },
+  "717409415695130064": {
+    "approved": true,
+    "name": "蝴蝶结小仓鼠",
+    "flagFree": true
+  },
+  "717901996882650862": {
+    "approved": true,
+    "name": "南瓜叠叠乐",
+    "flagFree": true
+  },
+  "717972365644696756": {
+    "approved": true,
+    "name": "蛋糕美乐蒂",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "717972365644696988": {
+    "approved": false,
+    "name": "暖心小熊三兄妹",
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "718464946786577893": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "719379740526796377": {
+    "approved": false,
+    "name": "火焰丸子",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "719801952971825446": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "720505640413770299": {
+    "approved": true,
+    "name": "超梦",
+    "flagFree": true
+  },
+  "722264859003745652": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "727472146098622780": {
+    "approved": true,
+    "name": "布丁狗与美乐蒂",
+    "flagFree": true
+  },
+  "728175833542137477": {
+    "approved": true,
+    "name": "小团子奶茶",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "728386939708124841": {
+    "approved": true,
+    "name": "招财喵喵",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "732679433172292020": {
+    "approved": true,
+    "name": "比格小奶狗",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "732890539384046317": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "732890539384586293": {
+    "approved": true,
+    "name": "蓝鸟莫迪凯",
+    "flagFree": true
+  },
+  "734509020501177927": {
+    "approved": true,
+    "name": "黑白兔影",
+    "flagFree": true
+  },
+  "736268239098752040": {
+    "approved": true,
+    "name": "生气库洛米脸",
+    "flagFree": true
+  },
+  "738168195219221021": {
+    "approved": true,
+    "name": "花朵凯蒂猫头像",
+    "flagFree": true
+  },
+  "739082988820230118": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "740490363781606825": {
+    "approved": true,
+    "name": "隐身耿鬼",
+    "flagFree": true
+  },
+  "744149538410721986": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "744431013420992693": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "744501382186638823": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "745697650847527356": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "745697650847564630": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "745838388314409715": {
+    "approved": true,
+    "name": "树袋熊头像",
+    "flagFree": true
+  },
+  "747386500694926499": {
+    "approved": true,
+    "name": "月亮伊布眨眼",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "749075350536715244": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "749497563020267072": {
+    "approved": true,
+    "name": "太空狼人双子",
+    "flagFree": true
+  },
+  "749779037989696245": {
+    "approved": true,
+    "name": "闪电皮卡丘头像",
+    "flagFree": true
+  },
+  "750271619214203582": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "750482725401188782": {
+    "approved": true,
+    "name": "凯蒂猫爱心咖啡",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "751467887830315916": {
+    "approved": true,
+    "name": "美纳斯",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "751538256563296435": {
+    "approved": true,
+    "name": "库洛米开心笑",
+    "flagFree": true
+  },
+  "752171575307293555": {
+    "approved": true,
+    "name": "小小玩偶猫",
+    "flagFree": true
+  },
+  "753649318925407659": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "75435362492826810": {
+    "approved": true,
+    "name": "胖丁亮晶晶",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "755478906244853571": {
+    "approved": true,
+    "name": "耀西大跳跃",
+    "flagFree": true
+  },
+  "757730706103129299": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "757871443539523189": {
+    "approved": true,
+    "name": "微笑猫猫",
+    "flagFree": true
+  },
+  "757871443539550756": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "757871443539552438": {
+    "approved": true,
+    "name": "快龙",
+    "flagFree": true
+  },
+  "757871443539689210": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "757871443541246818": {
+    "approved": true,
+    "name": "欢快波加曼",
+    "flagFree": true
+  },
+  "757871443541399217": {
+    "approved": true,
+    "name": "雷丘",
+    "flagFree": true
+  },
+  "757871443566099727": {
+    "approved": true,
+    "name": "侧身皮卡丘",
+    "flagFree": true
+  },
+  "758786237220449860": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "758997343474768699": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "759841768415694142": {
+    "approved": true,
+    "name": "豌豆发芽小人",
+    "flagFree": true
+  },
+  "759841768423863664": {
+    "approved": true,
+    "name": "奶茶仓鼠三兄妹",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "760475087124629793": {
+    "approved": true,
+    "name": "粉色百合",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "761741724521490581": {
+    "approved": false,
+    "skip": "武器轮廓及文字组合，不符合本游戏本次素材主题"
+  },
+  "765119424207063593": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "767019380342684979": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "767019380342684980": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "767019380342684982": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "768567492704933013": {
+    "approved": true,
+    "name": "雪白裙库洛米",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.85
+    ],
+    "flagFree": true
+  },
+  "768989705124728230": {
+    "approved": false,
+    "name": "软萌小兔头像",
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "770326711267734696": {
+    "approved": true,
+    "name": "复古游戏手柄",
+    "flagFree": true
+  },
+  "771874823683215650": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "777363585658429188": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "781656079088481395": {
+    "approved": true,
+    "name": "加菲猫面包车",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.84
+    ],
+    "flagFree": true
+  },
+  "782500504034206936": {
+    "approved": true,
+    "name": "震惊库洛米",
+    "flagFree": true
+  },
+  "783063453981433252": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "783556035197646617": {
+    "approved": true,
+    "name": "惊讶皮卡丘头像",
+    "flagFree": true
+  },
+  "783696772701987745": {
+    "approved": true,
+    "name": "布偶小猫",
+    "flagFree": true
+  },
+  "784752303849342925": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "785104147594171595": {
+    "approved": true,
+    "name": "粉色兔帽美乐蒂",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.84
+    ],
+    "flagFree": true
+  },
+  "785667097538891882": {
+    "approved": true,
+    "name": "爱心小翅膀",
+    "flagFree": true
+  },
+  "785737466277376933": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "786722628689246622": {
+    "approved": true,
+    "name": "红裙凯蒂猫",
+    "flagFree": true
+  },
+  "786863366170536955": {
+    "approved": true,
+    "name": "思考可达鸭",
+    "flagFree": true
+  },
+  "787426316125963355": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "793759503124039286": {
+    "approved": true,
+    "name": "降落伞美乐蒂",
+    "flagFree": true
+  },
+  "794181715546744753": {
+    "approved": true,
+    "name": "花栗鼠双子头像",
+    "crop": [
+      0,
+      0.025,
+      1,
+      0.86
+    ],
+    "flagFree": true
+  },
+  "794181715552142665": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "795448352942078524": {
+    "approved": true,
+    "name": "星空眼小白猫",
+    "flagFree": true
+  },
+  "798685315197705402": {
+    "approved": true,
+    "name": "熊猫小头像",
+    "flagFree": true
+  },
+  "799389002642470927": {
+    "approved": true,
+    "name": "喷火龙彩绘头像",
+    "flagFree": true
+  },
+  "799881583844505333": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "799881583921835050": {
+    "approved": true,
+    "name": "小狮子辛巴",
+    "flagFree": true
+  },
+  "800514902554625514": {
+    "approved": true,
+    "name": "抱尾小水獭",
+    "flagFree": true
+  },
+  "801077852526825576": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "801429696232003202": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "802274121103117520": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "802837071111175408": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "803118546090542470": {
+    "approved": true,
+    "name": "妙蛙花",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.84
+    ],
+    "flagFree": true
+  },
+  "804807395957432312": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "806214770834990772": {
+    "approved": false,
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足",
+    "parts": [
+      {
+        "name": "紫发小马珍奇",
+        "crop": [
+          0.0,
+          0.0,
+          0.5,
+          0.3333333333333333
+        ]
+      },
+      {
+        "name": "粉色小马碧琪",
+        "crop": [
+          0.5,
+          0.0,
+          0.5,
+          0.3333333333333333
+        ]
+      },
+      {
+        "name": "黄色小马柔柔",
+        "crop": [
+          0.0,
+          0.3333333333333333,
+          0.5,
+          0.3333333333333333
+        ]
+      },
+      {
+        "name": "蓝色小马云宝",
+        "crop": [
+          0.5,
+          0.3333333333333333,
+          0.5,
+          0.3333333333333333
+        ]
+      },
+      {
+        "name": "橙色小马苹果嘉儿",
+        "crop": [
+          0.0,
+          0.6666666666666666,
+          0.5,
+          0.3333333333333333
+        ]
+      },
+      {
+        "name": "紫色小马暮光",
+        "crop": [
+          0.5,
+          0.6666666666666666,
+          0.5,
+          0.3333333333333333
+        ]
+      }
+    ]
+  },
+  "806355508282629678": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "806355508282632399": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "808325833154997969": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "809662839308511971": {
+    "approved": true,
+    "name": "绿色螳螂",
+    "flagFree": true
+  },
+  "813040539015679591": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "813251645249290109": {
+    "approved": true,
+    "name": "气球熊猫一家",
+    "flagFree": true
+  },
+  "815925657509356346": {
+    "approved": true,
+    "name": "自信小熊猫",
+    "flagFree": true
+  },
+  "815925657509356406": {
+    "approved": true,
+    "name": "懒洋洋熊猫",
+    "flagFree": true
+  },
+  "816207132470257949": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "816770082466518901": {
+    "approved": true,
+    "name": "谜拟丘",
+    "flagFree": true
+  },
+  "816770082466518911": {
+    "approved": false,
+    "name": "粉色精灵球",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.84
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "819725569714642777": {
+    "approved": true,
+    "name": "森林小狐狸",
+    "flagFree": true
+  },
+  "822047738285029795": {
+    "approved": true,
+    "name": "蓝色睡莲",
+    "flagFree": true
+  },
+  "823525481862107205": {
+    "approved": true,
+    "name": "爱心眼小青蛙",
+    "flagFree": true
+  },
+  "828169819013632864": {
+    "approved": true,
+    "name": "小哔莫游戏机",
+    "flagFree": true
+  },
+  "828521662744122953": {
+    "approved": true,
+    "name": "精灵球收藏卡背",
+    "flagFree": true
+  },
+  "829295718917689927": {
+    "approved": true,
+    "name": "长尾小猴子",
+    "flagFree": true
+  },
+  "829436456399452347": {
+    "approved": true,
+    "name": "蓝色索尼克",
+    "flagFree": true
+  },
+  "831617887475379289": {
+    "approved": true,
+    "name": "笑脸小青蛙",
+    "flagFree": true
+  },
+  "832391943662284665": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "832391943662463923": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "832532681142380640": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "833095631083499568": {
+    "approved": true,
+    "name": "雷伊布",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.84
+    ],
+    "flagFree": true
+  },
+  "83316661851595581": {
+    "approved": false,
+    "name": "妙蛙种子侧身",
+    "crop": [
+      0.12,
+      0.01,
+      0.75,
+      0.98
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "83316661851595588": {
+    "approved": false,
+    "name": "杰尼龟侧身",
+    "crop": [
+      0,
+      0,
+      0.82,
+      1
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "836121487094165105": {
+    "approved": true,
+    "name": "黑粉双心",
+    "flagFree": true
+  },
+  "836262224602635789": {
+    "approved": false,
+    "name": "花帽小女孩",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.84
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "840836192928870636": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "845269423844505305": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "845550898839504625": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "845550898839509634": {
+    "approved": true,
+    "name": "皮卡丘汽水罐",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.84
+    ],
+    "flagFree": true
+  },
+  "845550898839523707": {
+    "approved": false,
+    "name": "粉色凯蒂猫小勺",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.84
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "845550898839560304": {
+    "approved": false,
+    "name": "煎锅凯蒂猫",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.84
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "845550898840293326": {
+    "approved": true,
+    "name": "抱熊紫裙凯蒂猫",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.84
+    ],
+    "flagFree": true
+  },
+  "845550898840293328": {
+    "approved": true,
+    "name": "花帽凯蒂猫",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.84
+    ],
+    "flagFree": true
+  },
+  "845550898840293332": {
+    "approved": true,
+    "name": "花环凯蒂猫",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.84
+    ],
+    "flagFree": true
+  },
+  "845550898840293531": {
+    "approved": false,
+    "name": "草莓圣代美乐蒂",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.84
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "845550898840296047": {
+    "approved": false,
+    "name": "扫帚上的凯蒂猫",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.84
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "845550898840296095": {
+    "approved": false,
+    "name": "蓝色花束凯蒂猫",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.84
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "845550898840296151": {
+    "approved": false,
+    "name": "甜甜圈美乐蒂",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.84
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "845550898840296152": {
+    "approved": false,
+    "name": "松饼车布丁狗",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.84
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "845550898840296155": {
+    "approved": false,
+    "name": "红色跑车凯蒂猫",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.84
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "845550898840296183": {
+    "approved": true,
+    "name": "太空人圆徽章",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.84
+    ],
+    "flagFree": true
+  },
+  "845550898840296192": {
+    "approved": true,
+    "name": "草莓熊圆徽章",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.84
+    ],
+    "flagFree": true
+  },
+  "845550898840296300": {
+    "approved": false,
+    "name": "寿司美乐蒂",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.84
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "845550898840296301": {
+    "approved": false,
+    "name": "蛋糕卷美乐蒂",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.84
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "845550898840296302": {
+    "approved": false,
+    "name": "海苔饭团美乐蒂",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.84
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "845550898840296303": {
+    "approved": false,
+    "name": "三明治美乐蒂",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.84
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "845550898840296323": {
+    "approved": true,
+    "name": "抹茶泡芙凯蒂猫",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.84
+    ],
+    "flagFree": true
+  },
+  "845550898840296325": {
+    "approved": true,
+    "name": "布丁狗吐司",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.84
+    ],
+    "flagFree": true
+  },
+  "845550898840296326": {
+    "approved": false,
+    "name": "布丁狗松饼",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.84
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "845550898840296349": {
+    "approved": false,
+    "name": "粉色小车凯蒂猫",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.84
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "845550898840296377": {
+    "approved": true,
+    "name": "三眼仔扭蛋机",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.84
+    ],
+    "flagFree": true
+  },
+  "845550898840296430": {
+    "approved": false,
+    "name": "草莓花裙凯蒂猫",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.84
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "845550898840296432": {
+    "approved": false,
+    "name": "荔枝凯蒂猫",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.84
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "846043480043163497": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "846465692508999358": {
+    "approved": false,
+    "name": "兔子朱迪与狐狸尼克",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.84
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "847732329904604942": {
+    "approved": true,
+    "name": "大嘴小鸭",
+    "flagFree": true
+  },
+  "848858229759742799": {
+    "approved": true,
+    "name": "大眼波加曼",
+    "flagFree": true
+  },
+  "848858229812552686": {
+    "approved": true,
+    "name": "胖乎乎龙猫",
+    "crop": [
+      0.02,
+      0.13,
+      0.5,
+      0.53
+    ],
+    "flagFree": true
+  },
+  "850335973430955573": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "853502566850746591": {
+    "approved": true,
+    "name": "蓝角妖怪面具",
+    "flagFree": true
+  },
+  "853502566865522536": {
+    "approved": true,
+    "name": "绿色加命蘑菇",
+    "flagFree": true
+  },
+  "854417360596344631": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "855472891751528475": {
+    "approved": true,
+    "name": "百变怪",
+    "flagFree": true
+  },
+  "856246947954863211": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "857232110299185000": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "858146904026166089": {
+    "approved": true,
+    "name": "白色琥珀川小龙",
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.84
+    ],
+    "flagFree": true
+  },
+  "859906122632665689": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "864409722266059062": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "865183778390766822": {
+    "approved": true,
+    "name": "水伊布盘尾",
+    "flagFree": true
+  },
+  "867435578279741982": {
+    "approved": true,
+    "name": "茶色线稿凯蒂猫",
+    "flagFree": true
+  },
+  "868350371921964131": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "868350371922106768": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "868350371922106769": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "868350371922234337": {
+    "approved": false,
+    "name": "飞行员小狗头像",
+    "crop": [
+      0,
+      0,
+      1,
+      0.88
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "868702215640942135": {
+    "approved": true,
+    "name": "小白鹅与粉心",
+    "flagFree": true
+  },
+  "869617009317174106": {
+    "approved": true,
+    "name": "戴耳机小狗",
+    "flagFree": true
+  },
+  "870742909200151724": {
+    "approved": true,
+    "name": "侧脸凯蒂猫",
+    "flagFree": true
+  },
+  "876090933784232084": {
+    "approved": true,
+    "name": "迷彩小蘑菇",
+    "flagFree": true
+  },
+  "877990889867989013": {
+    "approved": true,
+    "name": "小小害羞猫",
+    "flagFree": true
+  },
+  "878764946061695505": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "880313058408306914": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "880876008343243682": {
+    "approved": true,
+    "name": "黑耳小兔",
+    "flagFree": true
+  },
+  "881438958338077125": {
+    "approved": true,
+    "name": "脸红凯蒂猫",
+    "flagFree": true
+  },
+  "882916701967880580": {
+    "approved": false,
+    "name": "栗子小怪兽",
+    "crop": [
+      0.03,
+      0.08,
+      0.83,
+      0.7
+    ],
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "883761126916576350": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "884394445595863158": {
+    "approved": false,
+    "name": "煤球小精灵",
+    "skip": "最终预览审核未通过：残留编号或文字、裁切不完整、对比度或格点清晰度不足"
+  },
+  "884816658014688382": {
+    "approved": true,
+    "name": "小智帽皮卡丘",
+    "flagFree": true
+  },
+  "885872189232693461": {
+    "approved": true,
+    "name": "紫色猫头鹰",
+    "flagFree": true
+  },
+  "885872189232693617": {
+    "approved": true,
+    "name": "手指比心",
+    "flagFree": true
+  },
+  "886998089133598059": {
+    "approved": false,
+    "skip": "人工筛选：非独立图案、重复构图、实物照片或清晰度不足"
+  },
+  "886998089133706510": {
+    "approved": true,
+    "name": "温泉小水豚",
+    "crop": [
+      0.04,
+      0.05,
+      0.9,
+      0.75
+    ],
+    "flagFree": true
+  },
+  "887279564065828215": {
+    "approved": true,
+    "name": "大嘴尼莫",
+    "flagFree": true
+  },
+  "888053620474748755": {
+    "approved": true,
+    "name": "派对海豹",
+    "flagFree": true
+  },
+  "888053620474780038": {
+    "approved": true,
+    "name": "哭哭海豹",
+    "flagFree": true
+  },
+  "889109151422231330": {
+    "approved": true,
+    "name": "哈利波特小巫师",
+    "trim": true,
+    "flagFree": true
+  },
+  "892416482406596435": {
+    "approved": true,
+    "name": "比心大耳狗",
+    "trim": true,
+    "flagFree": true
+  },
+  "892627588655958317": {
+    "approved": true,
+    "name": "樱桃蛋糕卷",
+    "trim": true,
+    "flagFree": true
+  },
+  "892768326118280640": {
+    "approved": true,
+    "name": "紫色阴阳图",
+    "trim": true,
+    "flagFree": true
+  },
+  "897975613222358751": {
+    "approved": true,
+    "name": "南瓜小绿怪",
+    "trim": true,
+    "flagFree": true
+  },
+  "898116350703597042": {
+    "approved": true,
+    "name": "雪人凯蒂猫",
+    "trim": true,
+    "flagFree": true
+  },
+  "899523725590441207": {
+    "approved": true,
+    "name": "冲浪凯蒂猫",
+    "trim": true,
+    "flagFree": true
+  },
+  "899523725594758801": {
+    "approved": true,
+    "name": "鲨鱼装小团子",
+    "trim": true,
+    "flagFree": true
+  },
+  "899523725596884506": {
+    "approved": true,
+    "name": "篝火卡西法",
+    "trim": true,
+    "flagFree": true
+  },
+  "899523725597865671": {
+    "approved": true,
+    "name": "小丑魔法师",
+    "trim": true,
+    "flagFree": true
+  },
+  "899523725598095494": {
+    "approved": true,
+    "name": "食人花奥黛丽",
+    "trim": true,
+    "flagFree": true
+  },
+  "899523725598255270": {
+    "approved": true,
+    "name": "森林小野兔",
+    "trim": true,
+    "flagFree": true
+  },
+  "900016306773115252": {
+    "approved": true,
+    "name": "红条纹米菲兔",
+    "trim": true,
+    "flagFree": true
+  },
+  "900227413015410074": {
+    "approved": true,
+    "name": "皮卡丘抱精灵球",
+    "trim": true,
+    "flagFree": true
+  },
+  "903042162802014751": {
+    "approved": true,
+    "name": "红蝴蝶结泰迪熊",
+    "trim": true,
+    "flagFree": true
+  },
+  "903605112757092121": {
+    "approved": true,
+    "name": "向日葵小猫脸",
+    "trim": true,
+    "flagFree": true
+  },
+  "906138387546463375": {
+    "approved": true,
+    "name": "蓝色小花",
+    "trim": true,
+    "flagFree": true
+  },
+  "907897606107567239": {
+    "approved": true,
+    "name": "粉色少女剪影",
+    "trim": true,
+    "flagFree": true
+  },
+  "909304981058800722": {
+    "approved": true,
+    "name": "夜空小耿鬼",
+    "trim": true,
+    "flagFree": true
+  },
+  "911275305828003081": {
+    "approved": true,
+    "name": "松树帽迪普",
+    "trim": true,
+    "flagFree": true
+  },
+  "911767887050111709": {
+    "approved": true,
+    "name": "兔八哥",
+    "trim": true,
+    "flagFree": true
+  },
+  "911908624574343359": {
+    "approved": true,
+    "name": "捧脸小兔",
+    "trim": true,
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.79
+    ],
+    "flagFree": true
+  },
+  "914019686853812879": {
+    "approved": true,
+    "name": "史迪奇乖乖坐",
+    "trim": true,
+    "flagFree": true
+  },
+  "914723374297817372": {
+    "approved": true,
+    "name": "粉色小猪",
+    "trim": true,
+    "flagFree": true
+  },
+  "914793743055509914": {
+    "approved": true,
+    "name": "红纹小狐狸面具",
+    "trim": true,
+    "flagFree": true
+  },
+  "915356692999537309": {
+    "approved": true,
+    "name": "吃豆人幽灵小队",
+    "trim": true,
+    "flagFree": true
+  },
+  "917819599063126897": {
+    "approved": true,
+    "name": "绿色小叶子",
+    "trim": true,
+    "flagFree": true
+  },
+  "921830617544879333": {
+    "approved": true,
+    "name": "呆萌小狗",
+    "trim": true,
+    "flagFree": true
+  },
+  "921830617544879344": {
+    "approved": true,
+    "name": "彩色衣服小新",
+    "trim": true,
+    "flagFree": true
+  },
+  "922041723731872965": {
+    "approved": true,
+    "name": "绿色背景熊猫",
+    "trim": true,
+    "flagFree": true
+  },
+  "923941679836521290": {
+    "approved": true,
+    "name": "黑猫吉吉",
+    "trim": true,
+    "flagFree": true
+  },
+  "927741592016170490": {
+    "approved": true,
+    "name": "绿色小长颈龙",
+    "trim": true,
+    "flagFree": true
+  },
+  "928374910675319083": {
+    "approved": true,
+    "name": "布丁狗大头像",
+    "trim": true,
+    "flagFree": true
+  },
+  "929078598144464573": {
+    "approved": true,
+    "name": "抱心小熊",
+    "trim": true,
+    "flagFree": true
+  },
+  "929430441859306196": {
+    "approved": true,
+    "name": "长颈鹿小宝贝",
+    "trim": true,
+    "crop": [
+      0.09,
+      0.03,
+      0.78,
+      0.76
+    ],
+    "flagFree": true
+  },
+  "932878510338958400": {
+    "approved": true,
+    "name": "可达鸭侧脸",
+    "trim": true,
+    "crop": [
+      0.07,
+      0.08,
+      0.77,
+      0.87
+    ],
+    "flagFree": true
+  },
+  "933934041465755624": {
+    "approved": true,
+    "name": "粉脸小熊维尼",
+    "trim": true,
+    "flagFree": true
+  },
+  "934215516469575026": {
+    "approved": true,
+    "name": "四色拼图小伙伴",
+    "trim": true,
+    "flagFree": true
+  },
+  "934989572656692394": {
+    "approved": true,
+    "name": "抱心小青蛙",
+    "trim": true,
+    "flagFree": true
+  },
+  "942167184540585771": {
+    "approved": true,
+    "name": "黑猫吉吉头像",
+    "trim": true,
+    "flagFree": true
+  },
+  "942659765775504838": {
+    "approved": true,
+    "name": "粉色蝴蝶结吊饰",
+    "trim": true,
+    "flagFree": true
+  },
+  "944911565587610571": {
+    "approved": true,
+    "name": "小鲸鱼套装凯蒂猫",
+    "trim": true,
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.83
+    ],
+    "flagFree": true
+  },
+  "945755990517718414": {
+    "approved": true,
+    "name": "害羞小幽灵",
+    "trim": true,
+    "flagFree": true
+  },
+  "946318940425865488": {
+    "approved": true,
+    "name": "蕾丝裙库洛米",
+    "trim": true,
+    "flagFree": true
+  },
+  "949767008934521143": {
+    "approved": true,
+    "name": "圆圆星之卡比",
+    "trim": true,
+    "flagFree": true
+  },
+  "949837377657024877": {
+    "approved": true,
+    "name": "橙脚小企鹅",
+    "trim": true,
+    "flagFree": true
+  },
+  "954481714782124475": {
+    "approved": true,
+    "name": "蓝色皮克敏",
+    "trim": true,
+    "flagFree": true
+  },
+  "954622452285746930": {
+    "approved": true,
+    "name": "爱心小企鹅",
+    "trim": true,
+    "flagFree": true
+  },
+  "954622452288063111": {
+    "approved": true,
+    "name": "像素妙蛙种子",
+    "trim": true,
+    "flagFree": true
+  },
+  "954622452288689030": {
+    "approved": true,
+    "name": "捧花小白猫",
+    "trim": true,
+    "flagFree": true
+  },
+  "954622452288846065": {
+    "approved": true,
+    "name": "举杯小白鹅",
+    "trim": true,
+    "flagFree": true
+  },
+  "954622452288951090": {
+    "approved": true,
+    "name": "呆呆小黄人头像",
+    "trim": true,
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.83
+    ],
+    "flagFree": true
+  },
+  "954622452289869788": {
+    "approved": true,
+    "name": "星月大耳狗",
+    "trim": true,
+    "flagFree": true
+  },
+  "957437202028139132": {
+    "approved": true,
+    "name": "脸红库洛米",
+    "trim": true,
+    "flagFree": true
+  },
+  "957859414478649865": {
+    "approved": true,
+    "name": "库洛米小花",
+    "trim": true,
+    "flagFree": true
+  },
+  "959759370600074261": {
+    "approved": true,
+    "name": "扑克牌库洛米",
+    "trim": true,
+    "flagFree": true
+  },
+  "959829739349608767": {
+    "approved": true,
+    "name": "草帽凯蒂猫",
+    "trim": true,
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.83
+    ],
+    "flagFree": true
+  },
+  "961729695406614093": {
+    "approved": true,
+    "name": "打盹橘猫",
+    "trim": true,
+    "flagFree": true
+  },
+  "967077720003059515": {
+    "approved": true,
+    "name": "奶油双子冰棒",
+    "trim": true,
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.83
+    ],
+    "flagFree": true
+  },
+  "967781407585082753": {
+    "approved": true,
+    "name": "趴趴小兔",
+    "trim": true,
+    "flagFree": true
+  },
+  "969681363529820522": {
+    "approved": true,
+    "name": "蓝色小熊头像",
+    "trim": true,
+    "flagFree": true
+  },
+  "969681363529820592": {
+    "approved": true,
+    "name": "忍者神龟头像小队",
+    "trim": true,
+    "flagFree": true
+  },
+  "969681363529820596": {
+    "approved": true,
+    "name": "安静的小驴屹耳",
+    "trim": true,
+    "flagFree": true
+  },
+  "969892469759813461": {
+    "approved": true,
+    "name": "黑白狼影",
+    "trim": true,
+    "flagFree": true
+  },
+  "971159107140457292": {
+    "approved": true,
+    "name": "小裙子美乐蒂",
+    "trim": true,
+    "flagFree": true
+  },
+  "973059063253414045": {
+    "approved": true,
+    "name": "棕色小老鼠杰瑞",
+    "trim": true,
+    "crop": [
+      0.03,
+      0.03,
+      0.94,
+      0.8
+    ],
+    "flagFree": true
+  },
+  "973059063257969527": {
+    "approved": true,
+    "name": "草莓小海狮",
+    "trim": true,
+    "flagFree": true
+  },
+  "973059063259973696": {
+    "approved": true,
+    "name": "小丑帽小新",
+    "trim": true,
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.83
+    ],
+    "flagFree": true
+  },
+  "973059063259973699": {
+    "approved": true,
+    "name": "吃披萨的小新",
+    "trim": true,
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.83
+    ],
+    "flagFree": true
+  },
+  "973129432206842806": {
+    "approved": true,
+    "name": "飞翔大耳狗",
+    "trim": true,
+    "flagFree": true
+  },
+  "973692381938212379": {
+    "approved": true,
+    "name": "蓝色鲨鱼装小精灵",
+    "trim": true,
+    "flagFree": true
+  },
+  "974888650614503205": {
+    "approved": true,
+    "name": "骷髅凯蒂猫",
+    "trim": true,
+    "flagFree": true
+  },
+  "975381231866413803": {
+    "approved": true,
+    "name": "蓝花小屋",
+    "trim": true,
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.83
+    ],
+    "flagFree": true
+  },
+  "980307043891285406": {
+    "approved": true,
+    "name": "绿色痞老板",
+    "trim": true,
+    "flagFree": true
+  },
+  "980307043891285410": {
+    "approved": true,
+    "name": "小金鱼礼袋",
+    "trim": true,
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.83
+    ],
+    "flagFree": true
+  },
+  "980307043891311416": {
+    "approved": true,
+    "name": "蓝色精灵球卡盒",
+    "trim": true,
+    "flagFree": true
+  },
+  "980307043891312512": {
+    "approved": true,
+    "name": "无脸男头像",
+    "trim": true,
+    "flagFree": true
+  },
+  "980940362615605491": {
+    "approved": true,
+    "name": "皮卡丘收藏卡",
+    "trim": true,
+    "flagFree": true
+  },
+  "986569862136282149": {
+    "approved": true,
+    "name": "叼面包的小鸽子",
+    "trim": true,
+    "flagFree": true
+  },
+  "990932724243701306": {
+    "approved": true,
+    "name": "火伊布小头像",
+    "trim": true,
+    "flagFree": true
+  },
+  "993606736516028540": {
+    "approved": true,
+    "name": "红色玫瑰花",
+    "trim": true,
+    "crop": [
+      0.025,
+      0.025,
+      0.95,
+      0.83
+    ],
+    "flagFree": true
+  },
+  "994873373916384994": {
+    "approved": true,
+    "name": "彩虹小矮人",
+    "trim": true,
+    "flagFree": true
+  },
+  "995154848908970330": {
+    "approved": true,
+    "name": "女孩与小狗",
+    "trim": true,
+    "flagFree": true
+  },
+  "996210380094228300": {
+    "approved": true,
+    "name": "芭蕾裙小猫",
+    "trim": true,
+    "flagFree": true
+  },
+  "997547386197523718": {
+    "approved": true,
+    "name": "气球小白鹅",
+    "trim": true,
+    "flagFree": true
+  },
+  "999025129885474582": {
+    "approved": true,
+    "name": "张嘴小霸王龙",
+    "trim": true,
+    "flagFree": true
+  }
+}

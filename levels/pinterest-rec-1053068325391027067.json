@@ -1,0 +1,51 @@
+{
+  "key": "pinterest-rec-1053068325391027067",
+  "name": "派大星",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#fcadb3",
+    "C": "#181818",
+    "D": "#935f9f",
+    "E": "#e1ac9e"
+  },
+  "rows": [
+    "AAAAAAAACCAAAAAAAAAAA",
+    "AAAAAAACDDCAAAAAAAAAA",
+    "AAAAAAACDDDCCAAAAAAAA",
+    "AAAAAAACDDCBBCAAAAAAA",
+    "AAAAAAACDDCBBBCAAAAAA",
+    "AAAAAACDDCBBBBBCAAAAA",
+    "AAAAAACDDCBBBBBCAAAAA",
+    "AAAAAACECBBBBBBCAAAAA",
+    "AAAAACEECBBBBBBBCAAAA",
+    "AAAAACECBBCCBCCBCAAAA",
+    "AAAAACCBBBBBBBBBCAAAA",
+    "AAAAACBBBBBCBCBBCAAAA",
+    "AAACCBBBBEEBBBEECAAAA",
+    "AACBBBBBBBBCCCBBBCAAA",
+    "AACBBBBBBBBBBBBBBBCAA",
+    "ACBBBBBBBBBBBBBBEBBCA",
+    "CBBBBBBBBBBBBBBBBEBBC",
+    "CBBBBCCBBBBBBBBBBEBBC",
+    "ACCCCBBCBBBBBBBBBBBBC",
+    "ACBBBBBBCBBBBEBBBCBBC",
+    "ACBBBBBCECCBBBBCCBBCA",
+    "AACBEBBBCEDCCCCDDCCAA",
+    "AACBBEBBCEDDDDDDCAAAA",
+    "AACBBBBBCDDDDDCCCAAAA",
+    "AAACBBBBCCCCCCBCAAAAA",
+    "AAACBBBBCACBBBBCAAAAA",
+    "AAAACBBCAAACBBCAAAAAA",
+    "AAAAACCAAAAACCAAAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/1053068325391027067/",
+    "image": "https://i.pinimg.com/originals/48/c0/ca/48c0cac2f625ec2092380456d06c0c73.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "key": "pinterest-rec-1051520212990684927",
+  "name": "坐姿水豚",
+  "palette": {
+    "A": "#be874e",
+    "B": "#66bd2e",
+    "C": "#3c2f29",
+    "D": "#dbe6d1",
+    "E": "#6d4c26"
+  },
+  "rows": [
+    "BBBDDDDBBBBBBBBBBBBBBB",
+    "BBBBBCCCBCCCCCCCBCCCBB",
+    "BBBBBCEECAAAAAAACEECBB",
+    "BBBBBCEEAAAAAAAAAEECBB",
+    "BBBBBBCAAAAEEEAAAACBBB",
+    "BBBBBBCACAEEEEEACACBBB",
+    "DDDBBCAACAECCCEACACBBB",
+    "ADDDBCAAAAEECEEAAACBBB",
+    "DDDBBCAAAAEECEEAAACBBB",
+    "BBBBBCAAAAEECEEAAACBBB",
+    "BBBBCACAAAECECEAAACBBD",
+    "BBBCAAAAAAAEEEAAACBBDD",
+    "BBCAAAAAAAAAAAAAACBBBD",
+    "DBCAAAAAAAAAAAAACACBBB",
+    "BCAAAAAAAAAAAAAAAACBBB",
+    "BCAAAAAAAAAAAAAAAAACBB",
+    "BCAAAAAAAAAAAAAAAAACBB",
+    "BCAAAAAAEEAAAAAEAAACBB",
+    "BCAAAAAAAAEAAAAAEEEECB",
+    "BBCAAAAAAAACAAEECCEECB",
+    "BBBCAAAAAAEECCEECBCCBB",
+    "BBBBCCAAAEEECBCCBBBBDD",
+    "BDDDBBCCCCCCBBBBBBBDDA",
+    "DDADDBBBBBBBBBBBBBBBDD"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/1051520212990684927/",
+    "image": "https://i.pinimg.com/originals/a9/38/e5/a938e5f44181850f78582aba8d79654a.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

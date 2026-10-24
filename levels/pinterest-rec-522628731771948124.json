@@ -1,0 +1,37 @@
+{
+  "key": "pinterest-rec-522628731771948124",
+  "name": "迷你企鹅",
+  "palette": {
+    "A": "#181818",
+    "B": "#ffffff",
+    "C": "#fdcd2d",
+    "D": "#fb4b7c",
+    "E": "#c62a52"
+  },
+  "rows": [
+    "BBDDBDDBBBB",
+    "BBDDEDDABBB",
+    "BBAEAEAAABB",
+    "BAAAAAAAAAB",
+    "BAABAAABAAB",
+    "BABABABABAB",
+    "BABBCCCBBAB",
+    "AABBBCBBBAA",
+    "AAABBBBBAAA",
+    "AAABBBBBAAA",
+    "AAAABBBAAAA",
+    "ABAAAAAAABA",
+    "BBBAAAAABBB",
+    "BBCCCBCCCBB"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/522628731771948124/",
+    "image": "https://i.pinimg.com/originals/b4/fd/14/b4fd149df978df112fccb5f2a9894654.jpg",
+    "title": "penguin",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}
