@@ -1,0 +1,47 @@
+{
+  "key": "pinterest-687502699371008383",
+  "name": "蓝色花枝",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#88abc8",
+    "C": "#629650",
+    "D": "#415fa0",
+    "E": "#acb695",
+    "F": "#f6efcc"
+  },
+  "rows": [
+    "......C",
+    "......CC...BB...BB",
+    "..CCC.CCC.BBBB.BBBB",
+    "...CCC.CC.BBBBBBBBB",
+    "........C..BBAAABB",
+    ".....BB..BBBAEEEABB....C",
+    ".BB.BBB.BBBBAEEEABBB..CCC",
+    "BBBBBBB.BBBBAAAEABBB..CCC",
+    "BBBBAAABABBAADDABBB..CCCC",
+    ".BBAEEEAAAAADDDD.....CCC",
+    "..BAEEEAADDADDDD.DD.CCC",
+    ".BBAEEEADDDDDDDDDDDD",
+    "BBBBAAAADDDDDAADDDDD.C.CCC",
+    "BBBBBBBAADDDAEEADDD..CCAC",
+    ".BB.BBBBAADDAEEADD....CAAC",
+    "....BBBBADDDAEEADDD....CC",
+    ".....BB.DDDDDAADDDDD",
+    "........DDDDDDDDDDDD",
+    "...CCC.C.DD.DDDD.DD",
+    "..CCCACC....DDDD",
+    ".....CCC.....DD",
+    ".....CC..............FE",
+    ".....C...........FE",
+    ".............FF"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699371008383/",
+    "image": "https://i.pinimg.com/originals/9d/ad/ba/9dadba30785e6a958ae000eb643744e7.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

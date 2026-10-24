@@ -1,0 +1,34 @@
+{
+  "key": "pinterest-687502699400070691-06",
+  "name": "巧克力冰棒",
+  "palette": {
+    "A": "#fefb8a",
+    "B": "#8f430f",
+    "C": "#cc843a"
+  },
+  "rows": [
+    "..BBBB",
+    ".BBBBBB",
+    "BBBBBBBB",
+    "BBBABBAB",
+    "ABBABBAB",
+    "ABBABAAA",
+    "ABAAAAAA",
+    "AAAAAAAA",
+    "AAAAAAAA",
+    "AAAAAAAA",
+    "AAAAAAAA",
+    "...CC",
+    "...CC",
+    "...CC"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699400070691/",
+    "image": "https://i.pinimg.com/originals/b8/09/77/b809778036ed66ecbd4834a7e269c85c.jpg",
+    "title": "Ice cream cross stitch.",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

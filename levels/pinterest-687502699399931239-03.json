@@ -1,0 +1,45 @@
+{
+  "key": "pinterest-687502699399931239-03",
+  "name": "绿色拖拉机",
+  "palette": {
+    "A": "#0e6b34",
+    "B": "#181818",
+    "C": "#bfbbb4",
+    "D": "#e7d769",
+    "E": "#548c70"
+  },
+  "rows": [
+    "...........BBBBBBBBBBBBBBBBBB",
+    "..........BBAAAAAAABDDDDDDDDB",
+    "..........BABBBBBBABDBBBBBBDB",
+    "..........BABCCCCBABDBCCCCBDB",
+    ".........BAABCCCCBABDBCCCCBDB",
+    ".........BABBCCCEBABDBCCCCBDB",
+    ".........BABCCCCBBABDBCCCCBDB",
+    "........BAABCCCBBBABDBBBBBBDB",
+    ".BBBB.BBBABBBBBBBBABDDDDDDDDB",
+    ".BBBBBBAAABAAAAAABABBBBBBBBBB",
+    "BBAAAAAAAABAAAABABAAAAAAAAAAB",
+    "BAAAAAAAAABAAAABABAAAAAAAAAAB",
+    "BAAAAAAAAABAAAAAABAAAAAAAAAAB",
+    "BAABBBBBBABAAAAAABAABBBBBBAAB",
+    "BABBBBBBBBBBAAAABAABBBBBBBBAB",
+    "BBBBBBBBBBBABAABAABBBBBBBBBBB",
+    "BBBBBCCBBBBABBBBAABBBBCCBBBB",
+    ".BBBCCCCBBBAAAAAAABBBCCCCBBB",
+    ".BBBCCCCBBBBBBBBBBBBBCCCCBBB",
+    ".BBBBCCBBBB.......BBBBCCBBBB",
+    ".BBBBBBBBBB.......BBBBBBBBBB",
+    "..BBBBBBBB.........BBBBBBBB",
+    "...BBBBBB...........BBBBBB"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699399931239/",
+    "image": "https://i.pinimg.com/originals/b0/4b/05/b04b0599860aac7798a3a8c01abf120d.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "key": "pinterest-687502699351235678",
+  "name": "羽毛球",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#181818",
+    "C": "#fc0102",
+    "D": "#cc6602"
+  },
+  "rows": [
+    ".........BB",
+    "........BAAB",
+    "........BAAABB",
+    ".......BABAAAAB",
+    ".......BABABAABB",
+    "......BABABABBAAB",
+    "......BABAABAAAABB",
+    ".....BAAAAAAAABBAAB",
+    ".....BABAABAABAAAAB",
+    "....BAABABAABABBAAB",
+    "....BABABABAABAABB",
+    "...BABABABABAABB",
+    ".BBDBABABAAABB",
+    "BCCBDBABABBB",
+    "BCCCBDBABB",
+    "BCCCCBDB",
+    "BCCCCCB",
+    ".BCCCCB",
+    "..BBBB"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699351235678/",
+    "image": "https://i.pinimg.com/originals/b7/1b/c0/b71bc0091137ef6fccba8655365f4380.jpg",
+    "title": "Kralenplank Badmintonshuttle",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

@@ -7,3 +7,8 @@ art/preview.html
 .yarn/install-state.gz
 .pnp.*
 _to_delete/
+__pycache__/
+art/pinterest-board/originals/
+art/pinterest-board/converted/
+art/pinterest-board/review/
+art/pinterest-board/conversion-report.json

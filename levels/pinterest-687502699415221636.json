@@ -1,0 +1,38 @@
+{
+  "key": "pinterest-687502699415221636",
+  "name": "黄色兔兔头像",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#ffecbb",
+    "C": "#ffcae9",
+    "D": "#444444"
+  },
+  "rows": [
+    ".BBBBB......BBBBB",
+    "BBBBBBB....BBBBBBB",
+    "BBBBBBBB..BBBBBBBB",
+    ".BBBBBBB..BBBBBBB",
+    "....BBBB..BBBB",
+    ".....BBB..BBB",
+    "......BB..BB",
+    ".....BBBBBBBB",
+    "....BBBBBBBBBB",
+    "...BBBBBBBBBBBB",
+    "..BBBDABBBBDABBB",
+    "..BBBDDBBBBDDBBB",
+    "..BBBBBBCCBBBBBB",
+    "..BBBBBBBBBBBBBB",
+    "...BBBBCBBCBBBB",
+    "....BBBBCCBBBB",
+    "......BBBBBB"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699415221636/",
+    "image": "https://i.pinimg.com/originals/f9/e0/98/f9e098d215b80e416bec199964319144.png",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

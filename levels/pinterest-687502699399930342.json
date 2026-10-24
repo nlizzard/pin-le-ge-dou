@@ -1,0 +1,52 @@
+{
+  "key": "pinterest-687502699399930342",
+  "name": "胖企鹅",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#181818",
+    "C": "#d7d7d7",
+    "D": "#7e5a12"
+  },
+  "rows": [
+    "..............BB",
+    "............B..BB",
+    ".........BBBBBBBB",
+    "........BBBBBBBBBB",
+    ".......BBBBBAABBBBBB",
+    "......BBBBBBBBBBBBBBB",
+    ".....BBBAAAAABBBBBBBBB",
+    ".....BBAAAAAABBBBBBBBB",
+    "....BBAAAAAAAABBBAABBBB",
+    "....BAAAAAAAAAAAAAAAABB",
+    "...BBAAAAAAAAAAAAAAAABBB",
+    "...BBAAAAAAAAAAAAAAAAABB",
+    "...BBAAAAAAAAAAAAAAAAABB",
+    "...BAAAABCAAAAAAAAAAAABB",
+    "...BAAAABCAAAAAAAAAAACBB",
+    "..BBAAAAAAABBBBAACBAACB",
+    "..BBAAAAAABDDDDBACBACBB",
+    "..BBAAAAAAABBBBBAAAABBB",
+    "..BBCCCAAAAAAAAAAAAABBBBBB",
+    "..BBBBBCCAAAAAAAAAAAAACBBBB",
+    "BBBBABBBBCAAAAAAAAAAABBBBBB",
+    "BBBBBBAABBAAAAAAAAAABBBBBBB",
+    "BBBBBBBBBBAAAAAAAAAAABBBBB",
+    "BBBBBBBBBAAAAAAAAAAAABBBB",
+    ".BBBBBBBAAAAAAAAAAAAAABB",
+    ".BBBBBAAAAAAAAAAAAAAAAB",
+    "..BBAAAAAAAAAAAAAAAAACB",
+    "..BBCAAAAAAAAAAAAAAACCBB",
+    ".BBBBCAAAAAAAAAAAAACBBBBB",
+    "BDDDDBCCCBBBCCCCCCCBDDDDDB",
+    "BBBBB.BBBBBBBBBBBBB.BBBBBB"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699399930342/",
+    "image": "https://i.pinimg.com/originals/c6/b7/06/c6b70665d4562d4f57e4123d9734436d.jpg",
+    "title": "Alpha Pattern A23412",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

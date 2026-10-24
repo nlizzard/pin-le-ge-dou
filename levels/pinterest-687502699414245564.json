@@ -1,0 +1,53 @@
+{
+  "key": "pinterest-687502699414245564",
+  "name": "紫色花朵",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#246f3d",
+    "C": "#9886b8",
+    "D": "#39a058",
+    "E": "#c5b4df",
+    "F": "#573287",
+    "G": "#faf8be"
+  },
+  "rows": [
+    ".........EE",
+    "....EEE.EEEE.............BDDBD",
+    "....EEECEEEE........C...BDDBD",
+    ".....EECEEE........CCC.BBDBDD",
+    ".....EEEGEECC......CCC.BBDBDD",
+    "....CCCGGGCCCC..CC.CCCFFFDDDB",
+    "...CCCCCGCCCCC.CCCCCCFFFFBBB",
+    "...CCCCEFFCCC..CCCCCGFFFBBB",
+    "....CC.FFFFB....CCCGGGFBBB",
+    ".......FFFFABB....FFGFFFF",
+    "...BBBBFFFFAAAB..FFFFFFFF",
+    "..BDDDBBFFBBBBBB.FFFFFFFF",
+    ".DDDBBBBBB...EBBBFFF..FFF...DDD",
+    ".DDBBBBDB...EEEABBAAB.....DDBD",
+    "DDBDDDDB....EEEEACBAB....BDDBD",
+    "DDDDDBB.....CEEECCCBB...BDDBDDD",
+    "D........EEECEECCCCABB..BDBDDDD",
+    "....BBBBEEEEECGCCCCAAB.BDBBDDBD",
+    ".BBBB..BBEEEEGGGCCCAAB.BDBBBBDD",
+    "BBAB....BBACCCGFFFAAAABBBBBBDD",
+    "..B....BB.CCCCFFFFFAAABBBBDDDB",
+    "..BB...B..CCCCFFFFFBBBABBBBDB",
+    ".BBBB.....CCC..FFFBBBBBABBBB",
+    "BBCFFB...B.......DBBBBBBABB",
+    ".CCFFF...BCC....DDDBBBBBB",
+    "CCCFFFF..CBC..DDDBBBDDBB",
+    ".CC..F...CCC..DDBBDBDBBB",
+    ".C........C...DBBDBDBBB",
+    "..............DDDDDB"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699414245564/",
+    "image": "https://i.pinimg.com/originals/50/7e/f0/507ef048d06feeded6785621b10ca35a.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

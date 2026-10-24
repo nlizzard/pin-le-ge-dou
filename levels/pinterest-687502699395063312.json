@@ -1,0 +1,47 @@
+{
+  "key": "pinterest-687502699395063312",
+  "name": "史努比",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#181818",
+    "C": "#f9c044"
+  },
+  "rows": [
+    "..............B",
+    ".............BBBBBB",
+    "............BAABAAAB",
+    ".....BBBBBBBAAAAAAAAB",
+    "...BBAAAAAAAAAAAAAAAAB",
+    "..BAAAAAABBBABBAAAAAAB",
+    ".BAAAAAAAAAAAAABAAAAAAB",
+    "BAAAAAAAAAAAAAAAAAAAAAB",
+    "BAAAABBBBAAAAAAAAAAAAAAB",
+    "BAAAABBBBAAAAAAAAAAAAAAB",
+    "BAAAABBBBAAAAAAAAAABABBAB",
+    "BAAAAAAAAAAAAAAAAABABBBAB",
+    "BAAAAAAAAAAAAAAAABABBBBAB",
+    ".BAAAAAABABAAAAAABABBBBAB",
+    "..BAAABABCBCBABAABABBBBAB",
+    "...BBAABCBCBCBAAABABBBAB",
+    ".....BBBCBCCCBAABBABBBAB",
+    ".......CCCCCCCBBABAAAAB",
+    "......BBBCCBCBCCB.BBBB",
+    "......B..BCCCCCCB",
+    ".....B...BCCCCCCB",
+    ".....B....BBBBBB",
+    ".....BB.......B",
+    "....B.B.......B",
+    "....B..BB",
+    ".........BBBBB..B",
+    "..........B.....B"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699395063312/",
+    "image": "https://i.pinimg.com/originals/ff/86/e9/ff86e96e96b0010227561197a7c982d8.jpg",
+    "title": "National Hugging Day",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

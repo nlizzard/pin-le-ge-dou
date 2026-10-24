@@ -1,0 +1,48 @@
+{
+  "key": "pinterest-687502699414245571",
+  "name": "铃铛花",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#9726aa",
+    "C": "#48ae4a",
+    "D": "#ac9dd8"
+  },
+  "rows": [
+    "B.........CC",
+    "BB.......C",
+    ".BBBBB...C",
+    "..BBBBB",
+    ".DDDAABB",
+    "DDDDDABBBC",
+    ".DDDAABB.CC..C",
+    "..BBBBB...CC.C",
+    ".BBBBB.....CCC",
+    "BB.....CCC..CC",
+    "B.......CCC..C",
+    ".....D...CACCC",
+    ".....DDDDAACCC",
+    "....BADDDDCCCC",
+    ".....DDDDAACCC",
+    ".....D...CACCC",
+    "B.......CCC..C",
+    "BB.....CCC..CC",
+    ".BBBBB.....CCC",
+    "..BBBBB...CC.C",
+    ".DDDAABB.CC..C",
+    "DDDDDABBBC",
+    ".DDDAABB",
+    "..BBBBB",
+    ".BBBBB...C",
+    "BB.......C",
+    "B.........CC"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699414245571/",
+    "image": "https://i.pinimg.com/originals/e2/1b/0e/e21b0e91265528c2adb4894ca0286f80.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

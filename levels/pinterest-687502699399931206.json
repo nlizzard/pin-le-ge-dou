@@ -1,0 +1,44 @@
+{
+  "key": "pinterest-687502699399931206",
+  "name": "企鹅与北极熊",
+  "palette": {
+    "A": "#a8eaf7",
+    "B": "#ffffff",
+    "C": "#4d8bba",
+    "D": "#4f4f4f",
+    "E": "#ff96ce",
+    "F": "#ffbf5e"
+  },
+  "rows": [
+    "AAAAAAAAAAAAAAAAAAAAAAAAAA",
+    "AAAAAAACCCCCCCAAAAAAAAAAAA",
+    "AAAACCCBBBBBBBCCCAAAAAAAAA",
+    "AAACBCBBBBBBBBBCBCAAEAEAAA",
+    "AAACBBBBBBBBBBBBBCAAEEEAAA",
+    "AAAACBBBBBBBBBBBCAAAAEAAAA",
+    "AAAACBBDBDDDBDBBCAAAAAAAAA",
+    "AAACBBEBBBDBBBEBBCAAAAAAAA",
+    "AAACBBBBBBDBBBBBBCAAAAAAAA",
+    "AAACBBBBBBBBBBBBDDDDDAAAAA",
+    "AAAACCBBBBBBBBBDDDDDDDAAAA",
+    "AAAACBBBBBBBBBDDBBBBBDDAAA",
+    "AAAACBBBBBBBBBDBBBBBBBDAAA",
+    "AAACBBBBBBBBBBDBDBFBDBDAAA",
+    "AAACBBBBBBBBBBDEBFFFBEDAAA",
+    "AACCBBCBBBBBBDDBBBBBBBDDAA",
+    "ACBBBBCBBBCBDDDBBBBBBBDDDA",
+    "ACBBBBCBBBCBBBDBBBBBBBDAAA",
+    "ACBBBBBCBBCBBCBDBBBBBDAAAA",
+    "AACCCCCCCCCCCCFFDDDDDFFAAA",
+    "AAAAAAAAAAAAAAAAAAAAAAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699399931206/",
+    "image": "https://i.pinimg.com/originals/01/3f/6c/013f6c5337b9bb0944c6d09c72637d97.png",
+    "title": "Alpha pattern #28627",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

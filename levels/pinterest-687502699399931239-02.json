@@ -1,0 +1,47 @@
+{
+  "key": "pinterest-687502699399931239-02",
+  "name": "红色农场拖拉机",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#e3452c",
+    "C": "#8b9391",
+    "D": "#181818",
+    "E": "#e96046",
+    "F": "#8a6f69",
+    "G": "#b23825"
+  },
+  "rows": [
+    "..............EEEEEEEEEEE",
+    "..............CCCCCCCCCC",
+    "...DDDDDD.....CAAACAAAAC",
+    "....DDDD......CAAACAAAAC",
+    ".....DD......CAAAACAAAAC",
+    ".....DD......CAAAACAAAACC",
+    ".....DD......CAAAACAAAAAC",
+    ".....DD.....CAAAAACAAAAAC",
+    ".....DD.....CAAAAACAAAAAC",
+    ".....BBBBBBEFCCCCCCEEEEEE",
+    "...BBBBBBEBBEAAAAAEEEEEEEE",
+    ".FBBBDDDDDDEEAAAAEEDDDDDD",
+    ".FBBBBBBBBBEBAAAAEDDDDDDDD",
+    "..BBBBBBBBBEEAAAEDDDDDDDDDD",
+    "..BBBBBBBBBBBAABDDDDCCCCDDDD",
+    ".FBBDDDDBBBBBBEBDDDCCCCCCDDD",
+    "FFGDDDDDDBBBBDDBDDDCCCCCCDDD",
+    "FFDDDFFDDDBBBBBBDDDCCCCCCDDD",
+    "..DDFFFFDDBBBDDBDDDCCCCCCDDD",
+    "..DDFFFFDD..BBBBDDDDFFFFDDDD",
+    "..DDDFFDDD.......DDDDDDDDDD",
+    "...DDDDDD.........DDDDDDDD",
+    "....DDDD...........DDDDDD"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699399931239/",
+    "image": "https://i.pinimg.com/originals/b0/4b/05/b04b0599860aac7798a3a8c01abf120d.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

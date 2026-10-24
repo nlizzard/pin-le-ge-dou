@@ -1,0 +1,47 @@
+{
+  "key": "pinterest-687502699351235621",
+  "name": "复古面包车",
+  "palette": {
+    "A": "#63605c",
+    "B": "#ffffff",
+    "C": "#be2e36",
+    "D": "#abaaa6"
+  },
+  "rows": [
+    "....BBBBBBBBBBBBBBBB",
+    "...BBBBBBBBBBBBBBBBBB",
+    "...BBAAAAAABBAAAAAABB",
+    "..BBAAAAAAABBAAAAAAABB",
+    "..BAAAAAAAABBAAAAAAAAB",
+    "..BAAAAAAAABBAAAAAAAAB",
+    "AABAAAAAAAABBAAAAAAAABAA",
+    ".BBAAAAAAAABBAAAAAAAABB",
+    ".AABBBBBBBBBBBBBBBBBBAA",
+    ".CCABBBBBBBBBBBBBBBBACC",
+    ".CCCABBBBBBAABBBBBBACCC",
+    ".CCCCABBBBABBABBBBACCCC",
+    ".CCCCCABBBABBABBBACCCCC",
+    ".CCCAACABBBAABBBACAACCC",
+    ".CCADDACABBBBBBACADDACC",
+    ".CCADDACCABBBBACCADDACC",
+    ".CCCAACCCCABBACCCCAACCC",
+    ".CCCCCCCCCABBACCCCCCCCC",
+    ".ACCCCCCCCCAACCCCCCCCCA",
+    "DAACCCCCCCCAACCCCCCCCAAD",
+    "DDAACCCCCCCCCCCCCCCCAADD",
+    "DDDDAAAAAAAAAAAAAAAADDDD",
+    ".DDDDDDDDDDDDDDDDDDDDDD",
+    "...AADDDDDDDDDDDDDDAA",
+    "...AAA............AAA",
+    "....A..............A"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699351235621/",
+    "image": "https://i.pinimg.com/originals/e3/ef/4a/e3ef4affb37e917544303f8101dc28e4.png",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

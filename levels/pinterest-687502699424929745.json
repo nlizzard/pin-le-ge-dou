@@ -1,0 +1,49 @@
+{
+  "key": "pinterest-687502699424929745",
+  "name": "迷你库洛米头像",
+  "palette": {
+    "A": "#e5e5e5",
+    "B": "#3b3b3b",
+    "C": "#ffffff"
+  },
+  "rows": [
+    "BBB..........................BBB",
+    "BBB..........................BBB",
+    "BBBB.......................BBBBB",
+    ".BBBBB...................BBBBBB",
+    ".BBBBBBB...............BBBBBBBB",
+    ".BBBBBBBBB............BBBBBBBBB",
+    ".BBBBBBBBB............BBBBBBBBB",
+    ".BBBBBBBB...BBBBBBBB...BBBBBBBB",
+    ".BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+    ".BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+    ".BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+    ".BBBBBBBBBBBBBAAAABBBBBBBBBBBBB",
+    "....BBBBBBBBBAAAAAABBBBBBBBB",
+    "...BBBBBBBBBABAAAABABBBBBBBBB",
+    "...BBBBBBBBBABBAABBABBBBBBBBB",
+    "...BBBBBBBBBBAAAAAABBBBBBBBBB",
+    "..BBBBBBBBBBBBAAAABBBBBBBBBBBB",
+    "..BBBBBBCCCCBBBBBBBBCCCCBBBBBB",
+    "..BBBBBCCCCCCCBBBBCCCCCCCBBBBB",
+    "..BBBBCBCCCCCCCBBCCCCCCCBCBBBB",
+    "..BBBBCCBBCCCCCCCCCCCCBBCCBBBB",
+    "..BBBBCCBBBBCCCCCCCCBBBBCCBBBB",
+    "...BBBCCBBBBBCCCCCCBBBBBCCBBB",
+    "...BBBCCBBBBCCCCCCCCBBBBCCBBB",
+    "....BBBCCBBCCCCAACCCCBBCCBBB",
+    ".....BBCCCCCCBCCCCBCCCCCCBB",
+    "......BBBCCCCCBBBBCCCCCBBB",
+    "........BBBCCCCCCCCCCBBB",
+    "...........BBBBBBBBBB"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699424929745/",
+    "image": "https://i.pinimg.com/originals/d1/85/42/d185421fac7473748b777fbe7ff5a3cb.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

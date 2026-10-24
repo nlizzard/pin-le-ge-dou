@@ -1,0 +1,39 @@
+{
+  "key": "pinterest-687502699424801666",
+  "name": "企鹅贴贴",
+  "palette": {
+    "A": "#181818",
+    "B": "#8ac9ef",
+    "C": "#fef8da",
+    "D": "#f4a8a8",
+    "E": "#f09040"
+  },
+  "rows": [
+    ".......AAAAA......AAAAA",
+    ".....AABBBBBAA..AADDDDDAA",
+    "....ABBBBBBBBBAADDDDDDDDDA",
+    "...ABBBBBBBBBBBADDDDDDDDDDA",
+    "...ABBBBBBBBBBBADDDDDDDDDDA",
+    "..ABBBBAABBBBBADDDDDDAADDDDA",
+    "..ABBBCCABAABABDADAADACCDDDA",
+    ".ABBBBCCBBEEABAADAEEDDCCDDDDA",
+    "ABBBBBBBBBAABBBADDAADDDDDDDDDA",
+    "ABBBBBBCCCCCBBBADDCCCCCDDDDDDA",
+    "ABBBACCCCCCCCBADDCCCCCCCCADDDA",
+    "ABBBACCCCCCCCCADCCCCCCCCCADDDA",
+    "ABBACCCCCCCCCCACCCCCCCCCCCADDA",
+    ".AACCCCCCCCCCCACCCCCCCCCCCCAA",
+    "..AACCCCCCCCCAAACCCCCCCCCCAA",
+    "...AAEEAAAAEEA.AAEEAAAAEEAA",
+    ".....AA....AA....AA....AA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699424801666/",
+    "image": "https://i.pinimg.com/originals/47/6f/d4/476fd484450a72b6b1b11eb48cf09b2c.png",
+    "title": "Cute Pixel Penguin Couple",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "key": "pinterest-687502699400070691-08",
+  "name": "香草冰淇淋",
+  "palette": {
+    "A": "#cc843a",
+    "B": "#fde2cd",
+    "C": "#dc9485"
+  },
+  "rows": [
+    "...C",
+    "..CCC",
+    ".CCBBB",
+    "CCBBBC",
+    "CBBBCCC",
+    "BBBCCCB",
+    "BBCCCBBB..B",
+    "BCCCBBBB..B",
+    "AAAAAAA",
+    ".AAAAA",
+    ".AAAAA",
+    "..AAA",
+    "..AAA",
+    "..AAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699400070691/",
+    "image": "https://i.pinimg.com/originals/b8/09/77/b809778036ed66ecbd4834a7e269c85c.jpg",
+    "title": "Ice cream cross stitch.",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

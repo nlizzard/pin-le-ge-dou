@@ -1,0 +1,32 @@
+{
+  "key": "pinterest-687502699351165035-04",
+  "name": "救援救护车安巴",
+  "palette": {
+    "A": "#fc669b",
+    "B": "#f5c1d8",
+    "C": "#181818",
+    "D": "#a7a6a1"
+  },
+  "rows": [
+    "...AAAAAAA",
+    "..ABBBBBBBA",
+    "..ABCBBBCBA",
+    "..ABBBABBBA",
+    "...AAAAAAA",
+    "",
+    "..A..DDD..A",
+    "BBBB.....BBBB",
+    "CBBBBBBBBBBBC",
+    "CCC.......CCC",
+    ".CC.......CC"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699351165035/",
+    "image": "https://i.pinimg.com/originals/d1/a3/76/d1a3767525349b7a588c225043dd6080.png",
+    "title": "펄러비즈 로보카폴리 만들기 / 로보카폴리도안 / 취미생활추천 ⓒ윤파스(윤파라다이스)",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

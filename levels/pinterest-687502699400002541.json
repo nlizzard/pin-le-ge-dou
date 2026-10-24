@@ -1,0 +1,53 @@
+{
+  "key": "pinterest-687502699400002541",
+  "name": "蓝灰鸽子",
+  "palette": {
+    "A": "#303056",
+    "B": "#181818",
+    "C": "#d3d8f9",
+    "D": "#2e5476",
+    "E": "#908da0",
+    "F": "#6a4c69",
+    "G": "#b1b9cb",
+    "H": "#6d7485"
+  },
+  "rows": [
+    ".......................BBB",
+    "......................BADAH",
+    ".....................BADADAAH",
+    ".....................BAADBA",
+    ".....................BAAAB",
+    ".....................BAADB",
+    ".....................BADDDB",
+    "....................BAAADDB",
+    "...................BBBBAADB",
+    ".................BBEEEEBBAAB",
+    "................BEEEEGGCCBAB",
+    "...............BEEEGGGCCCGBB",
+    "..............BEEEGGGCCCCGBB",
+    ".............BEEEGGGCCCCGGB",
+    "............BEEEGGGCCCCGGEB",
+    "...........BBBEGGGCCCCGGEB",
+    "..........BEEBBGGCCCCGGEB",
+    ".........BBBEGBBBCCGGGEB",
+    "........BEEBBGGCBBBBBBB",
+    ".......BBBEGBBCCGEHBBH",
+    ".....BBBBBBBBBBBBBBDH",
+    "..BBBFFAAAAAAAABBDDH",
+    ".BFFAAAABBBBBBBDDHHD",
+    ".BAAABBBB..........HDF",
+    "..BBBBB...........HFHDFF",
+    "..BBB.............F.FFFFF",
+    ".BBB.................F.F",
+    "BB"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699400002541/",
+    "image": "https://i.pinimg.com/originals/84/cb/1a/84cb1a5635a7e5683ca30c95c19e2cb3.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "key": "pinterest-687502699394984824",
+  "name": "伊布头像",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#181818",
+    "C": "#d5b696",
+    "D": "#45413e",
+    "E": "#d6d6c5",
+    "F": "#a3a286",
+    "G": "#7a6148",
+    "H": "#5aaee6",
+    "I": "#de95a4"
+  },
+  "rows": [
+    ".............BB.....E",
+    ".............BEBB...D",
+    "..BBB.......BBDEDB..G",
+    ".BGCCB.BBB.BEEEEEB..C",
+    "BGGDCCBCCDBEEEEEEEB.F",
+    "BBDIFDGGDCDEEEEEDEB.F",
+    "..BFFDDDCCCDEEEFDFB.H",
+    "..BCCCCCCCDDEEFDFFB.B",
+    ".BHCCCACCCCDBDDFFB",
+    ".BDDCCDHCCDBABFFFB",
+    "BGGGDCGHCFCDBDFFB",
+    "BIGGGFCFFFDDCCDB",
+    ".BGGGDFFDDEDCCCB",
+    "..BBDDDDDEECDCCB",
+    "...BFFFFEEDDCCCB",
+    "...BFDFDDCDCBDFCB",
+    "....BCDFFDCB.BFFB",
+    "....BCCDCCCB.BDDB",
+    "....BDDBDCCB..BB",
+    ".....BB.BCCB",
+    "........BGGB",
+    ".........BB"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699394984824/",
+    "image": "https://i.pinimg.com/originals/4c/99/5b/4c995bdacb90813e7908c19a1c0210c7.png",
+    "title": "【ポケモン】イワンコの作り方【アイロンビーズ簡単図案】",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

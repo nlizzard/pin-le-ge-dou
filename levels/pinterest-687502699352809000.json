@@ -1,0 +1,41 @@
+{
+  "key": "pinterest-687502699352809000",
+  "name": "钻石剑",
+  "palette": {
+    "A": "#003333",
+    "B": "#006666",
+    "C": "#00ffcc",
+    "D": "#00cccc",
+    "E": "#339999",
+    "F": "#663300",
+    "G": "#996633",
+    "H": "#009999",
+    "I": "#cc6600"
+  },
+  "rows": [
+    "............BBB",
+    "...........BCDB",
+    "..........BCDCB",
+    ".........BCDCB",
+    "........BCDCB",
+    "..AA...BCDCB",
+    "..AHA.BCDCB",
+    "...AEACDCB",
+    "...AEADCB",
+    "....AEAA",
+    "...FGAEEA",
+    "..FIF.AAHA",
+    "AAGF....AA",
+    "ABA",
+    "AAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699352809000/",
+    "image": "https://i.pinimg.com/originals/c2/71/e5/c271e50215ce410b84fc96231f75b7a5.gif",
+    "title": "Alpha Pattern A36809",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

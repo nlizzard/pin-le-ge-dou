@@ -1,0 +1,34 @@
+{
+  "key": "pinterest-687502699351235545",
+  "name": "绿色鳄鱼",
+  "palette": {
+    "A": "#dddddd",
+    "B": "#b1c04d",
+    "C": "#096a3f",
+    "D": "#181818",
+    "E": "#ffffff"
+  },
+  "rows": [
+    "........CC...............C",
+    ".......CBBC.............CBC",
+    "......CBDDBC..C.C.C.....CBC",
+    "......CBEDBBCCBCBCBC...CBBC",
+    ".CCC.CBBBBBBCBBBBBBBCCCBBC",
+    "CBDBCBBBBBBBBBCCBCCBBBBBBC",
+    "CBBBBBBCBBBBBBBBBBBBBBBBC",
+    ".CCCCCCBBBBBCBBBBBBBBBBC",
+    "..CBBBBBBBBCBBBBBBBBBBC",
+    "...CCCCCCCCACCCCBCCCCBBC",
+    "...........CBC.CBCCBCBBC",
+    "............CC..CCCC.CC"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699351235545/",
+    "image": "https://i.pinimg.com/originals/7f/40/b9/7f40b96be2e79dbc0ea52cb3ead4568c.png",
+    "title": "Pixel Art, 8-Bit Art, Lego Art",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

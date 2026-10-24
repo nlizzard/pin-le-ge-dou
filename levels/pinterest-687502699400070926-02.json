@@ -1,0 +1,36 @@
+{
+  "key": "pinterest-687502699400070926-02",
+  "name": "棕色小母鸡",
+  "palette": {
+    "A": "#6da2db",
+    "B": "#945a3b",
+    "C": "#f0aa30",
+    "D": "#d12222",
+    "E": "#573320",
+    "F": "#302d30"
+  },
+  "rows": [
+    "AAAAAAAAAAAAA",
+    "AAAADAAAAAAAA",
+    "AAADDDAAAAAAA",
+    "AAABBBAAAABAA",
+    "AACBFBAAABBAA",
+    "AAABBBBBBBBAA",
+    "AAABBBBBBBBAA",
+    "AAABBEBBEBBAA",
+    "AAABBBEEBBAAA",
+    "AAAABBBBBAAAA",
+    "AAAAACACAAAAA",
+    "AAAAACACAAAAA",
+    "AAAAAAAAAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699400070926/",
+    "image": "https://i.pinimg.com/originals/e4/16/16/e41616af48802e56d84b48ad88682dcf.png",
+    "title": "Alpha pattern #133755",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

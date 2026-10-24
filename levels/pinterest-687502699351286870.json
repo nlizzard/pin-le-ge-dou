@@ -1,0 +1,51 @@
+{
+  "key": "pinterest-687502699351286870",
+  "name": "大白鲨",
+  "palette": {
+    "A": "#dddddd",
+    "B": "#626361",
+    "C": "#ffffff",
+    "D": "#0057a8",
+    "E": "#181818"
+  },
+  "rows": [
+    "..................BBB",
+    ".................BBBBB",
+    "................BBBBBBB",
+    "...............BBBBCBBBB",
+    "..............BEBBBBBBBEB",
+    "..............BBBBCCCBBBB",
+    ".............BBBBBBBBBBBBB",
+    ".............BBBBCCCCCBBBB",
+    "............BBBBBBBBBBBBBBB",
+    "............BBBBCCCCCCCBBBB",
+    "...........BBBBCCCCCCCCCBBBB",
+    "...........BBBCCCBBBBBCCCBBB",
+    "..........EBBCCCBCECECBCCCBBE",
+    "..........EBCCCBECECECEBCCCBE",
+    ".........BBBCCBCECEEECECBCCBBB",
+    ".........BBCCBECEEECEEECEBCCBB",
+    "........BBBCCBEEECECECEEEBCCBBB",
+    "........BBCCBCECECECECECECBCCBB",
+    "........BBCCBCEBBBBBBBBBECBCCBB",
+    ".......BBCCBCEBAAAAAAAAABECBCCBB",
+    ".......BCCCBCCBAAAAAAAAABCCBCCCB",
+    ".......BCCCBEBAAAAAAAAAAABEBCCCB",
+    ".......BCCBECBAAAAAAAAAAABCEBCCB",
+    "......BBCCBEBAAAAAAAAAAAAABEBCCBB",
+    "....DDBCCCBEBAAAAAAAAAAAAABEBCCCBDD",
+    "..DDDDBCCCBBAAAAAAAAAAAAAAABBCCCBDDDD",
+    "DDDDDDBCCCCBAAAAAAAAAAAAAAABCCCCBDDDDDD",
+    "..DDDDDCCCCCCCCCCCCCCCCCCCCCCCCCDDDDD",
+    "....DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699351286870/",
+    "image": "https://i.pinimg.com/originals/3c/50/ab/3c50aba123019a9e110c63be52b6942f.png",
+    "title": "Shark Pixel Art",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "key": "pinterest-687502699363400733",
+  "name": "炭治郎",
+  "palette": {
+    "A": "#f9dece",
+    "B": "#181818",
+    "C": "#3d4240",
+    "D": "#ffffff",
+    "E": "#461f09",
+    "F": "#750834",
+    "G": "#e2e7e7",
+    "H": "#4c916f"
+  },
+  "rows": [
+    "......BBBEEEFFFBEB",
+    ".....BFFFFFEEFFFEEB",
+    "....BFFFFFFFEEFFEFFB",
+    "...BFEEEEFFFFFEFEFFB",
+    "...BEEEFFEEEEEEEEFFFBB",
+    "..BEEEFEEEEAAEEEEEFFB",
+    ".BGBEFEAEEEAAAAAAAEEB",
+    ".BBEFEEEAEEAAAAAAAAEEB",
+    "..BEEEABBBAEAAABBBAEEEBB",
+    ".BEEEEAAAABAAABAAAAEEEB",
+    "CDBEEEABBBAAAAABBBAEEBB",
+    "CCDBEEBDEEBAAABEEDBEEEEB",
+    ".CCGBEADEEDAAADEEDAEEB",
+    "..CCBDEAAAAAAAAAAAEDEEB",
+    "...CCGBEAAAAAAAAAEBGBB",
+    "....CCDBBBBBBBBBBBDB",
+    ".....CCBBBBBBCCBCCB",
+    "......CCBAAACBBBCCB",
+    ".....BCBAAACCCCCCCB",
+    "....BCBCBBBBBBCCBCB",
+    ".....BHCDDDDDDBBCB",
+    "....BAACCCCCCCBCCB",
+    ".....BCCCBBBBBBBCCB",
+    "....CHBCCBBBBBBCCCCB",
+    "...HABBCCBBB.BBBCBB",
+    "...AA..B..B..B..BAAAA..AAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699363400733/",
+    "image": "https://i.pinimg.com/originals/a0/6b/d8/a06bd8cb1df782fd0f4ff8849c4066e2.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

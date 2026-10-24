@@ -1,0 +1,45 @@
+{
+  "key": "pinterest-687502699351286750",
+  "name": "蓝色跑车",
+  "palette": {
+    "A": "#899da5",
+    "B": "#181818",
+    "C": "#2f6b95",
+    "D": "#6f8aa6",
+    "E": "#eae8d5"
+  },
+  "rows": [
+    "............CCCCCCCCCCC",
+    "..........CCCCCCCCCCCCCCC",
+    "........CCCCCCCEEEECCEEEEE",
+    ".......CCCCCCCEEEEEEEEEEEEE",
+    "......CCCCCCCEEEEBBEEEEBBEEE",
+    "......CCCCAAAEEEBBBBEEBBBBEEE.AA",
+    ".....CCCCADADDEEBBBBEEBBBBEEEAADA",
+    "...CCCCCCDAAADCCCCCCCCCCCCCCCCCCA",
+    "..CCCCCCCCAADCCCCCCCCCCCCCCCCCCCCCCC",
+    ".CCCCCAACCCCCCCCCCCCAAACCCCCCCCCCCCCCEA",
+    ".BBCCAAADDCCCCCCCCCEAAAACCCCCCCCCCCCCEAA",
+    "BBBBADAAAAADCBBBCCCAAAAACCCCCCCCCCCCAAAA",
+    "BBBBADADDDDDBBBBBCCCAAAAACCCCCCCCCCEAAACC",
+    "BBCBADADDDDABBBBBACCCCCCCCCCCCCCCCCCCCCCC",
+    "BBCBADADDDAABBBBBAACCCCCCCCCCCCCCCCCCCCCC",
+    "BBCBAADADDAABBCBBBAACCCCCCCCCCCCCCCCCCCCD",
+    "BBBBAAAADDDDBBCCBBDADDDCCCCCBBBBBBBBCCADD",
+    ".BBBBADAADDDBBCCBBBAAAAAAAAADBBBBBBAADAD",
+    "..BBBBB..AADBBCCBBBBADDADDDADABBBBAAADAB",
+    "............BBBCBBBBBBAAAADADDADAAADADBB",
+    "............BBBBBBBBBB..AAAADAADAAADBBBB",
+    ".............BBBBBBBB..........BBBBBBBB",
+    "..............BBBBBB............BBBBBB"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699351286750/",
+    "image": "https://i.pinimg.com/originals/4d/c8/41/4dc841f2f0591f1c29148a1d41eda4b8.jpg",
+    "title": "Ponto cruz infantil carro",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

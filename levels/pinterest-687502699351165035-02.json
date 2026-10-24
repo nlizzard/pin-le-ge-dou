@@ -1,0 +1,40 @@
+{
+  "key": "pinterest-687502699351165035-02",
+  "name": "救援直升机海利",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#067d3d",
+    "C": "#8be4e8",
+    "D": "#0485d8",
+    "E": "#fbd0c0",
+    "F": "#95d451",
+    "G": "#181818",
+    "H": "#ff822b",
+    "I": "#fd0000"
+  },
+  "rows": [
+    "......I",
+    ".CCCCCACCCCC",
+    "....FABAF",
+    "...FBAAABF",
+    "..FFBABABFF",
+    "..FDDDDDDDF",
+    ".BDEGEEEGEDB",
+    ".BDEEEGEEEDB",
+    "CBADDDADDDABC",
+    "CBCAHAAAHACBC",
+    "...CCBBBCC",
+    "",
+    "....BB.BB",
+    "...BBB.BBB"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699351165035/",
+    "image": "https://i.pinimg.com/originals/d1/a3/76/d1a3767525349b7a588c225043dd6080.png",
+    "title": "펄러비즈 로보카폴리 만들기 / 로보카폴리도안 / 취미생활추천 ⓒ윤파스(윤파라다이스)",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

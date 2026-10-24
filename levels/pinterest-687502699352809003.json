@@ -1,0 +1,34 @@
+{
+  "key": "pinterest-687502699352809003",
+  "name": "钻石镐",
+  "palette": {
+    "A": "#4b4b4b",
+    "B": "#9a6601",
+    "C": "#32cdfd",
+    "D": "#c99b02"
+  },
+  "rows": [
+    "....AAAAA",
+    "...ACCCCCABD",
+    "....AAAACCDB",
+    "........BCCA",
+    ".......BDBCCA",
+    "......BDB.ACA",
+    ".....BDB..ACA",
+    "....BDB...ACA",
+    "...BDB....ACA",
+    "..BDB......A",
+    ".BDB",
+    "BDB",
+    "BB"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699352809003/",
+    "image": "https://i.pinimg.com/originals/a8/a7/72/a8a7727b6484d3fc3fc7e9f47eaa51db.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

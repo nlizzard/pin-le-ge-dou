@@ -1,0 +1,48 @@
+{
+  "key": "pinterest-687502699395036401",
+  "name": "菠萝小人",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#456998",
+    "C": "#0f6941",
+    "D": "#f9c346",
+    "E": "#161d2c"
+  },
+  "rows": [
+    "...CC",
+    "...CC",
+    "...CCC",
+    "....CC.C",
+    "..CCAC.C.C",
+    "...CCACACC",
+    "..CACCCAC",
+    "...CACCC",
+    "....CCCC",
+    ".....CC",
+    "......C",
+    "...DDDDDDD",
+    "..DDDDDDDDD",
+    ".DDDDDDDDDDD",
+    "DDDDDDDDDDDDD",
+    "DDDDDDDDDDDDD",
+    "DDEADDDDDEADD",
+    "DDEEDDBDDEEDD",
+    ".DDDDAAADDDD",
+    "..DDDDDDDDD",
+    "..BBBBBBBBB",
+    ".BBBBBBBBBBB",
+    "BB.BBBBBBB.BB",
+    "....BBBBB",
+    "..BBBB.BBBB",
+    "..BBB...BBB"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699395036401/",
+    "image": "https://i.pinimg.com/originals/40/af/71/40af71fc32317125f24303e4ab074d78.jpg",
+    "title": "Designs",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

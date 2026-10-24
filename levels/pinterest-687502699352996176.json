@@ -1,0 +1,43 @@
+{
+  "key": "pinterest-687502699352996176",
+  "name": "小蜜蜂",
+  "palette": {
+    "A": "#181818",
+    "B": "#ffffff",
+    "C": "#ffc13c",
+    "D": "#63605c",
+    "E": "#e05e80"
+  },
+  "rows": [
+    "......AAA",
+    ".....ABBBA.....A",
+    "....ABBBBBA....A",
+    "....ABBBBBA...AA",
+    "....ABBBBBAAAAA",
+    "..AAABBBBBACCCA..AAA",
+    ".ABBBABBBACCACCAAA",
+    "ABBBBABBBAECCCCCA",
+    "ABBBBAAAAACCCCACA",
+    "ABBBACAACCACCCCCA",
+    ".AAAACCAACCACECAAAA",
+    "...DAACCAACCAAABBBBA",
+    "...ACAACCAACABBBBBBBA",
+    "...DCCAACCAAABBBBBBBA",
+    "...DDCCAACCAABBBBBBBA",
+    "...ADACCAACCAABBBBBA",
+    "..ADAAACCAAABBAAAAA",
+    "..AAAAAAAAABBBA",
+    "..AA.....ABBBBA",
+    ".........ABBBA",
+    "..........AAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699352996176/",
+    "image": "https://i.pinimg.com/originals/49/7e/6a/497e6a3de310cc4a43170dc6c9e7f562.png",
+    "title": "Bee Pixel Art",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

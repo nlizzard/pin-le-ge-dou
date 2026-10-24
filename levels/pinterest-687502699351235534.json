@@ -1,0 +1,50 @@
+{
+  "key": "pinterest-687502699351235534",
+  "name": "粉色恐龙",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#ff69b4",
+    "C": "#211f1d",
+    "D": "#c71585",
+    "E": "#ba55d3"
+  },
+  "rows": [
+    "......CCCC",
+    "....CCBBBBC",
+    "...CBBBBBBBC",
+    "..CBBBAAABBBC",
+    ".CBBBBACABBDC",
+    "CBBBBBAAABDDC",
+    "CBBBBBBBBBBBC",
+    "CBBBBBBBBBBDC",
+    "CBBBBBCBBBDDC",
+    ".CBBBCBBBBBBC",
+    "..CCCCCCCBBDC",
+    "........CBDDC",
+    "........CBBBC",
+    "........CBDBC",
+    "........CBBC",
+    "........CBBC",
+    ".......CBBDBCCCCCC",
+    ".......CBBDBDDBDDBC",
+    "......CBBDDBDDBDDBBC",
+    "......CBBDBBDBBDBBDDC",
+    "......CBBBBBBBBBBDDBBCCCC",
+    "......CBBBBBBBBBBBBBBDBBC",
+    "......CCBBBBBBBBBBBBDDBC",
+    ".......CCCBBBBBBBBBCCCC",
+    ".......CECBBCCCCCBBC",
+    "......CEECBBC...CBBC",
+    "......CCCBBBC..CBBBC",
+    "........CCCCC..CCCCC"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699351235534/",
+    "image": "https://i.pinimg.com/originals/0f/f2/9f/0ff29faee6e81e7c38068258e284e482.png",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

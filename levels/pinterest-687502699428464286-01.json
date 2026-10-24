@@ -1,0 +1,39 @@
+{
+  "key": "pinterest-687502699428464286-01",
+  "name": "企鹅平古头像",
+  "palette": {
+    "A": "#60d0e0",
+    "B": "#181818",
+    "C": "#b01030",
+    "D": "#ffffff"
+  },
+  "rows": [
+    "AAAAAAAAAAAAAAAAA",
+    "AAAAAAAAAAAAAAAAA",
+    "AAAAABBBBBBAAAAAA",
+    "AAABBBBBBBBBBAAAA",
+    "AABBBBBBBBBBBBAAA",
+    "ABBBBBBBBBBBBBBAA",
+    "ABBDBBBBBBBBDBBAA",
+    "BBDBBBBBBBBBBDBBA",
+    "BBDBBBBBBBBBBDBBA",
+    "BBBBBBCCCCBBBBBBA",
+    "BBBBBCCCCCCBBBBBA",
+    "ABBBCCCCCCCCBBBAA",
+    "ABBBBCCCCCCBBBBAA",
+    "AABBBBBBBBBBBBAAA",
+    "AAAABBBBBBBBAAAAA",
+    "AAAAAAAAAAAAAAAAA",
+    "AAAAAAAAAAAAAAAAA",
+    "AAAAAAAAAAAAAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699428464286/",
+    "image": "https://i.pinimg.com/originals/e1/cd/ee/e1cdeebe00c1ed70be284f34a39b3f49.png",
+    "title": "ピングー 顔 16 pixel - pingu face",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

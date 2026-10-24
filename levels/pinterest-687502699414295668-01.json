@@ -1,0 +1,44 @@
+{
+  "key": "pinterest-687502699414295668-01",
+  "name": "圣诞麋鹿",
+  "palette": {
+    "A": "#a17e6a",
+    "B": "#865640",
+    "C": "#d3d4d6",
+    "D": "#c3bdbb",
+    "E": "#4b3d3a",
+    "F": "#60504a",
+    "G": "#b6aba3"
+  },
+  "rows": [
+    "CCCCCCCCCCCCCCDDDD",
+    "CCCCDDGCCCCCCGGGGC",
+    "CCDEEEEGCCCCGEEFEG",
+    "CCCAAAEEACCAFEAAFG",
+    "CCCGAAEEFCCAEEFAAC",
+    "CCCCFEEEECCAEEEEGC",
+    "CCCCGAAEFCCAFGAACC",
+    "CCCCAAAEFCCAEAAACC",
+    "CCCDAAAFEGGAFAAAGC",
+    "CCDBAGABBBBBAAAABG",
+    "CCCABAABBBBBBABBBG",
+    "CCCGABAFBBBFFABBAD",
+    "CCCCGABEEBBEEBBAGC",
+    "CCCCDABBBBBBBBAGDC",
+    "CCCCGABBBBBBBBBACC",
+    "CCCCABBBBBBBBABBDC",
+    "CCCCAACBBBBBACABDC",
+    "CCCCAAABBBBBBABBDC",
+    "CCCCABBBBBBBBBBBDC",
+    "CCCCCABBBBBBBBBACC"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699414295668/",
+    "image": "https://i.pinimg.com/originals/9c/46/6c/9c466c395271c9676f5f8bf708bb308f.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "resample",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

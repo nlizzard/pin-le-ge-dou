@@ -1,0 +1,38 @@
+{
+  "key": "pinterest-687502699351165035-01",
+  "name": "救援警车波利",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#0388e3",
+    "C": "#181818",
+    "D": "#79e9eb",
+    "E": "#073f96",
+    "F": "#a7a6a1",
+    "G": "#fd0000",
+    "H": "#fbb329",
+    "I": "#fed102"
+  },
+  "rows": [
+    "..GGGEEGGG",
+    ".....EE",
+    "...E.EE.E",
+    "..EDDDDDDE",
+    "..DDCDDCDD",
+    ".BB..II..BB",
+    "BBB.FAAF.BBB",
+    "BHB..FF..BHB",
+    "",
+    "C.F......F.C",
+    "CCC......CCC",
+    ".CC......CC"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699351165035/",
+    "image": "https://i.pinimg.com/originals/d1/a3/76/d1a3767525349b7a588c225043dd6080.png",
+    "title": "펄러비즈 로보카폴리 만들기 / 로보카폴리도안 / 취미생활추천 ⓒ윤파스(윤파라다이스)",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

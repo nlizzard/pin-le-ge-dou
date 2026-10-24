@@ -1,0 +1,46 @@
+{
+  "key": "pinterest-687502699414245560",
+  "name": "红色花枝",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#f4c3ac",
+    "C": "#56863c",
+    "D": "#cd3834",
+    "E": "#7ab925"
+  },
+  "rows": [
+    ".......................C",
+    ".......................C",
+    "......................D",
+    "......................C",
+    ".....................DCC",
+    "....................DBD",
+    "...................CDDDD",
+    "...................CCCDCC",
+    "....................CACC",
+    "....................BBC",
+    "...................BBDB",
+    "...................BDDB",
+    "..................EBBBBC",
+    ".................DEEBBCC",
+    "................DDDECCC",
+    "...............DDBBDCC",
+    "............CEEDBDDBD",
+    ".......D...BBCEDBBDBD",
+    ".....CDDD.BBDBCDDBBDDC",
+    ".CD.CDDBD.BDDBBCDDDDCCC",
+    ".DDDCDDDDCBBBBACC.DC",
+    "CDD..C.DCC.BB.CCC.ECC",
+    "..C..C..C..CC.CC..EEC",
+    "....................C"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699414245560/",
+    "image": "https://i.pinimg.com/originals/74/4b/8a/744b8a5f3bec0d86b4db352365cfe9f9.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

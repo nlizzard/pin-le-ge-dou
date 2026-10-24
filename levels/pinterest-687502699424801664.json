@@ -1,0 +1,50 @@
+{
+  "key": "pinterest-687502699424801664",
+  "name": "兔兔抱抱",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#181818",
+    "C": "#fd95a9",
+    "D": "#ce8a4d",
+    "E": "#ef8c8a"
+  },
+  "rows": [
+    "...............BB..BB",
+    "..............BCCBBCCB",
+    "..............BCCCCCCB",
+    "....BBB...BB...BCCCCB...BB...BBB",
+    "...BAAAB.BAAB...BCCB...BDDB.BDDDB",
+    "...BACCABBACAB...BB...BDCDBBDCCDB",
+    "...BACCABBACCB........BDCDBBDCCDB",
+    "...BACCAABACCB........BDCDBDCCCDB",
+    "....BACCABACCB........BDCDBDCCDB",
+    "....BACEABBBABB......BBDBBBDCDDB",
+    ".....BAAAAAAAAAB....BDDDDDDDDDB",
+    "....BAAAAAAAAAAAB..BDDDDDDDDDDDB",
+    "...BAAAAAAAAAAAAABBDDDDDDDDDDDDDB",
+    "...BAAAAAAAAAAAAABBDDDDDDDDEDDDDB",
+    "...BAAAABAAAAABAABBDBADDDDBADDDDB",
+    "...BAAAABBAACABBABBDBBDCCDBBDDDDB",
+    "...BAAACCAABABACCBBCCDBDBDDCCDDDB",
+    "....BAAAAAAABAAAABBDDDDBDDDDDDDB",
+    ".....BBAAABAAAAABAABDDDDDBDDDBB",
+    "....BAAAAAABBBABAAAABDBBBDDDDDDB",
+    "...BAAAAAAAAAABBBABBBBDDDDDDDDDDB",
+    "...BAAAAAAAAAAAAABDDDDDDDDDDDDDDB",
+    ".BBBAAAAAABAAAAAABDDDDDDDBDDDDDDBBB",
+    "BAABAAAAAAABBBBBB.BBBBBBBDDDDDDDBDDB",
+    "BAABAAAAAAAABAAB....BDDBDDDDDDDDBDDB",
+    "BAAABAAAAABBBAABB..BBDDBBBDDDDDBDDDB",
+    ".BBBBAAAAAAAABAAB..BDDBDDDDDDDDBBBB",
+    "....BBBBBBBBBBBB....BBBBBBBBBBBB"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699424801664/",
+    "image": "https://i.pinimg.com/originals/16/48/04/164804fb4e6329b12ce9d7f474ad2952.png",
+    "title": "Cute Pixel Bunny Couple",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

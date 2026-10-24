@@ -1,0 +1,45 @@
+{
+  "key": "pinterest-687502699352996185",
+  "name": "蝴蝶结企鹅",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#181818",
+    "C": "#6b327b",
+    "D": "#ff931c"
+  },
+  "rows": [
+    "...............BBBB",
+    ".........BBBBBBBCCB.BB",
+    ".......BBBBBBBBCCCCBBCB",
+    "......BBBBBBBBBCCCBCBCCB",
+    ".....BBBBBBBBBBBCBCCBCCB",
+    ".....BBBBBBBBBBBBBBBCCCB",
+    ".....BBAAAABBBAAAABBCCB",
+    "...BBBAAAAAABAAAAAABBB",
+    "...BBAAAAAAAAAAAAAAABB",
+    "...BBAAAAAAAAAAAAAAABB",
+    "...BAABBAAAAAAAAABBAAB",
+    ".BBBAABBAADDDDDAABBAABBB",
+    "BBBBAAAAAAADDDAAAAAAABBBB",
+    "BBBBAAAAAAAAAAAAAAAAABBBB",
+    ".BBBAAAAAAAAAAAAAAAAABBB",
+    "...BBAAAAAAAAAAAAAAABB",
+    "....BAAAAAAAAAAAAAAAB",
+    "....BAAAAAAAAAAAAAAAB",
+    "....BBAAAAAAAAAAAAABB",
+    ".....BBBAAAAAAAAABBB",
+    "......BBBBBBBBBBBBB",
+    ".......BBBBBBBBBBB",
+    "........DDDBBBDDD",
+    ".......DDDD...DDDD"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699352996185/",
+    "image": "https://i.pinimg.com/originals/a4/08/7f/a4087f9cb886cbaa4f3113b7559f8063.png",
+    "title": "Baby Penguin Pixel Art",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

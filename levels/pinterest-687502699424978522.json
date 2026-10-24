@@ -1,0 +1,49 @@
+{
+  "key": "pinterest-687502699424978522",
+  "name": "像素手账小女孩",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#181818",
+    "C": "#2e456a",
+    "D": "#d8b89d",
+    "E": "#3d393a",
+    "F": "#f1ecdd",
+    "G": "#766270"
+  },
+  "rows": [
+    "...EEE......EE.EEE",
+    "..EDDDEEEEEEEFEDDDE",
+    "..EDDDDDDDEEFEEEDDE",
+    "..EDDDDDDDEFEEEFEEE",
+    ".EDDDDDDDDDEEEFEEEFE",
+    ".EDDDDDDDDDDDDEEEFEE",
+    ".EDDDDDDDDDDDDDEFEEE",
+    ".EDDBBBBDDDDDBBBBEDE",
+    "EEEBDDDDBDDDBDDDDBEEE",
+    ".EDBDDEDDBBBDDEDDBDE",
+    "EEEBDDEDBDDDBDEDDBEEE",
+    ".EDBDFFDBDDDBDFFDBDE",
+    "..EDBBBBDDDDDBBBBDE",
+    "...EEDDDDDDDDDDDEE",
+    ".....EEEEEEEEEEE",
+    "....BCCAAADAAACCB",
+    "...BCCCCADADACCCCB",
+    "..BDCCCCDCCCDCCCCDB",
+    "..BDCCCCCCCCCCCCCDB",
+    "...BBEEEEEEEEEEEBB",
+    "....BEEBEEBEEBEEB",
+    "...BEEEEEEEEEEEEEB",
+    "...BBBBBBBBBBBBBBB",
+    ".....EDDDDEDDDDE",
+    "......EEEGDEEEE"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699424978522/",
+    "image": "https://i.pinimg.com/originals/19/06/7e/19067ebd5d15a7fce2a7e1baf24b38a6.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "specified-grid",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

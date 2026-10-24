@@ -1,0 +1,29 @@
+{
+  "key": "pinterest-687502699352808933-02",
+  "name": "末影人头像",
+  "palette": {
+    "A": "#36312d",
+    "B": "#181818",
+    "C": "#c302fe",
+    "D": "#d56dfd"
+  },
+  "rows": [
+    "BABBBBAB",
+    "BAABBAAB",
+    "ABAAAABA",
+    "BBAAAABB",
+    "DCDAADCD",
+    "ABBAABBA",
+    "BAABBAAB",
+    "AAAAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699352808933/",
+    "image": "https://i.pinimg.com/originals/04/05/23/04052301d60059e1e164adf466771b09.jpg",
+    "title": "Moldes de todos os personagens do Minecraft - 42 moldes",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

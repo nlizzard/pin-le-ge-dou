@@ -1,0 +1,53 @@
+{
+  "key": "pinterest-687502699415506596",
+  "name": "布丁狗",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#fff2b3",
+    "C": "#292929",
+    "D": "#ac6ade",
+    "E": "#5a0084",
+    "F": "#5f2d19",
+    "G": "#ebb884",
+    "H": "#985f34",
+    "I": "#ec6d65"
+  },
+  "rows": [
+    ".................CEDDCDDDC",
+    "................CEDDDDDDADC",
+    "................CEDDDDDDADC",
+    "................CEDDDDDDADC",
+    "................CEEDDDDADDC",
+    "...........C.....CEEDDDDDC",
+    ".........CCHCC....CEEDDDC",
+    ".......CCFFFHHCC...CCECC",
+    ".....CCCFFFFFFFCCC...C",
+    "....CBBBCCCCCCCBBBC..C",
+    "...CBBBBBBBBBBBBBBBC.C",
+    ".CCBBCBBBBBBBBBBBCBBCC",
+    "CBBBCBBBBBBBBBBBBBCBBBC",
+    "CBBGCBBCBBBCBBBCBBCGBBC",
+    "CBGCBBBBBCBCBCBBBBBCGBC",
+    ".CCCBBBBBBCICBBBBBBCCC",
+    "...CBBBBBBBCBBBBBBBCAC",
+    "....CCEBBBBBBBBBECCCC",
+    "...CBEDEDEDEDEDEDEBGC",
+    "..CBBBDEDEDEDEDEDBGC",
+    "...CCBBBDDDBBBBBBBC",
+    "....CBBBEEEBBBBBBBC",
+    "....CBBBDDDBBBBBBBC",
+    "....CBBBBBBBBBBBBGC",
+    ".....CBBBBBBBBBBGC",
+    ".....CBBGCCCCCGGGC",
+    "......CCC.....CCC"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699415506596/",
+    "image": "https://i.pinimg.com/originals/1d/df/75/1ddf7537d7b70ba75ceefdb41d284d58.png",
+    "title": "Sanrio Pompompurin PIX BRIX Pixel Art Template Instructions",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

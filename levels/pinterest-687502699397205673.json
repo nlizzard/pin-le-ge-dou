@@ -1,0 +1,46 @@
+{
+  "key": "pinterest-687502699397205673",
+  "name": "凯蒂猫头像",
+  "palette": {
+    "A": "#ff96c4",
+    "B": "#ffffff",
+    "C": "#383738",
+    "D": "#f54491",
+    "E": "#c2c2c2",
+    "F": "#ffc821"
+  },
+  "rows": [
+    "AAAAAAAAAAAAAAAAAAAAAAAA",
+    "AAAAAAAAAAAAAAAAAAAAAAAA",
+    "AAAAAAAAAAAACCCCAACCCAAA",
+    "AAACCCCAAAACDDDDCCEEECAA",
+    "AACBBBBCCCCDDDDDCEBBECAA",
+    "AACBBBBBBBCDDDDCCCBCCCAA",
+    "AACBBBBBBBCDDCCDDDCDDDCA",
+    "AACBBBBBBBCDDDCDDDCCDDCA",
+    "AAACBBBBBBBCCCCDDDCDDDCA",
+    "AAACBBBBBBBBBBBCCCDDDDCA",
+    "AACBBBBBBBBBBBBBBBCDDCAA",
+    "AACBBBBBBBBBBBBBBBECCAAA",
+    "AACBBBBBBBBBBBBBBBBEECAA",
+    "AACBBBBCBBBBBBBBCBBBECAA",
+    "ACCCBBBCBBBBBBBBCBBBCCCA",
+    "AACEBBBBBBBFFBBBBBBBECAA",
+    "AACCCBBBBBBBBBBBBBBCCCAA",
+    "ACACEBBBBBBBBBBBBBEECACA",
+    "AAAACEEBBBBBBBBBEEECAAAA",
+    "AAAAACCEEEEEEEEEECCAAAAA",
+    "AAAAAAACCCCCCCCCCAAAAAAA",
+    "AAAAAAAAAAAAAAAAAAAAAAAA",
+    "AAAAAAAAAAAAAAAAAAAAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699397205673/",
+    "image": "https://i.pinimg.com/originals/21/a1/a2/21a1a2ae68b68b8f6ac841ac06655a80.png",
+    "title": "Alpha pattern #80361",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

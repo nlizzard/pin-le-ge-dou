@@ -1,0 +1,31 @@
+{
+  "key": "pinterest-687502699399931239-01",
+  "name": "蓝色小汽车",
+  "palette": {
+    "A": "#f0d621",
+    "B": "#0b75bb",
+    "C": "#181818",
+    "D": "#cec69b"
+  },
+  "rows": [
+    "....BBBBB",
+    "...BAABAAB",
+    "..BAAABAAAB",
+    "..BAAABAAABBBB",
+    ".BBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBBA",
+    "ABCCBBBBBBCCBBA",
+    "BCDDCBBBBCDDCBB",
+    ".CDDC....CDDC",
+    "..CC......CC"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699399931239/",
+    "image": "https://i.pinimg.com/originals/b0/4b/05/b04b0599860aac7798a3a8c01abf120d.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

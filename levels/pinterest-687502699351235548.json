@@ -1,0 +1,45 @@
+{
+  "key": "pinterest-687502699351235548",
+  "name": "太空火箭",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#0057a8",
+    "C": "#6b327b",
+    "D": "#181818",
+    "E": "#ff0000"
+  },
+  "rows": [
+    "...........................B",
+    ".........................BBB",
+    "........................BBBB",
+    ".......................BBBB",
+    "......................BBBBB",
+    ".....................BCCBBB.DD",
+    "....................BCCCBBBDDD",
+    ".....BEAACCCAAAAAAAACCCCBBEDDD",
+    "...BBBEAACCCAAAAAAAAACCCBBEDDD",
+    "..BBBBEAAAAAAAAAAAAAAAAAAAE.DD",
+    ".DBBBBEAACCCAAAAAAAAAAAAAAE",
+    "DDBBBBEAACCCAAAAAAAAAAAAAAE",
+    ".DBBBBEAACCCAAAAAAAAAAAAAAE",
+    "..BBBBEAAAAAAADADADAAAAAAAE.DD",
+    "...BBBEAACCCAADADADAACCCBBEDDD",
+    ".....BEAACCCAAAAAAAACCCCBBEDDD",
+    "....................BCCCBBBDDD",
+    ".....................BCCBBB.DD",
+    "......................BBBBB",
+    ".......................BBBB",
+    "........................BBBB",
+    ".........................BBB",
+    "...........................B"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699351235548/",
+    "image": "https://i.pinimg.com/originals/06/c6/da/06c6da042f77f39886720a533a3820be.png",
+    "title": "Space Rocket Pixel Art",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

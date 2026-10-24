@@ -1,0 +1,50 @@
+{
+  "key": "pinterest-687502699395144134",
+  "name": "微笑太阳",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#ce4a03",
+    "C": "#f5a623",
+    "D": "#fbf4a9"
+  },
+  "rows": [
+    "................B",
+    "...............BCB",
+    "..............BCCCB",
+    "..............BCCCB",
+    "....BBB......BCCCCCB......BBB",
+    "....BCCBB....BCCCCCB....BBCCB",
+    "....BCCCCBB..BBBBBBB..BBCCCCB",
+    ".....BCCCCCBBDDDDDDDBBCCCCCB",
+    ".....BCCCCBDDDDDDBBBCCBCCCCB",
+    "......BCCBDDDDDDBCCCCCCBCCB",
+    "......BCBDDDDDDBCCCCCCCCBCB",
+    ".......BDBBBDDDBCCCCCCCCCB",
+    ".......BBDDDBDBCCCCCCCCCCB",
+    "....BBBDDAADDDBCCCCCCCAACCBBB",
+    "..BBCCBDAAAADDBCCCCCCAAAACBCCBB",
+    ".BCCCCBDAAAADDDBCCCBBAAAACBCCCCB",
+    "BCCCCCBBBAAADDDDBBBDBAAABBBCCCCCB",
+    ".BCCCBDDDBDDDDDDDDDDBCCBCCCBCCCB",
+    "..BBCBDDDBDDBDDDDDDBCCCBCCCBCBB",
+    "....BBDDDBBDDBBBBBBCCCBBCCCBB",
+    "......BBBDBBDDDDBCCCCBBCBBB",
+    ".......BDDBDBBBBBBBBBDBCCB",
+    "......BCBDDBDBDBDBDBDBCCBCB",
+    "......BCCBDDBBDBDBDBBCCBCCB",
+    ".....BCCCCBDDDBBBBBDDBBCCCCB",
+    ".....BCCCCCBBDDDDDDDBBCCCCCB",
+    "....BCCCCBB..BBBBBBB..BBCCCCB",
+    "....BCCBB...............BBCCB",
+    "....BBB...................BBB"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699395144134/",
+    "image": "https://i.pinimg.com/originals/20/01/8e/20018e20af51c30edf923ee020204d0a.png",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

@@ -28,6 +28,7 @@ try {
       colors: [...d.colors], target: Array.from(d.target), beads: Array.from(d.beads),
       objectives: d.objectives, elements: d.elements,
     });
+    if (id % 50 === 0) console.log(`关卡生成 ${id}/${LEVEL_COUNT}`);
   }
   await mkdir(path.dirname(outfile), { recursive: true });
   await writeFile(outfile, JSON.stringify(levels));

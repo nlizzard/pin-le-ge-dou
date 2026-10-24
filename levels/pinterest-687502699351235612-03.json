@@ -1,0 +1,41 @@
+{
+  "key": "pinterest-687502699351235612-03",
+  "name": "红色消防车",
+  "palette": {
+    "A": "#807e7f",
+    "B": "#c40904",
+    "C": "#d2d2d2",
+    "D": "#302e2f",
+    "E": "#ffffff",
+    "F": "#f18902",
+    "G": "#f3d005",
+    "H": "#174013"
+  },
+  "rows": [
+    ".....BBBB",
+    "..A.BEBGBE",
+    "..A.BEGBGE",
+    "..ABBEEEEE",
+    "..AABBBBBBB",
+    "..AABEEBEECA",
+    "..AABEHBHECA",
+    "..ABBBAAAAA",
+    "..BFFBAAAAAA",
+    "..BBFBAAAAAAF",
+    "..BBAAAAAAAAAB",
+    "DDADBBAAAAAABB",
+    "DDADBBDBBBBDBB",
+    "DDDDBBBDDDDBBB",
+    "DDDDDBBBBBBBBD",
+    "...DD.......DD"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699351235612/",
+    "image": "https://i.pinimg.com/originals/85/23/b1/8523b1975790ee83b030be3c6aa8a786.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

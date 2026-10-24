@@ -1,0 +1,48 @@
+{
+  "key": "pinterest-687502699351286865",
+  "name": "跃出海面的海豚",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#808080",
+    "C": "#4b4b4b",
+    "D": "#c0c0c0",
+    "E": "#181818"
+  },
+  "rows": [
+    "......................CC",
+    ".....................CCC",
+    "...................CCCCC",
+    "..................CCCCC",
+    ".................CCCCCC",
+    "...............BCCCCCCB",
+    ".............BBBBBBBBBBB",
+    "..........BBBBBBBBBBBBBBB",
+    ".......BBBBBBBBBBBBBBBBBBBB",
+    "......BBBBBBBBBBBBBBBBBBBBBB",
+    "......BBBBBBBBBBBBBBBBBBBBBBB",
+    ".....BBBBBBBBBBBBBBBBBBBBBBBBB",
+    "....BBBBBBBBBBBBBBBBBBBBBBBBBBB",
+    "..BBBBBBAABBBBBBBBBBBBBBBBBBBBBB",
+    ".BBBBBBBEABBBBBBBBBBBBBBBBBBBBBBB",
+    ".BBBBBBBBBBBBBBDDDDDDDDDDBBBBBBBBB",
+    "BBBBBBBDDDDDCCCCDDDDDDDDDDDDBBBBBBB",
+    "BBDDDDDDDDDDDCCCCDDDDD........BBBBBBCCCCC",
+    ".......DDDDDDDCCCC.............BBBBCCCCCCC",
+    "..............CCCCC.............BBCCCCCCCCC",
+    "...............CCCCC............CCCCCC",
+    ".................CCC............CCCC",
+    "..................CC............CCCC",
+    "...................C.............CCC",
+    ".................................CC",
+    "..................................C"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699351286865/",
+    "image": "https://i.pinimg.com/originals/6b/82/9b/6b829b758371cbaeeb9a507fd1bd103a.gif",
+    "title": "Alpha Pattern A58610",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

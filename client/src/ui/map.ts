@@ -67,16 +67,17 @@ export function renderMap(root: HTMLElement, onPlay: (id: number) => void, fx: F
   const list = h('div.level-grid');
   for (let id = 1; id <= LEVEL_COUNT; id++) {
     const locked = id > d.unlocked;
-    const info = levelInfo(id);
+    // 锁定卡片只展示图案；大图的可解性模拟留到实际进入关卡时执行。
+    const info = locked ? undefined : levelInfo(id);
     const best = d.best[id] ?? 0;
     const card = h(
       'button.level-card' + (locked ? '.locked' : '') + (id === d.unlocked && !best ? '.current' : ''),
       { onclick: () => !locked && onPlay(id), disabled: locked || undefined },
       h('div.level-no', {}, String(id)),
       thumbnail(id, locked),
-      h('div.level-name', {}, locked ? '？？？' : info.name),
+      h('div.level-name', {}, locked ? '？？？' : info!.name),
       locked ? h('div.lock', {}, '🔒') : starRow(best),
-      locked ? null : h('div.tag.diff-' + info.difficulty, {}, info.difficulty),
+      locked ? null : h('div.tag.diff-' + info!.difficulty, {}, info!.difficulty),
     );
     list.append(card);
   }

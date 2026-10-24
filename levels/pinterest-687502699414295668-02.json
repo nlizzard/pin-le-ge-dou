@@ -1,0 +1,45 @@
+{
+  "key": "pinterest-687502699414295668-02",
+  "name": "圣诞老人",
+  "palette": {
+    "A": "#d41934",
+    "B": "#d9b8a1",
+    "C": "#e3e6e7",
+    "D": "#c9c8c5",
+    "E": "#a4807b",
+    "F": "#ffffff",
+    "G": "#ada69f",
+    "H": "#93283b"
+  },
+  "rows": [
+    "DDDDDDFFFDDBBBBB",
+    "DDCCDCFFFCDDDDDD",
+    "CCCCDBBBBBCCCCCC",
+    "CCCCBAAAAABCCCCC",
+    "CCCEAAAAAAABDCCC",
+    "CCBAAAAAAAAABDDC",
+    "CDAAAAAAAAAAADCD",
+    "CCCDDDCCDDCDCCCC",
+    "CFFDBDBBBDBDFFCC",
+    "CFCBBBBBBGBBCCCC",
+    "DBBBEHEBEHEBBBDC",
+    "DBBBGEBBBEGBBBBC",
+    "BBBBBEBBBEBBBBBC",
+    "DBCBEHDFBHEBCGBD",
+    "CCFCBGHHHGDCFCCD",
+    "CFCCCCEHHCCCCCCD",
+    "CFCFFCCFCCFCCCCB",
+    "DBCCCCCCCCCCCGBD",
+    "DGDCCFCCFFCCDGDD",
+    "CDGDCCCFCCCDGDCC"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699414295668/",
+    "image": "https://i.pinimg.com/originals/9c/46/6c/9c466c395271c9676f5f8bf708bb308f.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "resample",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "key": "pinterest-687502699351236012",
+  "name": "红色龙虾",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#bc4f4c",
+    "C": "#9b3d3a"
+  },
+  "rows": [
+    "..B..........B",
+    ".BB..........BB",
+    ".B............B",
+    "BBB..B....B..BBB",
+    "BBB.BB....BB.BBB",
+    "BBBBBB....BBBBBB",
+    ".BBBBB....BBBBB",
+    ".BBBB......BBBB",
+    "..BB...BB...BB",
+    "..BB...BB...BB",
+    "..BB..CBBC..BB....B",
+    "..BB..BBBB..BB....B......B",
+    "...BB.BBBB.BB.....BBB..BBB",
+    "....BBBBBBBB......BBB..BBB",
+    ".....BBBBBB........BAB..B",
+    "..BBBBBBBBBBBB.....BABC.B",
+    ".....BBBBBB........BABBB",
+    "..BBBBBBBBBBBB......BBBB",
+    ".....BBBBBB.........BBBB",
+    "......BBBB..........BBBB",
+    "..BB..BBBB..BB.......BB",
+    "......BBBB...........BB",
+    ".......BB............BB",
+    "......BBBB...........B",
+    ".....BBBBBB",
+    ".....B.BB.B",
+    ".......BB..........C",
+    "...................B"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699351236012/",
+    "image": "https://i.pinimg.com/originals/fb/d9/68/fbd968b884e1c07db32dade548b07cc9.jpg",
+    "title": "cauldronofthecosmosblog.com",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "key": "pinterest-687502699400070691-01",
+  "name": "独角兽甜心",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#181818",
+    "C": "#f2478b",
+    "D": "#afdcbf",
+    "E": "#feec44",
+    "F": "#c39fc3",
+    "G": "#87abcd"
+  },
+  "rows": [
+    "..........BBB",
+    "........BBCCCB",
+    "......BBCCCCCCBBB",
+    ".....BCCCCCCCBAAAB",
+    "...BBCCCBBBBBAAAABB",
+    "BBBBCCCBAAAAAAAABEEB",
+    "BDDBBCBAAAAAAAABEEEB",
+    ".BDDDBAAAAAAAAAABEEB",
+    "..BDDBABBAAAAAAABEBB",
+    "..BBBAAABBBAAAAABBGB",
+    "..BCBAAAABBAAAAAABGB",
+    "...BAAAAABBAAAAAABB..B",
+    "...BAAAAAAACCAAABEB.BB",
+    "...BAAAAAAACCAAABEBBAB",
+    "...BAAAAAAAAAAAABBAAAB",
+    "....BAAAAAAAAAAABAAAAB",
+    ".....BAAAAABAAAABAAAB..B",
+    "......BBBBBAAAAAAABB..BFB",
+    "..........BAAAAAAACCBBFFFB",
+    ".........BAAAAAAACCCCBFFFB",
+    "........BBAAAAAAAACCAABFFB",
+    ".......BABBBAAAAAAACAAABFB",
+    "......BABBAAAAAAABAAAAABBBB",
+    "......BABAAABBBBBBBAAAAB",
+    "......BDBAAAB...BABBAAAB",
+    ".......BBDDDB...BDDBAAAB",
+    ".........BBB.....BBBDDDB",
+    "....................BBB"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699400070691/",
+    "image": "https://i.pinimg.com/originals/b8/09/77/b809778036ed66ecbd4834a7e269c85c.jpg",
+    "title": "Ice cream cross stitch.",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

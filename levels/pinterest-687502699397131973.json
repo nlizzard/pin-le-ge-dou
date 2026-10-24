@@ -1,0 +1,53 @@
+{
+  "key": "pinterest-687502699397131973",
+  "name": "阿尼亚",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#181818",
+    "C": "#ffdcbc",
+    "D": "#e35c5b",
+    "E": "#ff9899",
+    "F": "#fec29c",
+    "G": "#fe7c7c",
+    "H": "#47383c"
+  },
+  "rows": [
+    "..........EC",
+    ".........DDEC",
+    "...........DE",
+    ".......DDDDEDDDD",
+    ".BBFBBDEEEEEEEEEDBBFBB",
+    ".BFBBDEEEEEEEEEEEDBBFB",
+    ".FBBDEEEEEEEEEEEEEDBBF",
+    ".BBDCEEEEEEEEECDEEEDBB",
+    ".BBDCEEECDEEEEECDEEDBB",
+    ".BDCEEDCGDCEEDECDEEEDB",
+    "..DGEEDCEDCEEDEEDEEED",
+    "..DEEDFDEFDCCEDEDDEED",
+    "..DEEDCCCCCDDCCCDFDED",
+    ".DGEDCFFFCCCCCFFFCDCED",
+    ".DEEDCABBACCCABBACDCED",
+    ".DGEDCCCCCCCCCCCCCDCDD",
+    "DGGECDCCCHCCCHCCCDCEDED",
+    "DEGECDCCCCHHHCCCCDCEGED",
+    "DGDEECDFCCCCCCCFDCEEDGD",
+    ".DGDEECDGBFFFBGDCEEGDD",
+    ".DDGDEDDBBAFABBGEEGDDD",
+    "...DDDDBBBBABBBBDDDD",
+    ".......BBBABABBB",
+    ".......CBBBBBBBC",
+    ".......CBBBBBBBC",
+    "......CBBBBBBBBBC",
+    ".......BBBBBBBBB",
+    "..........C.C"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699397131973/",
+    "image": "https://i.pinimg.com/originals/a7/c6/01/a7c6015efbe97870c857ec044453535a.jpg",
+    "title": "Anya Forger",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

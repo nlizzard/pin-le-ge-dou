@@ -1,0 +1,45 @@
+{
+  "key": "pinterest-687502699371008393-01",
+  "name": "紫色小花",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#ff00ff",
+    "C": "#004000",
+    "D": "#460046"
+  },
+  "rows": [
+    "......BB",
+    ".....BBBB..BB",
+    ".....BBBB.BBBB",
+    "......BBBBBBBB",
+    "....BBABAABBB",
+    "...BBBBADDAB",
+    "...BBBBADDABBB",
+    "....BBBBAABBBBB",
+    ".CC....BBBBBBBB",
+    "......BBBBABBB",
+    "....C.BBBBAC",
+    ".BBBACABBAC...BB",
+    ".BBBBACCABB..BBBB",
+    "..BBCACCBBBB.BBBB",
+    "..CCCACCBBBBBBBB",
+    "...CCACAABBBAABABB",
+    "....CACAABBADDABBBB",
+    ".....CAABBBADDABBBB",
+    "..CCCCABBBBBAABBBB",
+    ".CCCCAABBBBBBBB",
+    "CCCC.CABBBB.BBBB",
+    "......CABBB.BBBB",
+    ".......C.....BB",
+    "........CC"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699371008393/",
+    "image": "https://i.pinimg.com/originals/24/00/65/240065535ebad3959eb361680d7c3bf6.png",
+    "title": "SoEasyPattern - Etsy",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

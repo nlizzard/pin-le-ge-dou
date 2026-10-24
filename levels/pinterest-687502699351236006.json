@@ -1,0 +1,43 @@
+{
+  "key": "pinterest-687502699351236006",
+  "name": "灰色小海豚",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#63605b",
+    "C": "#abaaa6",
+    "D": "#181818"
+  },
+  "rows": [
+    "....................BB",
+    "...................BBBB",
+    "...................BBBBB",
+    "...................BBBBBB",
+    "...................BBBBBBB",
+    "..................BBBBBBBBBBBB",
+    "................BBBBBBBBBBBBBBBBB",
+    "..............BBBBBBBAAAABBBBBBBBB",
+    ".............BBBBBBBAAAAAABBBBBBBBB",
+    "............BBBBBBBBAAAAAABBBBBBBBBB",
+    "..........BBBBBBBBBBBBAAAABBBBBBBBBB",
+    ".........BBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+    "........BBBBBBBBBBBBBBBBBDABBBBBBBBBB",
+    "........BBCBBBBBBBBBBBBBBDDBBBBBBBBBB",
+    ".......BBCCCBBBBBBBBBBBBCBBBBBBBBBBBB",
+    "....BBBBBBCCCBBBBBBBBBBBCCCCCCBBBBBB",
+    ".BBBBBBBBCCCCCCBBBBCBBBBCCCCCCCCCCC",
+    "BCCCCCCCCCC...BBBBB.CCCCCCCCCCCCCC",
+    "BCCCC.BCCCC..BBBB.....CCCCCCCCC",
+    ".B....BCCCC..BBB..........BBBB",
+    "......BCCC.................BB",
+    ".......BB"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699351236006/",
+    "image": "https://i.pinimg.com/originals/e7/a7/8b/e7a78bb9ce2cc4c14ed073a1c2d8ab57.jpg",
+    "title": "Orca Whale",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

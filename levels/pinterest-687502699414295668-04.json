@@ -1,0 +1,44 @@
+{
+  "key": "pinterest-687502699414295668-04",
+  "name": "圣诞星星",
+  "palette": {
+    "A": "#ead516",
+    "B": "#cccbc7",
+    "C": "#b09961",
+    "D": "#f5ef34",
+    "E": "#c2b67c",
+    "F": "#deca38",
+    "G": "#dad49a",
+    "H": "#ecea89"
+  },
+  "rows": [
+    "BBBBBBBBGGBBBBBBBBBB",
+    "BBBBBBBBDDBBBBBBBBBB",
+    "BBBBBBBHAAHBBBBBBBBB",
+    "BBBBBBGAAADBBBBBBBBB",
+    "BBBBBBDAAAAHBBBBBBBB",
+    "BBBBBHAAAAADBBBBBBBB",
+    "HDDAAAAAAAAADDDHBBBB",
+    "AAAAAAAAAAAAAAAAADBB",
+    "AAAAAAAAAAAAAAAAADBB",
+    "CAAAAAAAAAAAAAAAFEBB",
+    "ECAAAAAAFAAAAAAFCBBB",
+    "BCCAAAAAAAAAAAACEBBB",
+    "BECAAAAAAAAAAACEBBBB",
+    "BBEAAAAAAAAAAAEBBBBB",
+    "BBHAAAAAAAAAAAGBBBBB",
+    "BBFAAAAAAAAAAAGBBBBB",
+    "BBFAAAAFCFAAAAGBBBBB",
+    "BBAAFCCECCFAAAGBBBBB",
+    "BBECCEEBBECCCFGBBBBB"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699414295668/",
+    "image": "https://i.pinimg.com/originals/9c/46/6c/9c466c395271c9676f5f8bf708bb308f.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "resample",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

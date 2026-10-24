@@ -1,0 +1,51 @@
+{
+  "key": "pinterest-687502699399931239-04",
+  "name": "蓝帆小船",
+  "palette": {
+    "A": "#aee2de",
+    "B": "#72060e",
+    "C": "#ffffff",
+    "D": "#4b8da6",
+    "E": "#2f0609"
+  },
+  "rows": [
+    "............AAAAE",
+    ".............AAAE",
+    "............AAAAEA",
+    "...........AAACCEA",
+    "..........AAAAACEAA",
+    "..........AAAAACEAA",
+    "............ECCCEAAA",
+    "..........AAAAACEAAAA",
+    "........DAAAAAAAEAAAA",
+    ".......ADAAAAAAAEAAAAA",
+    ".......ADAAAAAAAEAAAAA",
+    "......AADACCECCAEAAAAAA",
+    ".....AAADCCCECCCEAAAAAAA",
+    ".....AAADAAAAAACEAAAAAAA",
+    "....AAAADAAAAAAAEAAAAAAAA",
+    "...AAAADAAAAAAAAEAAAAAAAAA",
+    "..AAAAADAAAAAAAAEAAAAAAAAA",
+    ".AAAAAADAAAAAAAAEAAAAAAAAAA",
+    "BBBCCCCCAACCECAAECDDDDDDD",
+    "..BBBBCCACCCECCAECDCDDCDD",
+    "...EEEBBBBBBBCCCECDDDDDDD",
+    "....BBEEEEEEEBBBBBBBBBBBBB",
+    ".....BBBBBBBBEEEEEEEEEEEEE",
+    "......BBBBBBBBBBBBBBBBBBBB",
+    ".......BBBBBBBBBBBBBBBBBB",
+    "........BBBBBBBBBBBBBBB",
+    "........DBBDBBDBBDBBDBCD",
+    "......DDDDDDDDDDDDDDDDDDDD",
+    ".......DDDDDDDDDDDDDDDDDD"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699399931239/",
+    "image": "https://i.pinimg.com/originals/b0/4b/05/b04b0599860aac7798a3a8c01abf120d.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

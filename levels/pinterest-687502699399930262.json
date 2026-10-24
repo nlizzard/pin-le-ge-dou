@@ -1,0 +1,35 @@
+{
+  "key": "pinterest-687502699399930262",
+  "name": "寿司小可爱",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#ff9024",
+    "C": "#ff8d63",
+    "D": "#2c2b2c",
+    "E": "#ff69b4"
+  },
+  "rows": [
+    ".......BBB.BB.BB.BB",
+    ".....BBCCACCACCACCABBB",
+    "....BACCACCACCACCACCACB",
+    "BB.BACCACCACCACCACCACCB",
+    "BCBBCCACCACCACCACCACCAB",
+    ".BBBBBBBBBBBBBBBBBBCACB",
+    ".BBBDAAAAAAAAAAAAAABBB",
+    "BCB.DADAAAAAAAAADAAD",
+    "BB..DADDAAAAAAAADDAD",
+    "....DAAAAADAADAAAAAD",
+    "....DAEEAADDDDAAEEAD",
+    "....DAAAAAAAAAAAAAAD",
+    ".....DDDDDDDDDDDDDD"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699399930262/",
+    "image": "https://i.pinimg.com/originals/19/25/44/192544f541748a74f4c07c2ed602851c.png",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

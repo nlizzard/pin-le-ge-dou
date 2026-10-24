@@ -1,0 +1,53 @@
+{
+  "key": "pinterest-687502699351236040",
+  "name": "蓝色蝠鲼",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#767576",
+    "C": "#a1bdc4",
+    "D": "#888b8d"
+  },
+  "rows": [
+    "........BB",
+    ".........BBB",
+    ".........BCCB",
+    "..........BCCB",
+    "..........BCCB",
+    "..........BCCCB",
+    "..........BCCCB",
+    "..........BCCCB",
+    "..........BCCCCB",
+    "...........BCCCBB",
+    "...........BCCCCBB",
+    "...........BCCCBBCBB",
+    "..........BCCCBCBCCCB",
+    "..........BCCBBCBCCCCB",
+    "..........BCBABCBCCCCCB",
+    "..........BB.BCCBCCCCCCB",
+    ".............BCCCCCCCCCB",
+    "...........BBCCCCCCCCCCCB",
+    "..........BCBCCCCCCCCCCCB",
+    "........BBCCCCCCCCCCCCCCB",
+    "......BBCCCCCCCCCCCCCCCCBB",
+    ".....BCCCCCCCCCCCCCCCCCCBBBB",
+    "....BCCCCCCCCCCCBCCCCCCCB",
+    "...BCCCCCCCCCCBCCBCCCCCCB",
+    "..BCCCCCCCCCCCCBCCBCCCCB",
+    ".BCCCCCCCCCCCCCCBCBCCCAB",
+    ".BCCCCCCCCCACCCCBCBCAAB",
+    "BCCCCCCCCCABACCCBCAABBD",
+    "BCCCCCCCCCCACCCAAABBBBBCC",
+    ".BCCCCCCCCAAAAAABB.....BBC",
+    "..BBAAAAAAABBBBB.........BB",
+    "....BBBBBBB................BB"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699351236040/",
+    "image": "https://i.pinimg.com/originals/16/62/73/166273d2dbc10a3b9ed18620f328c389.jpg",
+    "title": "Alpha pattern #16859",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

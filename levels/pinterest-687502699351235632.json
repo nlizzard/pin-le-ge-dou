@@ -1,0 +1,35 @@
+{
+  "key": "pinterest-687502699351235632",
+  "name": "三只小鸡",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#eef30c",
+    "C": "#ff0000",
+    "D": "#626361",
+    "E": "#ff931c",
+    "F": "#181818"
+  },
+  "rows": [
+    ".....BBB........BBB........BBB",
+    "....BBBBB......BBBBB......BBBBB",
+    "....BBBFB......BBBFB......BBBFB",
+    "....BBBBEC.....BBBBEC.....BBBBEC",
+    "B.BBBBBB...B.BBBBBB...B.BBBBBB",
+    "BDBBDBBBB..BDBBDBBBB..BDBBDBBBB",
+    "BBDDBBBBB..BBDDBBBBB..BBDDBBBBB",
+    "BBBBBBBBB..BBBBBBBBB..BBBBBBBBB",
+    ".BBBBBBB....BBBBBBB....BBBBBBB",
+    "..BBBBB......BBBBB......BBBBB",
+    "....CAC........CAC........CAC",
+    "...CCECE......CCECE......CCECE"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699351235632/",
+    "image": "https://i.pinimg.com/originals/5b/7f/3a/5b7f3ad6e7f46386263e183be83d3a86.png",
+    "title": "Chicks Pixel Art",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

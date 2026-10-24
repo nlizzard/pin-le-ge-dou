@@ -1,0 +1,35 @@
+{
+  "key": "pinterest-687502699400070926-03",
+  "name": "黑色小母鸡",
+  "palette": {
+    "A": "#c1dbf7",
+    "B": "#545454",
+    "C": "#f0aa30",
+    "D": "#302d30",
+    "E": "#d12222"
+  },
+  "rows": [
+    "AAAAAAAAAAAAA",
+    "AAAAEAAAAAAAA",
+    "AAAEEEAAAAAAA",
+    "AAABBBAAAABAA",
+    "AACBDBAAABBAA",
+    "AAABBBBBBBBAA",
+    "AAABBBBBBBBAA",
+    "AAABBDBBDBBAA",
+    "AAABBBDDBBAAA",
+    "AAAABBBBBAAAA",
+    "AAAAACACAAAAA",
+    "AAAAACACAAAAA",
+    "AAAAAAAAAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699400070926/",
+    "image": "https://i.pinimg.com/originals/e4/16/16/e41616af48802e56d84b48ad88682dcf.png",
+    "title": "Alpha pattern #133755",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

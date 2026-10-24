@@ -1,0 +1,34 @@
+{
+  "key": "pinterest-687502699351165035-03",
+  "name": "救援消防车罗伊",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#181818",
+    "C": "#fee902",
+    "D": "#fd0000",
+    "E": "#ff822b"
+  },
+  "rows": [
+    "....BCB",
+    "..BBCBCBB",
+    "..BCBABCB",
+    ".BDACCCADB",
+    "BBBBBBBBBBB",
+    ".CAAAAAAAC",
+    ".DABAEABAD",
+    ".DDDDDDDDD",
+    "DDEDDBDDEDD",
+    "DCCCCCCCCCD",
+    "BBCCCCCCCBB",
+    ".BB.....BB"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699351165035/",
+    "image": "https://i.pinimg.com/originals/d1/a3/76/d1a3767525349b7a588c225043dd6080.png",
+    "title": "펄러비즈 로보카폴리 만들기 / 로보카폴리도안 / 취미생활추천 ⓒ윤파스(윤파라다이스)",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

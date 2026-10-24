@@ -1,0 +1,41 @@
+{
+  "key": "pinterest-687502699400025407",
+  "name": "像素小恐龙",
+  "palette": {
+    "A": "#fff0d9",
+    "B": "#2f2f69"
+  },
+  "rows": [
+    "...........BBBBBBBB",
+    "..........BBABBBBBBB",
+    "..........BBBBBBBBBB",
+    "..........BBBBBBBBBB",
+    "..........BBBBBBBBBB",
+    "..........BBBBBB",
+    "..........BBBBBBBB",
+    ".........BBBBBB",
+    "B.......BBBBBBB",
+    "B......BBBBBBBBBB",
+    "BB....BBBBBBBBB.B",
+    "BBB..BBBBBBBBBB",
+    "BBBBBBBBBBBBBBB",
+    "BBBBBBBBBBBBBB",
+    ".BBBBBBBBBBBBB",
+    "..BBBBBBBBBBB",
+    "...BBBBBBBBB",
+    "....BBBBBBB",
+    ".....BBB.BB",
+    ".....BB...B",
+    ".....B....B",
+    ".....BB...BB"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699400025407/",
+    "image": "https://i.pinimg.com/originals/97/03/9f/97039ff3cc91ecb82455646688352d64.png",
+    "title": "Alpha pattern #13838 variation #10597",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

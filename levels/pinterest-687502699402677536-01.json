@@ -1,0 +1,50 @@
+{
+  "key": "pinterest-687502699402677536-01",
+  "name": "蓝色小象身体",
+  "palette": {
+    "A": "#3b83a4",
+    "B": "#aca89d",
+    "C": "#76588c",
+    "D": "#85979b"
+  },
+  "rows": [
+    "....AA",
+    "...AAAAA",
+    "..AAAAAAAAA..............A",
+    ".AADAAAAAA.......AA..AA.AA",
+    "AAAAAAAAAAAA....AAAAAAAAAAAA",
+    "AAAAAAAAAAAA....AAAAAAAAAAAAAA",
+    ".AAAAAAAAAAA...ADAAAAAAAAAAAAA",
+    ".AAAAAAAAAAA....AAAAAAAAAAAAAAA",
+    "AAAAAAAAAAAAAAA.AAAAAAAAAAAAAAAAAA",
+    "AAAAADDAAAAAAAAAAAAAAAAAAAAAAAAAADA",
+    ".AAAADDDDDDAAAAAAAAAAAAAAAAAAAAAADA",
+    "AAAAADDDBBBDAAAAAAAAAAAAAAAAAAAAAAA",
+    "AAAAAAAABBBBAAAAAAAAAAAAADDDDDDDAAA",
+    ".AAAAADDDBBBDDAAAAAAAAAAADBBBBBDAAA",
+    ".AAAAAAADBBBDAAAAAAAAAAAADDDBDDDAAA",
+    "....AAAAADDDDAAAAAAAAAAAAAAADADAAAA",
+    "........AADAADAAAAAAAAAAAAAAAADAADA",
+    "........AAAAAAAAAAAAAAAAAAAAAAAAAAA",
+    "........AAAAAAAAAAA.A.AAAAAAAAAAAAA",
+    "..........AAAAAAAA.......AAAAAAAAAA",
+    "...........AAAAAADA.......AAAAAAAAA",
+    "..........AAAAAAAA........AAAAAAAAA",
+    "...........AAAAAAA.........AAAAAAAA",
+    "...........AAAAAADA.........AAAAADA",
+    "..........AAAAAAAA.........AAAAAACC",
+    ".........CCCCCCCCCC.......CCCCCCCCC",
+    ".........CDCCCCCCCC.......CCCCCCCCCC",
+    ".........CCCCCCCCCCC......CCCCCCCCCC",
+    "..........CCCCCCCCC........CCCCCCCC"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699402677536/",
+    "image": "https://i.pinimg.com/originals/6a/74/7f/6a747fdc137bf87efbfcf30b954aa324.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "resample",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

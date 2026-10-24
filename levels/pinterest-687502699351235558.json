@@ -1,0 +1,45 @@
+{
+  "key": "pinterest-687502699351235558",
+  "name": "小猴子",
+  "palette": {
+    "A": "#84562e",
+    "B": "#d3b17e",
+    "C": "#181818",
+    "D": "#c96872"
+  },
+  "rows": [
+    "..........CCCCCCCCC",
+    ".........CAAAAAAAAAC",
+    "........CAAAAAAAAAAAC",
+    ".......CAAABBBBBBBAAAC",
+    ".......CAABBBBBBBBBAAC",
+    ".....CCAABBBBBBBBBBBAACC",
+    "....CAABBBBBBBBBBBBBBBAAC",
+    "....CABABBCCBBBBBCCBBABAC",
+    "....CABABCBBCBBBCBBCBABAC",
+    ".....CCCABBBBBBBBBBBACCC",
+    ".......CABBBDBBBDBBBAC",
+    "........CABBBDDDBBBAC",
+    ".CAC.....CABBBBBBBACC",
+    "CABAC.....CAABBBAAC",
+    "AB..AC...CAAAAAAAAAC",
+    "CA..CAC.CAAABBBBBAAAC",
+    ".CA..CA.CAAABBBBBAAAC",
+    "..BA..ACAACAABBBAACAAC",
+    "..AC..CCACCAABBBAACCAC",
+    ".......CACCAABBBAACCAC",
+    "........C.CAAAAAAAC.C",
+    "..........CAAAAAAAC",
+    "..........CAAACAAAC",
+    "...........CCC.CCC"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699351235558/",
+    "image": "https://i.pinimg.com/originals/1f/a6/a5/1fa6a5c2e87d6527b9904ecc5da513fc.gif",
+    "title": "Macaquinho",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "key": "pinterest-687502699356868716",
+  "name": "麋鹿头像",
+  "palette": {
+    "A": "#663300",
+    "B": "#181818",
+    "C": "#d9bb7b",
+    "D": "#b5b5b5"
+  },
+  "rows": [
+    ".A.........A",
+    ".A.B..B..B.A",
+    ".CADBBBBBDAC",
+    "..CAAABAAAC",
+    "..AABAAABAA",
+    "..AABAAABAA",
+    "..AAAACAAAA",
+    ".AAAACCCAAAA",
+    ".AAACACACAAA",
+    "CCCACCCCCACCC",
+    ".AAAAAAAAAAA",
+    ".AAAAAAAAAAA",
+    "..AAAAAAAAA",
+    "..AAAAAAAAA",
+    ".AAAABBBAAAA",
+    ".AAAABBBAAAA",
+    ".AAABBBBBAAA",
+    ".AAABBBBBAAA",
+    ".AAABBBBBAAA",
+    ".AAABBBBBAAA",
+    "..AAAAAAAAA",
+    "...AAAAAAA",
+    "....A...A",
+    "....B...B"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699356868716/",
+    "image": "https://i.pinimg.com/originals/35/2f/c3/352fc393e6007aa99aa6d14dc164efbd.png",
+    "title": "Pixel Art, 8-Bit Art, Lego Art",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

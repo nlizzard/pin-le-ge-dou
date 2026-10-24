@@ -1,0 +1,46 @@
+{
+  "key": "pinterest-687502699415508172",
+  "name": "胡士托小鸟",
+  "palette": {
+    "A": "#ffc13c",
+    "B": "#181818"
+  },
+  "rows": [
+    ".......AB..ABB",
+    ".....BAAB.AB",
+    ".....BAABAAB",
+    ".....BAABAAB",
+    "......BAAAAAB",
+    "BB....BAAAAAAB",
+    ".ABBBBAAAAAAAABBB",
+    "..AAAAAAAAAAAAAAABB",
+    "..AAAAAAAAABAABAAAAB",
+    ".AABBAAAABBAAAABBAAB",
+    ".BBAAAAAAAAAAAAAAAAB",
+    "BAAAABAAAAAAAAAAAAAB",
+    "AAAABAAABAAAAAAAABAB",
+    ".AABAAAAABBAAAABBAB",
+    "...BAAAAAAABBBBABB",
+    ".....ABBBAAAABBB",
+    ".....B...BAAB",
+    ".........BAAB",
+    "...BBBB.BAAAAB.BBBB",
+    "..BAAAABAAAAAABAAAAB",
+    "...BBBABAAAAAABABBB",
+    "...BAABBAAAAAABBAAB",
+    "...BBBBABAAAAB.BBB",
+    "..BAAAABBAAAAB",
+    "..BAAABBBAAAABBB",
+    "...BBBBAAAAAAAAAB",
+    "......BBBBBBBBBB"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699415508172/",
+    "image": "https://i.pinimg.com/originals/49/3f/15/493f154f60f5fddd5d9eaa9ddbeda1b3.png",
+    "title": "Pixel Art, 8-Bit Art, Lego Art",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

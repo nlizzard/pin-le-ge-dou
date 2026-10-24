@@ -1,0 +1,44 @@
+{
+  "key": "pinterest-687502699351165096",
+  "name": "红色拖拉机",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#181818",
+    "C": "#808989",
+    "D": "#f55738"
+  },
+  "rows": [
+    "..............DDDDDDDDDDD",
+    "..............CCCCCCCCCC",
+    "...BBBBBB.....CAAACAAAAC",
+    "....BBBB......CAAACAAAAC",
+    ".....BB......CAAAACAAAAC",
+    ".....BB......CAAAACAAAACC",
+    ".....BB......CAAAACAAAAAC",
+    ".....BB.....CAAAAACAAAAAC",
+    ".....BB.....CAAAAACAAAAAC",
+    ".....DDDDDDDCCCCCCCDDDDDD",
+    "...DDDDDDDDDDAAAAADDDDDDDD",
+    ".CDDDBBBBBBDDAAAADDBBBBBB",
+    ".CDDDDDDDDDDDAAAADBBBBBBBB",
+    "..DDDDDDDDDDDAAADBBBBBBBBBB",
+    "..DDDDDDDDDDDAADBBBBCCCCBBBB",
+    ".CDDBBBBDDDDDDDDBBBCCCCCCBBB",
+    "CCDBBBBBBDDDDBBDBBBCCCCCCBBB",
+    "CCBBBCCBBBDDDDDDBBBCCCCCCBBB",
+    "..BBCCCCBBDDDBBDBBBCCCCCCBBB",
+    "..BBCCCCBB..DDDDBBBBCCCCBBBB",
+    "..BBBCCBBB.......BBBBBBBBBB",
+    "...BBBBBB.........BBBBBBBB",
+    "....BBBB...........BBBBBB"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699351165096/",
+    "image": "https://i.pinimg.com/originals/cc/da/2b/ccda2bedbc08696984587ea67db34d6c.jpg",
+    "title": "Bold Red and Black Tractor Pattern - Free Cross-Stitch Pattern",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "key": "pinterest-687502699351235642",
+  "name": "史迪奇",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#181818",
+    "C": "#0057a8",
+    "D": "#87c0ea",
+    "E": "#edc1d2"
+  },
+  "rows": [
+    ".CB...................BC",
+    "EECB.................BCEE",
+    "EECB........B.BB.....BCEE",
+    ".EECB......BCBCB....BCEEE",
+    "EEECB....BBCBCBB....BCEEE",
+    "EEEEC..BBCCCCCCCBB..CEEE",
+    "EEEEC.BCCCCCCCCCCCB.CEEEE",
+    "EEEECBDCCCCCCCCCCCDBCEEEE",
+    ".EEEBDBDCCCCCCCCCDBDBEEE",
+    ".BEBDBBBDCCCCCCCDBBBDBEB",
+    "..EBDBBABDCCCCCDBABBDBE",
+    "..BBDBBBBDCCCCCDBBBBDBB",
+    "...BDBABBDCBBBCDBBABDB",
+    "...BCDBBDCBBBBBCDBBDCB",
+    "...BCCDDCCCBBBCCCDDCCB",
+    "....CCCCCCCCCCCCCCCCC",
+    ".....CDDDDDDDDDDDDDC",
+    ".........BCDDDCB",
+    "........BCCBDBCCB",
+    ".......BBBCBDBCBBB",
+    "......BCCCBBDBBCCCB",
+    "......BBBCBDDDBCBBB",
+    "......BBBCBDDDBCBBB",
+    "......BCCCBBBBBCCCB",
+    ".......BBB.....BBB"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699351235642/",
+    "image": "https://i.pinimg.com/originals/12/62/18/126218759c25e355a5571ca0059b5309.png",
+    "title": "Stitch Disney Pixel Art",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

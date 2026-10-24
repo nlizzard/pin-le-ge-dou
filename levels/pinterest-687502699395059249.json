@@ -1,0 +1,51 @@
+{
+  "key": "pinterest-687502699395059249",
+  "name": "独角兽",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#181818",
+    "C": "#e05e80",
+    "D": "#78afd6",
+    "E": "#a96eca",
+    "F": "#fec13c",
+    "G": "#b1bf4e"
+  },
+  "rows": [
+    "...BB",
+    "...BFB.BBB",
+    ".B..BFBCCCBBB",
+    "BCBBCBFBCBAAAB",
+    "BCCCCBBBBAAAABB",
+    ".BBCBAAAAAAABCCB",
+    "...BAAAAAAABCCCB",
+    "..BAAABAAAAABCCB",
+    "..BAAABBBAAABCGGB.BB",
+    "..BAAAABBAAAABGDDBAAB",
+    ".BAAAAABBAAAAABDDBAAB",
+    ".BAAAAABBAAAAABDBAAAB",
+    ".BAAAAAAACCAABEEBAAAB",
+    "..BAAAAAAAAAABEBAAAB",
+    "...BAAAAAAAAABEBAAB...BB",
+    "....BBBBAAAAAABAAAAB.BCCB",
+    ".......BAAAAAAACCCCCBCCGB",
+    "......BAAAAAAAAACCFAABGDB",
+    "....BBBAAAAAAAAAAFFFABDEB",
+    "...BAABAAAAAAAAAAAFAABBEEB",
+    "...BABAAAAAAAAAAAAAAAB.BB",
+    "...BABAAAABBBBBBBAAAAB",
+    "...BCBAAAB.....BABAAAB",
+    "....BBCCCB.....BAABAAAB",
+    "......BBB......BCCBAAAB",
+    "................BBBCCCB",
+    "...................BBB"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699395059249/",
+    "image": "https://i.pinimg.com/originals/91/58/66/9158664756af1059131bc57de35c914d.jpg",
+    "title": "unicorn",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

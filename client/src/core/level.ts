@@ -370,10 +370,14 @@ function solvableBySmartPlay(def: LevelDef): boolean {
     }
     if (cell < 0) {
       let best = Infinity;
+      const checked = new Set<number>();
       for (const set of g.wrongByColor.values()) {
         for (const c of set) {
-          if (g.locked[c]) continue;
-          const n = g.ice[c] ? 0.5 : g.groupAt(c).length;
+          if (g.locked[c] || checked.has(c)) continue;
+          // 同一色团只遍历一次；照片大图可能有几千格，逐格重复 BFS 会严重拖慢导入。
+          const group = g.ice[c] ? [] : g.groupAt(c);
+          for (const member of group) checked.add(member);
+          const n = g.ice[c] ? 0.5 : group.length;
           if (n < best) { best = n; cell = c; }
         }
       }

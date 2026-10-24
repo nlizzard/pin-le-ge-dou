@@ -1,0 +1,32 @@
+{
+  "key": "pinterest-687502699351235612-01",
+  "name": "闪电麦昆小车",
+  "palette": {
+    "A": "#f10102",
+    "B": "#ffffff",
+    "C": "#302e2f",
+    "D": "#f3d005",
+    "E": "#2ca1e4",
+    "F": "#f2a102",
+    "G": "#8979db"
+  },
+  "rows": [
+    "AA..AAAA",
+    "FAAABBBBA",
+    "DFGABEBEBA",
+    "ADDAAAAAAAAAA",
+    "CADCCAADAAAAAD",
+    "CAACACAABBBBBA",
+    "CC.CACAAABBBAC",
+    "....CCAAAAAACC"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699351235612/",
+    "image": "https://i.pinimg.com/originals/85/23/b1/8523b1975790ee83b030be3c6aa8a786.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

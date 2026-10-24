@@ -1,0 +1,48 @@
+{
+  "key": "pinterest-687502699414295668-06",
+  "name": "圣诞礼物",
+  "palette": {
+    "A": "#f0e41a",
+    "B": "#cd0b29",
+    "C": "#c99b9c",
+    "D": "#d6cecd",
+    "E": "#c73a43",
+    "F": "#cc807f",
+    "G": "#9f9686",
+    "H": "#e1cc4b",
+    "I": "#ceb5b8",
+    "J": "#d36245",
+    "K": "#efec6a"
+  },
+  "rows": [
+    "DDDDDDDDDDDDDDDDDDG",
+    "DDDDKKKDDDDDDDDDDDG",
+    "DDDDAAAKDDDDAAADDDD",
+    "DDDDAAAAKDKAAAADDDD",
+    "DDDDHAAAAKAAAAHDDDD",
+    "DDDDCHAAAAAAAHFDDDD",
+    "GDFEDFEEEAEJDJEECDD",
+    "GDJEIJBBEHBEIEBBFDC",
+    "HIEBBBBBEHBBBBBBFDG",
+    "GCJBBFCBEABBBFCBFDC",
+    "JCJBBFDBEHBBBCIBFDI",
+    "JCHAHAHHAAHHHAHHCDD",
+    "JGJEEEEEJAEEEEEJFDD",
+    "GCEBEBBBEHBBBBBBFDD",
+    "GCEEDJBBEHBJDEBBFDD",
+    "GIEBFEBBEABEFEBBFID",
+    "DIEBBBBBEHBBBBBBFDD",
+    "DDEBBCIBEHBBBCCBFDD",
+    "DDFEECIEJHEEECCEIDD",
+    "DDIGGGGGCGCGCCCCDDD"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699414295668/",
+    "image": "https://i.pinimg.com/originals/9c/46/6c/9c466c395271c9676f5f8bf708bb308f.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "resample",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

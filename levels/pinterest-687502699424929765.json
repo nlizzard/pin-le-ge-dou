@@ -1,0 +1,46 @@
+{
+  "key": "pinterest-687502699424929765",
+  "name": "巧克力凯蒂猫",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#9a5011",
+    "C": "#361c05",
+    "D": "#fa5fa8",
+    "E": "#cfe67d",
+    "F": "#763d0d"
+  },
+  "rows": [
+    "...CCC....CCC.CC",
+    "..CBBBCCCCDDDCBBC",
+    "..CBBBBBBCDCDCCCC",
+    "..CBBBBBBCDDCDCDDC",
+    ".CBBBBBBBBCCCDDCDC",
+    ".CBBBBBBBBBBBCCDDC",
+    ".CBBBBBBBBBBBBBCCC",
+    ".CBBBCBBBBBBBCBBBC",
+    "CCCBBCBBBBBBBCBBCCC",
+    ".CBBEEBBBEBBBAEBBC",
+    "CCBBBBBBBBBBBBBBBCC",
+    "..CBBBBBBBBBBBBBC",
+    "...CCBBBBBBBBBCC",
+    ".....CCCCCCCCC",
+    "....CBECBBBCEBC",
+    "...CBCDECCCEDCBC",
+    "..CBBCDDEEEDDCBBC",
+    "..CBBCBBBBBBBCBBC",
+    "...CCDDCDCDCDDCC",
+    "....DCEDFEFDECD",
+    "....CBBBBCBBBBC",
+    "....CBBBBCBBBBC",
+    ".....CCCC.CCCC"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699424929765/",
+    "image": "https://i.pinimg.com/originals/47/bb/77/47bb77dc3e9c630f53624f3f8f502c48.png",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

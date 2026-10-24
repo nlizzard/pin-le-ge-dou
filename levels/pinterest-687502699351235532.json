@@ -1,0 +1,51 @@
+{
+  "key": "pinterest-687502699351235532",
+  "name": "长颈恐龙",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#6495ed",
+    "C": "#211f1d",
+    "D": "#8a2be2",
+    "E": "#0000cd"
+  },
+  "rows": [
+    ".......CCCCCCCCCC",
+    ".....CCBBBBBBBBBBCCC",
+    "....CBBBBBBBCCCCBBBBC",
+    "...CBBBAAABBBC..CCCCBC",
+    "..CBBBBACABBDC.....CCC",
+    ".CBBBBBAAABDDC",
+    "CBBBBBBBBBBBBC",
+    "CBBBBBBBBBBBDC",
+    "CBBBBBBCBBBDDC",
+    ".CCBBBCBBBBBBC",
+    "...CCCCCCCBBDC",
+    ".........CBDDCC",
+    ".........CBBBBC",
+    ".......CCCBBBBDC",
+    ".......CECBBBBDDC",
+    ".......CCCBBBBDDBC",
+    ".........CBCBBDBBCC",
+    "......CCCCBCBBBBDDBC",
+    "......CBBBBCBBBBDDBBC",
+    "......CCCCCCBBBBDBBDDC",
+    "..........CBBBBBBBDDBBC",
+    "..........CBBBBBCBBBBBDC",
+    "...........CBBBCBBCBBDDBC",
+    "............CBBCBBCBCCCBBC",
+    ".............CCCBBCC...CBBC",
+    "............CCECBBC..CCACBC",
+    "...........CEECCBBC..CBCCBC",
+    "...........CCCBBBBC...CBBBC",
+    ".............CCCCCC....CCC"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699351235532/",
+    "image": "https://i.pinimg.com/originals/61/0d/93/610d93c26e0f0428fd14e8a84bd9da3e.png",
+    "title": "Dinosaur 6 by Tashar_h on Kandi Patterns",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

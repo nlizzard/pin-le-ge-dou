@@ -1,0 +1,45 @@
+{
+  "key": "pinterest-687502699351235538",
+  "name": "展翅小龙",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#ff7d3e",
+    "C": "#181818",
+    "D": "#abaaa6",
+    "E": "#e3c597"
+  },
+  "rows": [
+    "...................C",
+    "..................CBC",
+    "..................CBC",
+    "..................CBC",
+    ".................CBBBC",
+    "................CBBBBBC",
+    "...............CBBBBBBBC",
+    ".........CC....CBAABAABC....CC",
+    "........CBDC...CBACACABC...CDBC",
+    "......CCCBBC...CBAABAABC...CBBCCC",
+    "...CCCBCBCC.....CBBBBBC.....CCBCBCCC",
+    "..CBBBCBBCBCC...CBBBBBC...CCBCBBCBBBC",
+    ".CBBBCBBBCBBBCC.CBBBBBC.CCBBBCBBBCBBBC",
+    "CBBBBCBBBCBBBBBCBCEBECBCBBBBBCBBBCBBBBC",
+    "CBCCBCBCCBCBCCCBBCBBBCBBCCCBCBCCBCBCCBC",
+    "CC..CCC..CCC...CBBCBCBBC...CCC..CCC..CC",
+    "..............CBBBBCBBBBC",
+    "..............CBBBBBBBBBC",
+    "..............CBBBBBBBBBCCCC",
+    "...............CBBBBBBBBBBBBCC",
+    "................CCCBCCCBCCCCBBC",
+    "...............CDBDCDBDC....CCBC",
+    "................CCC.CCC.......CC"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/687502699351235538/",
+    "image": "https://i.pinimg.com/originals/4c/fd/b5/4cfdb502bb3b151bbcc255cde2abca82.png",
+    "title": "Pixel Art, 8-Bit Art, Lego Art",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}
