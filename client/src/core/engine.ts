@@ -243,11 +243,41 @@ export class Game {
 
   // ---------- 核心操作 ----------
 
+  /** 无副作用的本次移动预览，与实际点击采用相同分批规则。 */
+  batchAt(i: number): number[] {
+    const group = this.groupAt(i);
+    if (!group.length) return [];
+    const needed = this.emptyByColor.get(this.beads[i])?.size ?? 0;
+    if (needed) return group.slice(0, needed);
+    return this.freeSlots > 0 ? this.slotBatch(group) : [];
+  }
+
+  /** 放不下整组时，只选当前局面有收益的一批；不预演或改变后续棋盘。 */
+  private slotBatch(group: number[]): number[] {
+    if (group.length <= this.freeSlots) return group;
+    const available = new Map<number, number>();
+    for (const color of this.slots) available.set(color, (available.get(color) ?? 0) + 1);
+    const selected = [group[0]];
+    const consume = (cell: number) => {
+      const need = this.target[cell];
+      const count = available.get(need) ?? 0;
+      if (count > 0) available.set(need, count - 1);
+      return count > 0;
+    };
+    let refill = consume(group[0]);
+    for (const cell of group.slice(1)) {
+      if (selected.length >= this.freeSlots) break;
+      if (consume(cell)) { selected.push(cell); refill = true; }
+    }
+    // 有回填机会就只拿够用的；否则批量开链，尽可能留一格缓冲。
+    return refill ? selected : group.slice(0, Math.max(1, this.freeSlots - 1));
+  }
+
   /**
    * 点击一颗错位豆子，连着的同色错位豆子一起移动。两种去向互斥：
    * - 有空位需要这个颜色：能填几个空位就飞几颗过去（离点击处近的优先），其余留在原地；
-   * - 没有空位需要：整组进入空槽；若空槽放不下整组，只把点中的这一颗放进去，
-   *   其余留在原地（避免误触一大团直接爆槽）；空槽全满时才会爆槽。
+   * - 没有空位需要：整组进入空槽；若放不下，优先选可触发槽内回填的豆子，
+   *   否则按容量分批并尽量留一格；始终包含点击的豆子。空槽全满时才爆槽。
    * 之后每个被腾出的格子若在空槽里有它要的颜色，会自动飞回来填上（连锁）。
    */
   tap(i: number): TapResult {
@@ -269,7 +299,7 @@ export class Game {
     const empties = this.emptyByColor.get(color);
     const toCells = empties ? empties.size > 0 : false;
 
-    // 整组进空槽放不下：只动点中的一颗；连一颗的位置都没有才爆槽
+    // 连一颗的位置都没有才爆槽。
     const overflow = !toCells && group.length > this.freeSlots;
     if (overflow && this.freeSlots <= 0) {
       this.state = 'burst';
@@ -279,9 +309,9 @@ export class Game {
     this.pushUndo();
     const moves: Move[] = [];
     let placed = 0;
-    const movers = toCells ? group.slice(0, Math.min(group.length, empties!.size)) : overflow ? [i] : group;
+    const movers = toCells ? group.slice(0, Math.min(group.length, empties!.size)) : this.slotBatch(group);
 
-    // 1. 拿起豆子：全部去正确位置、全部进空槽，或放不下时只动点中的一颗
+    // 1. 拿起本批豆子：全部去正确位置或全部进空槽。
     for (const cell of movers) {
       if (toCells) {
         const dest = this.nearest(empties, cell);

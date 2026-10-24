@@ -313,7 +313,7 @@ export class GameScreen {
             'ol.howto',
             {},
             h('li', {}, '连续色块是正确底色，凸起的方豆就是放错了；归位后会融入底色。'),
-            h('li', {}, '点一颗放错的豆子，和它连着的同色错位豆子会一起移动：有空位需要这个颜色就飞去空位（空位不够时只飞够用的几颗），没有就整组进下方空槽。'),
+            h('li', {}, '点一颗放错的豆子，和它连着的同色错位豆子会一起移动：有空位需要就只飞够用的几颗；没有就进下方空槽。整组放不下时，优先带走能触发回填的豆子，否则按容量分批并尽量留一格。'),
             h('li', {}, '它原来的格子会变成闪烁的空位，去点空位需要的颜色，就能连锁归位。'),
             h('li', {}, '空槽满了会爆槽失败；时间用完还能继续，但只能拿半星。点计时器可以加时（每局 3 次）。'),
             h('li', {}, '右上角的啵啵：点它有惊喜，连点可能掉道具（每局 3 个），长按可以许愿（每局 3 次）。'),
@@ -369,7 +369,7 @@ export class GameScreen {
     } }, '✧ 制作我的分享卡');
   }
 
-  private async onBurst(cell: number, groupSize = 1) {
+  private async onBurst(cell: number) {
     this.paused = true;
     sfx.error();
     this.haptic([60, 40, 120]);
@@ -392,7 +392,7 @@ export class GameScreen {
         'div.result.fail',
         {},
         h('h2', {}, '爆槽啦！'),
-        h('p', {}, groupSize > 1 ? `这一组 ${groupSize} 颗连着的豆子要一起进空槽，但只剩 ${g.freeSlots} 格。` : '空槽已满，这颗豆子没地方放了。'),
+        h('p', {}, '空槽已满，这颗豆子没地方放了。'),
         canSave ? h('p.hint', {}, g.def.mode === 'custom' ? '自由创作可无限次免费续命，慢慢来。' : `可以用道具续命（本局还能续命 ${2 - g.stats.revives} 次，凤凰羽毛不占次数）`) : h('p.hint', {}, '小技巧：先点闪烁空位需要的颜色，不占空槽；必须进槽时挑小的一组。'),
       ),
       buttons,
@@ -555,7 +555,7 @@ export class GameScreen {
         return;
       }
       case 'burst':
-        this.onBurst(res.cell, res.group.length);
+        this.onBurst(res.cell);
         return;
       case 'moved':
         this.animateMoves(res.moves);
@@ -657,7 +657,7 @@ export class GameScreen {
   }
 
   private onHover(i: number) {
-    const group = i >= 0 && this.game.state === 'playing' && !this.paused && this.board.mode === 'normal' ? this.game.groupAt(i) : [];
+    const group = i >= 0 && this.game.state === 'playing' && !this.paused && this.board.mode === 'normal' ? this.game.batchAt(i) : [];
     this.board.setGroupPreview(group);
   }
 

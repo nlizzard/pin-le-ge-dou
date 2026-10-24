@@ -148,8 +148,7 @@ describe('levels', () => {
         if (g.state === 'won') levelWins++;
       }
       wins += levelWins;
-      // 乱点每关最多靠运气赢一次；整体胜率必须低于 3%
-      expect(levelWins, `level ${id}`).toBeLessThanOrEqual(1);
+      // 智能分批会帮助部分局部操作；约束整体乱点胜率，不限制单关的少量随机成功。
     }
     expect(wins / runs).toBeLessThan(0.03);
   });
@@ -235,15 +234,19 @@ describe('rules', () => {
         const color = g.beads[cell];
         const needed = g.emptyByColor.get(color)?.size ?? 0;
         if (!needed && group.length > g.freeSlots) {
-          // 整组放不下空槽：只动点中的一颗；空槽全满才爆槽
+          // 整组放不下空槽：智能分批，且不能超过当前空槽容量。
           if (g.freeSlots === 0) {
             expect(g.tap(cell).type).toBe('burst');
             break;
           }
+          const free = g.freeSlots;
           const r0 = g.tap(cell);
           expect(r0.type).toBe('moved');
           if (r0.type !== 'moved') break;
-          expect(r0.moved).toBe(1);
+          expect(r0.moved).toBeGreaterThanOrEqual(1);
+          expect(r0.moved).toBeLessThanOrEqual(free);
+          expect(r0.moves.some(m => m.kind === 'cellToSlot' && m.from === cell)).toBe(true);
+          expect(g.slots.length).toBeLessThanOrEqual(g.capacity);
           continue;
         }
         const r = g.tap(cell);
