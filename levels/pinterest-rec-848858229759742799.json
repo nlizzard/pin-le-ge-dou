@@ -1,0 +1,53 @@
+{
+  "key": "pinterest-rec-848858229759742799",
+  "name": "大眼波加曼",
+  "palette": {
+    "A": "#24bf3b",
+    "B": "#3b3b3b",
+    "C": "#ffffff",
+    "D": "#005cb3",
+    "E": "#6be1ff",
+    "F": "#ffe669"
+  },
+  "rows": [
+    "AAAAAAAAAABBBAAAAAAAAAA",
+    "AAAAAAABBBDDDBBBAAAAAAA",
+    "AAAAABBDDDDDDDDDBBAAAAA",
+    "AAAABDDDDDDDDDDDDDBAAAA",
+    "AAABDDDDDDDDDDDDDDDBAAA",
+    "AABDBBBDDDDBDDDDBBBDBAA",
+    "AABBCCCBDDBEBDDBCCCBBAA",
+    "ABBCCCCCBBEEEBBCCCCCBBA",
+    "ABCCBBCCEEEEEEECCBBCCBA",
+    "ABCBBCBCEEEEEEECBCBBCBA",
+    "ABCBBCBCCEBBBECCBCBBCBA",
+    "ABCBBBBCCBFFFBCCBBBBCBA",
+    "ABCBBBBCBFFFFFBCBBBBCBA",
+    "ABCCBBCCBFFFFFBCCBBCCBA",
+    "AABCCCCCCBFFFBCCCCCCBAA",
+    "AABCCCCCCCBBBCCCCCCCBAA",
+    "AAABCCCCCCCCCCCCCCCBAAA",
+    "AAAABBBCCCCCCCCCBBBAAAA",
+    "AAAABDDBBBCCCBBBDDBAAAA",
+    "AAABBDDDDDBBBDDDDDBBAAA",
+    "AABEEBBDDDDDDDDDBBEEBAA",
+    "ABEEEBCBDDBBBDDBCBEEEBA",
+    "BEEEBBBCBBEEEBBCBBBEEEB",
+    "BEEBFFFBCCEEECCBFFFBEEB",
+    "BEEBFFFFBCEEECBFFFFBEEB",
+    "ABBBFFFFFBEEEBFFFFFBBBA",
+    "AAAABFFFFBEEEBFFFFBAAAA",
+    "AAAAABFFFBBBBBFFFBAAAAA",
+    "AAAAAABBBAAAAABBBAAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/848858229759742799/",
+    "image": "https://i.pinimg.com/originals/45/9f/11/459f112a1f8ec78b4138e5c829f6a454.png",
+    "title": "Alpha pattern #42793 variation #60652",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

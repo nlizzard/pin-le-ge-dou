@@ -1,7 +1,7 @@
 {
   "section": "找寻更多点子",
   "sourcePinCount": 1047,
-  "targetPatternCount": 1000,
+  "targetPatternCount": 1018,
   "previousCount": 446,
   "excluded": [
     {
@@ -10,7 +10,7 @@
       "reason": "国旗及旗帜类图案，按用户要求排除"
     }
   ],
-  "newPatternCount": 555,
+  "newPatternCount": 573,
   "unchangedPatternCount": 445,
   "replacedSlots": [
     {
@@ -8864,7 +8864,7 @@
       "part": 1,
       "key": "pinterest-rec-845550898840296325",
       "name": "布丁狗吐司",
-      "status": "reserve",
+      "status": "imported",
       "w": 41,
       "h": 37,
       "method": "lattice"
@@ -8890,7 +8890,7 @@
       "part": 1,
       "key": "pinterest-rec-845550898840296377",
       "name": "三眼仔扭蛋机",
-      "status": "reserve",
+      "status": "imported",
       "w": 34,
       "h": 37,
       "method": "lattice"
@@ -8930,7 +8930,7 @@
       "part": 1,
       "key": "pinterest-rec-847732329904604942",
       "name": "大嘴小鸭",
-      "status": "reserve",
+      "status": "imported",
       "w": 15,
       "h": 14,
       "method": "lattice"
@@ -8942,7 +8942,7 @@
       "part": 1,
       "key": "pinterest-rec-848858229759742799",
       "name": "大眼波加曼",
-      "status": "reserve",
+      "status": "imported",
       "w": 23,
       "h": 29,
       "method": "lattice"
@@ -8954,7 +8954,7 @@
       "part": 1,
       "key": "pinterest-rec-848858229812552686",
       "name": "胖乎乎龙猫",
-      "status": "reserve",
+      "status": "imported",
       "w": 41,
       "h": 43,
       "method": "lattice"
@@ -8973,7 +8973,7 @@
       "part": 1,
       "key": "pinterest-rec-853502566850746591",
       "name": "蓝角妖怪面具",
-      "status": "reserve",
+      "status": "imported",
       "w": 29,
       "h": 29,
       "method": "lattice"
@@ -8985,7 +8985,7 @@
       "part": 1,
       "key": "pinterest-rec-853502566865522536",
       "name": "绿色加命蘑菇",
-      "status": "reserve",
+      "status": "imported",
       "w": 16,
       "h": 16,
       "method": "lattice"
@@ -9004,7 +9004,7 @@
       "part": 1,
       "key": "pinterest-rec-855472891751528475",
       "name": "百变怪",
-      "status": "reserve",
+      "status": "imported",
       "w": 26,
       "h": 20,
       "method": "lattice"
@@ -9030,7 +9030,7 @@
       "part": 1,
       "key": "pinterest-rec-858146904026166089",
       "name": "白色琥珀川小龙",
-      "status": "reserve",
+      "status": "imported",
       "w": 53,
       "h": 53,
       "method": "lattice"
@@ -9056,7 +9056,7 @@
       "part": 1,
       "key": "pinterest-rec-865183778390766822",
       "name": "水伊布盘尾",
-      "status": "reserve",
+      "status": "imported",
       "w": 47,
       "h": 53,
       "method": "lattice"
@@ -9068,7 +9068,7 @@
       "part": 1,
       "key": "pinterest-rec-867435578279741982",
       "name": "茶色线稿凯蒂猫",
-      "status": "reserve",
+      "status": "imported",
       "w": 23,
       "h": 22,
       "method": "lattice"
@@ -9108,7 +9108,7 @@
       "part": 1,
       "key": "pinterest-rec-868702215640942135",
       "name": "小白鹅与粉心",
-      "status": "reserve",
+      "status": "imported",
       "w": 20,
       "h": 23,
       "method": "lattice"
@@ -9120,7 +9120,7 @@
       "part": 1,
       "key": "pinterest-rec-869617009317174106",
       "name": "戴耳机小狗",
-      "status": "reserve",
+      "status": "imported",
       "w": 45,
       "h": 70,
       "method": "lattice"
@@ -9132,7 +9132,7 @@
       "part": 1,
       "key": "pinterest-rec-870742909200151724",
       "name": "侧脸凯蒂猫",
-      "status": "reserve",
+      "status": "imported",
       "w": 27,
       "h": 48,
       "method": "lattice"
@@ -9144,7 +9144,7 @@
       "part": 1,
       "key": "pinterest-rec-876090933784232084",
       "name": "迷彩小蘑菇",
-      "status": "reserve",
+      "status": "imported",
       "w": 11,
       "h": 12,
       "method": "lattice"
@@ -9156,7 +9156,7 @@
       "part": 1,
       "key": "pinterest-rec-877990889867989013",
       "name": "小小害羞猫",
-      "status": "reserve",
+      "status": "imported",
       "w": 38,
       "h": 38,
       "method": "lattice"
@@ -9182,7 +9182,7 @@
       "part": 1,
       "key": "pinterest-rec-880876008343243682",
       "name": "黑耳小兔",
-      "status": "reserve",
+      "status": "imported",
       "w": 20,
       "h": 40,
       "method": "lattice"
@@ -9194,7 +9194,7 @@
       "part": 1,
       "key": "pinterest-rec-881438958338077125",
       "name": "脸红凯蒂猫",
-      "status": "reserve",
+      "status": "imported",
       "w": 25,
       "h": 20,
       "method": "lattice"

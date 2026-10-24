@@ -8,13 +8,13 @@ import exclusions from '../art/pinterest-board/exclusions.json';
 
 const approvals = approvalData as Record<string, { approved: boolean; flagFree?: boolean }>;
 
-describe('1000-pattern catalogue', () => {
-  it('contains exactly 1000 independently keyed patterns and one level per pattern', () => {
-    expect(PATTERNS).toHaveLength(1000);
-    expect(LEVEL_COUNT).toBe(1000);
-    expect(new Set(PATTERNS.map((p) => p.key)).size).toBe(1000);
-    expect(additions.newPatternCount).toBe(555);
-    expect(PATTERNS.filter((p) => p.key.startsWith('pinterest-rec-'))).toHaveLength(555);
+describe('1018-pattern catalogue', () => {
+  it('contains exactly 1018 independently keyed patterns and one level per pattern', () => {
+    expect(PATTERNS).toHaveLength(1018);
+    expect(LEVEL_COUNT).toBe(1018);
+    expect(new Set(PATTERNS.map((p) => p.key)).size).toBe(1018);
+    expect(additions.newPatternCount).toBe(573);
+    expect(PATTERNS.filter((p) => p.key.startsWith('pinterest-rec-'))).toHaveLength(573);
   });
 
   it('preserves every previous non-flag level number', () => {
@@ -34,7 +34,7 @@ describe('1000-pattern catalogue', () => {
       expect(EXTRA_PATTERNS.some((p) => p.source?.url?.endsWith(`/pin/${banned.pinId}/`))).toBe(false);
     }
     const imported = additions.records.filter((r) => r.status === 'imported');
-    expect(imported).toHaveLength(555);
+    expect(imported).toHaveLength(573);
     for (const r of imported) {
       expect(approvals[r.pinId]?.approved, r.pinId).toBe(true);
       expect(approvals[r.pinId]?.flagFree, r.pinId).toBe(true);

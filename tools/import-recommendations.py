@@ -1,7 +1,7 @@
 """Reviewed Pinterest recommendation charts -> fixed-order, deduplicated game catalogue.
 
 Run from the repository root. Pillow and NumPy are required. --publish requires
-enough reviewed patterns to reach exactly 1000; it never invents filler levels.
+enough reviewed patterns to reach exactly 1018; it never invents filler levels.
 """
 from pathlib import Path
 import argparse
@@ -161,9 +161,9 @@ def main():
         return
     previous = read(ROOT/'previous-catalog.json')
     kept = [p for p in previous if p['key'] not in excluded]
-    required = 1000-len(kept)
+    required = 1018-len(kept)
     if len(candidates) < required:
-        raise SystemExit(f'只取得 {len(candidates)} 幅合格图案，还需 {required-len(candidates)} 幅；没有发布不足1000的目录')
+        raise SystemExit(f'只取得 {len(candidates)} 幅合格图案，还需 {required-len(candidates)} 幅；没有发布不足1018的目录')
     selected = candidates[:required]
     new_keys = [p['key'] for p in selected]
     # Fill the excluded flag's old slot once, then append the remaining reviewed art.
@@ -171,7 +171,7 @@ def main():
     order = [p['key'] if p['key'] not in excluded else next(replacements) for p in previous]
     used = set(order)
     order += [key for key in new_keys if key not in used]
-    if len(order) != 1000 or len(set(order)) != 1000:
+    if len(order) != 1018 or len(set(order)) != 1018:
         raise ValueError('目录顺序或去重校验失败')
     for p in selected:
         write(Path('levels')/f'{p["key"]}.json', p)
@@ -186,7 +186,7 @@ def main():
         if r['status'] == 'converted':
             r['status'] = 'imported' if r['key'] in new_keys else 'reserve'
     write(ROOT/'import-report.json', {'section': '找寻更多点子', 'sourcePinCount': len(assets),
-        'targetPatternCount': 1000, 'previousCount': len(previous), 'excluded': exclusions,
+        'targetPatternCount': 1018, 'previousCount': len(previous), 'excluded': exclusions,
         'newPatternCount': len(selected), 'unchangedPatternCount': len(kept),
         'replacedSlots': [{'id': p['id'], 'oldKey': p['key'], 'newKey': order[p['id']-1]} for p in previous if p['key'] in excluded],
         'records': records})

@@ -1,0 +1,42 @@
+{
+  "key": "pinterest-rec-881438958338077125",
+  "name": "脸红凯蒂猫",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#32332e",
+    "C": "#fce0df",
+    "D": "#dd5d6c"
+  },
+  "rows": [
+    "AAAAAAAAAAAAABBBABBBBAAAA",
+    "AAABBBAAAAAABBDDBAAABBAAA",
+    "AABAAABBBBBBBDDDDBAAABAAA",
+    "ABAAAAAAAAAABDDDDBBBABAAA",
+    "ABAAAAAAAAAABDDDDBDBBBBBB",
+    "ABAAAAAAAAAABBBBBBDBDDDDB",
+    "ABAAAAAAAAAAAAAAAABBDDDDB",
+    "ABAAAAAAAAAAAAAAAAABDDDDB",
+    "ABAAAAAAAAAAAAAAAAAABDDBA",
+    "BAAAAAAAAAAAAAAAAAAABBBBB",
+    "BAAAAAAAAAAAAAAAAAAAAAAAB",
+    "BAACCCAAAAAAAAAAAACCCAAAB",
+    "BACCCCCAAAAAAAAAACCCCCAAB",
+    "BACBBCCBBAACCAABBCCCBBCAB",
+    "BCCCCCCCAAAAAAAACCCCCCCAB",
+    "BACBBCCCAAAAAAAACCCCBBCAB",
+    "BACCCCCAAAAAAAAAACCCCCABA",
+    "ABAACCAAAAAAAAAAAAAAAABAA",
+    "AABBBAAAAAAAAAAAAAABBBAAA",
+    "AAAACBBBBBBBBBBBBBBAAAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/881438958338077125/",
+    "image": "https://i.pinimg.com/originals/57/da/08/57da08001a192abcdc829aa9a7b970dd.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

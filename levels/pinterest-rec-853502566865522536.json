@@ -1,0 +1,38 @@
+{
+  "key": "pinterest-rec-853502566865522536",
+  "name": "绿色加命蘑菇",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#181818",
+    "C": "#58bf00",
+    "D": "#eebf92"
+  },
+  "rows": [
+    "AAAAABBBBBBAAAAA",
+    "AAABBCCCCAABBAAA",
+    "AABAACCCCAAAABAA",
+    "ABAACCCCCCAAAABA",
+    "ABACCAAAACCAAABA",
+    "BCCCAAAAAACCCCCB",
+    "BCCCAAAAAACCAACB",
+    "BACCAAAAAACAAAAB",
+    "BAACCAAAACCAAAAB",
+    "BAACCCCCCCCCAACB",
+    "BACCBBBBBBBBCCCB",
+    "ABBBDDBDDBDDBBBA",
+    "AABDDDBDDBDDDBAA",
+    "AABDDDDDDDDDDBAA",
+    "AAABDDDDDDDDBAAA",
+    "AAAABBBBBBBBAAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/853502566865522536/",
+    "image": "https://i.pinimg.com/originals/72/f2/3c/72f23ce05a6f66fcb6d9933e0dbd713c.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}

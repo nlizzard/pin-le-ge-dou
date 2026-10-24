@@ -26,7 +26,7 @@
 
 Pinterest 收藏板导入说明和逐项报告见 [art/pinterest-board](../art/pinterest-board/README.md)。
 
-当前共有1000张图案。推荐区的555张新增图案、审核记录和复现说明见 [art/pinterest-recommendations](../art/pinterest-recommendations/README.md)。国旗及旗帜类图案按排除清单过滤，不纳入关卡。
+当前共有1018张图案。推荐区的573张新增图案、审核记录和复现说明见 [art/pinterest-recommendations](../art/pinterest-recommendations/README.md)。国旗及旗帜类图案按排除清单过滤，不纳入关卡。
 
 ```bash
 # 任意图片 → 关卡

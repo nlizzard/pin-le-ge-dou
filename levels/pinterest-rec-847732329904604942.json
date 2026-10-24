@@ -1,0 +1,35 @@
+{
+  "key": "pinterest-rec-847732329904604942",
+  "name": "大嘴小鸭",
+  "palette": {
+    "A": "#ffffff",
+    "B": "#181818",
+    "C": "#f87f1a"
+  },
+  "rows": [
+    "AAAABBBBAAAAAAA",
+    "AAABAAAABAAAAAA",
+    "AABAAAAAABAAAAA",
+    "ABBCABAAABAAAAA",
+    "BCCCAAAAABAAAAA",
+    "ABCCCAAABBAAABA",
+    "AABBAAAAAABBBAB",
+    "AABAAAAAAAAAAAB",
+    "ABAAAABAAAAABAB",
+    "ABAAAABBABBBAAB",
+    "ABAAAAABBBAAAAB",
+    "AABAAAAAAAAAABA",
+    "AAABAAAAAAAABAA",
+    "AAAABBBBBBBBAAA"
+  ],
+  "source": {
+    "url": "https://jp.pinterest.com/pin/847732329904604942/",
+    "image": "https://i.pinimg.com/originals/cd/39/4c/cd394c58dbc4fdfe6776863120fbff3a.jpg",
+    "title": "未命名",
+    "author": "原作者见来源页面",
+    "license": "来源网页未标注授权",
+    "conversion": "lattice",
+    "section": "找寻更多点子",
+    "board": "https://jp.pinterest.com/o4724o4724/%E6%8B%BC%E8%B1%86%E5%9C%96%E6%A1%88/"
+  }
+}
