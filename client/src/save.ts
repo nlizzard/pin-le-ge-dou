@@ -2,6 +2,7 @@
  * 存档：localStorage 一份 + 服务端一份（多设备共享进度）。
  * 服务端不可达时照常游玩，下次能连上时自动同步。
  */
+import { completionTimes } from './levelProgress';
 export interface Settings {
   sound: boolean;
   vibrate: boolean;
@@ -12,8 +13,9 @@ export interface Settings {
 export interface SaveData {
   version: number; // 每次写入 +1，服务端用来拒绝旧版本覆盖
   updatedAt: number;
-  unlocked: number; // 已解锁的最大关卡号
+  unlocked: number; // 旧版进度兼容字段，不再限制关卡访问
   best: Record<string, number>; // 关卡号 → 最高星级（0.5 / 1 / 2 / 3）
+  firstCompletedAt: Record<string, number>; // 首次通关时间；0表示旧档未记录时间
   inventory: Record<string, number>;
   settings: Settings;
   seenTutorial: boolean;
@@ -38,6 +40,7 @@ export function defaultSave(): SaveData {
     updatedAt: 0,
     unlocked: 1,
     best: {},
+    firstCompletedAt: {},
     inventory: {},
     settings: { sound: true, vibrate: true, needBar: true, colorBlind: false },
     seenTutorial: false,
@@ -68,6 +71,7 @@ function normalize(d: Partial<SaveData> | null | undefined): SaveData {
     ...d,
     settings: { ...base.settings, ...(d.settings ?? {}) },
     best: { ...(d.best ?? {}) },
+    firstCompletedAt: completionTimes(d.best ?? {}, d.firstCompletedAt),
     inventory: { ...(d.inventory ?? {}) },
     collected: [...(d.collected ?? [])],
     seenElements: [...(d.seenElements ?? [])],
@@ -79,11 +83,16 @@ export function mergeSaves(a: SaveData, b: SaveData): SaveData {
   const newer = a.updatedAt >= b.updatedAt ? a : b;
   const best: Record<string, number> = { ...a.best };
   for (const [k, v] of Object.entries(b.best)) best[k] = Math.max(best[k] ?? 0, v);
+  const firstCompletedAt = completionTimes(a.best, a.firstCompletedAt);
+  for (const [id, time] of Object.entries(completionTimes(b.best, b.firstCompletedAt))) {
+    firstCompletedAt[id] = Math.min(firstCompletedAt[id] ?? Infinity, time);
+  }
   return {
     ...newer,
     version: Math.max(a.version, b.version),
     unlocked: Math.max(a.unlocked, b.unlocked),
     best,
+    firstCompletedAt,
     seenTutorial: a.seenTutorial || b.seenTutorial,
     giftGiven: a.giftGiven || b.giftGiven,
     collected: [...new Set([...a.collected, ...b.collected])],

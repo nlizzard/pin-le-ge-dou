@@ -250,7 +250,7 @@ button {
   gap: 6px;
   transition: transform 0.14s, border-color 0.14s;
 }
-.level-card:hover:not(.locked) {
+.level-card:hover {
   transform: translateY(-4px) rotate(-0.8deg);
   border-color: #ffb7d2;
 }
@@ -263,10 +263,9 @@ button {
     outline-color: var(--gold);
   }
 }
-.level-card.locked {
+.level-card.unplayed {
   opacity: 0.55;
   border-color: #f0e2ec;
-  cursor: default;
 }
 .level-no {
   position: absolute;

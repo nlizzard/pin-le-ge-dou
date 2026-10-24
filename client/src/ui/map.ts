@@ -1,6 +1,7 @@
 import { LEVEL_COUNT, levelInfo } from '../core/level';
 import { PATTERNS } from '../core/patterns';
 import { save } from '../save';
+import { orderedLevelIds } from '../levelProgress';
 import type { Fx } from '../render/fx';
 import { openCollection } from './collection';
 import { h, starRow } from './dom';
@@ -10,8 +11,8 @@ import { openSettings } from './settings';
 let mapElf: Elf | null = null;
 const GREETINGS = ['今天也来拼豆吧！', '欢迎回来～', '点我有惊喜哦', '集齐隐藏道具我会变金色！', '三星通关可以扭蛋哦', '一起拼到第 200 关吧！'];
 
-/** 关卡缩略图：每格画成 1 个像素块；锁定关卡画半透明真彩色预览（看得见但还没解锁） */
-function thumbnail(id: number, locked: boolean): HTMLCanvasElement {
+/** 未通关仍保留原来的半透明预览样式。 */
+function thumbnail(id: number, unplayed: boolean): HTMLCanvasElement {
   const p = PATTERNS[(id - 1) % PATTERNS.length];
   const grid = patternGridOf(p);
   const scale = Math.max(2, Math.floor(64 / Math.max(grid.w, grid.h)));
@@ -19,7 +20,7 @@ function thumbnail(id: number, locked: boolean): HTMLCanvasElement {
   c.width = grid.w * scale;
   c.height = grid.h * scale;
   const ctx = c.getContext('2d')!;
-  ctx.globalAlpha = locked ? 0.35 : 1;
+  ctx.globalAlpha = unplayed ? 0.35 : 1;
   for (let i = 0; i < grid.target.length; i++) {
     const t = grid.target[i];
     if (t < 0) continue;
@@ -65,19 +66,19 @@ export function renderMap(root: HTMLElement, onPlay: (id: number) => void, fx: F
   const d = save.data;
   const total = Object.values(d.best).reduce((a, b) => a + b, 0);
   const list = h('div.level-grid');
-  for (let id = 1; id <= LEVEL_COUNT; id++) {
-    const locked = id > d.unlocked;
-    // 锁定卡片只展示图案；大图的可解性模拟留到实际进入关卡时执行。
-    const info = locked ? undefined : levelInfo(id);
+  for (const id of orderedLevelIds(d, LEVEL_COUNT)) {
     const best = d.best[id] ?? 0;
+    const unplayed = best <= 0;
+    // 未通关卡片只展示原有预览，进入时再生成关卡。
+    const info = unplayed ? undefined : levelInfo(id);
     const card = h(
-      'button.level-card' + (locked ? '.locked' : '') + (id === d.unlocked && !best ? '.current' : ''),
-      { onclick: () => !locked && onPlay(id), disabled: locked || undefined },
+      'button.level-card' + (unplayed ? '.unplayed' : ''),
+      { onclick: () => onPlay(id), 'aria-label': `第${id}关${unplayed ? ' · 未通关' : ` · ${info!.name}`}` },
       h('div.level-no', {}, String(id)),
-      thumbnail(id, locked),
-      h('div.level-name', {}, locked ? '？？？' : info!.name),
-      locked ? h('div.lock', {}, '🔒') : starRow(best),
-      locked ? null : h('div.tag.diff-' + info!.difficulty, {}, info!.difficulty),
+      thumbnail(id, unplayed),
+      h('div.level-name', {}, unplayed ? '？？？' : info!.name),
+      unplayed ? null : starRow(best),
+      unplayed ? null : h('div.tag.diff-' + info!.difficulty, {}, info!.difficulty),
     );
     list.append(card);
   }
@@ -105,6 +106,5 @@ export function renderMap(root: HTMLElement, onPlay: (id: number) => void, fx: F
       h('p.map-foot', {}, `${LEVEL_COUNT} 关等你拼 · 难度慢慢升温 · 超时通关只得半星 · 重玩可刷新最高星级`),
     ),
   );
-  root.querySelector('.level-card.current')?.scrollIntoView({ block: 'center' });
   setTimeout(() => mapElf?.say(GREETINGS[Math.floor(Math.random() * GREETINGS.length)], 2600, true), 600);
 }

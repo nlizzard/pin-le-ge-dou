@@ -6,6 +6,7 @@ import { BoardView } from '../render/board';
 import { Fx } from '../render/fx';
 import { buildSprites, type SpriteSet } from '../render/sprites';
 import { addProp, propCount, save } from '../save';
+import { recordLevelWin } from '../levelProgress';
 import { beadStyle, dialog, floatText, fmtTime, h, starRow, toast } from './dom';
 import { Elf, type DropResult } from './elf';
 import { openLottery } from './lottery';
@@ -447,7 +448,7 @@ export class GameScreen {
     const id = this.levelId;
     const prevBest = save.data.best[id] ?? 0;
     save.update((d) => {
-      d.best[id] = Math.max(prevBest, stars);
+      recordLevelWin(d, id, stars);
       d.unlocked = Math.max(d.unlocked, Math.min(LEVEL_COUNT, id + 1));
     });
     this.updateElf();
