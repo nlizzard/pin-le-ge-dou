@@ -324,8 +324,9 @@ export function buildLevel(id: number): LevelDef {
   const pool: Objective[] = [
     { type: 'timeLeft', value: tutorial ? 0.2 : pick(rng, [0.2, 0.25, 0.3, 0.35]) },
     { type: 'slotPeak', value: Math.max(4, Math.min(capacity - 2, Math.round(5 + wrong * 0.04))) },
-    { type: 'newChains', value: Math.max(4, Math.round(wrong * 0.18) + 2) },
-    { type: 'maxCombo', value: Math.max(8, Math.min(40, Math.round(wrong * 0.35))) },
+    // 加星目标整体放宽：连击不再随大图疯涨（上限 18），开新链也更宽松
+    { type: 'newChains', value: Math.max(3, Math.round(wrong * 0.12) + 1) },
+    { type: 'maxCombo', value: Math.max(6, Math.min(18, Math.round(wrong * 0.15))) },
     { type: 'noProps', value: 0 },
   ];
   const objectives = shuffle(rng, pool).slice(0, 2);

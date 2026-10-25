@@ -1,10 +1,12 @@
 import { LEVEL_COUNT, levelInfo, ROUND_NAMES } from '../core/level';
 import { PATTERNS } from '../core/patterns';
-import { save } from '../save';
+import { addProp, propCount, save } from '../save';
 import { orderedLevelIds } from '../levelProgress';
 import type { Fx } from '../render/fx';
+import { COMMON_PROPS } from '../core/props';
+import { sfx } from '../audio';
 import { openCollection } from './collection';
-import { dialog, h, starRow } from './dom';
+import { dialog, floatText, h, starRow } from './dom';
 import { Elf } from './elf';
 import { openSettings } from './settings';
 import { checkpointSummaries, clearCheckpoint, refreshCheckpointSummaries } from '../checkpoint';
@@ -12,6 +14,119 @@ import { checkpointSummaries, clearCheckpoint, refreshCheckpointSummaries } from
 let mapElf: Elf | null = null;
 let mapIO: IntersectionObserver | null = null;
 const GREETINGS = ['今天也来拼豆吧！', '欢迎回来～', '点我有惊喜哦', '集齐隐藏道具我会变金色！', '三星通关可以扭蛋哦', '一起拼到第 200 关吧！'];
+
+/* ---------- 主页连点小精灵奖励 ----------
+ * 一个周期最多 3 次奖励：随机掉道具，或把某个未三星通关的关卡直接变三星（带特效，不触发扭蛋机）。
+ * 触发需要连点达到随机的 3–6 下；周期内两次奖励间隔 ≥25 秒；3 次后冷却 5 分钟（本地持久，刷新不重置）。 */
+
+interface ElfRewardState { count: number; lastRewardAt: number; cycleResetAt: number; nextNeed: number }
+const REWARD_KEY = 'picture-play-elf-cycle';
+const REWARD_GAP_MS = 25_000;
+const REWARD_CYCLE_MS = 5 * 60_000;
+const MAX_REWARDS_PER_CYCLE = 3;
+
+function elfRewardState(): ElfRewardState {
+  try {
+    const raw = JSON.parse(localStorage.getItem(REWARD_KEY) || 'null');
+    if (raw && typeof raw.count === 'number' && typeof raw.cycleResetAt === 'number') {
+      return { count: raw.count, lastRewardAt: raw.lastRewardAt ?? 0, cycleResetAt: raw.cycleResetAt ?? 0, nextNeed: raw.nextNeed ?? 4 };
+    }
+  } catch { /* ignore */ }
+  return { count: 0, lastRewardAt: 0, cycleResetAt: 0, nextNeed: 3 + Math.floor(Math.random() * 4) };
+}
+
+function saveElfRewardState(st: ElfRewardState) {
+  try { localStorage.setItem(REWARD_KEY, JSON.stringify(st)); } catch { /* ignore */ }
+}
+
+let mapFxRef: Fx | null = null;
+let mapRootRef: HTMLElement | null = null;
+
+/** 主页连点奖励：返回 'dropped' 表示本轮给出奖励 */
+function mapElfReward(combo: number): 'dropped' | 'none' | 'empty' {
+  const st = elfRewardState();
+  const now = Date.now();
+  if (st.cycleResetAt > now) return 'empty'; // 冷却中
+  if (st.count >= MAX_REWARDS_PER_CYCLE) {
+    st.cycleResetAt = now + REWARD_CYCLE_MS;
+    saveElfRewardState(st);
+    return 'empty';
+  }
+  if (st.count > 0 && now - st.lastRewardAt < REWARD_GAP_MS) return 'none'; // 周期内间隔
+  if (combo < st.nextNeed) return 'none'; // 连点次数不够（随机 3–6 下）
+
+  st.count++;
+  st.lastRewardAt = now;
+  st.nextNeed = 3 + Math.floor(Math.random() * 4); // 下一次需要的连点数重新随机
+  if (st.count >= MAX_REWARDS_PER_CYCLE) st.cycleResetAt = now + REWARD_CYCLE_MS;
+  saveElfRewardState(st);
+
+  // 奖励类型：40% 尝试三星转化（有可转化的关卡时），否则掉道具
+  const convertible = pickConvertibleLevel();
+  if (convertible !== null && Math.random() < 0.4) {
+    convertToThreeStars(convertible);
+  } else {
+    dropRandomProp();
+  }
+  if (st.count >= MAX_REWARDS_PER_CYCLE) {
+    setTimeout(() => mapElf?.say('今天的好运用完啦，5 分钟后再来找我！', 3000, true), 1600);
+  }
+  return 'dropped';
+}
+
+/** 随机挑一个未三星的关卡：优先玩过的，其次已解锁的 */
+function pickConvertibleLevel(): number | null {
+  const played = Object.entries(save.data.best).filter(([, s]) => s > 0 && s < 3).map(([id]) => Number(id));
+  const unlocked = Array.from({ length: Math.min(save.data.unlocked, LEVEL_COUNT) }, (_, i) => i + 1).filter(id => (save.data.best[id] ?? 0) < 3);
+  const pool = played.length ? played : unlocked;
+  if (!pool.length) return null;
+  return pool[Math.floor(Math.random() * pool.length)];
+}
+
+/** 三星转化：卡片飞星星 + 彩纸 + 关卡直接三星（不触发扭蛋机） */
+function convertToThreeStars(id: number) {
+  save.update((d) => { d.best[id] = 3; });
+  const card = mapRootRef?.querySelector<HTMLElement>(`.level-card[data-id="${id}"]`);
+  const elfRect = document.querySelector('.map-elf')?.getBoundingClientRect();
+  sfx.win();
+  if (card) {
+    card.scrollIntoView({ block: 'center', behavior: 'smooth' });
+    setTimeout(() => {
+      const r = card.getBoundingClientRect();
+      const cx = r.left + r.width / 2, cy = r.top + r.height / 2;
+      mapFxRef?.burst(cx, cy, { n: 26, shape: 'star', speed: 5.5, size: 6, life: 44, colors: ['#ffd54f', '#ffb020', '#fff'] });
+      mapFxRef?.confetti();
+      floatText(`✨ 第${id}关 ★★★`, cx, cy - 20, 'gold');
+      sfx.star(2);
+    }, 700);
+  } else if (elfRect) {
+    mapFxRef?.confetti();
+    floatText(`✨ 第${id}关 ★★★`, elfRect.left + 30, elfRect.top + 60, 'gold');
+  }
+  mapElf?.say(`叮！第 ${id} 关直接三星啦～`, 3000, true);
+  // 让星级动画播完再重排地图
+  setTimeout(() => { if (mapRootRef && !mapRootRef.querySelector('.overlay')) renderMap(mapRootRef, mapOnPlay, mapFxRef!, mapOnStudio); }, 2200);
+}
+
+function dropRandomProp() {
+  const pool = COMMON_PROPS.filter(p => propCount(p.id) < 9);
+  const p = pool[Math.floor(Math.random() * pool.length)] ?? COMMON_PROPS[0];
+  addProp(p.id, 1);
+  const elfRect = document.querySelector('.map-elf')?.getBoundingClientRect();
+  if (elfRect) {
+    const cx = elfRect.left + elfRect.width / 2, cy = elfRect.top + elfRect.height / 2;
+    mapFxRef?.hearts(cx, cy, 8);
+    floatText(`🎁 ${p.icon} ${p.name} ×1`, cx, cy + 40, 'gold');
+  }
+  mapElf?.say(`送你一个 ${p.name}！`, 2400, true);
+}
+
+/** 主页小精灵宿主：把连点接到奖励系统上 */
+const mapElfHost = {
+  onComboTap(combo: number): 'dropped' | 'none' | 'empty' {
+    return mapElfReward(combo);
+  },
+};
 
 /** 关卡名直接取图案名（不生成关卡，地图首屏渲染 1000+ 张卡片也毫无压力） */
 function levelName(id: number): string {
@@ -83,8 +198,12 @@ async function confirmDropCheckpoint(id: string, progress: number, root: HTMLEle
   }
 }
 
+let mapOnPlay: (id: number) => void = () => { };
+let mapOnStudio: () => void = () => { };
+
 export function renderMap(root: HTMLElement, onPlay: (id: number) => void, fx: Fx, onStudio: () => void) {
-  if (!mapElf) mapElf = new Elf(fx, {}, 64);
+  mapOnPlay = onPlay; mapOnStudio = onStudio; mapFxRef = fx; mapRootRef = root;
+  if (!mapElf) mapElf = new Elf(fx, mapElfHost, 64);
   mapElf.setSkin(save.data.elfSkin);
   const d = save.data;
   const total = Object.values(d.best).reduce((a, b) => a + b, 0);
