@@ -28,7 +28,7 @@ const host = {
   },
   toStudio() {
     closeStudio?.(); game.close(); screen = 'studio';
-    closeStudio = renderArtWall(app, { toMap: () => host.toMap(), create: () => host.create() });
+    closeStudio = renderArtWall(app, { toMap: () => host.toMap(), create: () => host.create(), play: def => host.playCustom(def) });
   },
   play(id: number) {
     closeStudio?.(); closeStudio = undefined; screen = 'game';

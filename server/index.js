@@ -62,6 +62,26 @@ CREATE TABLE IF NOT EXISTS wall_settings (
   id INTEGER PRIMARY KEY CHECK (id = 1),
   data TEXT NOT NULL
 );
+CREATE TABLE IF NOT EXISTS walls_doc (
+  id INTEGER PRIMARY KEY CHECK (id = 1),
+  data TEXT NOT NULL,
+  updated_at INTEGER NOT NULL
+);
+CREATE TABLE IF NOT EXISTS recycle_bin (
+  id TEXT PRIMARY KEY,
+  data TEXT NOT NULL,
+  deleted_at INTEGER NOT NULL
+);
+CREATE TABLE IF NOT EXISTS checkpoints (
+  level_id INTEGER PRIMARY KEY,
+  data TEXT NOT NULL,
+  updated_at INTEGER NOT NULL
+);
+CREATE TABLE IF NOT EXISTS checkpoints_v2 (
+  id TEXT PRIMARY KEY,
+  data TEXT NOT NULL,
+  updated_at INTEGER NOT NULL
+);
 CREATE TABLE IF NOT EXISTS meta (key TEXT PRIMARY KEY, value TEXT NOT NULL);
 `);
 
@@ -89,11 +109,26 @@ const q = {
     'DELETE FROM custom_records WHERE completed_at NOT IN (SELECT completed_at FROM custom_records ORDER BY completed_at DESC LIMIT 30)',
   ),
   listWorks: db.prepare('SELECT data FROM wall_works ORDER BY completed_at ASC'),
+  getWork: db.prepare('SELECT completed_at, data FROM wall_works WHERE id = ?'),
   upsertWork: db.prepare(
     'INSERT INTO wall_works (id, completed_at, data) VALUES (?, ?, ?) ON CONFLICT (id) DO UPDATE SET completed_at = excluded.completed_at, data = excluded.data',
   ),
   getSettings: db.prepare('SELECT data FROM wall_settings WHERE id = 1'),
   upsertSettings: db.prepare('INSERT INTO wall_settings (id, data) VALUES (1, ?) ON CONFLICT (id) DO UPDATE SET data = excluded.data'),
+  getWallsDoc: db.prepare('SELECT data FROM walls_doc WHERE id = 1'),
+  upsertWallsDoc: db.prepare('INSERT INTO walls_doc (id, data, updated_at) VALUES (1, ?, ?) ON CONFLICT (id) DO UPDATE SET data = excluded.data, updated_at = excluded.updated_at'),
+  deleteWork: db.prepare('DELETE FROM wall_works WHERE id = ?'),
+  listRecycle: db.prepare('SELECT id, data, deleted_at FROM recycle_bin ORDER BY deleted_at DESC'),
+  getRecycle: db.prepare('SELECT data, deleted_at FROM recycle_bin WHERE id = ?'),
+  putRecycle: db.prepare('INSERT OR REPLACE INTO recycle_bin (id, data, deleted_at) VALUES (?, ?, ?)'),
+  dropRecycle: db.prepare('DELETE FROM recycle_bin WHERE id = ?'),
+  purgeRecycle: db.prepare('DELETE FROM recycle_bin WHERE deleted_at < ?'),
+  getCheckpoint: db.prepare('SELECT data FROM checkpoints_v2 WHERE id = ?'),
+  listCheckpoints: db.prepare('SELECT id, data, updated_at FROM checkpoints_v2'),
+  upsertCheckpoint: db.prepare('INSERT INTO checkpoints_v2 (id, data, updated_at) VALUES (?, ?, ?) ON CONFLICT (id) DO UPDATE SET data = excluded.data, updated_at = excluded.updated_at'),
+  clearCheckpoint: db.prepare('DELETE FROM checkpoints_v2 WHERE id = ?'),
+  clearAllCheckpoints: db.prepare('DELETE FROM checkpoints_v2'),
+  copyOldCheckpoints: db.prepare('INSERT OR IGNORE INTO checkpoints_v2 (id, data, updated_at) SELECT CAST(level_id AS TEXT), data, updated_at FROM checkpoints'),
 };
 
 function readProgress() {
@@ -221,7 +256,60 @@ app.get('/api/wall', async () => {
   } catch {
     settings = null;
   }
-  return { works, settings };
+  const docRow = q.getWallsDoc.get();
+  let doc = null;
+  try {
+    doc = docRow ? JSON.parse(docRow.data) : null;
+  } catch {
+    doc = null;
+  }
+  return { works, settings, doc };
+});
+
+app.put('/api/wall/doc', async (req, reply) => {
+  const body = req.body;
+  if (!body || typeof body !== 'object' || !Array.isArray(body.walls)) return reply.code(400).send({ error: 'invalid walls doc' });
+  q.upsertWallsDoc.run(JSON.stringify(body), Date.now());
+  return { ok: true };
+});
+
+app.delete('/api/wall/works/:id', async (req) => {
+  const id = String(req.params.id);
+  // 移入回收站（30 天后自动清理），而不是直接删除
+  const row = q.getWork.get(id);
+  if (row) {
+    q.putRecycle.run(id, row.data, Date.now());
+    q.deleteWork.run(id);
+  }
+  return { ok: true };
+});
+
+/* ---------- 回收站：误删的作品 30 天内可恢复 ---------- */
+const RECYCLE_DAYS = 30;
+app.get('/api/wall/recycle', async () => {
+  q.purgeRecycle.run(Date.now() - RECYCLE_DAYS * 86400_000);
+  return q.listRecycle.all().map((row) => {
+    try {
+      const d = JSON.parse(row.data);
+      return { id: row.id, name: d.name ?? row.id, deletedAt: row.deleted_at, work: d };
+    } catch {
+      return null;
+    }
+  }).filter(Boolean);
+});
+
+app.post('/api/wall/recycle/:id/restore', async (req, reply) => {
+  const id = String(req.params.id);
+  const row = q.getRecycle.get(id);
+  if (!row) return reply.code(404).send({ error: 'not in recycle bin' });
+  q.upsertWork.run(id, row.deleted_at, row.data);
+  q.dropRecycle.run(id);
+  return { ok: true };
+});
+
+app.delete('/api/wall/recycle/:id', async (req) => {
+  q.dropRecycle.run(String(req.params.id));
+  return { ok: true };
 });
 
 app.put('/api/wall/settings', async (req) => {
@@ -237,6 +325,50 @@ app.put('/api/wall/works', async (req, reply) => {
   }
   const completedAt = Number.isFinite(w.completedAt) ? Math.round(w.completedAt) : Date.now();
   q.upsertWork.run(w.id, completedAt, JSON.stringify(w));
+  return { ok: true };
+});
+
+/* ---------- 关卡中断存档（id：普通关卡为编号字符串，自定义作品为 custom-xxx） ---------- */
+db.exec('BEGIN');
+try {
+  q.copyOldCheckpoints.run();
+  db.exec('COMMIT');
+} catch {
+  db.exec('ROLLBACK'); // 旧表不存在时忽略
+}
+
+app.get('/api/checkpoints', async () =>
+  q.listCheckpoints.all().map((row) => {
+    try {
+      const d = JSON.parse(row.data);
+      return { levelId: row.id, savedAt: d.savedAt ?? row.updated_at, progress: d.progress ?? 0, remaining: d.remaining ?? 0, name: d.name ?? null };
+    } catch {
+      return null;
+    }
+  }).filter(Boolean),
+);
+
+app.get('/api/checkpoint/:id', async (req) => {
+  const id = String(req.params.id);
+  const row = q.getCheckpoint.get(id);
+  if (!row) return null;
+  try {
+    return { levelId: id, data: JSON.parse(row.data) };
+  } catch {
+    return null;
+  }
+});
+
+app.put('/api/checkpoint/:id', async (req, reply) => {
+  const id = String(req.params.id);
+  const body = req.body;
+  if (!id || !body || typeof body !== 'object') return reply.code(400).send({ error: 'invalid checkpoint' });
+  q.upsertCheckpoint.run(id, JSON.stringify(body), Date.now());
+  return { ok: true };
+});
+
+app.delete('/api/checkpoint/:id', async (req) => {
+  q.clearCheckpoint.run(String(req.params.id));
   return { ok: true };
 });
 

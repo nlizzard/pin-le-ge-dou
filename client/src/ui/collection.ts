@@ -1,6 +1,5 @@
 import { COMMON_PROPS, HIDDEN_PROPS } from '../core/props';
 import { ELEMENT_INFO } from '../core/level';
-import { EXTRA_PATTERNS } from '../core/patterns';
 import { propCount, save } from '../save';
 import { dialog, h } from './dom';
 
@@ -36,16 +35,6 @@ export async function openCollection(): Promise<void> {
       ...HIDDEN_PROPS.map((p) => row(p, collected.has(p.id))),
       h('h3', {}, '特殊格子'),
       ...Object.values(ELEMENT_INFO).map((e) => h('div.book-item', {}, h('div.book-icon', {}, e.icon), h('div.book-text', {}, h('div.book-name', {}, e.name), h('div.book-desc', {}, e.desc)))),
-      h('h3', {}, '图案来源'),
-      h('p.hint', {}, `前 16 张为原创手绘；之后的 ${EXTRA_PATTERNS.length} 张来自开放许可素材，经像素化处理。`),
-      ...EXTRA_PATTERNS.filter((p) => p.source).map((p) =>
-        h(
-          'div.book-desc.credit',
-          {},
-          `${p.name} — ${p.source!.author ?? '未知作者'} · ${p.source!.license ?? ''} · `,
-          p.source!.url ? h('a', { href: p.source!.url, target: '_blank', rel: 'noopener' }, '来源') : '',
-        ),
-      ),
     ),
     [{ label: '关闭', value: 'close', cls: 'primary' }],
     { dismissValue: 'close', cls: 'wide' },

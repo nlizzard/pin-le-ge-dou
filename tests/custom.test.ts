@@ -11,8 +11,8 @@ function grid() {
 }
 describe('自由创作关卡', () => {
   it('自定义格子数只接受 16–128 的整数', () => {
-    for (const n of [16, 64, 80, 96, 128]) expect(validateCustomSize(n)).toBe(n);
-    for (const n of [0, 15, 129, 24.5, NaN, Infinity]) expect(() => validateCustomSize(n)).toThrow('整数');
+    for (const n of [16, 64, 80, 96, 128, 160, 256]) expect(validateCustomSize(n)).toBe(n);
+    for (const n of [0, 15, 257, 24.5, NaN, Infinity]) expect(() => validateCustomSize(n)).toThrow('整数');
   });
   it('128 格画布可转换并打乱，越界尺寸被拒绝', () => {
     const pixels = new Uint8ClampedArray(128 * 128 * 4);
@@ -22,7 +22,7 @@ describe('自由创作关卡', () => {
     expect([def.w, def.h, def.target.length]).toEqual([128, 128, 16384]);
     expect(def.wrongCount).toBeGreaterThan(0);
     expect([...def.beads].sort()).toEqual([...def.target].sort());
-    expect(() => quantizeImage(new Uint8ClampedArray(129 * 4), 129, 1, 8)).toThrow('尺寸无效');
+    expect(() => quantizeImage(new Uint8ClampedArray(257 * 4), 257, 1, 8)).toThrow('尺寸无效');
   });
   it('保留比例、透明区域与色板索引', () => {
     const g = grid();

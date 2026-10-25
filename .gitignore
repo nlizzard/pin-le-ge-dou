@@ -16,3 +16,5 @@ art/pinterest-recommendations/originals/
 art/pinterest-recommendations/converted/
 art/pinterest-recommendations/review/
 art/pinterest-recommendations/conversion-report.json
+
+server/generated/

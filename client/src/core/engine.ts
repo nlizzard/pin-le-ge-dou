@@ -504,6 +504,83 @@ export class Game {
     return this.undoStack.length > 0;
   }
 
+  // ---------- 中断存档（checkpoint） ----------
+
+  /** 可 JSON 序列化的完整局面；恢复后撤销栈为空（撤回仅限本局连续操作） */
+  saveCheckpoint(): Record<string, unknown> {
+    return {
+      state: this.state,
+      beads: Array.from(this.beads),
+      slots: [...this.slots],
+      capacity: this.capacity,
+      ice: Array.from(this.ice),
+      locked: Array.from(this.locked),
+      bomb: Array.from(this.bomb),
+      star: Array.from(this.star),
+      fog: Array.from(this.fog),
+      correct: this.correct,
+      elapsed: this.elapsed,
+      playedSeconds: this.playedSeconds,
+      addedTime: this.addedTime,
+      starBonus: this.starBonus,
+      timerTaps: this.timerTaps,
+      overtime: this.overtime,
+      freezeLeft: this.freezeLeft,
+      cloverActive: this.cloverActive,
+      lastPlaceAt: this.lastPlaceAt,
+      propUses: { ...this.propUses },
+      stats: { ...this.stats },
+      wrongByColor: [...this.wrongByColor.entries()].map(([c, s]) => [c, [...s]]),
+      emptyByColor: [...this.emptyByColor.entries()].map(([c, s]) => [c, [...s]]),
+    };
+  }
+
+  /** 从存档恢复局面；数据不完整时返回 false 并保持原状 */
+  restoreCheckpoint(data: Record<string, unknown> | null | undefined): boolean {
+    if (!data || !Array.isArray(data.beads) || !Array.isArray(data.slots)) return false;
+    const n = this.target.length;
+    if (data.beads.length !== n) return false;
+    try {
+      this.beads.set(Int16Array.from(data.beads as number[]));
+      this.slots = [...(data.slots as number[])];
+      this.capacity = Number.isFinite(data.capacity as number) ? (data.capacity as number) : this.def.capacity;
+      if (Array.isArray(data.ice) && data.ice.length === n) this.ice.set(Uint8Array.from(data.ice as number[]));
+      if (Array.isArray(data.locked) && data.locked.length === n) this.locked.set(Uint8Array.from(data.locked as number[]));
+      if (Array.isArray(data.bomb) && data.bomb.length === n) this.bomb.set(Int16Array.from(data.bomb as number[]));
+      if (Array.isArray(data.star) && data.star.length === n) this.star.set(Uint8Array.from(data.star as number[]));
+      if (Array.isArray(data.fog) && data.fog.length === n) this.fog.set(Uint8Array.from(data.fog as number[]));
+      // 索引优先用存档里的（保留集合内部顺序），不匹配则全量重建
+      const wrong = data.wrongByColor as [number, number[]][] | undefined;
+      const empty = data.emptyByColor as [number, number[]][] | undefined;
+      if (Array.isArray(wrong) && Array.isArray(empty)) {
+        this.wrongByColor.clear();
+        for (const [c, cells] of wrong) this.wrongByColor.set(c, new Set(cells));
+        this.emptyByColor.clear();
+        for (const [c, cells] of empty) this.emptyByColor.set(c, new Set(cells));
+        this.correct = Number(data.correct ?? 0);
+      } else {
+        this.rebuildIndexes();
+      }
+      this.state = (['ready', 'playing', 'won', 'burst'] as const).includes(data.state as GameState) ? (data.state as GameState) : 'playing';
+      this.elapsed = Number(data.elapsed ?? 0);
+      this.playedSeconds = Number(data.playedSeconds ?? 0);
+      this.addedTime = Number(data.addedTime ?? 0);
+      this.starBonus = Number(data.starBonus ?? 0);
+      this.timerTaps = Number(data.timerTaps ?? 0);
+      this.overtime = !!data.overtime;
+      this.freezeLeft = Number(data.freezeLeft ?? 0);
+      this.cloverActive = !!data.cloverActive;
+      this.lastPlaceAt = Number(data.lastPlaceAt ?? -99);
+      Object.assign(this.propUses, data.propUses ?? {});
+      if (data.stats && typeof data.stats === 'object') Object.assign(this.stats, data.stats);
+      this.undoStack = [];
+      return true;
+    } catch {
+      this.rebuildIndexes();
+      return false;
+    }
+  }
+
   /** 撤回最近最多 3 次点击，时间不回退 */
   undo(): boolean {
     if (!this.undoStack.length) return false;

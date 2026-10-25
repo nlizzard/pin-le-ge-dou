@@ -27,7 +27,6 @@ export type BoardMode = 'normal' | 'pick' | 'paint';
 
 const MAX_CELL = 56;
 const TAP_SLOP = 8;
-const TOUCH_MIN_TAP_CELL = 16;
 
 export class BoardView {
   readonly canvas: HTMLCanvasElement;
@@ -327,11 +326,7 @@ export class BoardView {
       }
       return;
     }
-    // 手指点太小的格子容易点错：先放大
-    if (type === 'touch' && this.cam.s < TOUCH_MIN_TAP_CELL) {
-      this.zoomTo(Math.max(28, this.cam.s * 2.5), x, y, true);
-      return;
-    }
+    // 大小完全由用户自己调节（滑条 / 滚轮 / 双指），点击不自动放大
     if (this.mode === 'pick') this.cb.onPick?.(i);
     else if (this.mode === 'normal') this.cb.onTapCell(i);
   }

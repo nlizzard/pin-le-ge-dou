@@ -3,12 +3,17 @@ import { mulberry32 } from './rng';
 
 type RGB = [number, number, number];
 export const MIN_CUSTOM_SIZE = 16;
-export const MAX_CUSTOM_SIZE = 128;
+export const MAX_CUSTOM_SIZE = 256;
 export function validateCustomSize(size: number): number {
   if (!Number.isInteger(size) || size < MIN_CUSTOM_SIZE || size > MAX_CUSTOM_SIZE) {
     throw new Error(`最长边格子数请输入 ${MIN_CUSTOM_SIZE}–${MAX_CUSTOM_SIZE} 之间的整数`);
   }
   return size;
+}
+/** 按原图大小推荐拼豆格子数（最长边，8 的倍数）：大图自动给更多格子，避免糊成一团 */
+export function smartCustomSize(w: number, h: number): number {
+  const area = Math.sqrt(Math.max(1, w * h));
+  return Math.max(24, Math.min(160, Math.round(area / 22 / 8) * 8));
 }
 const distance = (a: RGB, b: RGB) => (a[0] - b[0]) ** 2 + (a[1] - b[1]) ** 2 + (a[2] - b[2]) ** 2;
 /** 小尺寸图片的确定性 k-means 量化。透明区域不进入调色板。 */

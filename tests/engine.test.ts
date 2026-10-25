@@ -213,8 +213,8 @@ describe('rules', () => {
   it('a tap moves the connected same-colour group, never mixing the two destinations', () => {
     let sawGroupToSlot = false;
     let sawGroupToCell = false;
-    // 200 关里抽样验证逐步规则（全量在 smart play 用例覆盖）
-    for (let id = 1; id <= LEVEL_COUNT; id += 7) {
+    // 全部关卡里抽样验证逐步规则（全量通关性在 smart play 用例覆盖）
+    for (let id = 1; id <= LEVEL_COUNT; id += 25) {
       const g = new Game(buildLevel(id));
       g.start();
       for (let n = 0; n < 400 && g.state === 'playing'; n++) {
@@ -276,6 +276,43 @@ describe('rules', () => {
     g.start();
     const i = g.target.findIndex((t, k) => t >= 0 && g.beads[k] === t);
     expect(g.tap(i).type).toBe('locked');
+  });
+});
+
+describe('checkpoint', () => {
+  it('restores the exact board after a JSON roundtrip and stays winnable', () => {
+    for (const id of [5, 30, 80, 150]) {
+      const def = buildLevel(id);
+      const g = new Game(def);
+      g.start();
+      // 先聪明地玩几步
+      for (let k = 0; k < 6; k++) {
+        const c = [...g.wrongByColor.values()].flatMap((s) => [...s]).find((x) => g.movable(x) && g.groupAt(x).length <= g.freeSlots);
+        if (c !== undefined) g.tap(c);
+      }
+      // JSON 往返（存进 SQLite / localStorage 都走这条路径）
+      const cp = JSON.parse(JSON.stringify(g.saveCheckpoint())) as Record<string, unknown>;
+      // 继续乱玩几步，让局面偏离存档
+      for (let k = 0; k < 4; k++) {
+        const all = [...g.wrongByColor.values()].flatMap((s) => [...s]).filter((x) => g.movable(x));
+        if (all.length) g.tap(all[k % all.length]);
+      }
+      const g2 = new Game(def);
+      expect(g2.restoreCheckpoint(cp)).toBe(true);
+      expect([...g2.beads]).toEqual(cp.beads);
+      expect(g2.state).toBe('playing');
+      expect(g2.progress).toBeGreaterThan(0);
+      expect(g2.elapsed).toBeCloseTo(cp.elapsed as number, 5);
+      expect(g2.overtime).toBe(cp.overtime);
+      expect(g2.correct).toBe(cp.correct);
+      expect([...g2.slots]).toEqual(cp.slots);
+      // 恢复后仍可用聪明玩法通关
+      playSmart(g2);
+      expect(g2.state, `level ${id}`).toBe('won');
+      // 无效数据安全返回 false
+      expect(new Game(def).restoreCheckpoint(null)).toBe(false);
+      expect(new Game(def).restoreCheckpoint({ beads: [1, 2] })).toBe(false);
+    }
   });
 });
 

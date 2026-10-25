@@ -5,10 +5,11 @@ import { defaultCardOptions } from '../client/src/render/shareCard';
 
 describe('作品墙布局与再编辑', () => {
   it('拖动、缩放与旋转的边界不会把作品移出墙面', () => {
-    expect(normalizePlacement({ x: -2, y: 8, size: 99, rotation: -90, z: 0, onWall: false }))
-      .toEqual({ x: 0, y: 1, size: 32, rotation: -12, z: 1, onWall: false });
+    expect(normalizePlacement({ x: -2, y: 8, size: 99, rotation: -190, z: 0, onWall: false }))
+      .toEqual({ x: 0, y: 1, size: 32, rotation: -180, z: 1, onWall: false });
     const p = normalizePlacement({ x: NaN, y: Infinity, size: -1, rotation: 90, z: Infinity, onWall: true });
     expect(Object.values(p).every(v => typeof v !== 'number' || Number.isFinite(v))).toBe(true);
+    expect(p.rotation).toBe(90); // 新版角度范围 ±180，大角度不再被压扁
   });
   it('无效墙面配置恢复为可用的默认值', () => {
     expect(normalizeWallSettings({ title: '  ' })).toEqual({ title: '我的小画室', theme: 'cream', decor: 'flowers' });
@@ -27,7 +28,7 @@ describe('作品墙布局与再编辑', () => {
   });
   it('保存的原图可以重新生成分享卡，并能重新创建可解的关卡', () => {
     const work: WallWork = { id: 'custom-test', name: '小小收藏', grid: { w: 2, h: 2, colors: ['#ff0000', '#00ff00'], target: new Int16Array([0, 1, -1, 0]) },
-      seconds: 45, propsUsed: 2, completedAt: 123, options: defaultCardOptions(), placement: { x: .3, y: .4, size: 20, rotation: 3, z: 1, onWall: true } };
+      seconds: 45, propsUsed: 2, completedAt: 123, options: defaultCardOptions() };
     const data = workShareData(work);
     expect(data.seconds).toBe(45); expect(data.level.name).toBe(work.name);
     expect([...data.level.target]).toEqual([0, 1, -1, 0]);

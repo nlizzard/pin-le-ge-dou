@@ -17,6 +17,7 @@ import { openShareStudio } from './share';
 import { customRecords, recordCustom } from '../customRecords';
 import { bindPropPress } from './propPress';
 import { loadWallWork, rememberArtwork } from '../artWallStore';
+import { clearCheckpoint, loadCheckpoint, saveCheckpoint, type LevelCheckpoint } from '../checkpoint';
 
 const FLIGHT_MS = 320;
 const STAGGER_MS = 110;
@@ -96,6 +97,11 @@ export class GameScreen {
   private needPinned = false;
   private needPressTimer = 0;
   private needPressFired = false;
+  // 关卡中断存档
+  private ckptTimer = 0;
+  private ckptId = '';
+  private ckptSavedPlacements = -1;
+  private lastChipsAt = 0;
   private elTray: HTMLElement;
   private elTrayInfo: HTMLElement;
   private elZoom: HTMLInputElement;
@@ -193,6 +199,7 @@ export class GameScreen {
     this.active = true;
     this.fixes = [];
     this.levelId = id;
+    this.ckptId = custom ? custom.key : String(id); // 存档键：普通关卡用编号，自定义作品用图片哈希
     (window as any).__pp = this; // 调试 / 自动化测试用
     (window as any).__grant = grantProp;
     const def = custom ?? (await loadLevelDef(id));
@@ -228,14 +235,19 @@ export class GameScreen {
     this.raf = requestAnimationFrame((t) => this.frame(t));
     clearInterval(this.metricsTimer);
     this.metricsTimer = window.setInterval(() => this.updateElf(), 500);
+    // 普通关卡每 10 秒自动存一次进度
+    clearInterval(this.ckptTimer);
+    this.ckptSavedPlacements = -1;
+    this.ckptTimer = window.setInterval(() => this.autoSaveCheckpoint(), 10000);
     requestAnimationFrame(() => this.board.resize());
-    await this.showStartCard();
+    await this.showStartCard(await loadCheckpoint(this.ckptId));
   }
 
   close() {
     clearTimeout(this.needTimer); this.needUntil = 0;
     this.needPinned = false;
     clearTimeout(this.needPressTimer);
+    clearInterval(this.ckptTimer);
     this.cancelPropPress();
     this.active = false;
     this.fixes = [];
@@ -260,6 +272,11 @@ export class GameScreen {
     }
     if (this.paused && this.brushUntil) this.brushUntil += dt * 1000;
     if (!this.paused && this.brushUntil && now > this.brushUntil) this.endBrush();
+    // 星级要求状态每秒刷新一次（时间类要求不点棋盘也会变化）
+    if (!this.paused && now - this.lastChipsAt > 1000) {
+      this.lastChipsAt = now;
+      this.renderObjectives();
+    }
     this.renderTimer();
     this.board.draw(now);
     this.fx.draw(now);
@@ -268,14 +285,31 @@ export class GameScreen {
 
   // ---------- 弹窗 ----------
 
-  private async showStartCard() {
+  private async showStartCard(resume: LevelCheckpoint | null = null) {
     const def = this.game.def;
     if (def.mode === 'custom') {
       this.paused = true;
-      await dialog(h('div.start-card', {}, h('h2', {}, def.name), h('p', {}, `${def.w} × ${def.h} 格 · ${def.colors.length} 色 · ${def.wrongCount} 颗等待归位`),
-        h('p.hint', {}, '这里没有倒计时，所有道具（含隐藏道具）免费畅用。计时器记录实际游玩时间，暂停不计时。'),
+      const resumeInfo = resume
+        ? h('div.ckpt-resume', {},
+            h('div.obj-head', {}, '💾 发现上次的进度'),
+            h('p.hint', {}, `已拼 ${Math.round(resume.progress * 100)}% · ${new Date(resume.savedAt).toLocaleString()} 保存`))
+        : null;
+      const buttons = resume
+        ? [{ label: '▶ 从上次的进度继续', value: 'resume', cls: 'primary big' }, { label: '↻ 重新开始', value: 'fresh', cls: 'big' }]
+        : [{ label: '开始我的创作', value: 'go', cls: 'primary big' }];
+      const v = await dialog(h('div.start-card', {}, h('h2', {}, def.name), h('p', {}, `${def.w} × ${def.h} 格 · ${def.colors.length} 色 · ${def.wrongCount} 颗等待归位`),
+        resumeInfo,
+        h('p.hint', {}, '这里没有倒计时，所有道具（含隐藏道具）免费畅用。计时器记录实际游玩时间，暂停不计时。进度每 10 秒自动保存。'),
         h('p.hint', {}, '点击凸起的方豆，找到它需要的底色；归位后它会融入画面。')),
-        [{ label: '开始我的创作', value: 'go', cls: 'primary big' }]);
+        buttons);
+      if (v === 'fresh') clearCheckpoint(this.ckptId);
+      if (v === 'resume' && this.game.restoreCheckpoint(resume!.game)) {
+        this.elfDrops = resume!.screen?.elfDrops ?? 0;
+        this.wished = new Set((resume!.screen?.wished ?? []) as PropId[]);
+        this.ckptSavedPlacements = this.game.stats.placements;
+        this.board.setGame(this.game, this.sprites);
+        this.renderAll();
+      }
       this.resume(); this.game.start(); return;
     }
     const tutorial = !save.data.seenTutorial;
@@ -287,11 +321,17 @@ export class GameScreen {
     if (el.fog.length) types.push('fog');
     if (el.lock) types.push('lock');
     if (el.bombs.length) types.push('bomb');
+    const resumeInfo = resume
+      ? h('div.ckpt-resume', {},
+          h('div.obj-head', {}, '💾 发现上次的进度'),
+          h('p.hint', {}, `已完成 ${Math.round(resume.progress * 100)}% · 剩余时间 ${fmtTime(resume.remaining)} · ${new Date(resume.savedAt).toLocaleString()} 自动保存`))
+      : null;
     const body = h(
       'div.start-card',
       {},
       h('h2', {}, `第${def.id}关 · ${def.name}`),
       h('div.tag.diff-' + def.difficulty, {}, def.difficulty),
+      resumeInfo,
       h(
         'div.facts',
         {},
@@ -299,7 +339,7 @@ export class GameScreen {
         h('div', {}, h('b', {}, String(def.capacity)), h('span', {}, '个空槽')),
         h('div', {}, h('b', {}, fmtTime(def.timeLimit)), h('span', {}, '限时')),
       ),
-      h('div.obj-list', {}, h('div.obj-head', {}, '★ 倒计时内通关'), ...def.objectives.map((o) => h('div', {}, `★ ${OBJECTIVE_ICON[o.type]} ${OBJECTIVE_TEXT[o.type](o.value)}`))),
+      h('div.obj-list', {}, h('div.obj-head', {}, '★ 倒计时内通关'), ...def.objectives.map((o) => h('div', {}, `★ ${OBJECTIVE_ICON[o.type]} ${OBJECTIVE_TEXT[o.type](o.value)}`)), h('p.hint', {}, '游戏进行中，顶部的三颗星要求会实时点亮 ✓ / ✗；进度每 10 秒自动保存一次，也可以在暂停菜单手动保存。')),
       types.length
         ? h(
             'div.elements-intro',
@@ -320,11 +360,22 @@ export class GameScreen {
           )
         : null,
     );
-    await dialog(body, [{ label: '开始', value: 'go', cls: 'primary big' }]);
+    const buttons = resume
+      ? [{ label: '▶ 从上次的进度继续', value: 'resume', cls: 'primary big' }, { label: '↻ 重新开始', value: 'fresh', cls: 'big' }]
+      : [{ label: '开始', value: 'go', cls: 'primary big' }];
+    const v = await dialog(body, buttons);
     save.update((d) => {
       d.seenTutorial = true;
       for (const t of types) if (!d.seenElements.includes(t)) d.seenElements.push(t);
     });
+    if (v === 'fresh') clearCheckpoint(this.ckptId);
+    if (v === 'resume' && this.game.restoreCheckpoint(resume!.game)) {
+      this.elfDrops = resume!.screen?.elfDrops ?? 0;
+      this.wished = new Set((resume!.screen?.wished ?? []) as PropId[]);
+      this.ckptSavedPlacements = this.game.stats.placements;
+      this.board.setGame(this.game, this.sprites);
+      this.renderAll();
+    }
     this.paused = false;
     this.game.start();
     this.lastFrame = performance.now();
@@ -332,17 +383,66 @@ export class GameScreen {
     this.elf.say(['开始啦，加油！', '一起把画拼好吧～', '我会在旁边给你打气！'][Math.floor(Math.random() * 3)], 2200, true);
   }
 
+  // ---------- 关卡存档 ----------
+
+  private buildCheckpoint(): LevelCheckpoint {
+    const def = this.game.def;
+    return {
+      levelId: this.ckptId,
+      savedAt: Date.now(),
+      progress: this.game.progress,
+      remaining: def.mode === 'custom' ? 0 : Math.max(0, this.game.timeLeft),
+      game: this.game.saveCheckpoint(),
+      screen: { elfDrops: this.elfDrops, wished: [...this.wished] },
+      // 自定义作品带上关卡快照：小画室的「未完成的创作」入口可凭它直接续拼，无需重新上传图片
+      ...(def.mode === 'custom'
+        ? { name: def.name, def: { key: def.key, name: def.name, w: def.w, h: def.h, colors: [...def.colors], target: Array.from(def.target), beads: Array.from(def.beads) } }
+        : {}),
+    };
+  }
+
+  /** 自动保存：只在棋盘有新变化时写，避免空转 */
+  private autoSaveCheckpoint() {
+    if (!this.active || this.game.state !== 'playing' || this.finishing) return;
+    if (this.game.stats.placements <= 0 && this.game.stats.newChains <= 0) return; // 只是倒计时在走、一颗豆都没动过（归位或开新链都算动过），不存
+    if (this.game.stats.placements === this.ckptSavedPlacements) return;
+    this.ckptSavedPlacements = this.game.stats.placements;
+    saveCheckpoint(this.buildCheckpoint());
+  }
+
+  /** 手动保存（暂停菜单里点）；返回是否成功保存 */
+  private manualSaveCheckpoint(): boolean {
+    if (this.game.state !== 'playing') return false;
+    if (this.game.stats.placements <= 0 && this.game.stats.newChains <= 0) return false; // 没有实际操作就没有可存的进度
+    this.ckptSavedPlacements = this.game.stats.placements;
+    saveCheckpoint(this.buildCheckpoint());
+    return true;
+  }
+
   private async pause() {
     if (this.paused || this.game.state !== 'playing') return;
     this.paused = true;
-    const v = await openSettings([
-      { label: '重新开始', value: 'restart' },
-      { label: '关卡地图', value: 'map' },
-    ]);
+    const buttons: { label: string; value: string }[] = [];
+    if (this.game.progress > 0) buttons.push({ label: '💾 保存进度', value: 'save' });
+    buttons.push({ label: '重新开始', value: 'restart' }, { label: '关卡地图', value: 'map' });
+    const v = await openSettings(buttons);
     this.board.colorBlind = save.data.settings.colorBlind;
     this.renderNeed();
-    if (v === 'restart') return this.replay();
-    if (v === 'map') return this.host.toMap();
+    if (v === 'save') {
+      if (this.manualSaveCheckpoint()) toast('💾 进度已保存，下次进入本关可以继续');
+      else toast('还没有可保存的进度');
+      this.resume();
+      return;
+    }
+    if (v === 'restart') {
+      clearCheckpoint(this.ckptId);
+      return this.replay();
+    }
+    if (v === 'map') {
+      // 离开关卡前把进度存一份，下次进来可以接着拼
+      if (this.game.state === 'playing' && this.game.progress > 0) this.manualSaveCheckpoint();
+      return this.host.toMap();
+    }
     this.resume();
   }
 
@@ -416,8 +516,10 @@ export class GameScreen {
       const changed = g.reviveWithBroom(Math.random) ?? [];
       this.popCells(changed);
       toast('洗牌完成，空槽清空！');
-    } else if (v === 'retry') return this.replay();
-    else return this.host.toMap();
+    } else if (v === 'retry') {
+      clearCheckpoint(this.ckptId);
+      return this.replay();
+    } else return this.host.toMap();
     this.trayHidden.clear();
     this.renderAll();
     this.elf.react('clap');
@@ -430,6 +532,7 @@ export class GameScreen {
     this.finishing = true;
     this.endModes();
     const g = this.game;
+    clearCheckpoint(this.ckptId); // 通关后清掉中断存档
     if (g.def.mode === 'custom') {
       const best = customRecords().filter(r => r.key === g.def.key).reduce((n, r) => Math.min(n, r.seconds), Infinity);
       const stored = recordCustom({ key: g.def.key, name: g.def.name, seconds: g.playedSeconds, propsUsed: g.stats.propsUsed, completedAt: Date.now() });
@@ -1357,16 +1460,27 @@ export class GameScreen {
     this.renderObjectives();
   }
 
+  /** 三个星级要求的实时达成状态：✓ 绿 = 当前已达成，✗ 红 = 未达成/已失败 */
   private renderObjectives() {
     const g = this.game;
+    if (g.def.mode === 'custom') {
+      this.elObjectives.replaceChildren();
+      return;
+    }
+    const chip = (met: boolean, title: string, icon: string, label: string, extra = '', type = '') =>
+      h('span.obj-chip' + (met ? '.ok' : '.no'), { 'data-obj': type || undefined, title },
+        h('span.mark', {}, met ? '✓' : '✗'), ` ${icon} ${label}${extra}`);
+    const baseMet = !g.overtime;
     this.elObjectives.replaceChildren(
+      chip(baseMet, '一星：倒计时内通关；超时后通关只得半星', '⏱', '限时通关'),
       ...g.def.objectives.map((o: Objective) => {
-        const met = g.objectiveMet(o) && !g.overtime;
+        const met = !g.overtime && g.objectiveMet(o);
         let extra = '';
         if (o.type === 'maxCombo') extra = ` ${g.stats.maxCombo}/${o.value}`;
         if (o.type === 'slotPeak') extra = ` ${g.stats.slotPeak}/${o.value}`;
         if (o.type === 'newChains') extra = ` ${g.stats.newChains}/${o.value}`;
-        return h('span.obj-chip' + (met ? '.ok' : ''), { 'data-obj': o.type, title: OBJECTIVE_TEXT[o.type](o.value) }, OBJECTIVE_ICON[o.type] + extra);
+        const name = OBJECTIVE_TEXT[o.type](o.value).split('：')[0];
+        return chip(met, OBJECTIVE_TEXT[o.type](o.value), OBJECTIVE_ICON[o.type], name, extra, o.type);
       }),
     );
   }
