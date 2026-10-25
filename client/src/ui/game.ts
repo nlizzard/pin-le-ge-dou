@@ -4,7 +4,7 @@ import { ELEMENT_INFO, LEVEL_COUNT, loadLevelDef, OBJECTIVE_ICON, OBJECTIVE_TEXT
 import { COMMON_PROPS, ELF_DROP_CHANCE, ELF_DROPS_PER_GAME, HIDDEN_PROPS, PROP_MAP, PROPS, rollCommon, rollHidden, WISHES_PER_GAME, type PropId } from '../core/props';
 import { BoardView } from '../render/board';
 import { Fx } from '../render/fx';
-import { buildSprites, type SpriteSet } from '../render/sprites';
+import { buildSprites, separateColors, type SpriteSet } from '../render/sprites';
 import { addProp, propCount, save } from '../save';
 import { recordLevelWin } from '../levelProgress';
 import { beadStyle, dialog, floatText, fmtTime, h, starRow, toast } from './dom';
@@ -203,6 +203,7 @@ export class GameScreen {
     (window as any).__pp = this; // 调试 / 自动化测试用
     (window as any).__grant = grantProp;
     const def = custom ?? (await loadLevelDef(id));
+    def.colors = separateColors(def.colors); // 相近色拉开，减轻眼疲劳
     this.game = new Game(def);
     this.sprites = buildSprites(def.colors);
     this.board.colorBlind = save.data.settings.colorBlind;
@@ -475,6 +476,7 @@ export class GameScreen {
     this.haptic([60, 40, 120]);
     this.board.shakeBoard();
     this.updateElf();
+    clearCheckpoint(this.ckptId); // 爆槽即失败：这局 10 秒自动存的进度作废；选择复活后立刻重建
     const c = this.board.cellClientCenter(cell);
     this.fx.burst(c.x, c.y, { n: 20, colors: ['#ff5252', '#ff8a80'], speed: 6 });
     await new Promise((r) => setTimeout(r, 500));
@@ -517,9 +519,9 @@ export class GameScreen {
       this.popCells(changed);
       toast('洗牌完成，空槽清空！');
     } else if (v === 'retry') {
-      clearCheckpoint(this.ckptId);
       return this.replay();
     } else return this.host.toMap();
+    this.manualSaveCheckpoint(); // 复活成功：马上重建中断存档，续命后的进度不丢
     this.trayHidden.clear();
     this.renderAll();
     this.elf.react('clap');

@@ -424,7 +424,8 @@ export class BoardView {
           ctx.fillRect(px, py, s + 0.5, s + 0.5);
         }
         if (b >= 0) {
-          if (b !== t) ctx.drawImage(sp.beads[b], px, py, s, s);
+          // 归位的豆不再融平进底色，保留同色浮雕轮廓（参考图效果）
+          ctx.drawImage(b === t ? sp.settled[b] : sp.beads[b], px, py, s, s);
           if (g.ice[i]) drawIce(ctx, px, py, s);
           if (g.locked[i]) drawLock(ctx, px, py, s, g.def.colors[g.lockColor]);
           if (g.star[i]) drawStar(ctx, px + s * 0.8, py + s * 0.2, s * 0.17, pulse);
