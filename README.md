@@ -126,9 +126,9 @@ docker compose logs -f --tail=100
 
 ```yaml
 services:
-  picture-play:
+  pin-le-ge-dou:
     build: .
-    image: picture-play:latest
+    image: pin-le-ge-dou:latest
     ports:
       - "3000:3000"
     volumes:
@@ -161,11 +161,13 @@ docker compose logs --tail=100
 
 | 运行方式 | 默认数据库位置 |
 | --- | --- |
-| 源码运行 | `项目目录/data/picture-play.db` |
-| Docker 容器内 | `/data/picture-play.db` |
-| 当前 Compose 对应的宿主机 | `/home/a123/docker_data/pin_le_ge_dou/picture-play.db` |
+| 源码运行 | `项目目录/data/pin-le-ge-dou.db` |
+| Docker 容器内 | `/data/pin-le-ge-dou.db` |
+| 当前 Compose 对应的宿主机 | `/home/a123/docker_data/pin_le_ge_dou/pin-le-ge-dou.db` |
 
-数据库保存关卡定义、闯关进度、星级、背包、设置、创作用时、作品墙与中断存档。为兼容已有存档，数据库文件名和浏览器存储键仍沿用 `picture-play`。
+数据库保存关卡定义、闯关进度、星级、背包、设置、创作用时、作品墙与中断存档。数据库文件名和浏览器存储键统一使用 `pin-le-ge-dou`。升级时会自动复制旧版数据库和迁移浏览器缓存，旧数据库保留作备份；升级前请停止旧服务并备份数据目录。
+
+从旧名称版本升级时，先在更新代码前执行 `docker compose down` 停止旧服务，再更新代码并重建；服务名与镜像名均已改为 `pin-le-ge-dou`。原数据挂载路径保持不变。
 
 **全新空目录首次启动时包含内置关卡，没有历史游玩存档。** 从源码部署迁移到 Docker 时，先停止原服务，把原 `data` 目录内容完整复制到挂载目录，再启动容器。
 

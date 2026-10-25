@@ -1,9 +1,10 @@
+import './storageMigration';
 /**
  * 自由创作的最近用时记录：主存是本地 SQLite（服务端 /api/custom-records），
  * localStorage 只作展示缓存与离线兜底，恢复联网后以下一次写入为准。
  */
 export interface CustomRecord { key: string; name: string; seconds: number; propsUsed: number; completedAt: number }
-const KEY = 'picture-play-custom-records';
+const KEY = 'pin-le-ge-dou-custom-records';
 const LIMIT = 30;
 let cache: CustomRecord[] | null = null;
 

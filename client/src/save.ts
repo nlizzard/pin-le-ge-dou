@@ -1,3 +1,4 @@
+import './storageMigration';
 /**
  * 存档：localStorage 一份 + 服务端一份（多设备共享进度）。
  * 服务端不可达时照常游玩，下次能连上时自动同步。
@@ -31,8 +32,8 @@ export interface SaveData {
   seenElements: string[];
 }
 
-const KEY = 'picture-play-save';
-const KEY_ACCESS = 'picture-play-access-key';
+const KEY = 'pin-le-ge-dou-save';
+const KEY_ACCESS = 'pin-le-ge-dou-access-key';
 
 export function defaultSave(): SaveData {
   return {

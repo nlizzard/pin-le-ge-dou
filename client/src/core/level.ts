@@ -405,7 +405,7 @@ export const OBJECTIVE_ICON: Record<ObjectiveType, string> = {
 };
 
 /* ---------- 关卡数据来自本地 SQLite（服务端）时的读取层 ----------
- * 服务端把 200 关的完整定义写进 data/picture-play.db 并提供 /api/levels。
+ * 服务端把 200 关的完整定义写进 data/pin-le-ge-dou.db 并提供 /api/levels。
  * 连不上服务端时自动退回本地确定性生成，游戏照常可玩。 */
 
 export interface LevelInfo {

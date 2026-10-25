@@ -1,5 +1,6 @@
+import { migrateDatabase } from './storageMigration.js';
 // 拼了个豆 服务端：托管前端静态文件 + 本地 SQLite（node:sqlite）存档
-// 数据都在 data/picture-play.db：关卡定义、闯关进度、自由创作记录、作品墙
+// 数据都在 data/pin-le-ge-dou.db：关卡定义、闯关进度、自由创作记录、作品墙
 import Fastify from 'fastify';
 import fastifyStatic from '@fastify/static';
 import { DatabaseSync } from 'node:sqlite';
@@ -13,12 +14,13 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const PORT = Number(process.env.PORT || 3000);
 const DATA_DIR = process.env.DATA_DIR || path.join(__dirname, '..', 'data');
 const ACCESS_KEY = process.env.ACCESS_KEY || '';
-const DB_FILE = path.join(DATA_DIR, 'picture-play.db');
+const DB_FILE = path.join(DATA_DIR, 'pin-le-ge-dou.db');
 const LEGACY_SAVE = path.join(DATA_DIR, 'save.json'); // 旧版 JSON 存档，首启时迁入 SQLite
 const LEVELS_JSON = path.join(__dirname, 'generated', 'levels.json'); // npm run build:levels 生成
 const PUBLIC_DIR = [path.join(__dirname, 'public'), path.join(__dirname, '..', 'dist')].find((d) => existsSync(d));
 
 await mkdir(DATA_DIR, { recursive: true });
+migrateDatabase(DATA_DIR);
 
 const db = new DatabaseSync(DB_FILE);
 db.exec(`

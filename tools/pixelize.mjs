@@ -222,7 +222,7 @@ export function slug(s) {
 
 export async function loadInput(src) {
   if (/^https?:\/\//.test(src)) {
-    const res = await fetch(src, { headers: { 'user-agent': 'picture-play-pixelize/1.0' } });
+    const res = await fetch(src, { headers: { 'user-agent': 'pin-le-ge-dou-pixelize/1.0' } });
     if (!res.ok) throw new Error(`下载失败 ${res.status}: ${src}`);
     return Buffer.from(await res.arrayBuffer());
   }

@@ -1,7 +1,7 @@
 services:
-  picture-play:
+  pin-le-ge-dou:
     build: .
-    image: picture-play:latest
+    image: pin-le-ge-dou:latest
     ports:
       - "3000:3000"
     volumes:

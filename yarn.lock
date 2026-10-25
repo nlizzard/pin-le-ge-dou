@@ -1946,9 +1946,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"picture-play@workspace:.":
+"pin-le-ge-dou@workspace:.":
   version: 0.0.0-use.local
-  resolution: "picture-play@workspace:."
+  resolution: "pin-le-ge-dou@workspace:."
   dependencies:
     "@fastify/static": "npm:^8.0.0"
     concurrently: "npm:^9.0.0"

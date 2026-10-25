@@ -1,3 +1,4 @@
+import './storageMigration';
 /**
  * 关卡中断存档：主存是本地 SQLite（服务端 /api/checkpoint/:id），localStorage 兜底。
  * 读取时本地与服务端都查，取保存时间较新的一份。
@@ -16,7 +17,7 @@ export interface LevelCheckpoint {
   screen: { elfDrops: number; wished: string[] };
 }
 
-const key = (id: string) => `picture-play-ckpt-${id}`;
+const key = (id: string) => `pin-le-ge-dou-ckpt-${id}`;
 
 function parse(raw: unknown, id: string): LevelCheckpoint | null {
   if (!raw || typeof raw !== 'object') return null;
@@ -84,7 +85,7 @@ export function clearCheckpoint(id: string): void {
 
 export interface CkptSummary { levelId: string; savedAt: number; progress: number; name?: string }
 
-const PREFIX = 'picture-play-ckpt-';
+const PREFIX = 'pin-le-ge-dou-ckpt-';
 const summaryCache = new Map<string, CkptSummary>();
 let lastSnapshot = '';
 let scannedLocal = false;

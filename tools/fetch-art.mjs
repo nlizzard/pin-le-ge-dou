@@ -38,7 +38,7 @@ function parseArgs(argv) {
 
 async function search(q, count) {
   const url = `${API}?q=${encodeURIComponent(q)}&license=cc0,pdm&page_size=${Math.min(50, count * 3)}&mature=false`;
-  const res = await fetch(url, { headers: { 'user-agent': 'picture-play-fetch-art/1.0 (personal game)' } });
+  const res = await fetch(url, { headers: { 'user-agent': 'pin-le-ge-dou-fetch-art/1.0 (personal game)' } });
   if (!res.ok) throw new Error(`搜索失败 ${res.status}（${q}）`);
   const body = await res.json();
   // 偏好 png / svg（通常是插画、透明背景），其次 jpg

@@ -1,3 +1,4 @@
+import { migrateGallery } from './storageMigration';
 import type { LevelDef, PatternGrid } from './core/level';
 import { defaultCardOptions, type CardOptions, type ShareData } from './render/shareCard';
 
@@ -136,14 +137,14 @@ function deserializeWork(raw: any): WallWork | null {
 let opening: Promise<IDBDatabase> | undefined;
 function database(): Promise<IDBDatabase> {
   if (!opening) opening = new Promise<IDBDatabase>((resolve, reject) => {
-    const request = indexedDB.open('picture-play-gallery', 1);
+    const request = indexedDB.open('pin-le-ge-dou-gallery', 1);
     request.onupgradeneeded = () => {
       request.result.createObjectStore('works', { keyPath: 'id' });
       request.result.createObjectStore('settings');
     };
     request.onsuccess = () => {
       request.result.onversionchange = () => { request.result.close(); opening = undefined; };
-      resolve(request.result);
+      void migrateGallery(request.result).then(() => resolve(request.result), error => { request.result.close(); reject(error); });
     };
     request.onerror = () => { opening = undefined; reject(request.error); };
     request.onblocked = () => { opening = undefined; reject(new Error('请关闭其他页面后重试')); };

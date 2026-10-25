@@ -27,7 +27,7 @@ const SIZE = +(flag('size', 24) || 24);
 const COLORS = +(flag('colors', 8) || 8);
 
 const API = 'https://commons.wikimedia.org/w/api.php';
-const UA = { 'user-agent': 'picture-play-fetch-commons/1.0 (personal game)' };
+const UA = { 'user-agent': 'pin-le-ge-dou-fetch-commons/1.0 (personal game)' };
 
 async function search(q) {
   const url = `${API}?action=query&format=json&generator=search&gsrsearch=${encodeURIComponent(q)}&gsrnamespace=6&gsrlimit=40&prop=imageinfo&iiprop=url%7Cextmetadata%7Cmime%7Csize&iiurlwidth=640`;
