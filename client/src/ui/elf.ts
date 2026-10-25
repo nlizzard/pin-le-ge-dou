@@ -180,7 +180,7 @@ export class Elf {
     else if (fxKind === 2) floatText(['♪', '♫', '♬'][Math.floor(Math.random() * 3)], cx + (Math.random() - 0.5) * 40, cy, 'note');
     else if (fxKind === 3) this.fx.burst(cx, cy, { n: 16, shape: 'square', speed: 5, size: 5, life: 40, gravity: 0.12 });
     else this.fx.hearts(cx, cy, 3);
-    this.bump(['bounce', 'spin', 'wiggle'][Math.floor(Math.random() * 3)]);
+    this.bump(['bounce', 'wiggle', 'jump'][Math.floor(Math.random() * 3)]);
     sfx.click();
 
     // 越连点越激动
