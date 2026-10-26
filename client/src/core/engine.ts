@@ -33,6 +33,11 @@ export const STAR_BONUS = 3; // 秒
 export const MAX_REVIVES = 2;
 export const UNDO_STEPS = 3;
 
+/** 开局锁住的空槽数：容量够大时锁 2 个，玩家可手动开启（开启后本关最多 2 星） */
+export function defaultLockedSlots(capacity: number): number {
+  return capacity >= 6 ? 2 : capacity >= 4 ? 1 : 0;
+}
+
 export interface Stats {
   placements: number;
   newChains: number;
@@ -67,6 +72,10 @@ export class Game {
   /** 空槽里的豆子颜色，按颜色排序 */
   slots: number[] = [];
   capacity: number;
+  /** 锁住的空槽（容量里的最后几格）；开启后清零 */
+  lockedSlots = 0;
+  /** 是否开启过锁住的空槽：开启后本关最多 2 星 */
+  slotsUnlocked = false;
   /** 所需颜色 → 需要它的空位 */
   readonly emptyByColor = new Map<number, Set<number>>();
   /** 豆子颜色 → 放着这种错位豆子的格子（含冰封 / 锁链格） */
@@ -215,7 +224,20 @@ export class Game {
   }
 
   get freeSlots() {
-    return this.capacity - this.slots.length;
+    return this.capacity - this.lockedSlots - this.slots.length;
+  }
+
+  /** 当前可用的空槽数（不含锁住的） */
+  get usableCapacity() {
+    return this.capacity - this.lockedSlots;
+  }
+
+  /** 开启锁住的空槽；返回是否真的开启了 */
+  unlockSlots(): boolean {
+    if (this.lockedSlots <= 0) return false;
+    this.lockedSlots = 0;
+    this.slotsUnlocked = true;
+    return true;
   }
 
   uses(id: PropId) {
@@ -360,6 +382,90 @@ export class Game {
     this.countPlacements(1);
     const won = this.checkWin();
     return { type: 'moved', moves: [{ kind: 'slotToCell', color, slot: k, to: dest }], placed: 1, newChain: false, won, groupSize: 1, moved: 1, events: this.ev };
+  }
+
+  // ---------- 手动玩法：先点豆子（浮起），再点目的地 ----------
+  //
+  // 与 tap() 的区别：豆子不会自己决定去空孔还是空槽，由玩家点目的地；
+  // 腾出的格子也不会从空槽自动回填，空槽里的豆子要玩家点空槽才出来。
+  // 「自动填豆」只是界面层的捷径：点到的豆子有同色空孔时直接调用 placeGroup。
+
+  /** 同色空孔数 */
+  holesFor(color: number) {
+    return this.emptyByColor.get(color)?.size ?? 0;
+  }
+
+  /**
+   * 把浮起的一组错位豆子放进同色空孔。near ≥ 0 时离 near 近的孔优先（玩家点的那个孔），
+   * 否则每颗豆子各找离自己最近的孔。孔不够时只放够用的几颗，其余留在原地。
+   */
+  placeGroup(cells: number[], near = -1): TapResult {
+    if (this.state !== 'playing' || !cells.length) return { type: 'ignored' };
+    const color = this.beads[cells[0]];
+    if (color < 0 || cells.some((c) => !this.movable(c) || this.beads[c] !== color)) return { type: 'ignored' };
+    const empties = this.emptyByColor.get(color);
+    const n = Math.min(cells.length, empties?.size ?? 0);
+    if (!n) return { type: 'ignored' };
+    this.ev = emptyEvents();
+    this.pushUndo();
+    const moves: Move[] = [];
+    for (const cell of cells.slice(0, n)) {
+      const dest = this.nearest(empties, near >= 0 ? near : cell);
+      this.setBead(cell, -1);
+      this.setBead(dest, color);
+      moves.push({ kind: 'cellToCell', color, from: cell, to: dest });
+    }
+    this.countPlacements(n);
+    this.tickBombs();
+    const won = this.checkWin();
+    return { type: 'moved', moves, placed: n, newChain: false, won, groupSize: cells.length, moved: n, events: this.ev };
+  }
+
+  /** 把浮起的一组错位豆子放进空槽；放不下的留在原地，一格都没有 = 爆槽 */
+  groupToTray(cells: number[]): TapResult {
+    if (this.state !== 'playing' || !cells.length) return { type: 'ignored' };
+    const color = this.beads[cells[0]];
+    if (color < 0 || cells.some((c) => !this.movable(c) || this.beads[c] !== color)) return { type: 'ignored' };
+    if (this.freeSlots <= 0) {
+      this.state = 'burst';
+      return { type: 'burst', cell: cells[0], group: cells };
+    }
+    this.ev = emptyEvents();
+    this.pushUndo();
+    const moves: Move[] = [];
+    // 放不下整组时沿用经典分批规则：优先带走「腾出的孔正好是空槽里颜色」的豆子
+    const movers = this.slotBatch(cells);
+    for (const cell of movers) {
+      this.setBead(cell, -1);
+      moves.push({ kind: 'cellToSlot', color, from: cell, slot: this.insertSlot(color) });
+    }
+    if (this.freezeLeft <= 0) this.stats.newChains++;
+    this.stats.slotPeak = Math.max(this.stats.slotPeak, this.slots.length);
+    this.tickBombs();
+    return { type: 'moved', moves, placed: 0, newChain: true, won: false, groupSize: cells.length, moved: movers.length, events: this.ev };
+  }
+
+  /** 空槽里某种颜色的豆子飞进同色空孔（离 near 近的优先） */
+  trayToHoles(color: number, near = -1): TapResult {
+    if (this.state !== 'playing') return { type: 'ignored' };
+    const empties = this.emptyByColor.get(color);
+    const have = this.slots.filter((c) => c === color).length;
+    const n = Math.min(have, empties?.size ?? 0);
+    if (!n) return { type: 'ignored' };
+    this.ev = emptyEvents();
+    this.pushUndo();
+    const moves: Move[] = [];
+    for (let k = 0; k < n; k++) {
+      const slot = this.slots.indexOf(color);
+      this.slots.splice(slot, 1);
+      const dest = this.nearest(empties, near);
+      this.setBead(dest, color);
+      moves.push({ kind: 'slotToCell', color, slot, to: dest });
+    }
+    this.countPlacements(n);
+    this.tickBombs();
+    const won = this.checkWin();
+    return { type: 'moved', moves, placed: n, newChain: false, won, groupSize: n, moved: n, events: this.ev };
   }
 
   // ---------- 道具（引擎部分） ----------
@@ -513,6 +619,8 @@ export class Game {
       beads: Array.from(this.beads),
       slots: [...this.slots],
       capacity: this.capacity,
+      lockedSlots: this.lockedSlots,
+      slotsUnlocked: this.slotsUnlocked,
       ice: Array.from(this.ice),
       locked: Array.from(this.locked),
       bomb: Array.from(this.bomb),
@@ -544,6 +652,8 @@ export class Game {
       this.beads.set(Int16Array.from(data.beads as number[]));
       this.slots = [...(data.slots as number[])];
       this.capacity = Number.isFinite(data.capacity as number) ? (data.capacity as number) : this.def.capacity;
+      if (Number.isFinite(data.lockedSlots as number)) this.lockedSlots = data.lockedSlots as number;
+      this.slotsUnlocked = !!data.slotsUnlocked;
       if (Array.isArray(data.ice) && data.ice.length === n) this.ice.set(Uint8Array.from(data.ice as number[]));
       if (Array.isArray(data.locked) && data.locked.length === n) this.locked.set(Uint8Array.from(data.locked as number[]));
       if (Array.isArray(data.bomb) && data.bomb.length === n) this.bomb.set(Int16Array.from(data.bomb as number[]));
@@ -665,7 +775,8 @@ export class Game {
   stars(): number {
     if (this.state !== 'won') return 0;
     if (this.overtime) return 0.5;
-    return 1 + this.def.objectives.filter((o) => this.objectiveMet(o)).length;
+    const stars = 1 + this.def.objectives.filter((o) => this.objectiveMet(o)).length;
+    return this.slotsUnlocked ? Math.min(2, stars) : stars;
   }
 
   finalScore(): number {

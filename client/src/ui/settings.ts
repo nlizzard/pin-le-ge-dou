@@ -3,6 +3,7 @@ import { save, type Settings } from '../save';
 import { dialog, h } from './dom';
 
 const LABELS: [keyof Settings, string, string][] = [
+  ['autoFill', '自动填豆', '点到的豆子已有同色空孔时直接飞过去，不用再点一次空孔；要进空槽的豆子仍由你点空槽决定'],
   ['sound', '音效', '点击、归位、爆破的声音'],
   ['vibrate', '震动', '手机上的触感反馈'],
   ['needBar', '空位提示', '点击「提示」后显示需求颜色 2 秒'],

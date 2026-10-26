@@ -1,5 +1,5 @@
 import { sfx, vibrate } from '../audio';
-import { Game, TIMER_TAP_LIMIT, type Events, type Move, type TapResult } from '../core/engine';
+import { defaultLockedSlots, Game, TIMER_TAP_LIMIT, type Events, type Move, type TapResult } from '../core/engine';
 import { ELEMENT_INFO, LEVEL_COUNT, loadLevelDef, OBJECTIVE_ICON, OBJECTIVE_TEXT, type ElementType, type Objective } from '../core/level';
 import { COMMON_PROPS, ELF_DROP_CHANCE, ELF_DROPS_PER_GAME, HIDDEN_PROPS, PROP_MAP, PROPS, rollCommon, rollHidden, WISHES_PER_GAME, type PropId } from '../core/props';
 import { BoardView } from '../render/board';
@@ -63,6 +63,12 @@ export class GameScreen {
   private finishing = false;
   private active = false;
   private fixes: { game: Game; cell: number; at: number; before?: (c: number) => void }[] = [];
+  /** 当前浮起的豆子：棋盘上的一组，或空槽里的某种颜色 */
+  private sel: { kind: 'board'; cells: number[]; color: number } | { kind: 'tray'; color: number } | null = null;
+  /** 同色连通区域（拼完时闪一下） */
+  private regions: number[][] = [];
+  private regionDone = new Set<number>();
+  private tipTimer = 0;
 
   // 本局状态
   private elfDrops = 0;
@@ -186,7 +192,7 @@ export class GameScreen {
           h('button.icon-btn.small', { onclick: () => this.board.zoomBy(1 / 1.4), title: '缩小 (-)' }, '−'),
         ),
       ),
-      h('div.side', {}, h('div.tray-panel', {}, this.elTrayInfo, this.elTray), this.elProps, h('p.props-help', {}, '单点使用 · 长按查看作用')),
+      h('div.side', {}, h('div.tray-panel', { onclick: () => void this.onTapTray(-1) }, this.elTrayInfo, this.elTray), this.elProps, h('p.props-help', {}, '单点使用 · 长按查看作用')),
     );
   }
 
@@ -205,6 +211,9 @@ export class GameScreen {
     const def = custom ?? (await loadLevelDef(id));
     def.colors = separateColors(def.colors); // 相近色拉开，减轻眼疲劳
     this.game = new Game(def);
+    // 闯关锁 2 个空槽：玩家可点开，但开了就拿不到第三颗星；自由创作没有星级，不锁
+    if (def.mode !== 'custom') this.game.lockedSlots = defaultLockedSlots(this.game.capacity);
+    this.sel = null;
     this.sprites = buildSprites(def.colors);
     this.board.colorBlind = save.data.settings.colorBlind;
     this.board.helperAt = -1;
@@ -227,6 +236,7 @@ export class GameScreen {
     this.elTitle.textContent = custom ? `自由创作 · ${def.name}` : `第${id}关 · ${def.name}`;
     this.elTimer.title = custom ? '实际游玩时间（暂停不计时）' : '点我加时！';
     this.board.setGame(this.game, this.sprites);
+    this.buildRegions();
     this.renderAll();
     this.setBanner(null);
     addEventListener('keydown', this.keyHandler);
@@ -309,6 +319,7 @@ export class GameScreen {
         this.wished = new Set((resume!.screen?.wished ?? []) as PropId[]);
         this.ckptSavedPlacements = this.game.stats.placements;
         this.board.setGame(this.game, this.sprites);
+        this.syncRegions();
         this.renderAll();
       }
       this.resume(); this.game.start(); return;
@@ -337,10 +348,11 @@ export class GameScreen {
         'div.facts',
         {},
         h('div', {}, h('b', {}, String(def.wrongCount)), h('span', {}, '颗放错')),
-        h('div', {}, h('b', {}, String(def.capacity)), h('span', {}, '个空槽')),
+        h('div', {}, h('b', {}, String(this.game.usableCapacity)), h('span', {}, this.game.lockedSlots ? `个空槽 +🔒${this.game.lockedSlots}` : '个空槽')),
         h('div', {}, h('b', {}, fmtTime(def.timeLimit)), h('span', {}, '限时')),
       ),
-      h('div.obj-list', {}, h('div.obj-head', {}, '★ 倒计时内通关'), ...def.objectives.map((o) => h('div', {}, `★ ${OBJECTIVE_ICON[o.type]} ${OBJECTIVE_TEXT[o.type](o.value)}`)), h('p.hint', {}, '游戏进行中，顶部的三颗星要求会实时点亮 ✓ / ✗；进度每 10 秒自动保存一次，也可以在暂停菜单手动保存。')),
+      h('div.obj-list', {}, h('div.obj-head', {}, '★ 倒计时内通关'), ...def.objectives.map((o) => h('div', {}, `★ ${OBJECTIVE_ICON[o.type]} ${OBJECTIVE_TEXT[o.type](o.value)}`)),
+        this.game.lockedSlots ? h('div', {}, `🔒 另有 ${this.game.lockedSlots} 个锁住的空槽，点它可以开启，但开启后本关最多 2 颗星`) : null, h('p.hint', {}, '游戏进行中，顶部的三颗星要求会实时点亮 ✓ / ✗；进度每 10 秒自动保存一次，也可以在暂停菜单手动保存。')),
       types.length
         ? h(
             'div.elements-intro',
@@ -354,9 +366,10 @@ export class GameScreen {
             'ol.howto',
             {},
             h('li', {}, '连续色块是正确底色，凸起的方豆就是放错了；归位后会融入底色。'),
-            h('li', {}, '点一颗放错的豆子，和它连着的同色错位豆子会一起移动：有空位需要就只飞够用的几颗；没有就进下方空槽。整组放不下时，优先带走能触发回填的豆子，否则按容量分批并尽量留一格。'),
-            h('li', {}, '它原来的格子会变成闪烁的空位，去点空位需要的颜色，就能连锁归位。'),
-            h('li', {}, '空槽满了会爆槽失败；时间用完还能继续，但只能拿半星。点计时器可以加时（每局 3 次）。'),
+            h('li', {}, '点一颗放错的豆子，它和连着的同色错位豆子会一起浮起来；再点一个同色的空孔，它们就填进去。'),
+            h('li', {}, '没有同色空孔时，点下方的空槽把浮起的豆子先放进去；之后点空槽里的豆子、再点同色空孔，就能把它们拿出来。'),
+            h('li', {}, '设置里的「自动填豆」：点到的豆子已经有同色空孔时，直接飞过去，不用再点空孔（进空槽仍由你决定）。'),
+            h('li', {}, '空槽满了再放会爆槽失败；带 🔒 的空槽点开就能用，但本关最多 2 颗星。时间用完还能继续，但只能拿半星。'),
             h('li', {}, '右上角的啵啵：点它有惊喜，连点可能掉道具（每局 3 个），长按可以许愿（每局 3 次）。'),
           )
         : null,
@@ -375,6 +388,7 @@ export class GameScreen {
       this.wished = new Set((resume!.screen?.wished ?? []) as PropId[]);
       this.ckptSavedPlacements = this.game.stats.placements;
       this.board.setGame(this.game, this.sprites);
+      this.syncRegions();
       this.renderAll();
     }
     this.paused = false;
@@ -572,6 +586,7 @@ export class GameScreen {
       h('h2', {}, g.overtime ? '加时通关！' : stars >= 3 ? '完美通关！' : '通关！'),
       row,
       g.overtime ? h('p.hint', {}, '超时后通关只能得半星，下次试试在倒计时内完成～') : null,
+      !g.overtime && g.slotsUnlocked ? h('p.hint', {}, '本局开启了锁住的空槽，最多 2 颗星；下次试试不开锁槽通关～') : null,
       draws ? h('p.hint.gold', {}, `三星奖励：扭蛋 ${draws} 次${g.cloverActive ? '（四叶草加成）' : ''}`) : null,
       h(
         'div.stats',
@@ -621,22 +636,184 @@ export class GameScreen {
   private onTapCell(i: number) {
     if (this.paused || this.game.state !== 'playing') return;
     this.lastActionAt = performance.now();
-    const res = this.game.tap(i);
-    this.handleResult(res);
-  }
-
-  private onTapSlot(k: number) {
-    if (this.paused || this.game.state !== 'playing') return;
-    const res = this.game.tapSlot(k);
-    if (res.type === 'ignored') {
-      toast('还没有空位需要这个颜色');
+    const g = this.game;
+    const b = g.beads[i];
+    const t = g.target[i];
+    // 冰封 / 锁链：沿用原来的点击反馈（敲冰、提示解锁）
+    if (b >= 0 && b !== t && (g.ice[i] || g.locked[i])) {
+      this.clearSel();
+      this.handleResult(g.tap(i));
+      return;
+    }
+    const sel = this.sel;
+    if (sel) {
+      if (sel.kind === 'board' && sel.cells.includes(i)) {
+        // 再点一下浮起的豆子：放回去
+        this.clearSel();
+        sfx.drop();
+        return;
+      }
+      if (b < 0) {
+        if (t !== sel.color) return this.wrongHole();
+        const res = sel.kind === 'board' ? g.placeGroup(sel.cells, i) : g.trayToHoles(sel.color, i);
+        const from = sel.kind === 'board' ? sel.cells : [];
+        this.clearSel();
+        this.handleResult(res, from, sel.kind === 'tray');
+        return;
+      }
+      if (g.movable(i)) return this.lift(i); // 换一组
+      return this.wrongHole(); // 点到了已归位的豆子
+    }
+    if (b < 0) {
+      sfx.pick();
+      this.showTip(g.slots.includes(t) ? '点下方空槽里的豆子，再点这个孔' : '先点一颗放错的豆子，再点同色的孔');
+      return;
+    }
+    if (b === t) {
       sfx.locked();
       return;
     }
-    this.handleResult(res);
+    this.lift(i);
   }
 
-  private handleResult(res: TapResult) {
+  // ---------- 浮起 / 放下 ----------
+
+  private get autoFill() {
+    return save.data.settings.autoFill;
+  }
+
+  /** 点一颗错位豆子：有同色空孔且开了自动填豆就直接飞过去，否则整组浮起等玩家点目的地 */
+  private lift(i: number) {
+    const g = this.game;
+    const cells = g.groupAt(i);
+    if (!cells.length) return;
+    const color = g.beads[i];
+    if (this.autoFill && g.holesFor(color) > 0) {
+      this.clearSel();
+      this.handleResult(g.placeGroup(cells));
+      return;
+    }
+    this.sel = { kind: 'board', cells, color };
+    this.board.setLifted(cells);
+    this.board.setGroupPreview([]);
+    sfx.pick();
+    this.haptic(8);
+    if (cells.length > 1) {
+      const c = this.board.cellClientCenter(i);
+      floatText(`×${cells.length}`, c.x, c.y - 14);
+    }
+    this.renderTray();
+  }
+
+  private clearSel() {
+    if (!this.sel) return;
+    this.sel = null;
+    this.board.setLifted([]);
+    this.renderTray();
+  }
+
+  /** 棋盘变了（道具、撤回、洗牌）之后，浮起的豆子不再成立就放下 */
+  private validateSel() {
+    const g = this.game;
+    const sel = this.sel;
+    if (!sel) return;
+    const ok = sel.kind === 'board'
+      ? sel.cells.every((c) => g.movable(c) && g.beads[c] === sel.color)
+      : g.slots.includes(sel.color);
+    if (!ok) {
+      this.sel = null;
+      this.board.setLifted([]);
+    }
+  }
+
+  private wrongHole() {
+    sfx.wrongHole();
+    this.haptic(15);
+    this.showTip('要放在相同颜色孔上哦');
+  }
+
+  /** 录屏里那条从左侧滑入的紫色提示条 */
+  private showTip(text: string) {
+    this.setBanner(h('div.tray-tip', {}, text));
+    this.elBanner.classList.add('tip');
+    clearTimeout(this.tipTimer);
+    this.tipTimer = window.setTimeout(() => {
+      this.elBanner.classList.remove('tip');
+      this.updateBanner();
+    }, 1400);
+  }
+
+  /** 点空槽（k = 点到的格子，-1 = 空白处） */
+  private async onTapTray(k: number) {
+    const g = this.game;
+    if (this.paused || g.state !== 'playing') return;
+    this.lastActionAt = performance.now();
+    if (k >= g.usableCapacity && k < g.capacity && g.lockedSlots > 0) {
+      await this.promptUnlock();
+      return;
+    }
+    const sel = this.sel;
+    // An occupied slot is a selection target, even while board beads are lifted.
+    // Only an empty slot / panel background means "put this group in the tray".
+    const clickedBead = k >= 0 && k < g.slots.length;
+    if (sel?.kind === 'board' && !clickedBead) {
+      if (g.freeSlots <= 0 && g.lockedSlots > 0) {
+        if (!(await this.promptUnlock('空槽满了'))) return;
+        if (this.sel !== sel) return;
+      }
+      const res = g.groupToTray(sel.cells);
+      this.clearSel();
+      this.handleResult(res, sel.cells);
+      return;
+    }
+    // 空槽里的豆子：点到哪颗算哪种颜色；点空白处取第一种有空孔的颜色
+    if (!g.slots.length) {
+      sfx.pick();
+      this.showTip('先点一颗放错的豆子');
+      return;
+    }
+    const color = k >= 0 && k < g.slots.length ? g.slots[k] : (g.slots.find((c) => g.holesFor(c) > 0) ?? g.slots[0]);
+    if (sel?.kind === 'tray' && sel.color === color) {
+      this.clearSel();
+      sfx.drop();
+      return;
+    }
+    const hasHoles = g.holesFor(color) > 0;
+    if (this.autoFill && hasHoles && sel?.kind !== 'board') {
+      this.clearSel();
+      this.handleResult(g.trayToHoles(color));
+      return;
+    }
+    this.sel = { kind: 'tray', color };
+    this.board.setLifted([]);
+    sfx.pick();
+    this.haptic(8);
+    this.renderTray();
+    if (!hasHoles) this.showTip('还没有空孔需要这个颜色，先移开棋盘上的豆子');
+  }
+
+  /** 开启锁住的空槽（开启后本关最多 2 星） */
+  private async promptUnlock(reason = ''): Promise<boolean> {
+    const g = this.game;
+    if (g.lockedSlots <= 0) return false;
+    this.paused = true;
+    const v = await dialog(
+      h('div', {}, h('h2', {}, `🔒 开启 ${g.lockedSlots} 个锁住的空槽？`),
+        reason ? h('p', {}, reason + '，开启后可以继续放豆子。') : null,
+        h('p', {}, '开启后本关最多只能获得 2 颗星，无法拿到第三颗星。')),
+      [{ label: '先不开', value: 'no' }, { label: '开启（放弃第三颗星）', value: 'yes', cls: 'primary' }],
+    );
+    this.resume();
+    if (v !== 'yes' || !g.unlockSlots()) return false;
+    sfx.star(0);
+    this.elTray.parentElement!.classList.add('grow');
+    setTimeout(() => this.elTray.parentElement!.classList.remove('grow'), 600);
+    toast('空槽已开启，本关最多 2 颗星');
+    this.renderAll();
+    return true;
+  }
+
+  private handleResult(res: TapResult, liftedFrom: number[] = [], liftedTray = false) {
     switch (res.type) {
       case 'ignored':
         return;
@@ -663,7 +840,7 @@ export class GameScreen {
         this.onBurst(res.cell);
         return;
       case 'moved':
-        this.animateMoves(res.moves);
+        this.animateMoves(res.moves, liftedFrom, liftedTray);
         sfx.pick();
         this.haptic(10);
         this.board.setGroupPreview([]);
@@ -722,7 +899,8 @@ export class GameScreen {
     }
   }
 
-  private animateMoves(moves: Move[]) {
+  private animateMoves(moves: Move[], liftedFrom: number[] = [], liftedTray = false) {
+    const lifted = new Set(liftedFrom);
     const now = performance.now();
     const stagger = this.stagger(moves.length);
     // 进槽的豆子在最终托盘里占的位置：该颜色区间的最后几格，落地前隐藏
@@ -743,11 +921,11 @@ export class GameScreen {
       if (m.kind === 'cellToCell' || m.kind === 'slotToCell') {
         const to = m.to;
         this.board.arriving.set(to, now + delay + FLIGHT_MS);
-        const from = m.kind === 'cellToCell' ? this.cellPt(m.from) : this.slotPt(m.slot);
+        const from = m.kind === 'cellToCell' ? this.cellPt(m.from, lifted.has(m.from)) : this.slotPt(m.slot, liftedTray);
         this.fx.fly(img, from, this.cellPt(to), FLIGHT_MS, delay, () => this.onLand(to, m.color));
       } else {
         const slot = slotTargets[slotK++];
-        this.fx.fly(img, this.cellPt(m.from), this.slotPt(slot), FLIGHT_MS, delay, () => {
+        this.fx.fly(img, this.cellPt(m.from, lifted.has(m.from)), this.slotPt(slot), FLIGHT_MS, delay, () => {
           this.trayHidden.delete(slot);
           this.renderTray();
           sfx.slot();
@@ -762,7 +940,7 @@ export class GameScreen {
   }
 
   private onHover(i: number) {
-    const group = i >= 0 && this.game.state === 'playing' && !this.paused && this.board.mode === 'normal' ? this.game.batchAt(i) : [];
+    const group = i >= 0 && !this.sel && this.game.state === 'playing' && !this.paused && this.board.mode === 'normal' ? this.game.groupAt(i) : [];
     this.board.setGroupPreview(group);
   }
 
@@ -779,18 +957,20 @@ export class GameScreen {
     }
   }
 
-  private cellPt(i: number) {
+  /** raised = 从浮起的位置起飞 */
+  private cellPt(i: number, raised = false) {
+    const lift = raised ? this.board.cam.s * 0.26 : 0;
     return () => {
       const c = this.board.cellClientCenter(i);
-      return { x: c.x, y: c.y, size: c.size };
+      return { x: c.x, y: c.y - lift, size: c.size * (raised ? 1.1 : 1) };
     };
   }
 
-  private slotPt(k: number) {
+  private slotPt(k: number, raised = false) {
     return () => {
       const el = this.elTray.children[k] as HTMLElement | undefined;
       const r = (el ?? this.elTray).getBoundingClientRect();
-      return { x: r.left + r.width / 2, y: r.top + r.height / 2, size: r.width * 1.3 };
+      return { x: r.left + r.width / 2, y: r.top + r.height / 2 - (raised ? 7 : 0), size: r.width * 1.3 * (raised ? 1.12 : 1) };
     };
   }
 
@@ -804,6 +984,65 @@ export class GameScreen {
         this.fx.burst(p.x, p.y, { n: 4, colors: ['rgba(255,255,255,0.95)', '#d1c4e9'], speed: 2, size: Math.max(3, p.size * 0.25), life: 24 });
       }
     });
+  }
+
+  // ---------- 同色区域拼完的高光 ----------
+
+  private buildRegions() {
+    const g = this.game;
+    const n = g.target.length;
+    const of = new Int32Array(n).fill(-1);
+    const regions: number[][] = [];
+    for (let i = 0; i < n; i++) {
+      if (g.target[i] < 0 || of[i] >= 0) continue;
+      const id = regions.length;
+      const cells = [i];
+      of[i] = id;
+      for (let q = 0; q < cells.length; q++) {
+        const c = cells[q];
+        const x = c % g.w;
+        for (const nb of [x > 0 ? c - 1 : -1, x < g.w - 1 ? c + 1 : -1, c - g.w, c + g.w]) {
+          if (nb < 0 || nb >= n || of[nb] >= 0 || g.target[nb] !== g.target[i]) continue;
+          of[nb] = id;
+          cells.push(nb);
+        }
+      }
+      regions.push(cells);
+    }
+    this.regions = regions;
+    this.syncRegions();
+  }
+
+  /** 静默同步已完成的区域（开局 / 读档时不放特效） */
+  private syncRegions() {
+    this.regionDone = new Set();
+    this.regions.forEach((cells, id) => cells.every((c) => this.game.isCorrect(c)) && this.regionDone.add(id));
+  }
+
+  /** 新拼完的区域：等豆子落地后扫一道高光并「叮」一声 */
+  private checkRegions() {
+    const g = this.game;
+    if (!g || !this.regions.length) return;
+    const now = performance.now();
+    let latest = -1;
+    this.regions.forEach((cells, id) => {
+      const done = cells.every((c) => g.isCorrect(c));
+      if (!done) {
+        this.regionDone.delete(id);
+        return;
+      }
+      if (this.regionDone.has(id)) return;
+      this.regionDone.add(id);
+      let start = now;
+      for (const c of cells) start = Math.max(start, this.board.arriving.get(c) ?? now);
+      start += 40;
+      this.board.shine(cells, start);
+      if (cells.length >= 3) latest = Math.max(latest, start);
+    });
+    if (latest >= 0) {
+      const game = g;
+      setTimeout(() => this.active && this.game === game && sfx.complete(), latest - now);
+    }
   }
 
   // ---------- 计时器 ----------
@@ -899,7 +1138,7 @@ export class GameScreen {
       state: g.state,
       overtime: g.overtime,
       timeRatio: g.def.mode === 'custom' ? 1 : Math.max(0, g.timeLeft) / g.def.timeLimit,
-      slotRatio: g.slots.length / g.capacity,
+      slotRatio: g.slots.length / Math.max(1, g.usableCapacity),
       combo: now - this.lastPlaceAt < 1500 ? g.stats.combo : 0,
       progress: g.progress,
       chainStreak: this.chainStreak,
@@ -1399,6 +1638,7 @@ export class GameScreen {
       case 'Escape':
         if (this.pickAction) this.endPick();
         else if (this.brushUntil) this.endBrush();
+        else if (this.sel) this.clearSel();
         else this.pause();
         break;
       default:
@@ -1414,6 +1654,8 @@ export class GameScreen {
   // ---------- 渲染 HUD ----------
 
   private renderAll() {
+    this.validateSel();
+    this.checkRegions();
     this.renderTray();
     this.renderNeed();
     this.renderProgress();
@@ -1484,6 +1726,9 @@ export class GameScreen {
         const name = OBJECTIVE_TEXT[o.type](o.value).split('：')[0];
         return chip(met, OBJECTIVE_TEXT[o.type](o.value), OBJECTIVE_ICON[o.type], name, extra, o.type);
       }),
+      ...(g.lockedSlots > 0 || g.slotsUnlocked
+        ? [chip(!g.slotsUnlocked, '不开启锁住的空槽；开启后本关最多 2 颗星', '🔒', g.slotsUnlocked ? '已开锁槽·最多2星' : '不开锁槽')]
+        : []),
     );
   }
 
@@ -1552,20 +1797,47 @@ export class GameScreen {
   private renderTray() {
     const g = this.game;
     const cap = g.capacity;
-    const children: HTMLElement[] = [];
+    const usable = g.usableCapacity;
+    const sel = this.sel;
+    // Keep slot/bead nodes alive: rebuilding them restarts animations and can
+    // remove a pressed button before pointerup, losing its click and sound.
+    while (this.elTray.children.length > cap) this.elTray.lastElementChild!.remove();
     for (let k = 0; k < cap; k++) {
       const color = g.slots[k];
       const filled = color !== undefined && !this.trayHidden.has(k);
-      const el = h('button.slot' + (filled ? '.filled' : ''), { onclick: () => filled && this.onTapSlot(k), tabindex: filled ? 0 : -1 });
-      if (filled) el.append(h('span.bead-dot', { style: { background: beadStyle(g.def.colors[color]) } }));
-      children.push(el);
+      const locked = k >= usable && color === undefined;
+      const lifted = filled && sel?.kind === 'tray' && sel.color === color;
+      let el = this.elTray.children[k] as HTMLButtonElement | undefined;
+      if (!el) {
+        el = h('button.slot', {
+          type: 'button',
+          onclick: (e: Event) => { e.stopPropagation(); void this.onTapTray(k); },
+        }) as HTMLButtonElement;
+        this.elTray.append(el);
+      }
+      el.classList.toggle('filled', filled);
+      el.classList.toggle('locked', locked);
+      el.classList.toggle('lifted', !!lifted);
+      el.setAttribute('aria-pressed', String(!!lifted));
+      el.setAttribute('aria-label', locked ? '锁住的空槽：点击开启' : filled ? `空槽 ${k + 1} 的豆子` : `空槽 ${k + 1}`);
+      el.title = locked ? '锁住的空槽：点击开启（开启后本关最多 2 颗星）' : '';
+      const content = filled ? `bead:${color}:${g.def.colors[color]}` : locked ? 'locked' : 'empty';
+      if (el.dataset.content !== content) {
+        el.dataset.content = content;
+        if (filled) el.replaceChildren(h('span.bead-dot', { style: { background: beadStyle(g.def.colors[color]) } }));
+        else if (locked) el.replaceChildren(h('span.slot-lock', {}, '🔒'));
+        else el.replaceChildren();
+      }
     }
-    this.elTray.replaceChildren(...children);
     const used = g.slots.length;
-    const ratio = used / cap;
-    this.elTray.parentElement!.classList.toggle('warn', ratio >= 0.7 && ratio < 0.9);
-    this.elTray.parentElement!.classList.toggle('danger', ratio >= 0.9);
-    this.elTrayInfo.textContent = `空槽 ${used} / ${cap}`;
+    const ratio = used / Math.max(1, usable);
+    const panel = this.elTray.parentElement!;
+    panel.classList.toggle('warn', ratio >= 0.7 && ratio < 0.9);
+    panel.classList.toggle('danger', ratio >= 0.9);
+    panel.classList.toggle('drop-target', sel?.kind === 'board');
+    this.elTrayInfo.textContent = sel?.kind === 'board'
+      ? `点这里把浮起的 ${sel.cells.length} 颗放进空槽 · ${used} / ${usable}`
+      : `空槽 ${used} / ${usable}` + (g.lockedSlots ? ` · 🔒${g.lockedSlots}` : '');
   }
 }
 

@@ -25,6 +25,18 @@ export interface BoardCallbacks {
 
 export type BoardMode = 'normal' | 'pick' | 'paint';
 
+/** 一片颜色拼完后的高光扫过 */
+interface Shine {
+  cells: number[];
+  start: number;
+  d0: number;
+  d1: number;
+}
+
+const SHINE_MS = 650;
+/** 浮起的豆子升起来的时长 */
+const LIFT_MS = 140;
+
 const MAX_CELL = 56;
 const TAP_SLOP = 8;
 
@@ -57,6 +69,10 @@ export class BoardView {
   /** 精灵帮帮忙：啵啵在画布上的位置（格子） */
   helperAt = -1;
   private shake = 0;
+  private shines: Shine[] = [];
+  /** 被点起、正浮在空中等玩家点目的地的豆子 */
+  private lifted = new Set<number>();
+  private liftAt = 0;
 
   constructor(canvas: HTMLCanvasElement, private cb: BoardCallbacks) {
     this.canvas = canvas;
@@ -76,6 +92,8 @@ export class BoardView {
     this.sprites = sprites;
     this.arriving.clear();
     this.hints.clear();
+    this.shines = [];
+    this.lifted.clear();
     this.resize();
     this.fit(false);
   }
@@ -202,6 +220,33 @@ export class BoardView {
     this.shake = 1;
   }
 
+  /** 设置浮起的豆子（空数组 = 放下） */
+  setLifted(cells: number[]) {
+    const same = cells.length === this.lifted.size && cells.every((c) => this.lifted.has(c));
+    if (same) return;
+    this.lifted = new Set(cells);
+    this.liftAt = performance.now();
+  }
+
+  /** 浮起豆子当前的绘制位置（供飞行动画从空中起飞） */
+  liftOffset(): number {
+    return this.lifted.size ? this.cam.s * 0.26 : 0;
+  }
+
+  /** 一片颜色拼完：从左上到右下扫过一道高光 */
+  shine(cells: number[], start = performance.now()) {
+    const g = this.game;
+    if (!g || !cells.length) return;
+    let d0 = Infinity;
+    let d1 = -Infinity;
+    for (const c of cells) {
+      const d = (c % g.w) + Math.floor(c / g.w);
+      d0 = Math.min(d0, d);
+      d1 = Math.max(d1, d);
+    }
+    this.shines.push({ cells, start, d0, d1 });
+  }
+
   // ---------- 输入 ----------
 
   private local(e: PointerEvent | WheelEvent) {
@@ -317,7 +362,21 @@ export class BoardView {
     const now = performance.now();
     const dbl = now - this.lastTap.t < 320 && Math.hypot(x - this.lastTap.x, y - this.lastTap.y) < 24;
     this.lastTap = { t: now, x, y };
-    const i = this.cellAtLocal(x, y);
+    // Raised beads are painted above their original cells. Hit-test the visible
+    // bead first, otherwise tapping its top hits the row above (or empty space).
+    let i = this.cellAtLocal(x, y);
+    if (this.mode === 'normal' && this.game) {
+      const s = this.cam.s;
+      const ease = 1 - (1 - Math.min(1, (now - this.liftAt) / LIFT_MS)) ** 2;
+      const size = s * (1 + 0.1 * ease);
+      for (const cell of [...this.lifted].reverse()) {
+        if (!this.game.movable(cell)) continue;
+        const left = this.cam.x + (cell % this.game.w) * s + (s - size) / 2;
+        const lift = (s * 0.26 + Math.sin(now / 260 + cell * 0.7) * s * 0.03) * ease;
+        const top = this.cam.y + Math.floor(cell / this.game.w) * s + (s - size) / 2 - lift;
+        if (x >= left && x <= left + size && y >= top && y <= top + size) { i = cell; break; }
+      }
+    }
     if (i < 0) {
       // 双击空白：放大 / 复位
       if (dbl) {
@@ -423,7 +482,10 @@ export class BoardView {
           ctx.fillStyle = g.def.colors[t];
           ctx.fillRect(px, py, s + 0.5, s + 0.5);
         }
-        if (b >= 0) {
+        if (b >= 0 && this.lifted.has(i) && b !== t) {
+          // 浮起的豆子：原位露出孔，豆子本身稍后画在上层
+          ctx.drawImage(sp.socket, px, py, s, s);
+        } else if (b >= 0) {
           // 归位的豆不再融平进底色，保留同色浮雕轮廓（参考图效果）
           ctx.drawImage(b === t ? sp.settled[b] : sp.beads[b], px, py, s, s);
           if (g.ice[i]) drawIce(ctx, px, py, s);
@@ -446,6 +508,46 @@ export class BoardView {
             ctx.font = `${Math.round(s * 0.32)}px sans-serif`;
             ctx.fillText(SYMBOLS[t % SYMBOLS.length], px + s / 2, py + s / 2 + 1);
           }
+        }
+      }
+    }
+
+    // 浮起的豆子：影子 + 抬高的豆子，轻轻上下浮动
+    if (this.lifted.size && !lod) {
+      const k = Math.min(1, (now - this.liftAt) / LIFT_MS);
+      const ease = 1 - (1 - k) * (1 - k);
+      for (const i of this.lifted) {
+        const b = g.beads[i];
+        if (b < 0 || b === g.target[i]) continue;
+        const px = X + (i % g.w) * s;
+        const py = Y + Math.floor(i / g.w) * s;
+        const bob = Math.sin(now / 260 + i * 0.7) * s * 0.03;
+        const lift = (s * 0.26 + bob) * ease;
+        const sc = 1 + 0.1 * ease;
+        ctx.fillStyle = 'rgba(60,40,110,0.22)';
+        ctx.beginPath();
+        ctx.ellipse(px + s / 2, py + s * 0.62, s * 0.36 * sc, s * 0.16, 0, 0, Math.PI * 2);
+        ctx.fill();
+        const bs = s * sc;
+        ctx.drawImage(sp.beads[b], px + (s - bs) / 2, py + (s - bs) / 2 - lift, bs, bs);
+      }
+    }
+
+    // 拼完一片：高光斜扫（像拼豆熨平时反光）
+    if (this.shines.length) {
+      this.shines = this.shines.filter((sh) => now < sh.start + SHINE_MS);
+      for (const sh of this.shines) {
+        const t = (now - sh.start) / SHINE_MS;
+        if (t < 0) continue;
+        const span = sh.d1 - sh.d0 + 6;
+        const band = sh.d0 - 3 + span * t;
+        for (const i of sh.cells) {
+          const cx = i % g.w;
+          const cy = Math.floor(i / g.w);
+          const a = Math.max(0, 1 - Math.abs(cx + cy - band) / 3) * 0.75 + (1 - t) * 0.12;
+          if (a <= 0.01) continue;
+          ctx.fillStyle = `rgba(255,255,255,${a.toFixed(3)})`;
+          ctx.fillRect(X + cx * s, Y + cy * s, s + 0.5, s + 0.5);
         }
       }
     }

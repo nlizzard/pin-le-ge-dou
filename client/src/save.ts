@@ -9,6 +9,8 @@ export interface Settings {
   vibrate: boolean;
   needBar: boolean;
   colorBlind: boolean;
+  /** 自动填豆（玩法糖）：点到的豆子有同色空孔时直接飞过去，不用再点一次空孔；进空槽始终由玩家决定 */
+  autoFill: boolean;
 }
 
 export interface SaveData {
@@ -43,7 +45,7 @@ export function defaultSave(): SaveData {
     best: {},
     firstCompletedAt: {},
     inventory: {},
-    settings: { sound: true, vibrate: true, needBar: true, colorBlind: false },
+    settings: { sound: true, vibrate: true, needBar: true, colorBlind: false, autoFill: true },
     seenTutorial: false,
     giftGiven: false,
     collected: [],
